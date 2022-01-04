@@ -3,12 +3,15 @@
     "workbench.colorTheme": "Visual Studio Dark",
     "workbench.iconTheme": "material-icon-theme",
     "liveSassCompile.settings.generateMap": false,
-    "liveSassCompile.settings.formats":[
+    "liveSassCompile.settings.formats": [
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": null
-        }
+            "savePath": "/resource/css"
+        },
     ],
-    "liveServer.settings.donotShowInfoMsg": true
+    "liveServer.settings.donotShowInfoMsg": true,
+    "liveSassCompile.settings.includeItems":[	// 경로에 있는 .scss파일만 컴파일
+        "/css/scss/ *.scss"
+    ]
 }
