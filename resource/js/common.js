@@ -22,6 +22,31 @@ $(function () {
         $(".btn-mailing").next().hide();
     });
 
+    //gnb
+    // $(".depth1>ul>li>a").mouseover(function(){
+    //     $(this).next().addClass("on");
+    // });
+    $(".depth1>ul>li").mouseover(function(){
+        $(this).addClass("on");
+        $(this).children("a").next().addClass("on");
+        $(this).siblings().removeClass("on");
+        $(this).siblings().children("a").next().removeClass("on");
+        if($(this).hasClass("on")){
+            $(this).children("a").next().addClass("on");
+        }else{
+            $(this).children("a").next().removeClass("on");
+        }
+    });
+    $(".depth2 li").mouseout(function(){
+        $(this).parent().removeClass("on");
+        $(this).parent().parent().removeClass("on");
+    });
+    $(".depth2").mouseout(function(){
+        $(this).removeClass("on");
+    })
+   
+    
+
     //notice
     var swipernotice = new Swiper(".gnb .notice .swiper-container", {
         slidesPerView: 'auto',
@@ -45,22 +70,24 @@ $(function () {
 
     });
 
-    //winger
+    //winger-menu
+	$('.wingtab').click(function () {
+		var activeTab = $(this).attr('data-tab');
+		$('.wingtab').removeClass('current');
+		$('.winger-content').removeClass('current');
+		$(this).addClass('current');
+		$('#' + activeTab).addClass('current');
+	});
 
-
-    $(".winger-list>div").click(function () {
-        $(this).children("button").addClass("active");
-
-        $(this).children("button").parent().siblings().children("button").next().hide().removeClass("on");
-
-        $(this).children("button").next().show().addClass("on");
-
-        
-    });
+    $(".button-close").click(function(){
+        var activeTab2 = $(this).parents().attr('data-tab');
+        $('.wingtab').removeClass('current');
+        $('.winger-content').removeClass('current');
+    })
  
     
     var swiperwinger = new Swiper(".winger-content .swiper-container", {
-        spaceBetween: 10,
+        //spaceBetween: 10,
         slidesPerView: 4,
         slidesPerGroup: 4,
         loop: true,
@@ -89,8 +116,8 @@ $(function () {
         slidesPerView: 1,
         loop: true,
         navigation: {
-            nextEl: ".notice .swiper-button-next",
-            prevEl: ".notice .swiper-button-prev",
+            nextEl: ".visual-banner .swiper-button-next",
+            prevEl: ".visual-banner .swiper-button-prev",
         },
         pagination: {
             el: ".swiper-pagination",

@@ -11,12 +11,21 @@
         .visual{
             &-banner{
                 &__inner{
+                    height: 280px;
                     &.main{
                         height: 400px;
                         border-radius: 3px;
                     }
-                    &__sub{
+                    &.sub{
                         height: 280px;
+                        .swiper{
+                            &-container{
+                                height: 100%;
+                            }
+                        }
+                        .img-wrap{
+                            height: 100%;
+                        }
                     }
                     .swiper{
                         &-container{
@@ -329,6 +338,11 @@
                                 content:""
                             }
                             &.click{
+                                &-file{
+                                    &::before{
+                                        background: #000000;
+                                    }
+                                }
                                 &-plus{
                                     color:$color-red;
                                     &::before{
@@ -350,6 +364,9 @@
                 height: 40px;
                 border:1px solid #000000;
                 border-radius: 3px;
+                &::placeholder{
+                    font-size: 1.6rem;
+                }
                 &.w-600{
                     width:600px;
                 }
@@ -361,20 +378,6 @@
             font: {
                 size:1.8rem;
                 weight:$font-weight__m;
-            }
-            &.essential{
-                display: inline-block;
-                position:relative;
-                &::before{
-                    position:absolute;
-                    top:-6px;
-                    right: -7px;
-                    width:5px;
-                    height:5px;
-                    background: $color-red;
-                    border-radius: 100%;
-                    content:""
-                }
             }
             
         }
@@ -391,6 +394,20 @@
                 }
             }
         }
+    }
+}
+.essential{
+    display: inline-block;
+    position:relative;
+    &::before{
+        position:absolute;
+        top:-6px;
+        right: -7px;
+        width:5px;
+        height:5px;
+        background: $color-red;
+        border-radius: 100%;
+        content:""
     }
 }
 .comment{
@@ -599,7 +616,7 @@
     &-wrap{
         button{
             height: 50px;
-            padding:0 29px;
+            padding:0 2.866rem;
             font-size:1.8rem;
             border-radius: 3px;
         }
@@ -1044,9 +1061,13 @@
             .view{
                 &-header{
                     height: 108px;
-                    padding:40px 0;
+                    padding:0px 0;
                     background: none;
                     border-bottom:1px solid #e5e7ee;
+                    h3{
+                        margin: 0;
+                        margin-top: 25px;
+                    }
                 }
                 &-title{
                     font-size: 3rem;
@@ -1066,12 +1087,37 @@
                     .content{
                         &-detail{
                             &__top{
-                                
                                 .img-wrap{
                                     width: 512px;
                                     margin-right: 70px;
                                     img{
                                         width: 100%;
+                                    }
+                                    a{
+                                        position: relative;
+                                        display: block;
+                                        width: 100%;
+                                        height: 100%;
+                                        &:hover{
+                                            &::before{
+                                                position: absolute;
+                                                left: 0;
+                                                top: 0;
+                                                width:100%;
+                                                height:100%;
+                                                background: rgba(0,0,0,0.4);
+                                                content: "";
+                                            }
+                                            &::after{
+                                                position: absolute;
+                                                left: 0;
+                                                top: 0;
+                                                width:100%;
+                                                height:100%;
+                                                background:url(../image/sub/img-poster__hoverIcon.png)no-repeat center;
+                                                content: "";
+                                            }
+                                        }
                                     }
                                 }
                                 .info{
@@ -1341,4 +1387,243 @@
             }
         } 
     } 
+}
+
+.form-input{
+    input{
+        width:29rem;
+        height: 4rem;
+        border:1px solid #000000;
+        border-radius: 3px;
+        font-size: 1.6rem;
+    }
+}
+.view-separate{
+    margin: 0 -15px;
+    >div{
+        padding: 0 15px;
+        .view{
+            &-content{
+                border-bottom:none;
+            }
+        }
+    }
+}
+
+.border{
+    &-bottom{
+        &__none{
+            border-bottom:none !important;
+        }
+    }
+}
+
+.agree{
+    &-child{
+        height: 25.6rem;
+        margin-top: 1.5rem;
+        padding:30px;
+        border:1px solid #e5e7ee;
+        border-radius: 3px;
+        font-size:1.6rem;
+        color:$color-fontgray;
+        line-height: 3rem;
+        overflow-y: scroll;
+        
+    }
+}
+
+/* 신청 완료 */ 
+.done{
+    >div{
+        padding:6rem 10rem;
+    }
+    .border-gray{
+        padding:0 6rem 2rem 6rem;
+    }
+}
+.border-gray{
+    border: 1px solid #e4e6ee;
+    border-radius: 3px;
+    background: #ffffff;
+}
+
+/* 검색 결과 */ 
+.search-result{
+    &__box{
+        display: inline-block;
+        width: auto;
+        padding:3rem;
+        box-shadow: 6px 6px 10px rgba(10,10,33,0.1);
+        .form-input{
+            width: 45rem;
+            input{
+                width:calc(100% - 4.2rem)
+            }
+        }
+    }
+}
+.form-box{
+    margin: -5px;
+    >div{
+        padding: 5px;
+    }
+    select{
+        width: 16rem;
+        height: 5rem;
+        font-size: 1.8rem;
+        line-height: 100%;
+        border:1px solid #000000;
+        border-radius: 3px;
+        background: #ffffff url(../image/common/icon/clamp__bottom.png) no-repeat right 1rem center;
+    }
+    .form{
+        &-input{
+            background: #ffffff;
+            border:1px solid #000000;
+            border-radius: 3px;
+            input{
+                height: 100%;
+                border:none;
+            }
+        }
+    }
+    button{
+        display: inline-block; 
+        vertical-align: top;
+        width: 4.2rem; 
+        height: 5rem; 
+        background: url(../image/common/icon/icon-search.png) no-repeat center;
+        background-size: 2.4rem;
+    }
+}
+.h-50{
+    input, select{
+        height: 5rem;
+    }
+    .form{
+        &-input{
+            height: 5rem;
+        }
+    }
+}
+.result{
+    &-box{
+        &+&{
+            margin-top: 90px;
+        }
+    }
+    &-title{
+        padding:2rem;
+        background:#f8f8fa;
+        .type{
+            font-size:2.6rem;
+            font-weight: $font-weight__b;
+        }
+        .total-num{
+            margin-left: 2rem;
+            font-size:1.7rem;
+            color:$color-fontgray;
+            em{
+
+                font-weight: $font-weight__m;
+                color:$color-red;
+            }
+        }
+        .button-more{
+            width:3.4rem;
+            height: 3.4rem;
+            border:1px solid #e5e7ee;
+            border-radius: 3px;
+            background: #ffffff url(../image/common/icon/icon-plus.png)no-repeat center;
+        }
+    }
+    &-msg{
+        margin:60px 0;
+    }
+    &-list{
+        &-thumb{
+            ul{
+                li{
+
+                    padding:3rem 0;
+                    border-bottom:1px solid #e5e7ee;
+                    .img-wrap{
+                        max-width: 23.4rem;
+                        img{
+                            width:100%;
+                        }
+                    }
+                    .title{
+                        display: inline-block;
+                        margin-bottom: 1.5rem;
+                        font-size:2rem;
+                        font-weight:$font-weight__m;
+                        .keyword-txt{
+                            color:$color-red;
+                            font-weight:$font-weight__m;
+                        }
+                    }
+                    p{
+                        font-size:1.7rem;
+                    }
+                    .info{
+                        margin-left: 4rem;
+                    }
+                    .date{
+                        margin-bottom: 2rem;
+                        font-size:1.7rem;
+                        color:$color-fontgray;
+                    }
+                }
+            }
+        }
+        &-common{
+            ul{
+                li{
+                    padding:3rem 0;
+                    border-bottom:1px solid #e7ecfd;
+                    .title{
+                        display: inline-block;
+                        margin-bottom: 1.5rem;
+                        padding-right:.5rem;
+                        font-size:2rem;
+                        font-weight:$font-weight__m;
+                        .keyword-txt{
+                            font-size:2rem;
+                            font-weight:$font-weight__m;
+                            color:$color-red;
+                        }
+                    }
+                    p, span{
+                        font-size:1.7rem;
+                    }
+                    .writer, .time{
+                        padding: 0 1.5rem;
+                        color:$color-fontgray;
+                    }
+                    .time{
+                        position:relative;
+                        &::before{
+                            position:absolute;
+                            top:.5rem;
+                            left:0;
+                            width:.1rem;
+                            height:1.5rem;
+                            background: $color-fontgray;
+                            content: "";
+                        }
+                    }
+                    .cont-wrap{
+                        p{
+                            @include text-overflow2;
+                            font-size:1.8rem;
+                            line-height: 3.2rem;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
