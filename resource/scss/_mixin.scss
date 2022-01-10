@@ -5,6 +5,7 @@ $mobile-s: 360px;
 $mobile-sm: 480px;
 $mobile-m: 540px;
 $mobile-l: 720px;
+$labtop: 1024px;
 $desktop: 1440px;
 
 $height-l:936px;
@@ -50,6 +51,12 @@ $height-l:936px;
 
 @mixin desktop {
     @media (min-width: #{$desktop}) {
+      @content;
+    }
+  }
+
+@mixin laptop {
+    @media (min-width: #{$laptop}) {
       @content;
     }
   }
