@@ -574,7 +574,7 @@ p{
             }
         }
         .banner{
-            padding:20px 0;
+            padding:30px 0;
             border-top:2px solid #8c8c8c;
             background: #f8f8fa;
             &__inner{
@@ -1610,4 +1610,4 @@ ul{
 /* scrollbar */ 
 .book-list::-webkit-scrollbar { width: .4rem; }
 .book-list::-webkit-scrollbar-thumb { background-color: #9dd757; border-radius: 1rem; }
-.book-list::-webkit-scrollbar-track { background-color: #d2d2d2; border-radius: 2rem; }
+.book-list::-webkit-scrollbar-track { background-color: #d2d2d2; border-radius: 1rem; }
