@@ -1977,7 +1977,7 @@ ul.list-dashed li::before {
 
 .content__inner {
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .content__inner.sub {
@@ -2102,6 +2102,24 @@ ul.list-dashed li::before {
   width: 2.4rem;
   height: 2.4rem;
   background: url(../image/common/icon/icon-search.png);
+}
+
+.content__core.login {
+  max-width: 92rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.content__core.login .view-tab .tab-top {
+  height: 6rem;
+}
+
+.content__core.login .view-tab .tab-top .tab li {
+  font-size: 1.8rem;
+}
+
+.content__core.login .view-tab .tab-content input, .content__core.login .view-tab .tab-content label {
+  width: 100%;
 }
 
 .lnb__inner {
@@ -2495,7 +2513,7 @@ ul.list-dashed li::before {
 }
 
 .comment-list .button-wrap button {
-  height: 40px;
+  height: 4rem;
   padding: 0 20px;
   font-size: 1.6rem;
   font-weight: 400;
@@ -2672,10 +2690,15 @@ ul.list-dashed li::before {
 
 /* button */
 .button-wrap button {
-  height: 50px;
+  height: 5rem;
   padding: 0 2.866rem;
   font-size: 1.8rem;
   border-radius: 3px;
+}
+
+.button-wrap button.next {
+  width: 11rem;
+  height: 5rem;
 }
 
 .button-wrap .color-red {
@@ -3385,7 +3408,7 @@ ul.list-dashed li::before {
 }
 
 .view-tab .tab-top {
-  height: 69px;
+  height: 7rem;
 }
 
 .view-tab .tab-top ul li {
@@ -3525,12 +3548,21 @@ ul.list-dashed li::before {
   width: 100%;
 }
 
+.form-row {
+  margin-right: 0;
+  margin-left: 0;
+}
+
 .form-input input {
   width: 29rem;
   height: 4rem;
   border: 1px solid #000000;
-  border-radius: 3px;
+  border-radius: 2px;
   font-size: 1.6rem;
+}
+
+.form-select {
+  height: 100%;
 }
 
 .view-separate {
@@ -3768,4 +3800,166 @@ ul.list-dashed li::before {
   -webkit-box-orient: vertical;
   font-size: 1.8rem;
   line-height: 3.2rem;
+}
+
+/* 회원가입 */
+.grayBox.auth {
+  padding: 5.5rem 1.5rem;
+  background: #fafbfe url("../image/sub/img-joinbox.png") no-repeat 100% 100%;
+}
+
+.grayBox.auth p {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 2.4em;
+}
+
+.grayBox.auth p:first-child span {
+  display: block;
+}
+
+.grayBox.auth p span {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.grayBox.auth p.quot {
+  padding-top: 1.5rem;
+  margin-bottom: 1rem;
+  background: url("../image/sub/icon/icon-quotGray.png") no-repeat 0 0;
+}
+
+.grayBox.auth p.quot strong {
+  display: block;
+  font-weight: 600;
+}
+
+.grayBox.auth p.quot strong span {
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.grayBox.auth p.quot span {
+  display: inline-block;
+}
+
+.grayBox.auth h3 {
+  padding-left: 3rem;
+  margin: 3.5rem 0 2.5rem;
+}
+
+.grayBox.auth span {
+  color: #dd2525;
+  font-weight: 500;
+}
+
+.grayBox.auth .checkList li {
+  padding-left: 3rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  background: url("../image/sub/icon/icon-joinCheck.png") no-repeat 1rem 0;
+}
+
+.grayBox.auth .checkList li + li {
+  margin-top: 1.3rem;
+}
+
+.cerifyBox {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 6rem 7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e5e7ee;
+  font-size: 2rem;
+}
+
+.cerifyBox .form-row {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cerifyBox .form-row > * {
+  margin-right: 0.9rem;
+}
+
+.cerifyBox .form-input {
+  width: 23rem;
+}
+
+.cerifyBox .form-input label {
+  margin-bottom: 0;
+}
+
+.cerifyBox .form-select {
+  width: 15rem;
+  height: 4rem;
+  margin-right: 0;
+  background-color: #f8f8fa;
+  color: #747478;
+}
+
+.cerifyBox .form-select .form-select {
+  border: 1px solid #e5e7ee;
+  border-radius: 2px;
+}
+
+.cerifyBox .button-wrap {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.cerifyBox .button-wrap button {
+  width: 14rem;
+  height: 4rem;
+  font-weight: 200;
+}
+
+.circleGray {
+  width: 14.3rem;
+  height: 14.3rem;
+  margin: 0 auto;
+  background-color: #f8f8fa;
+  border-radius: 100%;
+  line-height: 14.3rem;
+  text-align: center;
+}
+
+.justNotice {
+  font-size: 1.6rem;
+  color: #747478;
+  line-height: 1.7em;
+}
+
+.login > div {
+  width: 42.9rem;
+}
+
+.login > div.ownerSelect {
+  margin-right: 6rem;
+}
+
+.login > div img {
+  width: 100%;
+}
+
+.linkFind a {
+  font-size: 1.7rem;
+}
+
+.linkFind a + a:before {
+  display: inline-block;
+  width: 1px;
+  height: 1.5rem;
+  margin: 0 1rem;
+  vertical-align: middle;
+  background-color: #000;
+  content: "";
+}
+
+.linkPlatform a + a {
+  margin-left: 2rem;
 }
