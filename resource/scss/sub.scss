@@ -132,6 +132,10 @@
             }
         }
     }
+    &__deepin{
+        max-width:47.5rem;
+        margin:0 auto;
+    }
 }
 
 .lnb{
@@ -1775,6 +1779,73 @@
 }
 
 .login{
+    &.find{
+        > div{
+            width:100%;
+        }
+        .form-input{
+            label{
+                @include justify-between;
+                @include align-center;
+                font-size:1.8rem;
+                font-weight:$font-weight__m;
+            }
+            input{
+                width:33.8rem !important;
+            }
+        }
+        .justNotice{
+            padding:0 3.5rem;
+            box-sizing:border-box;
+        }
+    }
+    &.comp{
+        > div{
+            width:100%;
+            button{
+                width:auto;
+            }
+        }
+        > .img-wrap{
+            width:9.7rem;
+            margin:0 auto;
+        }
+        h3{
+            line-height:1.8em;
+        }
+        dl{
+            @include d-flex;
+            flex-wrap:wrap;
+            width:45rem;
+            margin:4rem auto 5.5rem;
+            padding:4rem 10rem;
+            border:1px solid #e5e7ee;
+            background-color:#f8f8fa;
+            dt, dd{
+                font-size:2rem;
+                text-align:left;
+            }
+            dt{
+                width:9rem;
+                &:first-child{
+                    margin-bottom:3rem;
+                }
+            }
+            dd{
+                width:calc(100% - 9rem);
+                &:nth-child(2){
+                    margin-bottom:3rem;
+                }
+            }
+        }
+        > p{
+            padding:0 12rem;
+            font-size:1.8rem;
+            box-sizing:border-box;
+            line-height:1.7em;
+            text-align:left;
+        }
+    }
     > div{
         width:42.9rem;
         &.ownerSelect{

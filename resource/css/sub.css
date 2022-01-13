@@ -2122,6 +2122,11 @@ ul.list-dashed li::before {
   width: 100%;
 }
 
+.content__deepin {
+  max-width: 47.5rem;
+  margin: 0 auto;
+}
+
 .lnb__inner {
   width: 260px;
   margin-right: 70px;
@@ -3932,6 +3937,97 @@ ul.list-dashed li::before {
   font-size: 1.6rem;
   color: #747478;
   line-height: 1.7em;
+}
+
+.login.find > div {
+  width: 100%;
+}
+
+.login.find .form-input label {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.login.find .form-input input {
+  width: 33.8rem !important;
+}
+
+.login.find .justNotice {
+  padding: 0 3.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.login.comp > div {
+  width: 100%;
+}
+
+.login.comp > div button {
+  width: auto;
+}
+
+.login.comp > .img-wrap {
+  width: 9.7rem;
+  margin: 0 auto;
+}
+
+.login.comp h3 {
+  line-height: 1.8em;
+}
+
+.login.comp dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 45rem;
+  margin: 4rem auto 5.5rem;
+  padding: 4rem 10rem;
+  border: 1px solid #e5e7ee;
+  background-color: #f8f8fa;
+}
+
+.login.comp dl dt, .login.comp dl dd {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.login.comp dl dt {
+  width: 9rem;
+}
+
+.login.comp dl dt:first-child {
+  margin-bottom: 3rem;
+}
+
+.login.comp dl dd {
+  width: calc(100% - 9rem);
+}
+
+.login.comp dl dd:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.login.comp > p {
+  padding: 0 12rem;
+  font-size: 1.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.7em;
+  text-align: left;
 }
 
 .login > div {
