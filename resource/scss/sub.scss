@@ -656,6 +656,18 @@
                 background: #dd2525;
                 border:none !important;
             }
+            &-naver{
+                background-color:#26cc0a;
+                color:#fff;
+            }
+            &-facebook{
+                background-color:#527bd3;
+                color:#fff;
+            }
+            &-kakao{
+                background-color:#fdeb1d;
+                color:#000;
+            }
         }
     }
 }
@@ -1853,6 +1865,96 @@
         }
         img{
             width:100%
+        }
+    }
+    &.hostSel{
+        > div{
+            width:40rem;
+            padding:3rem 5rem;
+            box-sizing:border-box;
+            border:1px solid #e5e7ee;
+            span{
+                display:inline-block;
+                width:14.3rem;
+                height:14.3rem;
+                border-radius:100%;
+                background-color:#f8f8fa;
+                line-height:14.3rem;
+                text-align:center;
+            }
+            h3{
+                margin-top:3rem;
+            }
+            >p{
+                margin-top:3rem;
+                font-size:1.8rem;
+                font-weight:$font-weight__m;
+            }
+            .button-wrap{
+                margin-top:2rem;
+                &.sns{
+                    button{
+                        position:relative;
+                        font-size:1.6rem;
+                        background-repeat:no-repeat;
+                        &:before{
+                            position:absolute;
+                            top:50%;
+                            left:5rem;
+                            width:1px;
+                            height:1.6rem;
+                            background-color:rgba(255, 255, 255, 0.487);
+                            vertical-align: middle;
+                            transform:translateY(-50%);
+                            content:"";
+                        }
+                        &.color{
+                            &-naver{
+                                background-image:url('../image/sub/icon/icon_logoNaver.png');
+                                background-size:1.6rem;
+                                background-position:1.9rem center;
+                            }
+                            &-facebook{
+                                background-image:url('../image/sub/icon/icon_logoFacebook.png');
+                                background-size:1.1rem;
+                                background-position:2rem center;
+                            }
+                            &-kakao{
+                                background-image:url('../image/sub/icon/icon_logoKakao.png');
+                                background-size:2.1rem;
+                                background-position:1.5rem center;
+                                &:before{
+                                    background-color:rgba(0, 0, 0, 0.309)
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .grayBox{
+                margin-top:3rem;
+                padding:1.7rem;
+                box-sizing:border-box;
+                background-color:#f8f8fa;
+                border:1px solid #e5e7ee;
+                border-radius:3px;
+                font-size:1.6rem;
+                color:#747478;
+                line-height:1.5em;
+            }
+        }
+        .join{
+            &Noraml{
+                margin-right:4rem;
+                img{
+                    width:7.4rem
+                }
+            }
+            &Company{
+                img{
+                    width:7.6rem
+                }
+            }
         }
     }
 }

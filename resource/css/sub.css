@@ -2712,6 +2712,21 @@ ul.list-dashed li::before {
   border: none !important;
 }
 
+.button-wrap .color-naver {
+  background-color: #26cc0a;
+  color: #fff;
+}
+
+.button-wrap .color-facebook {
+  background-color: #527bd3;
+  color: #fff;
+}
+
+.button-wrap .color-kakao {
+  background-color: #fdeb1d;
+  color: #000;
+}
+
 .box {
   padding: 60px;
 }
@@ -4040,6 +4055,104 @@ ul.list-dashed li::before {
 
 .login > div img {
   width: 100%;
+}
+
+.login.hostSel > div {
+  width: 40rem;
+  padding: 3rem 5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e5e7ee;
+}
+
+.login.hostSel > div span {
+  display: inline-block;
+  width: 14.3rem;
+  height: 14.3rem;
+  border-radius: 100%;
+  background-color: #f8f8fa;
+  line-height: 14.3rem;
+  text-align: center;
+}
+
+.login.hostSel > div h3 {
+  margin-top: 3rem;
+}
+
+.login.hostSel > div > p {
+  margin-top: 3rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.login.hostSel > div .button-wrap {
+  margin-top: 2rem;
+}
+
+.login.hostSel > div .button-wrap.sns button {
+  position: relative;
+  font-size: 1.6rem;
+  background-repeat: no-repeat;
+}
+
+.login.hostSel > div .button-wrap.sns button:before {
+  position: absolute;
+  top: 50%;
+  left: 5rem;
+  width: 1px;
+  height: 1.6rem;
+  background-color: rgba(255, 255, 255, 0.487);
+  vertical-align: middle;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+
+.login.hostSel > div .button-wrap.sns button.color-naver {
+  background-image: url("../image/sub/icon/icon_logoNaver.png");
+  background-size: 1.6rem;
+  background-position: 1.9rem center;
+}
+
+.login.hostSel > div .button-wrap.sns button.color-facebook {
+  background-image: url("../image/sub/icon/icon_logoFacebook.png");
+  background-size: 1.1rem;
+  background-position: 2rem center;
+}
+
+.login.hostSel > div .button-wrap.sns button.color-kakao {
+  background-image: url("../image/sub/icon/icon_logoKakao.png");
+  background-size: 2.1rem;
+  background-position: 1.5rem center;
+}
+
+.login.hostSel > div .button-wrap.sns button.color-kakao:before {
+  background-color: rgba(0, 0, 0, 0.309);
+}
+
+.login.hostSel > div .grayBox {
+  margin-top: 3rem;
+  padding: 1.7rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #f8f8fa;
+  border: 1px solid #e5e7ee;
+  border-radius: 3px;
+  font-size: 1.6rem;
+  color: #747478;
+  line-height: 1.5em;
+}
+
+.login.hostSel .joinNoraml {
+  margin-right: 4rem;
+}
+
+.login.hostSel .joinNoraml img {
+  width: 7.4rem;
+}
+
+.login.hostSel .joinCompany img {
+  width: 7.6rem;
 }
 
 .linkFind a {
