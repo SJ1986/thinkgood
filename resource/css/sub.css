@@ -291,9 +291,9 @@
   padding-left: 10px;
 }
 
-.py_1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.px_1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px_2 {
@@ -301,9 +301,34 @@
   padding-right: 2rem;
 }
 
+.px_3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px_4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px_5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py_1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py_2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py_3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py_4 {
@@ -311,8 +336,33 @@
   padding-bottom: 4rem;
 }
 
+.py_5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb_100 {
   padding-bottom: 10rem;
+}
+
+.pd_1 {
+  padding: 1rem;
+}
+
+.pd_2 {
+  padding: 2rem;
+}
+
+.pd_3 {
+  padding: 3rem;
+}
+
+.pd_4 {
+  padding: 4rem;
+}
+
+.pd_5 {
+  padding: 5rem;
 }
 
 .font_30 {
@@ -1708,7 +1758,7 @@ ul.list-dashed li::before {
   left: .6rem;
   width: 1.3rem;
   height: 1.3rem;
-  background: #c41a66;
+  background: #dd2525;
   border-radius: 100%;
 }
 
@@ -1982,6 +2032,15 @@ ul.list-dashed li::before {
 
 .content__inner.sub {
   margin-bottom: 120px;
+}
+
+.content__inner.sub > h1 {
+  font-weight: 600;
+}
+
+.content__inner.sub > h1 img {
+  margin-top: 1.2rem;
+  margin-right: 1rem;
 }
 
 .content__inner .visual-banner__inner {
@@ -2667,6 +2726,22 @@ ul.list-dashed li::before {
 .table-wrap table tr td .tit em {
   display: inline-block;
   vertical-align: middle;
+}
+
+.table-wrap table tr .caution {
+  position: relative;
+  display: inline-block;
+}
+
+.table-wrap table tr .caution:before {
+  position: absolute;
+  top: -.6rem;
+  right: -.6rem;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 100%;
+  background-color: #dd2525;
+  content: "";
 }
 
 .badge.answer {
@@ -3823,9 +3898,13 @@ ul.list-dashed li::before {
 }
 
 /* 회원가입 */
+.grayBox {
+  background-color: #f8f8fa;
+}
+
 .grayBox.auth {
   padding: 5.5rem 1.5rem;
-  background: #fafbfe url("../image/sub/img-joinbox.png") no-repeat 100% 100%;
+  background: url("../image/sub/img-joinbox.png") no-repeat 100% 100%;
 }
 
 .grayBox.auth p {
@@ -3883,6 +3962,13 @@ ul.list-dashed li::before {
 
 .grayBox.auth .checkList li + li {
   margin-top: 1.3rem;
+}
+
+.grayBox.check {
+  width: 100%;
+  padding: 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .cerifyBox {
@@ -4135,7 +4221,6 @@ ul.list-dashed li::before {
   padding: 1.7rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: #f8f8fa;
   border: 1px solid #e5e7ee;
   border-radius: 3px;
   font-size: 1.6rem;
@@ -4155,6 +4240,108 @@ ul.list-dashed li::before {
   width: 7.6rem;
 }
 
+.login.terms {
+  width: 100%;
+  max-width: 130rem;
+}
+
+.login.terms .table-wrap {
+  width: 100%;
+}
+
+.login.terms .table-wrap th, .login.terms .table-wrap td {
+  border: 1px solid #e5e7ee;
+}
+
+.login.terms .table-wrap th {
+  padding: 2.5rem 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.login.terms .table-wrap th .caution {
+  font-weight: 500;
+}
+
+.login.terms .table-wrap td {
+  padding: 1.5rem 3rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-align: left;
+}
+
+.login.terms .table-wrap td .form-row select, .login.terms .table-wrap td .form-row input {
+  height: 4rem;
+  border: 1px solid #e5e7ee;
+  border-radius: 0.3rem;
+}
+
+.login.terms .table-wrap td .form-row select {
+  width: 25rem;
+  background: url("../image/common/icon/clamp__bottom.png") no-repeat right 10px center;
+}
+
+.login.terms .table-wrap td .form-row input {
+  width: 50rem;
+}
+
+.login.terms .table-wrap td .form-row.group {
+  width: 50rem;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.login.terms .table-wrap td .form-row.group input {
+  width: 100%;
+}
+
+.login.terms .table-wrap td .form-row.group input + input {
+  margin-left: .5rem;
+}
+
+.login.terms .table-wrap td .form-row.flex-wrap .checks {
+  width: 100%;
+  margin-right: 0;
+}
+
+.login.terms .table-wrap td .form-row.flex-wrap .checks + .checks {
+  margin-top: 2rem;
+}
+
+.login.terms .table-wrap td .form-row .checks {
+  margin-right: 5.5rem;
+}
+
+.login.terms .table-wrap td .form-row .checks input[type="radio"] + label:before {
+  top: 0.2rem;
+  width: 2.2rem;
+  height: 2.2rem;
+}
+
+.login.terms .table-wrap td .form-row .checks input[type="radio"] + label::after {
+  top: 0.8rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+.login.terms .table-wrap td .form-row .checks input[type="radio"]:checked + label:before {
+  border: 1px solid #dd2525;
+}
+
+.login.terms .table-wrap td .form-row .checks input[type="radio"]:checked + label::after {
+  background-color: #dd2525;
+}
+
+.login.terms .table-wrap td .postSch {
+  height: 100%;
+  padding: 0;
+  margin-top: 1rem;
+  margin-left: 1.5rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid #000;
+}
+
 .linkFind a {
   font-size: 1.7rem;
 }
@@ -4171,4 +4358,70 @@ ul.list-dashed li::before {
 
 .linkPlatform a + a {
   margin-left: 2rem;
+}
+
+.accordion .form-check {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e7ee;
+}
+
+.accordion .form-check.on .acc_admit {
+  background: url("../image/sub/icon/icon_accClampUp.png") no-repeat 100% 100%;
+  background-size: contain;
+}
+
+.accordion .form-check input[type='checkbox'] + label::before {
+  top: 0.2rem;
+}
+
+.accordion .acc_admit {
+  height: 3.4rem;
+  padding-right: 4.5rem;
+  font-size: 1.6rem;
+  background: url("../image/sub/icon/icon_accClampDown.png") no-repeat 100% 100%;
+  background-size: contain;
+}
+
+.accordion .admitContent {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 12rem;
+  margin-top: 1rem;
+  padding: 1.8rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e5e7ee;
+}
+
+.accordion .admitContent p {
+  line-height: 1.8em;
+}
+
+.accordion .admitContent p::-webkit-scrollbar-track {
+  background-color: #f8f8fa;
+  border-radius: 5rem;
+}
+
+.accordion .admitContent p::-webkit-scrollbar-thumb {
+  background-color: #e5e7ee;
+  border-radius: 5rem;
+}
+
+.accordion .admitContent p.pre {
+  overflow: auto;
+  height: 100%;
+  padding-right: 3rem;
+  font-size: 1.6rem;
+  color: #747478;
+  white-space: pre-line;
 }

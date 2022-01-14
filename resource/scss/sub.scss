@@ -7,6 +7,13 @@
         margin-top: 20px;
         &.sub{
             margin-bottom: 120px;
+            >h1{
+                font-weight:$font-weight__b;
+                img{
+                    margin-top:1.2rem;
+                    margin-right:1rem;
+                }
+            }
         }
         .visual{
             &-banner{
@@ -605,6 +612,20 @@
                         }
                     }
                     
+                }
+                .caution{
+                    position:relative;
+                    display:inline-block;
+                    &:before{
+                        position:absolute;
+                        top:-.6rem;
+                        right:-.6rem;
+                        width:0.5rem;
+                        height:0.5rem;
+                        border-radius:100%;
+                        background-color:#dd2525;
+                        content:""
+                    }
                 }
             }
         }
@@ -1679,9 +1700,10 @@
 
 /* 회원가입 */
 .grayBox{
+    background-color:#f8f8fa;
     &.auth{
         padding:5.5rem 1.5rem;
-        background:#fafbfe url('../image/sub/img-joinbox.png') no-repeat 100% 100%;
+        background:url('../image/sub/img-joinbox.png') no-repeat 100% 100%;
         p{
             &:first-child{
                 span{
@@ -1732,6 +1754,11 @@
                 }
             }
         }
+    }
+    &.check{
+        width:100%;
+        padding:2rem;
+        box-sizing:border-box;
     }
 }
 .cerifyBox{
@@ -1935,7 +1962,6 @@
                 margin-top:3rem;
                 padding:1.7rem;
                 box-sizing:border-box;
-                background-color:#f8f8fa;
                 border:1px solid #e5e7ee;
                 border-radius:3px;
                 font-size:1.6rem;
@@ -1957,8 +1983,98 @@
             }
         }
     }
+    &.terms{
+        width:100%;
+        max-width:130rem;
+        .table-wrap{
+            width:100%;
+            th, td{
+                border:1px solid #e5e7ee;
+            }
+            th{
+                padding:2.5rem 3rem;
+                box-sizing: border-box;
+                text-align:left;
+                .caution{
+                    font-weight:$font-weight__m;
+                }
+            }
+            td{
+                padding:1.5rem 3rem;
+                box-sizing: border-box;
+                text-align:left;
+                .form-row{
+                    select, input{
+                        height:4rem;
+                        border:1px solid #e5e7ee;
+                        border-radius:0.3rem;
+                    }
+                    select{
+                        width:25rem;
+                        background:url('../image/common/icon/clamp__bottom.png') no-repeat right 10px center;
+                    }
+                    input{
+                        width:50rem;
+                    }
+                    &.group{
+                        width:50rem;
+                        flex-wrap:nowrap;
+                        input{
+                            width:100%;
+                            &+input{
+                                margin-left:.5rem;
+                            }
+                        }
+                    }
+                    &.flex-wrap{
+                        .checks{
+                            width:100%;
+                            margin-right:0;
+                            &+.checks{
+                                margin-top:2rem;
+                            }
+                        }
+                    }
+                    .checks{
+                        margin-right:5.5rem;
+                        input[type="radio"]{
+                            &+label{
+                                &:before{
+                                    top:0.2rem;
+                                    width:2.2rem;
+                                    height:2.2rem;
+                                }
+                                &::after{
+                                    top:0.8rem;
+                                    width:1rem;
+                                    height:1rem;
+                                }
+                            }
+                            &:checked{
+                                &+label{
+                                    &:before{
+                                        border:1px solid #dd2525;
+                                    }
+                                    &::after{
+                                        background-color:#dd2525;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .postSch{
+                    height:100%;
+                    padding:0;
+                    margin-top:1rem;
+                    margin-left:1.5rem;
+                    padding-bottom:.5rem;
+                    border-bottom:1px solid #000;
+                }
+            }
+        }
+    }
 }
-
 .link{
     &Find{
         a{
@@ -1980,6 +2096,70 @@
         a{
             &+a{
                 margin-left:2rem;
+            }
+        }
+    }
+}
+.accordion{
+    .form-check{
+        flex-wrap:wrap;
+        @include align-center;
+        @include justify-between;
+        width:100%;
+        padding:1.5rem 2rem;
+        border-bottom:1px solid #e5e7ee;
+        &.on{
+            .acc_admit{
+                background:url('../image/sub/icon/icon_accClampUp.png') no-repeat 100% 100%;        
+                background-size:contain;
+            }
+        }
+        input{
+            &[type='checkbox']{
+                &+label{
+                    &::before{
+                        top:0.2rem;
+                    }
+                }
+            }
+        }
+    }
+    .acc_admit{
+        height:3.4rem;
+        padding-right:4.5rem;
+        font-size:1.6rem;
+        background:url('../image/sub/icon/icon_accClampDown.png') no-repeat 100% 100%;
+        background-size:contain;
+    }
+    .admitContent{
+        display:none;
+        overflow:hidden;
+        width:100%;
+        height:12rem;
+        margin-top:1rem;
+        padding:1.8rem 2rem;
+        box-sizing:border-box;
+        border:1px solid #e5e7ee;
+        p{
+            &::-webkit-scrollbar-{
+                &track{
+                    background-color:#f8f8fa;
+                    border-radius:5rem;
+                }
+                &thumb{
+                    background-color:#e5e7ee;
+                    border-radius:5rem;
+                }
+
+            }
+            line-height:1.8em;
+            &.pre{
+                overflow:auto;
+                height:100%;
+                padding-right:3rem;
+                font-size:1.6rem;
+                color:#747478;
+                white-space:pre-line;
             }
         }
     }

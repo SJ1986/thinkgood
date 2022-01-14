@@ -208,12 +208,25 @@ $(function () {
             }, 300)
     });
 
-
-
-
+    acc_event('.acc_admit');  //아코디언 Object
 
 })
 
+var acc_event = function(this_obj) { //아코디언 FN
+    var $click_this = $(this_obj);
+    var parent_class = $click_this.parent('div').attr('class');
+    $click_this.click(function(e) {
+        if (!$(this).parent('div').hasClass('on')) {
+            $('.accordion').find('.'+parent_class+'').removeClass('on');
+            $('.accordion').find('.'+parent_class+'').find('div').slideUp('fast');
+            $(this).parent('div').addClass('on');
+            $(this).parent('div').find('div').slideDown('fast');
+        } else {
+            $(this).parent('div').removeClass('on');
+            $(this).parent('div').find('div').slideUp('fast');
+        }
+    });
+}
 
 
 

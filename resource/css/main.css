@@ -291,9 +291,9 @@
   padding-left: 10px;
 }
 
-.py_1 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+.px_1 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px_2 {
@@ -301,9 +301,34 @@
   padding-right: 2rem;
 }
 
+.px_3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.px_4 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.px_5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.py_1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 .py_2 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.py_3 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 
 .py_4 {
@@ -311,8 +336,33 @@
   padding-bottom: 4rem;
 }
 
+.py_5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
 .pb_100 {
   padding-bottom: 10rem;
+}
+
+.pd_1 {
+  padding: 1rem;
+}
+
+.pd_2 {
+  padding: 2rem;
+}
+
+.pd_3 {
+  padding: 3rem;
+}
+
+.pd_4 {
+  padding: 4rem;
+}
+
+.pd_5 {
+  padding: 5rem;
 }
 
 .font_30 {
@@ -850,7 +900,7 @@ p {
 }
 
 .footer__inner .banner {
-  padding: 20px 0;
+  padding: 40px 0;
   border-top: 2px solid #8c8c8c;
   background: #f8f8fa;
 }
@@ -1708,7 +1758,7 @@ ul.list-dashed li::before {
   left: .6rem;
   width: 1.3rem;
   height: 1.3rem;
-  background: #c41a66;
+  background: #dd2525;
   border-radius: 100%;
 }
 
