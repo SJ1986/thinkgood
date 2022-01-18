@@ -13,6 +13,9 @@
                     margin-top:1.2rem;
                     margin-right:1rem;
                 }
+                >span{
+                    display:block;
+                }
             }
         }
         .visual{
@@ -69,7 +72,6 @@
                 }
             }
         }
-        
     }
     &__core{
         margin-top: 40px;
@@ -137,6 +139,10 @@
                     }
                 }
             }
+        }
+        &.etc{
+            max-width:128rem;
+            margin:0 auto;
         }
     }
     &__deepin{
@@ -1698,12 +1704,17 @@
     }
 }
 
-/* 회원가입 */
+/* 회원가입 , 배너등록 */
 .grayBox{
     background-color:#f8f8fa;
-    &.auth{
+    &.intro{
         padding:5.5rem 1.5rem;
-        background:url('../image/sub/img-joinbox.png') no-repeat 100% 100%;
+        &.auth{
+            background:#f8f8fa url('../image/sub/img-joinbox.png') no-repeat 100% 100%;
+        }
+        &.registBan{
+            background:#f8f8fa url('../image/sub/img-registBan-01.png') no-repeat 93% 60%;
+        }
         p{
             &:first-child{
                 span{
@@ -2100,66 +2111,41 @@
         }
     }
 }
-.accordion{
-    .form-check{
-        flex-wrap:wrap;
-        @include align-center;
-        @include justify-between;
-        width:100%;
-        padding:1.5rem 2rem;
-        border-bottom:1px solid #e5e7ee;
-        &.on{
-            .acc_admit{
-                background:url('../image/sub/icon/icon_accClampUp.png') no-repeat 100% 100%;        
-                background-size:contain;
-            }
-        }
-        input{
-            &[type='checkbox']{
-                &+label{
-                    &::before{
-                        top:0.2rem;
-                    }
-                }
-            }
-        }
-    }
-    .acc_admit{
-        height:3.4rem;
-        padding-right:4.5rem;
-        font-size:1.6rem;
-        background:url('../image/sub/icon/icon_accClampDown.png') no-repeat 100% 100%;
-        background-size:contain;
-    }
-    .admitContent{
-        display:none;
-        overflow:hidden;
-        width:100%;
-        height:12rem;
-        margin-top:1rem;
-        padding:1.8rem 2rem;
-        box-sizing:border-box;
-        border:1px solid #e5e7ee;
-        p{
-            &::-webkit-scrollbar-{
-                &track{
-                    background-color:#f8f8fa;
-                    border-radius:5rem;
-                }
-                &thumb{
-                    background-color:#e5e7ee;
-                    border-radius:5rem;
-                }
 
+// 배너등록
+.stepList{
+    margin:0;
+    @include justify-between;
+    &.resist{
+        li{
+            position:relative;
+            width:auto;
+            text-align:center;
+            &+li{
+                &:before{
+                    position:absolute;
+                    top:45%;
+                    left:-50%;
+                    width:1.5rem;
+                    height:1.8rem;
+                    background:url('../image/sub/icon/icon-clamp-right.png') no-repeat 0 0;
+                    background-size:contain;
+                    content:"";
+                }
             }
-            line-height:1.8em;
-            &.pre{
-                overflow:auto;
-                height:100%;
-                padding-right:3rem;
-                font-size:1.6rem;
-                color:#747478;
-                white-space:pre-line;
+            > p{
+                font-size:2rem;
+                font-weight:$font-weight__m;
+            }
+            > img{
+                width:18.7rem;
+                height:15rem;
+            }
+            em{
+                display:block;
+                font-size:1.8rem;
+                font-weight:$font-weight__m;
+                line-height:1.2em;
             }
         }
     }
