@@ -2851,9 +2851,23 @@ ul.list-dashed li::before {
   border-radius: 3px;
 }
 
+.button-wrap button.size-big {
+  height: 8rem;
+  padding: 0 4rem;
+  font-size: 2.4rem;
+}
+
 .button-wrap button.next {
   width: 11rem;
   height: 5rem;
+}
+
+.button-wrap button.arrow-next {
+  padding-right: 8rem;
+  background-image: url("../image/sub/icon/icon-arrow-next.png");
+  background-repeat: no-repeat;
+  background-position: 85% center;
+  background-size: 1.5rem 2.5rem;
 }
 
 .button-wrap .color-red {
