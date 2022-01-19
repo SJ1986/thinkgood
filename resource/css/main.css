@@ -105,6 +105,71 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
+/* parts:width */
+.w_100 {
+  width: 100% !important;
+}
+
+.w_75 {
+  width: 75% !important;
+}
+
+.w_50 {
+  width: 50% !important;
+}
+
+.w_45 {
+  width: 45% !important;
+}
+
+.w_25 {
+  width: 25% !important;
+}
+
+.w_auto {
+  width: auto !important;
+}
+
+.w_titan {
+  width: 80rem !important;
+}
+
+.w_xlarge {
+  width: 68rem !important;
+}
+
+.w_wide {
+  width: 55rem !important;
+}
+
+.w_slarge {
+  width: 40rem !important;
+}
+
+.w_large {
+  width: 30rem !important;
+}
+
+.w_fit {
+  width: 20rem !important;
+}
+
+.w_medium {
+  width: 15rem !important;
+}
+
+.w_normal {
+  width: 14rem !important;
+}
+
+.w_small {
+  width: 9rem !important;
+}
+
+.w_tiny {
+  width: 5rem !important;
+}
+
 .color-red {
   color: #dd2525 !important;
 }
@@ -418,6 +483,7 @@ p.font-s {
 .wrap {
   position: relative;
   min-height: 100%;
+  overflow: hidden;
 }
 
 h1 {
@@ -1521,6 +1587,37 @@ ul.list-dashed li::before {
   content: "";
 }
 
+ul.lists li {
+  position: relative;
+  padding-left: 1rem;
+}
+
+ul.lists li + li {
+  margin-top: 1rem;
+}
+
+ul.lists li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+ul.lists.num {
+  counter-reset: num;
+}
+
+ul.lists.num li {
+  padding-left: 2rem;
+  font-size: 1.8rem;
+  color: #000;
+}
+
+ul.lists.num li:before {
+  counter-increment: num;
+  content: counter(num) ". ";
+}
+
 /* checkbox */
 .form-check {
   position: relative;
@@ -2023,6 +2120,72 @@ ul.list-dashed li::before {
 .book-list::-webkit-scrollbar-track {
   background-color: #d2d2d2;
   border-radius: 1rem;
+}
+
+.accordion .form-check {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  border-bottom: 1px solid #e5e7ee;
+}
+
+.accordion .form-check.on .acc_admit {
+  background: url("../image/sub/icon/icon_accClampUp.png") no-repeat 100% 100%;
+  background-size: contain;
+}
+
+.accordion .form-check input[type='checkbox'] + label::before {
+  top: 0.2rem;
+}
+
+.accordion .acc_admit {
+  height: 3.4rem;
+  padding-right: 4.5rem;
+  font-size: 1.6rem;
+  background: url("../image/sub/icon/icon_accClampDown.png") no-repeat 100% 100%;
+  background-size: contain;
+}
+
+.accordion .admitContent {
+  display: none;
+  overflow: hidden;
+  width: 100%;
+  height: 12rem;
+  margin-top: 1rem;
+  padding: 1.8rem 2rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e5e7ee;
+}
+
+.accordion .admitContent p {
+  line-height: 1.8em;
+}
+
+.accordion .admitContent p::-webkit-scrollbar-track {
+  background-color: #f8f8fa;
+  border-radius: 5rem;
+}
+
+.accordion .admitContent p::-webkit-scrollbar-thumb {
+  background-color: #e5e7ee;
+  border-radius: 5rem;
+}
+
+.accordion .admitContent p.pre {
+  overflow: auto;
+  height: 100%;
+  padding-right: 3rem;
+  font-size: 1.6rem;
+  color: #747478;
+  white-space: pre-line;
 }
 
 .icon {

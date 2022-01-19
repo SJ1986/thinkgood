@@ -50,6 +50,58 @@ $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
 
+/* parts:width */
+.w{
+    &_100{
+        width:100% !important
+    }
+    &_75{
+        width:75% !important
+    }
+    &_50{
+        width:50% !important
+    }
+    &_45{
+        width:45% !important
+    }
+    &_25{
+        width:25% !important
+    }
+    &_auto{
+        width:auto !important
+    }
+    &_titan{
+        width:80rem !important
+    }
+    &_xlarge{
+        width:68rem !important
+    }
+    &_wide{
+        width:55rem !important
+    }
+    &_slarge{
+        width:40rem !important
+    }
+    &_large{
+        width:30rem !important
+    }
+    &_fit{
+        width:20rem !important
+    }
+    &_medium{
+        width:15rem !important
+    }
+    &_normal{
+        width:14rem !important
+    }
+    &_small{
+        width:9rem !important
+    }
+    &_tiny{
+        width:5rem !important
+    }
+}
+
 
 
 .color-red {
@@ -251,6 +303,7 @@ p{
 .wrap{
     position: relative;
     min-height:100%;
+    overflow:hidden;
 }
 h1{
     font-size: 3.2rem;
@@ -1175,6 +1228,35 @@ ul{
                 }
            }
            
+        }
+    }
+}
+ul{
+    &.lists{
+        li{
+            position:relative;
+            padding-left: 1rem;
+            &+li{
+                margin-top:1rem;
+            }
+            &:before{
+                position:absolute;
+                top:0;
+                left:0;
+                content:""
+            }
+        }
+        &.num{
+            counter-reset: num;
+            li{
+                padding-left: 2rem;
+                font-size: 1.8rem;
+                color:#000;
+                &:before{
+                    counter-increment: num;
+                    content:counter(num) '. ';
+                }
+            }
         }
     }
 }

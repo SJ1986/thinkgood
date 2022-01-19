@@ -6,7 +6,7 @@
         margin: 0 auto;
         margin-top: 20px;
         &.sub{
-            margin-bottom: 120px;
+            margin-bottom: 12rem;
             >h1{
                 font-weight:$font-weight__b;
                 img{
@@ -21,13 +21,13 @@
         .visual{
             &-banner{
                 &__inner{
-                    height: 280px;
+                    height: 28rem;
                     &.main{
-                        height: 400px;
+                        height: 40rem;
                         border-radius: 3px;
                     }
                     &.sub{
-                        height: 280px;
+                        height: 28rem;
                         .swiper{
                             &-container{
                                 height: 100%;
@@ -40,24 +40,29 @@
                     .swiper{
                         &-container{
                             z-index: 0;
+                            img{
+                                width:100%;
+                            }
                         }
                         &-button{
                             &-next, &-prev{
-                                width:26px;
-                                height: 45px;
+                                width:2.6rem;
+                                height: 4.5rem;
                                 margin: 0;
                                 transform: translateY(-50%);
+                                background-size:cover;
+                                background-repeat:no-repeat;
                                 &::after{
                                     content:""
                                 }
                             }
                             &-prev{
                                 left: 20px;
-                                background: url(../image/common/icon/icon__slidePrev.png)no-repeat;
+                                background-image: url(../image/common/icon/icon__slidePrev.png);
                             }
                             &-next{
                                 right: 20px;
-                                background: url(../image/common/icon/icon__slideNext.png)no-repeat;
+                                background-image: url(../image/common/icon/icon__slideNext.png);
                             }
                         }
                         &-pagination{
@@ -143,6 +148,32 @@
         &.etc{
             max-width:128rem;
             margin:0 auto;
+            >p{
+                font-weight:$font-weight__m;
+                span{
+                    font-weight:$font-weight__m;
+                }
+            }
+            .tabcontent{
+                p{
+                    margin-top:1.2rem;
+                    font-size:1.8rem;
+                }
+                .grayBox{
+                    padding:4rem;
+                    font-size:1.7rem;
+                    color:#747478;
+                    line-height:1.8em;
+                    border:1px solid #e5e7ee;
+                    border-radius:.3rem;
+                }
+            }
+            p{
+                line-height:1.8em;
+            }
+            h3{
+                font-weight:$font-weight__b;
+            }
         }
     }
     &__deepin{
@@ -664,7 +695,7 @@
     }
 }
 
-/* button */ 
+/* button */
 .button{
     &-wrap{
         button{
@@ -1292,7 +1323,7 @@
     button{
         @include d-flex;
         width:45px;
-        height: 45px;
+        height: 4.5rem;
         margin: 2.5px;
         padding:0;
         border:1px solid #e5e7ee;
@@ -1765,6 +1796,7 @@
         h3{
             padding-left:3rem;
             margin:3.5rem 0 2.5rem;
+            font-weight:$font-weight__m;
         }
         span{
             color: $color-red;
@@ -1786,6 +1818,30 @@
         width:100%;
         padding:2rem;
         box-sizing:border-box;
+    }
+    &.full{
+        &_back{
+            position:relative;
+            padding:6rem;
+            text-align:center;
+            &:before{
+                position:absolute;
+                top:0;
+                left:-100%;
+                width:300%;
+                height:100%;
+                background-color:#f8f8fa;
+                z-index:-1;
+                content:"";
+            }
+            >p{
+                font-size:3rem;
+                font-weight:$font-weight__m;
+                span{
+                    font-weight:$font-weight__m
+                }
+            }
+        }
     }
 }
 .cerifyBox{
@@ -2165,4 +2221,76 @@
             }
         }
     }
+}
+.guideMap{
+    ul{
+        @include justify-center;
+        li{
+            @include d-flex;
+            @include justify-between;
+            position:relative;
+            flex-direction:column;
+            width:23.4rem;
+            height:24.5rem;
+            border:1px solid #e4e1e0;
+            border-radius:0.3rem;
+            background-color:#fff;
+            font-size:0;
+            &:before{
+                position:absolute;
+                left:50%;
+                width:1.8rem;
+                height:1.8rem;
+                transform:translateX(-50%);
+                background:url('../image/sub/icon/icon-innerCircle-01.png') no-repeat 0 0;
+                background-size:cover;
+                content:"";
+            }
+            span{
+                @include d-flex;
+                @include justify-center;
+                @include align-center;
+                height:calc(100% - 12.9rem);
+            }
+            p{
+                @include d-flex;
+                @include justify-center;
+                @include align-center;
+                width:100%;
+                height:12.9rem;
+                box-sizing:border-box;
+                font-size:1.8rem;
+                line-height:1.5em !important;
+                font-weight:$font-weight__m;
+                background-color:#e4e1e0;
+            }
+            &+li{
+                margin-left:4rem;
+            }
+        }
+        &.top{
+            li{
+                margin-bottom:4rem;
+                &:before{
+                    bottom:-20%;
+                }
+            }
+        }
+        &.bot{
+            li{
+                margin-top:4rem;
+                &:before{
+                    top:-20%;
+                }
+            }
+        }
+    }
+    img{
+        width:71%;
+    }
+}
+
+// 마이씽크룸
+.pinkBox{
+    background-color:#f8f8fa;
 }
