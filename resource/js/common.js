@@ -51,7 +51,7 @@ $(function () {
     var swipernotice = new Swiper(".gnb .notice .swiper-container", {
         slidesPerView: 'auto',
         //spaceBetween: 10,
-        slidesPerView: 1,
+        //slidesPerView: 1,
         loop: true,
         direction: "vertical",
         navigation: {
@@ -113,7 +113,7 @@ $(function () {
     var swipervisual = new Swiper(".visual-banner .swiper-container", {
         slidesPerView: 'auto',
         //spaceBetween: 10,
-        slidesPerView: 1,
+        //slidesPerView: 1,
         loop: true,
         navigation: {
             nextEl: ".visual-banner .swiper-button-next",
@@ -138,7 +138,7 @@ $(function () {
     var swiperfooter = new Swiper(".slide-banner .swiper-container", {
         slidesPerView: 'auto',
         spaceBetween: 10,
-        slidesPerView: 7,
+        //slidesPerView: 7,
         loop: true,
         //loopedSlides: 7,
         // observer: true,

@@ -67,7 +67,10 @@ $height-l:936px;
     }
   }
 
-
+@mixin d-grid{
+  display:grid;
+  display: -ms-grid;
+}
 
 @mixin d-flex {
   display: -webkit-box;
