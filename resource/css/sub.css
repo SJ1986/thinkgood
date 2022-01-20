@@ -1671,6 +1671,7 @@ ul.lists.num li:before {
   vertical-align: middle;
   border: .1rem solid #e5e7ee;
   border-radius: 0.3rem;
+  background-color: #fff;
 }
 
 .form-check input[type='checkbox']:checked + label {
@@ -1684,6 +1685,10 @@ ul.lists.num li:before {
   background: #fff url(../image/common/icon/icon-check.png) no-repeat center center;
   background-size: 1.3rem 1rem;
   border-color: #000000;
+}
+
+.form-check input[type='checkbox']:focus + label:before {
+  border: 1px solid #000;
 }
 
 /* select 셀렉트 영역 스타일 */
@@ -5053,7 +5058,21 @@ ul.lists.num li:before {
 }
 
 .calWrap .right {
-  width: calc(100% - 42rem);
+  width: calc(100% - 48rem);
+  margin-left: 6rem;
+  text-align: left;
+}
+
+.calWrap .right > p {
+  font-size: 1.6rem;
+  color: #747478;
+}
+
+.calWrap .right > p span {
+  margin-right: 2rem;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #000;
 }
 
 .calWrap .calendarSt {
@@ -5064,6 +5083,43 @@ ul.lists.num li:before {
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 4rem repeat(5, minmax(12rem, auto));
   -ms-grid-rows: 4rem 12rem 12rem 12rem 12rem 12rem;
+}
+
+.calWrap .calendarSt.simply {
+  grid-template-rows: 4rem repeat(5, minmax(6rem, auto));
+  -ms-grid-rows: 4rem 6rem 6rem 6rem 6rem 6rem;
+}
+
+.calWrap .calendarSt.simply > div {
+  position: relative;
+}
+
+.calWrap .calendarSt.simply > div > a {
+  display: none;
+}
+
+.calWrap .calendarSt.simply > div > button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  text-indent: -9999px;
+}
+
+.calWrap .calendarSt.simply > div > button:before {
+  position: absolute;
+  bottom: .8rem;
+  right: .8rem;
+  width: .8rem;
+  height: .8rem;
+  background-color: #ff5f49;
+  border-radius: 100%;
+  content: "";
 }
 
 .calWrap .calendarSt > div {
@@ -5356,4 +5412,94 @@ ul.lists.num li:before {
 .calWrap .calendarSt > div:nth-child(42) {
   -ms-grid-row: 6;
   -ms-grid-column: 7;
+}
+
+.transCardWrap.contest {
+  margin-top: 4.4rem;
+}
+
+.transCardWrap.contest .transHead > div, .transCardWrap.contest .transList > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  height: 100%;
+}
+
+.transCardWrap.contest .transHead > div:first-child, .transCardWrap.contest .transList > div:first-child {
+  width: 5rem;
+}
+
+.transCardWrap.contest .transHead > div:nth-child(2), .transCardWrap.contest .transList > div:nth-child(2) {
+  width: 30rem;
+}
+
+.transCardWrap.contest .transHead > div:nth-child(3), .transCardWrap.contest .transList > div:nth-child(3) {
+  width: 11rem;
+}
+
+.transCardWrap.contest .transHead > div:nth-child(4), .transCardWrap.contest .transList > div:nth-child(4) {
+  width: 11.5rem;
+}
+
+.transCardWrap.contest .transHead > div:nth-child(5), .transCardWrap.contest .transList > div:nth-child(5) {
+  width: 13.5rem;
+}
+
+.transHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 6rem;
+  background-color: #f8f8fa;
+}
+
+.transHead .form-check {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.transHead .form-check input[type='checkbox'] + label {
+  padding-left: 0;
+}
+
+.transHead .form-check input[type='checkbox'] + label::before {
+  position: relative;
+}
+
+.transList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 7rem;
 }

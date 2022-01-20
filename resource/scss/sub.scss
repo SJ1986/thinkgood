@@ -2540,7 +2540,19 @@
             width:42rem;
         }
         .right{
-            width:calc(100% - 42rem);
+            width:calc(100% - 48rem);
+            margin-left:6rem;
+            text-align:left;
+            > p{
+                font-size:1.6rem;
+                color:#747478;
+                span{
+                    margin-right:2rem;
+                    font-size:3rem;
+                    font-weight:$font-weight__m;
+                    color:#000;
+                }
+            }
         }
         .calendarSt{
             @include d-grid;
@@ -2549,6 +2561,41 @@
             -ms-grid-columns:1fr 1fr 1fr 1fr 1fr 1fr 1fr;
             grid-template-rows: 4rem repeat(5, minmax(12rem, auto));
             -ms-grid-rows:4rem 12rem 12rem 12rem 12rem 12rem;
+            &.simply{
+                grid-template-rows:4rem repeat(5, minmax(6rem, auto));
+                -ms-grid-rows:4rem 6rem 6rem 6rem 6rem 6rem;
+                > div{
+                    position:relative;
+                    &.hasEvent{
+
+                    }
+                    > a{
+                        display: none;
+                    }
+                    > button{
+                        position:absolute;
+                        top:0;
+                        left:0;
+                        width:100%;
+                        height:100%;
+                        padding:0;
+                        margin:0;
+                        border:none;
+                        background:none;
+                        text-indent:-9999px;
+                        &:before{
+                            position:absolute;
+                            bottom:.8rem;
+                            right:.8rem;
+                            width:.8rem;
+                            height:.8rem;
+                            background-color:#ff5f49;
+                            border-radius:100%;
+                            content:""
+                        }
+                    }
+                }
+            }
             > div{
                 padding:.4rem;
                 border-left:1px solid #eeeeee;
@@ -2608,49 +2655,105 @@
                 }
 
                 // ie를 위한 grid 위치잡기
-                &:nth-child(1){-ms-grid-row: 1;-ms-grid-column: 1;}
-                &:nth-child(2){-ms-grid-row: 1;-ms-grid-column: 2;}
-                &:nth-child(3){-ms-grid-row: 1;-ms-grid-column: 3;}
-                &:nth-child(4){-ms-grid-row: 1;-ms-grid-column: 4;}
-                &:nth-child(5){-ms-grid-row: 1;-ms-grid-column: 5;}
-                &:nth-child(6){-ms-grid-row: 1;-ms-grid-column: 6;}
-                &:nth-child(7){-ms-grid-row: 1;-ms-grid-column: 7;}
-                &:nth-child(8){-ms-grid-row: 2;-ms-grid-column: 1;}
-                &:nth-child(9){-ms-grid-row: 2;-ms-grid-column: 2;}
-                &:nth-child(10){-ms-grid-row: 2;-ms-grid-column: 3;}
-                &:nth-child(11){-ms-grid-row: 2;-ms-grid-column: 4;}
-                &:nth-child(12){-ms-grid-row: 2;-ms-grid-column: 5;}
-                &:nth-child(13){-ms-grid-row: 2;-ms-grid-column: 6;}
-                &:nth-child(14){-ms-grid-row: 2;-ms-grid-column: 7;}
-                &:nth-child(15){-ms-grid-row: 3;-ms-grid-column: 1;}
-                &:nth-child(16){-ms-grid-row: 3;-ms-grid-column: 2;}
-                &:nth-child(17){-ms-grid-row: 3;-ms-grid-column: 3;}
-                &:nth-child(18){-ms-grid-row: 3;-ms-grid-column: 4;}
-                &:nth-child(19){-ms-grid-row: 3;-ms-grid-column: 5;}
-                &:nth-child(20){-ms-grid-row: 3;-ms-grid-column: 6;}
-                &:nth-child(21){-ms-grid-row: 3;-ms-grid-column: 7;}
-                &:nth-child(22){-ms-grid-row: 4;-ms-grid-column: 1;}
-                &:nth-child(23){-ms-grid-row: 4;-ms-grid-column: 2;}
-                &:nth-child(24){-ms-grid-row: 4;-ms-grid-column: 3;}
-                &:nth-child(25){-ms-grid-row: 4;-ms-grid-column: 4;}
-                &:nth-child(26){-ms-grid-row: 4;-ms-grid-column: 5;}
-                &:nth-child(27){-ms-grid-row: 4;-ms-grid-column: 6;}
-                &:nth-child(28){-ms-grid-row: 4;-ms-grid-column: 7;}
-                &:nth-child(29){-ms-grid-row: 5;-ms-grid-column: 1;}
-                &:nth-child(30){-ms-grid-row: 5;-ms-grid-column: 2;}
-                &:nth-child(31){-ms-grid-row: 5;-ms-grid-column: 3;}
-                &:nth-child(32){-ms-grid-row: 5;-ms-grid-column: 4;}
-                &:nth-child(33){-ms-grid-row: 5;-ms-grid-column: 5;}
-                &:nth-child(34){-ms-grid-row: 5;-ms-grid-column: 6;}
-                &:nth-child(35){-ms-grid-row: 5;-ms-grid-column: 7;}
-                &:nth-child(36){-ms-grid-row: 6;-ms-grid-column: 1;}
-                &:nth-child(37){-ms-grid-row: 6;-ms-grid-column: 2;}
-                &:nth-child(38){-ms-grid-row: 6;-ms-grid-column: 3;}
-                &:nth-child(39){-ms-grid-row: 6;-ms-grid-column: 4;}
-                &:nth-child(40){-ms-grid-row: 6;-ms-grid-column: 5;}
-                &:nth-child(41){-ms-grid-row: 6;-ms-grid-column: 6;}
-                &:nth-child(42){-ms-grid-row: 6;-ms-grid-column: 7;}
+                &:nth-child(1){-ms-grid-row:1;-ms-grid-column:1;}
+                &:nth-child(2){-ms-grid-row:1;-ms-grid-column:2;}
+                &:nth-child(3){-ms-grid-row:1;-ms-grid-column:3;}
+                &:nth-child(4){-ms-grid-row:1;-ms-grid-column:4;}
+                &:nth-child(5){-ms-grid-row:1;-ms-grid-column:5;}
+                &:nth-child(6){-ms-grid-row:1;-ms-grid-column:6;}
+                &:nth-child(7){-ms-grid-row:1;-ms-grid-column:7;}
+                &:nth-child(8){-ms-grid-row:2;-ms-grid-column:1;}
+                &:nth-child(9){-ms-grid-row:2;-ms-grid-column:2;}
+                &:nth-child(10){-ms-grid-row:2;-ms-grid-column:3;}
+                &:nth-child(11){-ms-grid-row:2;-ms-grid-column:4;}
+                &:nth-child(12){-ms-grid-row:2;-ms-grid-column:5;}
+                &:nth-child(13){-ms-grid-row:2;-ms-grid-column:6;}
+                &:nth-child(14){-ms-grid-row:2;-ms-grid-column:7;}
+                &:nth-child(15){-ms-grid-row:3;-ms-grid-column:1;}
+                &:nth-child(16){-ms-grid-row:3;-ms-grid-column:2;}
+                &:nth-child(17){-ms-grid-row:3;-ms-grid-column:3;}
+                &:nth-child(18){-ms-grid-row:3;-ms-grid-column:4;}
+                &:nth-child(19){-ms-grid-row:3;-ms-grid-column:5;}
+                &:nth-child(20){-ms-grid-row:3;-ms-grid-column:6;}
+                &:nth-child(21){-ms-grid-row:3;-ms-grid-column:7;}
+                &:nth-child(22){-ms-grid-row:4;-ms-grid-column:1;}
+                &:nth-child(23){-ms-grid-row:4;-ms-grid-column:2;}
+                &:nth-child(24){-ms-grid-row:4;-ms-grid-column:3;}
+                &:nth-child(25){-ms-grid-row:4;-ms-grid-column:4;}
+                &:nth-child(26){-ms-grid-row:4;-ms-grid-column:5;}
+                &:nth-child(27){-ms-grid-row:4;-ms-grid-column:6;}
+                &:nth-child(28){-ms-grid-row:4;-ms-grid-column:7;}
+                &:nth-child(29){-ms-grid-row:5;-ms-grid-column:1;}
+                &:nth-child(30){-ms-grid-row:5;-ms-grid-column:2;}
+                &:nth-child(31){-ms-grid-row:5;-ms-grid-column:3;}
+                &:nth-child(32){-ms-grid-row:5;-ms-grid-column:4;}
+                &:nth-child(33){-ms-grid-row:5;-ms-grid-column:5;}
+                &:nth-child(34){-ms-grid-row:5;-ms-grid-column:6;}
+                &:nth-child(35){-ms-grid-row:5;-ms-grid-column:7;}
+                &:nth-child(36){-ms-grid-row:6;-ms-grid-column:1;}
+                &:nth-child(37){-ms-grid-row:6;-ms-grid-column:2;}
+                &:nth-child(38){-ms-grid-row:6;-ms-grid-column:3;}
+                &:nth-child(39){-ms-grid-row:6;-ms-grid-column:4;}
+                &:nth-child(40){-ms-grid-row:6;-ms-grid-column:5;}
+                &:nth-child(41){-ms-grid-row:6;-ms-grid-column:6;}
+                &:nth-child(42){-ms-grid-row:6;-ms-grid-column:7;}
             }
         }
+    }
+}
+.trans{
+    &CardWrap{
+        &.contest{
+            margin-top:4.4rem;
+            .trans{
+                &Head, &List{
+                    > div{
+                        @include d-flex;
+                        @include align-center;
+                        @include justify-center;
+                        font-size:1.8rem;
+                        font-weight:$font-weight__m;
+                        height:100%;
+                        &:first-child{
+                            width:5rem;
+                        }
+                        &:nth-child(2){
+                            width:30rem;
+                        }
+                        &:nth-child(3){
+                            width:11rem;
+                        }
+                        &:nth-child(4){
+                            width:11.5rem;
+                        }
+                        &:nth-child(5){
+                            width:13.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &Head{
+        @include d-flex;
+        height:6rem;
+        background-color:#f8f8fa;
+        .form-check{
+            @include align-center;
+            @include justify-center;
+            height:100%;
+            input[type='checkbox']{
+                + label{
+                    padding-left:0;
+                    &::before{
+                        position:relative;
+                    }
+                }
+            }
+        }
+    }
+    &List{
+        @include d-flex;
+        height:7rem;
     }
 }

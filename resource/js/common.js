@@ -1,9 +1,6 @@
 'use strict';
 
 $(function () {
-
-
-
     //header 
     
     //btn-mailing
@@ -136,9 +133,9 @@ $(function () {
 
     //footer banner
     var swiperfooter = new Swiper(".slide-banner .swiper-container", {
-        slidesPerView: 'auto',
+        //slidesPerView: 'auto',
         spaceBetween: 10,
-        //slidesPerView: 7,
+        slidesPerView: 7,
         loop: true,
         //loopedSlides: 7,
         // observer: true,
@@ -172,7 +169,15 @@ $(function () {
 		$('.tabcontent').removeClass('current');
 		$(this).addClass('current');
 		$('#' + activeTab).addClass('current');
+        if($('#tabCalendar02').hasClass('current')){ //calendar tab event
+            $('.calendarSt div a').parent().addClass('hasEvent');
+            $('.hasEvent').append('<button type="button"></button>');
+        }else{
+            $('.calendarSt div a').removeClass('hasEvent');
+            $('.hasEvent button').remove();
+        }
 	})
+
 
 
     var $menu = $('.floating-menu li.m'),

@@ -1320,6 +1320,7 @@ ul{
                         
                         border: .1rem solid #e5e7ee; 
                         border-radius : 0.3rem; 
+                        background-color:#fff;
                     }
                 }
                 &:checked{
@@ -1333,6 +1334,11 @@ ul{
                             background-size: 1.3rem 1rem;
                             border-color: #000000;
                         }
+                    }
+                }
+                &:focus{
+                    & + label:before{
+                        border:1px solid #000;
                     }
                 }
             }
