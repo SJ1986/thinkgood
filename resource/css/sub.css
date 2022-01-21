@@ -2706,6 +2706,17 @@ ul.lists.num li:before {
   right: 0;
 }
 
+.board-bottom .button-wrap.leftSide {
+  width: 100%;
+  height: 100%;
+}
+
+.board-bottom .button-wrap.leftSide button {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .board-write .form-wrap .select {
   width: 160px;
   height: 40px;
@@ -2924,7 +2935,7 @@ ul.lists.num li:before {
 .search-box .select {
   width: 153px;
   height: 50px;
-  font-size: 18px;
+  font-size: 1.8rem;
   border: none;
   border-bottom: 1px solid #000000;
   line-height: 100%;
@@ -2973,6 +2984,7 @@ ul.lists.num li:before {
 }
 
 .search-right .form-input {
+  width: calc(100% - 50px);
   border: none;
 }
 
@@ -3497,7 +3509,7 @@ ul.lists.num li:before {
 }
 
 .tab-wrap .tab-top {
-  height: 61px;
+  height: 6rem;
   text-align: right;
 }
 
@@ -4040,6 +4052,17 @@ ul.lists.num li:before {
   height: 100%;
 }
 
+.form-select select {
+  font-size: 1.8rem;
+  border: none;
+  border-bottom: 1px solid #000;
+  line-height: 100%;
+  text-indent: 1rem;
+  background: url("../image/common/icon/clamp__bottom.png") no-repeat right 10px center;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .view-separate {
   margin: 0 -15px;
 }
@@ -4408,7 +4431,7 @@ ul.lists.num li:before {
   text-align: right;
 }
 
-.grayBox.status > div em {
+.grayBox.status > div a {
   font-size: 4.8rem;
   font-weight: 600;
 }
@@ -4987,7 +5010,6 @@ ul.lists.num li:before {
 
 .boxWrap > p {
   float: left;
-  margin-top: 1rem;
   font-size: 2.8rem;
   font-weight: 500;
 }
@@ -4998,11 +5020,11 @@ ul.lists.num li:before {
   color: #747478;
 }
 
-.boxWrap .button-wrap {
+.boxWrap > .button-wrap {
   float: right;
 }
 
-.boxWrap .button-wrap button {
+.boxWrap > .button-wrap button {
   width: 13rem;
   height: 4.5rem;
 }
@@ -5015,6 +5037,71 @@ ul.lists.num li:before {
 
 .boxWrap .calWrap > p {
   position: absolute;
+}
+
+.boxWrap > .form-select {
+  margin-top: 3.5rem;
+}
+
+.boxWrap .form-select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  float: left;
+  width: 100%;
+}
+
+.boxWrap .form-select p {
+  font-size: 16px;
+  color: #747478;
+}
+
+.boxWrap .form-select p span {
+  margin: 0 0.5rem;
+  font-weight: 500;
+  color: #dd2525;
+}
+
+.boxWrap .form-select select {
+  width: 15rem;
+  margin-left: 3rem;
+}
+
+.boxWrap .search-box {
+  float: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  margin-top: 4rem;
+}
+
+.boxWrap > .tab-wrap {
+  float: left;
+}
+
+.boxWrap > .tab-wrap .tab-top .link-plus {
+  width: 56rem;
+}
+
+.boxWrap > .board-bottom {
+  float: left;
+  width: 100%;
+}
+
+.boxWrap > .board-bottom .paging {
+  margin-top: 0;
 }
 
 .calWrap {
@@ -5183,7 +5270,8 @@ ul.lists.num li:before {
 }
 
 .calWrap .calendarSt > div.today {
-  border: 1px solid #dd2525;
+  background-color: #f4f4f4;
+  border: 1px solid #b7b7b7;
 }
 
 .calWrap .calendarSt > div > p {
@@ -5206,8 +5294,6 @@ ul.lists.num li:before {
   padding: .7rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid #f6aaaa;
-  background-color: #fefafa;
   font-size: 1.3rem;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -5215,6 +5301,18 @@ ul.lists.num li:before {
 
 .calWrap .calendarSt > div > a:not(.viewMore) + a {
   margin-top: .3rem;
+}
+
+.calWrap .calendarSt > div > a.bg-pink {
+  background-color: #fcd2e6;
+}
+
+.calWrap .calendarSt > div > a.bg-yellowGreen {
+  background-color: #d0eca3;
+}
+
+.calWrap .calendarSt > div > a.bg-yellow {
+  background-color: #f7e99d;
 }
 
 .forIE.calendarSt > div:nth-child(1) {
@@ -5427,24 +5525,73 @@ ul.lists.num li:before {
   -ms-grid-column: 7;
 }
 
-.transCardWrap.contest {
-  margin-top: 4.4rem;
+.forIE .transHead > *:nth-child(1), .forIE .items > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
 }
 
-.transCardWrap.contest .transHead {
+.forIE .transHead > *:nth-child(2), .forIE .items > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+}
+
+.forIE .transHead > *:nth-child(3), .forIE .items > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.forIE .transHead > *:nth-child(4), .forIE .items > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+}
+
+.forIE .transHead > *:nth-child(5), .forIE .items > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.forIE .transHead > *:nth-child(6), .forIE .items > *:nth-child(6) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+}
+
+.transCardWrap .transHead {
+  display: grid;
+  display: -ms-grid;
   gap: 0;
   grid-template-columns: 5rem 31.5rem 10rem 12rem 12rem;
   -ms-grid-columns: 5rem 31.5rem 10rem 12rem 12rem;
   grid-template-rows: 6rem;
   -ms-grid-rows: 6rem;
+  background-color: #f8f8fa;
 }
 
-.transCardWrap.contest .items {
+.transCardWrap .transHead > * {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-grid-row-align: center;
+}
+
+.transCardWrap .transHead p {
+  font-weight: 500;
+  text-align: center;
+}
+
+.transCardWrap .items {
+  display: grid;
+  display: -ms-grid;
   gap: 0;
   grid-template-columns: 5rem 31.5rem 10rem 12rem 12rem;
   -ms-grid-columns: 5rem 31.5rem 10rem 12rem 12rem;
   grid-template-rows: 7rem;
   -ms-grid-rows: 7rem;
+  border-bottom: 1px solid #e5e7ee;
+}
+
+.transCardWrap .items > * {
+  -ms-flex-item-align: center;
+      align-self: center;
+  -ms-grid-row-align: center;
 }
 
 .transCardWrap .form-check {
@@ -5460,15 +5607,6 @@ ul.lists.num li:before {
   margin: 0;
 }
 
-.transCardWrap .items {
-  display: grid;
-  display: -ms-grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-bottom: 1px solid #e5e7ee;
-}
-
 .transCardWrap p {
   font-size: 1.8rem;
   text-align: center;
@@ -5476,6 +5614,7 @@ ul.lists.num li:before {
 
 .transCardWrap a {
   overflow: hidden;
+  display: inline-block;
   width: 100%;
   height: 1.8rem;
   text-overflow: ellipsis;
@@ -5483,16 +5622,75 @@ ul.lists.num li:before {
   font-size: 1.8rem;
 }
 
-.transHead {
-  display: grid;
-  display: -ms-grid;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: #f8f8fa;
+.transCardWrap.contest {
+  margin-top: 4.4rem;
 }
 
-.transHead p {
-  font-weight: 500;
-  text-align: center;
+.transCardWrap.content {
+  float: left;
+  width: 100%;
+}
+
+.transCardWrap.content .transHead {
+  grid-template-columns: 5rem 12.5rem 16rem 60rem 24rem;
+  -ms-grid-columns: 5rem 12.5rem 16rem 60rem 24rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
+}
+
+.transCardWrap.content .items {
+  grid-template-columns: 5rem 12.5rem 16rem 60rem 24rem;
+  -ms-grid-columns: 5rem 12.5rem 16rem 60rem 24rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
+}
+
+.transCardWrap.content .items a {
+  padding-left: 3rem;
+}
+
+.transCardWrap.reply {
+  float: left;
+  width: 100%;
+}
+
+.transCardWrap.reply .transHead {
+  grid-template-columns: 5rem 12.5rem 16rem 40rem 40rem;
+  -ms-grid-columns: 5rem 12.5rem 16rem 40rem 40rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
+}
+
+.transCardWrap.reply .items {
+  grid-template-columns: 5rem 12.5rem 16rem 40rem 40rem;
+  -ms-grid-columns: 5rem 12.5rem 16rem 40rem 40rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
+}
+
+.transCardWrap.reply .items a {
+  padding-left: 3rem;
+}
+
+.transCardWrap.applyList {
+  float: left;
+  width: 100%;
+}
+
+.transCardWrap.applyList .transHead {
+  grid-template-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
+  -ms-grid-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
+}
+
+.transCardWrap.applyList .items {
+  grid-template-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
+  -ms-grid-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
+}
+
+.transCardWrap.applyList .items a {
+  padding-left: 3rem;
 }
