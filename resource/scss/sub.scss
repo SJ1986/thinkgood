@@ -1898,120 +1898,129 @@
 }
 
 /* 회원가입 , 배너등록 */
-.grayBox{
-    background-color:#f8f8fa;
-    &.intro{
-        padding:5.5rem 1.5rem;
-        &.auth{
-            background:#f8f8fa url('../image/sub/img-joinbox.png') no-repeat 100% 100%;
-        }
-        &.registBan{
-            background:#f8f8fa url('../image/sub/img-registBan-01.png') no-repeat 93% 60%;
-        }
-        p{
-            &:first-child{
-                span{
-                    display:block;
-                }
+.gray{
+    &Box{
+        background-color:#f8f8fa;
+        &.intro{
+            padding:5.5rem 1.5rem;
+            &.auth{
+                background:#f8f8fa url('../image/sub/img-joinbox.png') no-repeat 100% 100%;
             }
-            padding-left:3rem;
-            font-size:1.8rem;
-            font-weight:$font-weight__m;
-            line-height:2.4em;
-            span{
-                display:inline-block;
-                font-weight:$font-weight__m;
+            &.registBan{
+                background:#f8f8fa url('../image/sub/img-registBan-01.png') no-repeat 93% 60%;
             }
-            &.quot{
-                padding-top:1.5rem;
-                margin-bottom:1rem;
-                background:url('../image/sub/icon/icon-quotGray.png') no-repeat 0 0 ;
-                strong{
-                    display:block;
-                    font-weight:$font-weight__b;
+            p{
+                &:first-child{
                     span{
-                        font-size:2.2rem;
-                        font-weight:$font-weight__b;
+                        display:block;
                     }
                 }
-                span{
-                    display:inline-block;
-                }
-            }
-        }
-        h3{
-            padding-left:3rem;
-            margin:3.5rem 0 2.5rem;
-            font-weight:$font-weight__m;
-        }
-        span{
-            color: $color-red;
-            font-weight:$font-weight__m;
-        }
-        .checkList{
-            li{
                 padding-left:3rem;
                 font-size:1.8rem;
-                font-weight:400;
-                background:url('../image/sub/icon/icon-joinCheck.png') no-repeat 1rem 0;
-                &+li{
-                    margin-top:1.3rem;
-                }
-            }
-        }
-    }
-    &.check{
-        width:100%;
-        padding:2rem;
-        box-sizing:border-box;
-    }
-    &.full{
-        &_back{
-            position:relative;
-            padding:6rem;
-            text-align:center;
-            &:before{
-                position:absolute;
-                top:0;
-                left:-100%;
-                width:300%;
-                height:100%;
-                background-color:#f8f8fa;
-                z-index:-1;
-                content:"";
-            }
-            >p{
-                font-size:3rem;
                 font-weight:$font-weight__m;
+                line-height:2.4em;
                 span{
-                    font-weight:$font-weight__m
+                    display:inline-block;
+                    font-weight:$font-weight__m;
+                }
+                &.quot{
+                    padding-top:1.5rem;
+                    margin-bottom:1rem;
+                    background:url('../image/sub/icon/icon-quotGray.png') no-repeat 0 0 ;
+                    strong{
+                        display:block;
+                        font-weight:$font-weight__b;
+                        span{
+                            font-size:2.2rem;
+                            font-weight:$font-weight__b;
+                        }
+                    }
+                    span{
+                        display:inline-block;
+                    }
                 }
             }
-        }
-    }
-    &.status{
-        padding:3rem 0;
-        > div{
-            width:100%;
-            padding:1.2rem 4.5rem;
-            box-sizing:border-box;
-            p{
-                margin-bottom:2.3rem;
-                font-size:1.8rem;
-                font-weight:$font-weight__b;
+            h3{
+                padding-left:3rem;
+                margin:3.5rem 0 2.5rem;
+                font-weight:$font-weight__m;
             }
             span{
-                display:block;
-                font-size:3rem;
-                text-align:right;
+                color: $color-red;
+                font-weight:$font-weight__m;
             }
-            a{
-                font-size:4.8rem;
-                font-weight:$font-weight__b
+            .checkList{
+                li{
+                    padding-left:3rem;
+                    font-size:1.8rem;
+                    font-weight:400;
+                    background:url('../image/sub/icon/icon-joinCheck.png') no-repeat 1rem 0;
+                    &+li{
+                        margin-top:1.3rem;
+                    }
+                }
             }
-            &+div{
-                border-left:1px solid #e5e5e5;
+        }
+        &.check{
+            width:100%;
+            padding:2rem;
+            box-sizing:border-box;
+        }
+        &.full{
+            &_back{
+                position:relative;
+                padding:6rem;
+                text-align:center;
+                &:before{
+                    position:absolute;
+                    top:0;
+                    left:-100%;
+                    width:300%;
+                    height:100%;
+                    background-color:#f8f8fa;
+                    z-index:-1;
+                    content:"";
+                }
+                >p{
+                    font-size:3rem;
+                    font-weight:$font-weight__m;
+                    span{
+                        font-weight:$font-weight__m
+                    }
+                }
             }
+        }
+        &.status{
+            padding:3rem 0;
+            > div{
+                width:100%;
+                padding:1.2rem 4.5rem;
+                box-sizing:border-box;
+                p{
+                    margin-bottom:2.3rem;
+                    font-size:1.8rem;
+                    font-weight:$font-weight__b;
+                }
+                span{
+                    display:block;
+                    font-size:3rem;
+                    text-align:right;
+                }
+                a{
+                    font-size:4.8rem;
+                    font-weight:$font-weight__b
+                }
+                &+div{
+                    border-left:1px solid #e5e5e5;
+                }
+            }
+        }
+    }
+    &Cap{
+        background-color:#f8f8fa;
+        > p{
+            @include justify-center;
+            padding:3.8rem;
         }
     }
 }
@@ -2574,6 +2583,51 @@
                 margin-top:0;
             }
         }
+        .post{
+            &-tit{
+                align-items:flex-start;
+                span{
+                    font-size:1.8rem;
+                    text-align:center;
+                    strong{
+                        display:block;
+                        margin-top:0.5rem;
+                        margin-bottom:2.3rem;
+                        font-size:2.8rem;
+                        font-weight:$font-weight__m;
+                    }
+                }
+            }
+            &-subtit{
+                display:block;
+                float:none !important;
+                margin:0 5.5rem;
+                margin-top:6rem;
+                padding-bottom:2.5rem;
+                border-bottom:1px solid #e5e7ee;
+                font-size:2.6rem;
+                font-weight:$font-weight__b;
+            }
+        }
+        > dl{
+            @include d-flex;
+            flex-wrap:wrap;
+            margin:0 5.5rem;
+            &+.post-subtit{
+                margin-top:8rem;
+            }
+            dt, dd{
+                margin-top:3rem;
+                font-size:1.8rem;
+            }
+            dt{
+                width:23rem;
+                font-weight:$font-weight__m;
+            }
+            dd{
+                width:calc(100% - 23rem)
+            }
+        }
     }
 }
 .cal{
@@ -2937,3 +2991,25 @@
         }
     }
 }
+.accept{
+    &-ing, &-end, &-expect{
+        padding:1rem;
+        margin-right:1.5rem;
+        font-size:1.8rem;
+        box-sizing:border-box;
+    }
+    &-ing{
+        border:1px solid #dd2525;
+        color:#dd2525;
+    }
+    &-end{
+        border:1px solid #78838c;
+        color:#78838c;
+    }
+    &-expect{
+        border:1px solid #000;
+        color:#000;
+    }
+}
+
+
