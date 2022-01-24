@@ -175,6 +175,7 @@
                 font-weight:$font-weight__b;
             }
         }
+        
     }
     &__deepin{
         max-width:47.5rem;
@@ -2476,6 +2477,72 @@
 }
 .mythink{
     &Room{
+        &.modi{
+            max-width:92rem;
+            margin:0 auto;
+            margin-top:6rem;
+            > div{
+                width:100%;
+                button{
+                    width:17.5rem;
+                }
+            }
+            > .img-wrap{
+                width:9.7rem;
+                margin:0 auto;
+            }
+            h3{
+                line-height:1.8em;
+            }
+            dl{
+                @include d-flex;
+                flex-wrap:wrap;
+                width:45rem;
+                margin:4rem auto 5.5rem;
+                padding:4rem;
+                border:1px solid #e5e7ee;
+                background-color:#f8f8fa;
+                dt, dd{
+                    font-size:2rem;
+                    text-align:left;
+                }
+                dt{
+                    width:9rem;
+                    &:first-child{
+                        margin-bottom:3rem;
+                    }
+                    &.btnDt{
+                        width:100%;
+                        .button-wrap{
+                            width:100%;
+                            button{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+                dd{
+                    width:calc(100% - 9rem);
+                    &:nth-child(2){
+                        margin-bottom:3rem;
+                    }
+                    input{
+                        width:100%;
+                        margin-bottom:0;
+                    }
+                    button{
+                        width:100%
+                    }
+                }
+            }
+            > p{
+                padding:0 12rem;
+                font-size:1.8rem;
+                box-sizing:border-box;
+                line-height:1.7em;
+                text-align:left;
+            }
+        }
         .lnb{
             &__inner{
                 >p{
@@ -2509,6 +2576,9 @@
                 margin-left:2rem;
                 font-size:1.6rem;
                 color:#747478;
+            }
+            &.floatNo{
+                font-size:1.8rem;
             }
         }
         > .button{

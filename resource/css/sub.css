@@ -105,6 +105,18 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
+.floatNo {
+  float: none !important;
+}
+
+.floatR {
+  float: right !important;
+}
+
+.floatL {
+  float: left !important;
+}
+
 /* parts:width */
 .w_100 {
   width: 100% !important;
@@ -319,7 +331,7 @@
 }
 
 .mb_50 {
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 .mt_60 {
@@ -5002,6 +5014,99 @@ ul.lists.num li:before {
   background-color: #f8f8fa;
 }
 
+.mythinkRoom.modi {
+  max-width: 92rem;
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.mythinkRoom.modi > div {
+  width: 100%;
+}
+
+.mythinkRoom.modi > div button {
+  width: 17.5rem;
+}
+
+.mythinkRoom.modi > .img-wrap {
+  width: 9.7rem;
+  margin: 0 auto;
+}
+
+.mythinkRoom.modi h3 {
+  line-height: 1.8em;
+}
+
+.mythinkRoom.modi dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 45rem;
+  margin: 4rem auto 5.5rem;
+  padding: 4rem;
+  border: 1px solid #e5e7ee;
+  background-color: #f8f8fa;
+}
+
+.mythinkRoom.modi dl dt, .mythinkRoom.modi dl dd {
+  font-size: 2rem;
+  text-align: left;
+}
+
+.mythinkRoom.modi dl dt {
+  width: 9rem;
+}
+
+.mythinkRoom.modi dl dt:first-child {
+  margin-bottom: 3rem;
+}
+
+.mythinkRoom.modi dl dt.btnDt {
+  width: 100%;
+}
+
+.mythinkRoom.modi dl dt.btnDt .button-wrap {
+  width: 100%;
+}
+
+.mythinkRoom.modi dl dt.btnDt .button-wrap button {
+  width: 100%;
+}
+
+.mythinkRoom.modi dl dd {
+  width: calc(100% - 9rem);
+}
+
+.mythinkRoom.modi dl dd:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.mythinkRoom.modi dl dd input {
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.mythinkRoom.modi dl dd button {
+  width: 100%;
+}
+
+.mythinkRoom.modi > p {
+  padding: 0 12rem;
+  font-size: 1.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1.7em;
+  text-align: left;
+}
+
 .mythinkRoom .lnb__inner > p {
   padding-bottom: 3.3rem;
   border-bottom: 1px solid #e5e7ee;
@@ -5033,6 +5138,10 @@ ul.lists.num li:before {
   margin-left: 2rem;
   font-size: 1.6rem;
   color: #747478;
+}
+
+.boxWrap > p.floatNo {
+  font-size: 1.8rem;
 }
 
 .boxWrap > .button-wrap {

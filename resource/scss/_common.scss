@@ -50,6 +50,18 @@ $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
 
+.float{
+    &No{
+        float:none !important;
+    }
+    &R{
+        float:right !important;
+    }
+    &L{
+        float:left !important;
+    }
+}
+
 /* parts:width */
 .w{
     &_100{
@@ -184,7 +196,7 @@ $font-weight__b : 600;
 .ml_45{margin-left: 4.5rem;}
 .mt_50{margin-top: 5rem;}
 .mb_40{margin-bottom: 4rem;}
-.mb_50{margin-bottom: 5rem;}
+.mb_50{margin-bottom: 5rem !important;}
 .mt_60{margin-top: 6rem;}
 .mt_80{margin-top: 8rem;}
 .mt_90{margin-top: 9rem;}
