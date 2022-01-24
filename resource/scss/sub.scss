@@ -80,9 +80,52 @@
     }
     &__core{
         margin-top: 4rem;
+        &.myHost{
+            .content__core-right{
+                width:calc(100% - 28rem);
+                .grayBox{
+                    &.status{
+                        padding:4.5rem;
+                        box-sizing:border-box;
+                        > div{
+                            padding:0;
+                            > p{
+                                font-size:3rem;
+                                span{
+                                    display:block;
+                                    margin-top:2rem;
+                                    font-size:2rem;
+                                    font-weight:500;
+                                }
+                            }
+                            > em{
+                                display:block;
+                                font-size:1.8rem;
+                                color:#747478;
+                            }
+                            >a{
+                                display:block;
+                                margin-top:4rem;
+                                font-size:1.6rem;
+                                text-decoration:underline;
+                                text-align:right;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &-right{
             width:calc(100% - 33rem);
             //padding-top: 67px;
+            > .d-flex{
+                > div{
+                    width:100%;
+                    &+div{
+                        margin-left:2rem;
+                    }
+                }
+            }
         }
         &.contest{
             .lnb{
@@ -324,6 +367,41 @@
         }
         *{
             color:#fff;
+        }
+        .thumb{
+            width:8rem;
+            height:8rem;
+            margin-bottom:2rem;
+            background-color:#fff;
+            border-radius:100%;
+            line-height:8rem;
+            text-align:center;
+            img{
+                width:62.5%;
+            }
+        }
+    }
+    .contactUs{
+        margin-top:1.5rem;
+        p{
+            font-size:1.7rem;
+            &+p{
+                margin-top:1rem;
+            }
+            &.ph{
+                padding-bottom:2rem;
+                padding-left:2.5rem;
+                margin-bottom:2rem;
+                border-bottom:1px dashed #000;
+                font-size:3rem;
+                font-weight:$font-weight__m;
+                background:url('../image/sub/icon/icon-phone.png') no-repeat 0 .4rem;
+                background-size:2.2rem 2rem;
+            }
+            span{
+                margin-right:.5rem;
+                font-weight:$font-weight__m;
+            }
         }
     }
 }
@@ -1997,19 +2075,19 @@
                 width:100%;
                 padding:1.2rem 4.5rem;
                 box-sizing:border-box;
-                p{
+                > p{
                     margin-bottom:2.3rem;
                     font-size:1.8rem;
                     font-weight:$font-weight__b;
                 }
-                span{
+                > span{
                     display:block;
                     font-size:3rem;
                     text-align:right;
-                }
-                a{
-                    font-size:4.8rem;
-                    font-weight:$font-weight__b
+                    a{
+                        font-size:4.8rem;
+                        font-weight:$font-weight__b
+                    }
                 }
                 &+div{
                     border-left:1px solid #e5e5e5;
@@ -2475,88 +2553,98 @@
 .pinkBox{
     background-color:#f8f8fa;
 }
-.mythink{
-    &Room{
-        &.modi{
-            max-width:92rem;
-            margin:0 auto;
-            margin-top:6rem;
-            > div{
-                width:100%;
-                button{
-                    width:17.5rem;
-                }
-            }
-            > .img-wrap{
-                width:9.7rem;
+.my{
+    &think{
+        &Room{
+            &.modi{
+                max-width:92rem;
                 margin:0 auto;
-            }
-            h3{
-                line-height:1.8em;
-            }
-            dl{
-                @include d-flex;
-                flex-wrap:wrap;
-                width:45rem;
-                margin:4rem auto 5.5rem;
-                padding:4rem;
-                border:1px solid #e5e7ee;
-                background-color:#f8f8fa;
-                dt, dd{
-                    font-size:2rem;
-                    text-align:left;
-                }
-                dt{
-                    width:9rem;
-                    &:first-child{
-                        margin-bottom:3rem;
+                margin-top:6rem;
+                > div{
+                    width:100%;
+                    button{
+                        width:17.5rem;
                     }
-                    &.btnDt{
-                        width:100%;
-                        .button-wrap{
+                }
+                > .img-wrap{
+                    width:9.7rem;
+                    margin:0 auto;
+                }
+                h3{
+                    line-height:1.8em;
+                }
+                dl{
+                    @include d-flex;
+                    flex-wrap:wrap;
+                    width:45rem;
+                    margin:4rem auto 5.5rem;
+                    padding:4rem;
+                    border:1px solid #e5e7ee;
+                    background-color:#f8f8fa;
+                    dt, dd{
+                        font-size:2rem;
+                        text-align:left;
+                    }
+                    dt{
+                        width:9rem;
+                        &:first-child{
+                            margin-bottom:3rem;
+                        }
+                        &.btnDt{
                             width:100%;
-                            button{
+                            .button-wrap{
                                 width:100%;
+                                button{
+                                    width:100%;
+                                }
                             }
                         }
                     }
+                    dd{
+                        width:calc(100% - 9rem);
+                        &:nth-child(2){
+                            margin-bottom:3rem;
+                        }
+                        input{
+                            width:100%;
+                            margin-bottom:0;
+                        }
+                        button{
+                            width:100%
+                        }
+                    }
                 }
-                dd{
-                    width:calc(100% - 9rem);
-                    &:nth-child(2){
-                        margin-bottom:3rem;
-                    }
-                    input{
-                        width:100%;
-                        margin-bottom:0;
-                    }
-                    button{
-                        width:100%
+                > p{
+                    padding:0 12rem;
+                    font-size:1.8rem;
+                    box-sizing:border-box;
+                    line-height:1.7em;
+                    text-align:left;
+                }
+            }
+            .lnb{
+                &__inner{
+                    >p{
+                        padding-bottom:3.3rem;
+                        border-bottom:1px solid #e5e7ee;
+                        span{
+                            font-weight:$font-weight__m
+                        }
                     }
                 }
             }
-            > p{
-                padding:0 12rem;
-                font-size:1.8rem;
-                box-sizing:border-box;
-                line-height:1.7em;
-                text-align:left;
+            .img-wrap{
+                img{
+                    width:100%;
+                }
             }
         }
+    }
+    &Host{
+        margin-top:6rem;
         .lnb{
             &__inner{
-                >p{
-                    padding-bottom:3.3rem;
-                    border-bottom:1px solid #e5e7ee;
-                    span{
-                        font-weight:$font-weight__m
-                    }
-                }
-            }
-        }
-        .img-wrap{
-            img{
-                width:100%;
+                margin-right:2rem;
             }
         }
     }

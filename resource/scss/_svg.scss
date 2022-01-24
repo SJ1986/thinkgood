@@ -5,7 +5,7 @@
         arrow-fill__bottom: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='m5.997 8.005-6-7.994h11.999L5.997 8.005Z'/%3E%3C/svg%3E",
         arrow-fill__right: "%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='15'%3E%3Cpath fill-rule='evenodd' fill='rgb(0, 0, 0)' d='M10 7.498 0-.001v14.999l10-7.5Z'/%3E%3C/svg%3E",
         close : "%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13'%3E%3Cpath fill-rule='evenodd' fill='%23#{$color}' d='m12.864 12.156-.707.707L6.5 7.206.843 12.863l-.707-.707 5.657-5.657L.136.841.843.134 6.5 5.792 12.157.134l.707.707-5.657 5.658 5.657 5.657Z'/%3E%3C/svg%3E",
-        close_big: "%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='27'%3E%3Cpath fill-rule='evenodd' fill='%23#{$color}' d='m25.531 25.047-.983.983L13 14.482 1.451 26.03l-.982-.983 11.548-11.548L.469 1.951l.982-.983L13 12.516 24.548.968l.983.983-11.548 11.548 11.548 11.548Z'/%3E%3C/svg%3E"
+        close_big: "%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='27'%3E%3Cpath fill-rule='evenodd' fill='%23#{$color}' d='m25.531 25.047-.983.983L13 14.482 1.451 26.03l-.982-.983 11.548-11.548L.469 1.951l.982-.983L13 12.516 24.548.968l.983.983-11.548 11.548 11.548 11.548Z'/%3E%3C/svg%3E",
     );
     $icon: map-get($iconList, $iconName );
     @return url("data:image/svg+xml;charset=utf8, #{$icon}");

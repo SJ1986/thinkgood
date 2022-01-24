@@ -2299,8 +2299,55 @@ ul.lists.num li:before {
   margin-top: 4rem;
 }
 
+.content__core.myHost .content__core-right {
+  width: calc(100% - 28rem);
+}
+
+.content__core.myHost .content__core-right .grayBox.status {
+  padding: 4.5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div {
+  padding: 0;
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > p {
+  font-size: 3rem;
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > p span {
+  display: block;
+  margin-top: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > em {
+  display: block;
+  font-size: 1.8rem;
+  color: #747478;
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > a {
+  display: block;
+  margin-top: 4rem;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  text-align: right;
+}
+
 .content__core-right {
   width: calc(100% - 33rem);
+}
+
+.content__core-right > .d-flex > div {
+  width: 100%;
+}
+
+.content__core-right > .d-flex > div + div {
+  margin-left: 2rem;
 }
 
 .content__core.contest .lnb .tit {
@@ -2574,6 +2621,48 @@ ul.lists.num li:before {
 
 .lnbBox * {
   color: #fff;
+}
+
+.lnbBox .thumb {
+  width: 8rem;
+  height: 8rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border-radius: 100%;
+  line-height: 8rem;
+  text-align: center;
+}
+
+.lnbBox .thumb img {
+  width: 62.5%;
+}
+
+.lnb .contactUs {
+  margin-top: 1.5rem;
+}
+
+.lnb .contactUs p {
+  font-size: 1.7rem;
+}
+
+.lnb .contactUs p + p {
+  margin-top: 1rem;
+}
+
+.lnb .contactUs p.ph {
+  padding-bottom: 2rem;
+  padding-left: 2.5rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px dashed #000;
+  font-size: 3rem;
+  font-weight: 500;
+  background: url("../image/sub/icon/icon-phone.png") no-repeat 0 0.4rem;
+  background-size: 2.2rem 2rem;
+}
+
+.lnb .contactUs p span {
+  margin-right: .5rem;
+  font-weight: 500;
 }
 
 /* board */
@@ -4435,19 +4524,19 @@ ul.lists.num li:before {
           box-sizing: border-box;
 }
 
-.grayBox.status > div p {
+.grayBox.status > div > p {
   margin-bottom: 2.3rem;
   font-size: 1.8rem;
   font-weight: 600;
 }
 
-.grayBox.status > div span {
+.grayBox.status > div > span {
   display: block;
   font-size: 3rem;
   text-align: right;
 }
 
-.grayBox.status > div a {
+.grayBox.status > div > span a {
   font-size: 4.8rem;
   font-weight: 600;
 }
@@ -5118,6 +5207,14 @@ ul.lists.num li:before {
 
 .mythinkRoom .img-wrap img {
   width: 100%;
+}
+
+.myHost {
+  margin-top: 6rem;
+}
+
+.myHost .lnb__inner {
+  margin-right: 2rem;
 }
 
 .boxWrap {
