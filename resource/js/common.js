@@ -1,7 +1,22 @@
 'use strict';
 
 $(function () {
-    //header 
+    $("input[type='text']").on('input', function(){
+        if($("input[type='text']").val() == ''){
+            $(this).removeClass('fill');
+        }else{
+            $(this).addClass('fill');
+        }
+    })
+
+    $("input[type='checkbox']").on('input', function(){
+        if($(this).is(":checked") == true){
+            $(this).next('label').find('input').attr('disabled', false);
+        }
+        if($(this).is(":checked") == false){
+            $(this).next('label').find('input').attr('disabled', true);
+        }
+    })
     
     //btn-mailing
     $(".btn-mailing").click(function(){

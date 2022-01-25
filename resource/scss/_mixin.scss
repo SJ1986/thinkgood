@@ -93,6 +93,10 @@ $height-l:936px;
   -webkit-box-align:center;-ms-flex-align:center;align-items:center;
 }
 
+@mixin justify-start {
+  -webkit-box-pack:start;-ms-flex-pack:start;justify-content:start;  
+}
+
 @mixin justify-center {
   -webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;  
 }

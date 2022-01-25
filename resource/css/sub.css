@@ -1619,6 +1619,10 @@ ul.lists li:before {
   content: "";
 }
 
+ul.lists.bar li:before {
+  content: "-";
+}
+
 ul.lists.num {
   counter-reset: num;
 }
@@ -2310,6 +2314,7 @@ ul.lists.num li:before {
 }
 
 .content__core.myHost .content__core-right .grayBox.status > div {
+  overflow: hidden;
   padding: 0;
 }
 
@@ -2331,11 +2336,99 @@ ul.lists.num li:before {
 }
 
 .content__core.myHost .content__core-right .grayBox.status > div > a {
-  display: block;
+  float: right;
+  position: relative;
+  display: inline-block;
   margin-top: 4rem;
+  padding: .3rem 0;
+  padding-right: 1.5rem;
   font-size: 1.6rem;
-  text-decoration: underline;
+  background: url("../image/common/icon/arrow__next-big.png") no-repeat 100% center;
+  background-size: 1rem 1.8rem;
   text-align: right;
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > a:before {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #000;
+  content: "";
+}
+
+.content__core.myHost .content__core-right .grayBox .lists li {
+  font-size: 1.7rem;
+  color: #747478;
+}
+
+.content__core.myHost .content__core-right .grayBox.normal {
+  padding: 3.5rem;
+}
+
+.content__core.myHost .content__core-right .grayBox.normal strong {
+  font-weight: 500;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: relative;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div .img_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  margin-right: 3rem;
+  background-color: #f8f8fa;
+  border-radius: 100%;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div p {
+  font-size: 1.8rem;
+  color: #747478;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div p span {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #000;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div .btn-wrap {
+  position: absolute;
+  right: 0;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div .btn-wrap button {
+  width: 100%;
+  height: 5rem;
+  border-radius: 3px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.content__core.myHost .content__core-right .boxWrap > div .btn-wrap button + button {
+  margin-top: .5rem;
 }
 
 .content__core-right {
@@ -4153,6 +4246,10 @@ ul.lists.num li:before {
   font-size: 1.6rem;
 }
 
+.form-input input.fill {
+  border: 1px solid #000000;
+}
+
 .form-select {
   height: 100%;
 }
@@ -4537,12 +4634,43 @@ ul.lists.num li:before {
 }
 
 .grayBox.status > div > span a {
+  padding-right: 1.5rem;
   font-size: 4.8rem;
   font-weight: 600;
 }
 
 .grayBox.status > div + div {
   border-left: 1px solid #e5e5e5;
+}
+
+.grayBox.status .mini > div {
+  width: 100%;
+}
+
+.grayBox.status .mini > div p {
+  font-size: 1.8rem;
+}
+
+.grayBox.status .mini > div:first-child {
+  padding-right: 5rem;
+  border-right: 1px solid #e4e4e4;
+}
+
+.grayBox.status .mini > div + div {
+  padding-left: 5rem;
+}
+
+.grayBox.status .mini > div span {
+  display: block;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+  text-align: right;
+}
+
+.grayBox.status .mini > div span a {
+  display: inline-block;
+  font-size: 4.8rem;
+  font-weight: 500;
 }
 
 .grayCap {
@@ -5213,7 +5341,7 @@ ul.lists.num li:before {
   margin-top: 6rem;
 }
 
-.myHost .lnb__inner {
+.myHost.intro .lnb__inner {
   margin-right: 2rem;
 }
 
@@ -5864,6 +5992,9 @@ ul.lists.num li:before {
 .transCardWrap .items {
   display: grid;
   display: -ms-grid;
+}
+
+.transCardWrap .items.cols {
   gap: 0;
   grid-template-columns: 5rem 31.5rem 10rem 12rem 12rem;
   -ms-grid-columns: 5rem 31.5rem 10rem 12rem 12rem;
@@ -5872,23 +6003,110 @@ ul.lists.num li:before {
   border-bottom: 1px solid #e5e7ee;
 }
 
+.transCardWrap .items.rows {
+  gap: 0;
+  grid-template-columns: 24rem calc(100% - 24rem);
+  -ms-grid-columns: 24rem calc(100% - 24rem);
+  grid-template-rows: minmax(7rem, auto);
+  -ms-grid-rows: minmax(7rem, auto);
+  border: 1px solid #e5e7ee;
+}
+
+.transCardWrap .items.rows + .rows {
+  border-top: none;
+}
+
+.transCardWrap .items.rows h5 {
+  background-color: #f8f8fa;
+}
+
+.transCardWrap .items.rows > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
+  height: 100%;
+  padding: 1.5rem 3rem;
+  margin: 0;
+  line-height: 1.8em;
+  text-align: left;
+}
+
+.transCardWrap .items.rows > * + * {
+  border-left: 1px solid #e5e7ee;
+}
+
+.transCardWrap .items.rows.full {
+  grid-template-columns: 100%;
+  -ms-grid-columns: 100%;
+}
+
+.transCardWrap .items.rows .form-input {
+  border: none;
+  border-left: 1px solid #e5e7ee;
+}
+
+.transCardWrap .items.rows .form-input input {
+  border: 1px solid #e5e7ee;
+}
+
+.transCardWrap .items.rows .form-input input.fill {
+  border: 1px solid #000;
+}
+
 .transCardWrap .items > * {
+  position: relative;
   -ms-flex-item-align: center;
       align-self: center;
   -ms-grid-row-align: center;
 }
 
+.transCardWrap .items > *.caution:after {
+  display: inline-block;
+  width: .5rem;
+  height: .5rem;
+  margin-bottom: 2.5rem;
+  border-radius: 100%;
+  background-color: #dd2525;
+  content: "";
+}
+
 .transCardWrap .form-check {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   text-align: center;
 }
 
 .transCardWrap .form-check input[type='checkbox'] + label {
   padding-left: 0;
+  margin: 1rem 0;
+  margin-right: 4rem;
 }
 
 .transCardWrap .form-check input[type='checkbox'] + label::before {
   position: relative;
   margin: 0;
+  margin-right: 0.5rem;
+}
+
+.transCardWrap .form-check input[type='checkbox'] + label > .form-input {
+  margin-left: 1rem;
+}
+
+.transCardWrap .form-input {
+  border: 1px solid #e5e7ee;
+}
+
+.transCardWrap .form-input:focus {
+  border: 1px solid #000;
 }
 
 .transCardWrap p {
