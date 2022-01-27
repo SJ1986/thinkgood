@@ -188,7 +188,7 @@
             //padding-top: 67px;
             > .d-flex{
                 > div{
-                    width:100%;
+                    //width:100%;
                     &+div{
                         margin-left:2rem;
                     }
@@ -655,7 +655,7 @@
             }
             &-input{
                 height: 40px;
-                border:1px solid #000000;
+                border:1px solid #e5e7ee;
                 border-radius: 3px;
                 &::placeholder{
                     font-size: 1.6rem;
@@ -778,7 +778,7 @@
 /* table */ 
 .search{
     &-box{
-        height: 67px;
+        //height: 67px;
         //margin-top: -67px;
         margin-bottom: 30px;
         align-items: flex-end;
@@ -792,6 +792,13 @@
             text-indent: 10px;
             background: url(../image/common/icon/clamp__bottom.png)no-repeat right 10px center;
             box-sizing: border-box;
+        }
+        > a{
+            img{
+                margin-right:1rem;
+            }
+            font-size:2rem;
+            font-weight:$font-weight__b;
         }
     }
     &-right{
@@ -945,6 +952,20 @@
                     background-repeat:no-repeat;
                     background-position:85% center;
                     background-size:1.5rem 2.5rem;
+                }
+            }
+            &.fileDown{
+                i{
+                    display:inline-block;
+                    width:1.7rem;
+                    height:1.7rem;
+                    background-image:url('../image/sub/icon/icon-fileDown.png');
+                    background-size:1.7rem 1.7rem;
+                }
+                &.button-darkgray{
+                    i{
+                        background-image:url('../image/sub/icon/icon-fileDown-white.png');
+                    }
                 }
             }
         }
@@ -1797,7 +1818,7 @@
     input{
         width:29rem;
         height: 4rem;
-        border:1px solid #000000;
+        border:1px solid #e5e7ee;
         border-radius: 2px;
         font-size: 1.6rem;
         &.fill{
@@ -2652,94 +2673,95 @@
     background-color:#f8f8fa;
 }
 .my{
-    &think{
-        &Room{
-            &.modi{
-                max-width:92rem;
-                margin:0 auto;
-                margin-top:6rem;
-                > div{
-                    width:100%;
-                    button{
-                        width:17.5rem;
-                    }
-                }
-                > .img-wrap{
-                    width:9.7rem;
-                    margin:0 auto;
-                }
-                h3{
-                    line-height:1.8em;
-                }
-                dl{
-                    @include d-flex;
-                    flex-wrap:wrap;
-                    width:45rem;
-                    margin:4rem auto 5.5rem;
-                    padding:4rem;
-                    border:1px solid #e5e7ee;
-                    background-color:#f8f8fa;
-                    dt, dd{
-                        font-size:2rem;
-                        text-align:left;
-                    }
-                    dt{
-                        width:9rem;
-                        &:first-child{
-                            margin-bottom:3rem;
-                        }
-                        &.btnDt{
-                            width:100%;
-                            .button-wrap{
-                                width:100%;
-                                button{
-                                    width:100%;
-                                }
-                            }
-                        }
-                    }
-                    dd{
-                        width:calc(100% - 9rem);
-                        &:nth-child(2){
-                            margin-bottom:3rem;
-                        }
-                        input{
-                            width:100%;
-                            margin-bottom:0;
-                        }
-                        button{
-                            width:100%
-                        }
-                    }
-                }
-                > p{
-                    padding:0 12rem;
-                    font-size:1.8rem;
-                    box-sizing:border-box;
-                    line-height:1.7em;
-                    text-align:left;
-                }
-            }
-            .lnb{
-                &__inner{
-                    >p{
-                        padding-bottom:3.3rem;
-                        border-bottom:1px solid #e5e7ee;
-                        span{
-                            font-weight:$font-weight__m
-                        }
-                    }
+    &thinkRoom, &Host{
+        &.modi{
+            max-width:92rem;
+            margin:0 auto;
+            margin-top:6rem;
+            > div{
+                width:100%;
+                button{
+                    width:17.5rem;
                 }
             }
             .img-wrap{
-                img{
-                    width:100%;
+                width:9.7rem;
+                margin:0 auto;
+            }
+            h3{
+                line-height:1.8em;
+            }
+            dl, ul.lists{
+                @include d-flex;
+                flex-wrap:wrap;
+                width:45rem;
+                margin:4rem auto 5.5rem;
+                padding:4rem;
+                border:1px solid #e5e7ee;
+                background-color:#f8f8fa;
+                dt, dd, li{
+                    font-size:2rem;
+                    text-align:left;
                 }
+                dt{
+                    width:9rem;
+                    &:first-child{
+                        margin-bottom:3rem;
+                    }
+                    &.btnDt{
+                        width:100%;
+                        .button-wrap{
+                            width:100%;
+                            button{
+                                width:100%;
+                            }
+                        }
+                    }
+                }
+                dd{
+                    width:calc(100% - 9rem);
+                    &:nth-child(2){
+                        margin-bottom:3rem;
+                    }
+                    input{
+                        width:100%;
+                        margin-bottom:0;
+                    }
+                    button{
+                        width:100%
+                    }
+                }
+            }
+            > p{
+                padding:0 12rem;
+                font-size:1.8rem;
+                box-sizing:border-box;
+                line-height:1.7em;
+                text-align:left;
+            }
+            ul.lists{
+                display: block;
+                width:84rem;
+            }
+        }
+        .lnb{
+            &__inner{
+                >p{
+                    padding-bottom:3.3rem;
+                    border-bottom:1px solid #e5e7ee;
+                    span{
+                        font-weight:$font-weight__m
+                    }
+                }
+            }
+        }
+        .img-wrap{
+            img{
+                width:100%;
             }
         }
     }
     &Host{
-        margin-top:6rem;
         &.intro{
             .lnb{
                 &__inner{
@@ -2747,6 +2769,24 @@
                 }
             }
             
+        }
+        &.modi{
+            max-width:100%;
+            >div{
+                width:auto;
+            }
+            dl{
+                width:60rem;
+                padding:5.5rem;
+                dt{
+                    width:18.5rem;
+                    margin-bottom:1rem !important;
+                }
+                dd{
+                    width:calc(100% - 18.5rem);
+                    margin-bottom:1rem !important;
+                }
+            }
         }
     }
 }
@@ -2878,13 +2918,21 @@
             dt, dd{
                 margin-top:3rem;
                 font-size:1.8rem;
+                line-height:1.5em;
             }
             dt{
                 width:23rem;
                 font-weight:$font-weight__m;
             }
             dd{
-                width:calc(100% - 23rem)
+                width:calc(100% - 23rem);
+                margin-bottom:0;
+            }
+        }
+        &.noLine{
+            border:none;
+            >*{
+                margin:0;
             }
         }
     }
@@ -3233,6 +3281,13 @@
                             border:none;
                         }
                     }
+                    &-check{
+                        input[type='checkbox']{
+                            &+ label{
+                                margin-right:4rem;
+                            }
+                        }
+                    }
                 }
                 .button{
                     &-wrap{
@@ -3315,7 +3370,6 @@
                     + label{
                         padding-left:0;
                         margin:1rem 0;
-                        margin-right:4rem;
                         &::before{
                             position:relative;
                             margin:0;
@@ -3415,6 +3469,22 @@
                 }
             }
         }
+        &.w1312221{
+            .trans{
+                &Head{
+                    grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+                    -ms-grid-columns:10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+                    grid-template-rows: 6rem;
+                    -ms-grid-rows:6rem;
+                }
+            }
+            .items{
+                grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+                -ms-grid-columns:10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+                grid-template-rows: 6rem;
+                -ms-grid-rows:6rem;
+            }
+        }
     }
 }
 .accept{
@@ -3477,6 +3547,28 @@
             font-size:14px;
             vertical-align:middle;
             text-align:center;
+        }
+    }
+}
+
+// modal
+.onlyConfirm{
+    .modal{
+        &-body{
+            p{
+                font-size:2rem;
+            }
+        }
+        &-footer{
+            button{
+                margin:0;
+                padding:2rem 0;
+                color:#fff;
+                font-size:1.8rem;
+            }
+        }
+        &-content{
+            min-height:27rem;
         }
     }
 }

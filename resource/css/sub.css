@@ -2439,10 +2439,6 @@ ul.lists.num li:before {
   width: calc(100% - 33rem);
 }
 
-.content__core-right > .d-flex > div {
-  width: 100%;
-}
-
 .content__core-right > .d-flex > div + div {
   margin-left: 2rem;
 }
@@ -2973,7 +2969,7 @@ ul.lists.num li:before {
 
 .board-write .form-input {
   height: 40px;
-  border: 1px solid #000000;
+  border: 1px solid #e5e7ee;
   border-radius: 3px;
 }
 
@@ -3127,7 +3123,6 @@ ul.lists.num li:before {
 
 /* table */
 .search-box {
-  height: 67px;
   margin-bottom: 30px;
   -webkit-box-align: end;
       -ms-flex-align: end;
@@ -3145,6 +3140,15 @@ ul.lists.num li:before {
   background: url(../image/common/icon/clamp__bottom.png) no-repeat right 10px center;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.search-box > a {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.search-box > a img {
+  margin-right: 1rem;
 }
 
 .search-right {
@@ -3296,6 +3300,18 @@ ul.lists.num li:before {
   background-repeat: no-repeat;
   background-position: 85% center;
   background-size: 1.5rem 2.5rem;
+}
+
+.button-wrap button.fileDown i {
+  display: inline-block;
+  width: 1.7rem;
+  height: 1.7rem;
+  background-image: url("../image/sub/icon/icon-fileDown.png");
+  background-size: 1.7rem 1.7rem;
+}
+
+.button-wrap button.fileDown.button-darkgray i {
+  background-image: url("../image/sub/icon/icon-fileDown-white.png");
 }
 
 .button-wrap .color-red {
@@ -4245,7 +4261,7 @@ ul.lists.num li:before {
 .form-input input {
   width: 29rem;
   height: 4rem;
-  border: 1px solid #000000;
+  border: 1px solid #e5e7ee;
   border-radius: 2px;
   font-size: 1.6rem;
 }
@@ -5235,30 +5251,30 @@ ul.lists.num li:before {
   background-color: #f8f8fa;
 }
 
-.mythinkRoom.modi {
+.mythinkRoom.modi, .myHost.modi {
   max-width: 92rem;
   margin: 0 auto;
   margin-top: 6rem;
 }
 
-.mythinkRoom.modi > div {
+.mythinkRoom.modi > div, .myHost.modi > div {
   width: 100%;
 }
 
-.mythinkRoom.modi > div button {
+.mythinkRoom.modi > div button, .myHost.modi > div button {
   width: 17.5rem;
 }
 
-.mythinkRoom.modi > .img-wrap {
+.mythinkRoom.modi .img-wrap, .myHost.modi .img-wrap {
   width: 9.7rem;
   margin: 0 auto;
 }
 
-.mythinkRoom.modi h3 {
+.mythinkRoom.modi h3, .myHost.modi h3 {
   line-height: 1.8em;
 }
 
-.mythinkRoom.modi dl {
+.mythinkRoom.modi dl, .mythinkRoom.modi ul.lists, .myHost.modi dl, .myHost.modi ul.lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5277,49 +5293,49 @@ ul.lists.num li:before {
   background-color: #f8f8fa;
 }
 
-.mythinkRoom.modi dl dt, .mythinkRoom.modi dl dd {
+.mythinkRoom.modi dl dt, .mythinkRoom.modi dl dd, .mythinkRoom.modi dl li, .mythinkRoom.modi ul.lists dt, .mythinkRoom.modi ul.lists dd, .mythinkRoom.modi ul.lists li, .myHost.modi dl dt, .myHost.modi dl dd, .myHost.modi dl li, .myHost.modi ul.lists dt, .myHost.modi ul.lists dd, .myHost.modi ul.lists li {
   font-size: 2rem;
   text-align: left;
 }
 
-.mythinkRoom.modi dl dt {
+.mythinkRoom.modi dl dt, .mythinkRoom.modi ul.lists dt, .myHost.modi dl dt, .myHost.modi ul.lists dt {
   width: 9rem;
 }
 
-.mythinkRoom.modi dl dt:first-child {
+.mythinkRoom.modi dl dt:first-child, .mythinkRoom.modi ul.lists dt:first-child, .myHost.modi dl dt:first-child, .myHost.modi ul.lists dt:first-child {
   margin-bottom: 3rem;
 }
 
-.mythinkRoom.modi dl dt.btnDt {
+.mythinkRoom.modi dl dt.btnDt, .mythinkRoom.modi ul.lists dt.btnDt, .myHost.modi dl dt.btnDt, .myHost.modi ul.lists dt.btnDt {
   width: 100%;
 }
 
-.mythinkRoom.modi dl dt.btnDt .button-wrap {
+.mythinkRoom.modi dl dt.btnDt .button-wrap, .mythinkRoom.modi ul.lists dt.btnDt .button-wrap, .myHost.modi dl dt.btnDt .button-wrap, .myHost.modi ul.lists dt.btnDt .button-wrap {
   width: 100%;
 }
 
-.mythinkRoom.modi dl dt.btnDt .button-wrap button {
+.mythinkRoom.modi dl dt.btnDt .button-wrap button, .mythinkRoom.modi ul.lists dt.btnDt .button-wrap button, .myHost.modi dl dt.btnDt .button-wrap button, .myHost.modi ul.lists dt.btnDt .button-wrap button {
   width: 100%;
 }
 
-.mythinkRoom.modi dl dd {
+.mythinkRoom.modi dl dd, .mythinkRoom.modi ul.lists dd, .myHost.modi dl dd, .myHost.modi ul.lists dd {
   width: calc(100% - 9rem);
 }
 
-.mythinkRoom.modi dl dd:nth-child(2) {
+.mythinkRoom.modi dl dd:nth-child(2), .mythinkRoom.modi ul.lists dd:nth-child(2), .myHost.modi dl dd:nth-child(2), .myHost.modi ul.lists dd:nth-child(2) {
   margin-bottom: 3rem;
 }
 
-.mythinkRoom.modi dl dd input {
+.mythinkRoom.modi dl dd input, .mythinkRoom.modi ul.lists dd input, .myHost.modi dl dd input, .myHost.modi ul.lists dd input {
   width: 100%;
   margin-bottom: 0;
 }
 
-.mythinkRoom.modi dl dd button {
+.mythinkRoom.modi dl dd button, .mythinkRoom.modi ul.lists dd button, .myHost.modi dl dd button, .myHost.modi ul.lists dd button {
   width: 100%;
 }
 
-.mythinkRoom.modi > p {
+.mythinkRoom.modi > p, .myHost.modi > p {
   padding: 0 12rem;
   font-size: 1.8rem;
   -webkit-box-sizing: border-box;
@@ -5328,25 +5344,49 @@ ul.lists.num li:before {
   text-align: left;
 }
 
-.mythinkRoom .lnb__inner > p {
+.mythinkRoom.modi ul.lists, .myHost.modi ul.lists {
+  display: block;
+  width: 84rem;
+}
+
+.mythinkRoom .lnb__inner > p, .myHost .lnb__inner > p {
   padding-bottom: 3.3rem;
   border-bottom: 1px solid #e5e7ee;
 }
 
-.mythinkRoom .lnb__inner > p span {
+.mythinkRoom .lnb__inner > p span, .myHost .lnb__inner > p span {
   font-weight: 500;
 }
 
-.mythinkRoom .img-wrap img {
+.mythinkRoom .img-wrap img, .myHost .img-wrap img {
   width: 100%;
-}
-
-.myHost {
-  margin-top: 6rem;
 }
 
 .myHost.intro .lnb__inner {
   margin-right: 2rem;
+}
+
+.myHost.modi {
+  max-width: 100%;
+}
+
+.myHost.modi > div {
+  width: auto;
+}
+
+.myHost.modi dl {
+  width: 60rem;
+  padding: 5.5rem;
+}
+
+.myHost.modi dl dt {
+  width: 18.5rem;
+  margin-bottom: 1rem !important;
+}
+
+.myHost.modi dl dd {
+  width: calc(100% - 18.5rem);
+  margin-bottom: 1rem !important;
 }
 
 .boxWrap {
@@ -5509,6 +5549,7 @@ ul.lists.num li:before {
 .boxWrap > dl dt, .boxWrap > dl dd {
   margin-top: 3rem;
   font-size: 1.8rem;
+  line-height: 1.5em;
 }
 
 .boxWrap > dl dt {
@@ -5518,6 +5559,15 @@ ul.lists.num li:before {
 
 .boxWrap > dl dd {
   width: calc(100% - 23rem);
+  margin-bottom: 0;
+}
+
+.boxWrap.noLine {
+  border: none;
+}
+
+.boxWrap.noLine > * {
+  margin: 0;
 }
 
 .calWrap {
@@ -6103,6 +6153,10 @@ ul.lists.num li:before {
   border: none;
 }
 
+.transCardWrap .items.rows .form-check input[type='checkbox'] + label {
+  margin-right: 4rem;
+}
+
 .transCardWrap .items.rows .button-wrap button {
   position: relative;
   height: 2.5rem;
@@ -6202,7 +6256,6 @@ ul.lists.num li:before {
 .transCardWrap .form-check input[type='checkbox'] + label {
   padding-left: 0;
   margin: 1rem 0;
-  margin-right: 4rem;
 }
 
 .transCardWrap .form-check input[type='checkbox'] + label::before {
@@ -6312,6 +6365,20 @@ ul.lists.num li:before {
   padding-left: 3rem;
 }
 
+.transCardWrap.w1312221 .transHead {
+  grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+  -ms-grid-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
+}
+
+.transCardWrap.w1312221 .items {
+  grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+  -ms-grid-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
+}
+
 .accept-ing, .accept-end, .accept-expect {
   padding: 1rem;
   margin-right: 1.5rem;
@@ -6377,4 +6444,19 @@ ul.lists.num li:before {
   font-size: 14px;
   vertical-align: middle;
   text-align: center;
+}
+
+.onlyConfirm .modal-body p {
+  font-size: 2rem;
+}
+
+.onlyConfirm .modal-footer button {
+  margin: 0;
+  padding: 2rem 0;
+  color: #fff;
+  font-size: 1.8rem;
+}
+
+.onlyConfirm .modal-content {
+  min-height: 27rem;
 }
