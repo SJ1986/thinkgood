@@ -105,6 +105,18 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
+.floatNo {
+  float: none !important;
+}
+
+.floatR {
+  float: right !important;
+}
+
+.floatL {
+  float: left !important;
+}
+
 /* parts:width */
 .w_100 {
   width: 100% !important;
@@ -135,19 +147,23 @@
 }
 
 .w_xlarge {
-  width: 68rem !important;
+  width: 70rem !important;
 }
 
 .w_wide {
-  width: 55rem !important;
+  width: 50rem !important;
 }
 
-.w_slarge {
+.w_xlarge {
   width: 40rem !important;
 }
 
-.w_large {
+.w_slarge {
   width: 30rem !important;
+}
+
+.w_large {
+  width: 25rem !important;
 }
 
 .w_fit {
@@ -163,7 +179,7 @@
 }
 
 .w_small {
-  width: 9rem !important;
+  width: 10rem !important;
 }
 
 .w_tiny {
@@ -319,7 +335,7 @@
 }
 
 .mb_50 {
-  margin-bottom: 5rem;
+  margin-bottom: 5rem !important;
 }
 
 .mt_60 {
@@ -408,6 +424,10 @@
 
 .pb_100 {
   padding-bottom: 10rem;
+}
+
+.pd_0 {
+  padding: 0 !important;
 }
 
 .pd_1 {
@@ -1603,6 +1623,10 @@ ul.lists li:before {
   content: "";
 }
 
+ul.lists.bar li:before {
+  content: "-";
+}
+
 ul.lists.num {
   counter-reset: num;
 }
@@ -1671,6 +1695,7 @@ ul.lists.num li:before {
   vertical-align: middle;
   border: .1rem solid #e5e7ee;
   border-radius: 0.3rem;
+  background-color: #fff;
 }
 
 .form-check input[type='checkbox']:checked + label {
@@ -1684,6 +1709,10 @@ ul.lists.num li:before {
   background: #fff url(../image/common/icon/icon-check.png) no-repeat center center;
   background-size: 1.3rem 1rem;
   border-color: #000000;
+}
+
+.form-check input[type='checkbox']:focus + label:before {
+  border: 1px solid #000;
 }
 
 /* select 셀렉트 영역 스타일 */
@@ -2066,6 +2095,7 @@ ul.lists.num li:before {
   color: #686868;
   font-size: 1.4rem;
   font-weight: 200;
+  z-index: 1;
 }
 
 .paging__inner a.first i {

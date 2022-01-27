@@ -86,16 +86,19 @@ $color-blue : #2024dc;
         width:80rem !important
     }
     &_xlarge{
-        width:68rem !important
+        width:70rem !important
     }
     &_wide{
-        width:55rem !important
+        width:50rem !important
     }
-    &_slarge{
+    &_xlarge{
         width:40rem !important
     }
-    &_large{
+    &_slarge{
         width:30rem !important
+    }
+    &_large{
+        width:25rem !important
     }
     &_fit{
         width:20rem !important
@@ -107,7 +110,7 @@ $color-blue : #2024dc;
         width:14rem !important
     }
     &_small{
-        width:9rem !important
+        width:10rem !important
     }
     &_tiny{
         width:5rem !important

@@ -1,20 +1,23 @@
 'use strict';
 
 $(function () {
-    $("input[type='text']").on('input', function(){
-        if($("input[type='text']").val() == ''){
+    uploadFile();
+    
+    $("input[type='text'], textarea").on('input', function(){
+        if($(this).val() == ''){
             $(this).removeClass('fill');
         }else{
             $(this).addClass('fill');
         }
     })
-
     $("input[type='checkbox']").on('input', function(){
         if($(this).is(":checked") == true){
             $(this).next('label').find('input').attr('disabled', false);
+            $(this).parents('.items.full').next('.full').find('textarea').attr('disabled', false);
         }
         if($(this).is(":checked") == false){
             $(this).next('label').find('input').attr('disabled', true);
+            $(this).parents('.items.full').next('.full').find('textarea').attr('disabled', true);
         }
     })
     
@@ -248,69 +251,15 @@ var acc_event = function(this_obj) { //아코디언 FN
     });
 }
 
-
-
-
-
-
-//Tweenmax를 이용한 header  
-
-/*
-$(function () {
-    gnbSubMenu();
-
-});
-
-
-function gnbSubMenu() {
-    var gnb = $(".gnb");
-    var gnbChild = $(".gnb > div");
-    var gnbTitle = gnb.find('a');
-
-    gnbChild.on({
-        mouseover: function () {
-            $(this).addClass('on')
-        },
-        mouseleave: function () {
-            $(this).removeClass('on');
+function uploadFile(){
+    var fileTarget = $('.form.file.upload-hidden');
+    fileTarget.on('change', function(){
+        if(window.FileReader){
+            var filename = $(this)[0].files[0].name;
         }
+        else {
+            var filename = $(this).val().split('/').pop().split('\\').pop();
+        };
+        $(this).siblings('.upload-name').val(filename);
     });
-    gnbTitle.mouseover(function () {
-        headerOpen();
-    });
-    $('.gnb').mouseleave(function () {
-        headerClose();
-        $('body').css('overflow', 'initail')
-    });
-
-    function headerOpen() { //Tweenmax를 이용한 헤더 메뉴 슬라이드 open
-        TweenMax.killAll();
-        TweenMax.to($(".gnb"), .5, {
-            height: 440,
-            ease: 'easeOutExpo'
-        });
-        $(".gnb").addClass("on");
-    }
-
-    function headerClose() { //Tweenmax를 이용한 헤더 메뉴 슬라이드 close
-        TweenMax.killAll();
-        TweenMax.to($(".gnb"), .5, {
-            height: 110,
-            ease: 'easeOutExpo',
-            onComplete: function () {
-                $(".gnb").removeClass("on");
-            }
-        });
-        $('.overlay').removeClass('on');
-        $(".gnb-hover-bar").removeClass("on");
-    }
-
-
-
-    
-
-
-
 }
-
-*/
