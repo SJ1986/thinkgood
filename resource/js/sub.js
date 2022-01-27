@@ -1,16 +1,10 @@
 $(function () {
-
-
 	$(".lnb-list__dep2>li>a").click(function () {
 		$(this).toggleClass("on");
 		$(this).next(".dep3").slideToggle();
 	});
 
 	$("img[src$='img-contestbanner__noImg.png']").parent().parent().parent().addClass("noImg");
-
-
-
-
 
 	//thinkgoodPick
 	var thinkgoodPick = new Swiper(".thinkgoodPick-banner .swiper-container", {
@@ -70,24 +64,32 @@ $(function () {
         //     $($agreeAll).prop("checked",false);
         // }
 		
-
 	});
 
+	var laborSwiper = new Swiper(".lab .swiper-container", {
+		slidesPerView: 5,
+		spaceBetween: 25,
+		navigation: {
+			nextEl: ".lab .swiper-button-next",
+			prevEl: ".lab .swiper-button-prev",
+		},
+	})
 
-
-	
-
-
-
-
-
-
-
-
-
-
-
-
-
+	var strategySwiper = new Swiper(".galleryStrategy .swiper-container", {
+		slidesPerView: 3,
+		spaceBetween: 25,
+		navigation: {
+			nextEl: ".lab .swiper-button-next",
+			prevEl: ".lab .swiper-button-prev",
+		},
+	})
+	var strategySwiper = new Swiper(".galleryStrategy .swiper-container", {
+		slidesPerView: 3,
+		spaceBetween: 25,
+		navigation: {
+			nextEl: ".lab .swiper-button-next",
+			prevEl: ".lab .swiper-button-prev",
+		},
+	})
 
 })
