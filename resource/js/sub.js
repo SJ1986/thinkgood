@@ -66,29 +66,28 @@ $(function () {
 		
 	});
 
-	var laborSwiper = new Swiper(".lab .swiper-container", {
+	var laborSwiper = new Swiper(".post4 .swiper-container", {
 		slidesPerView: 5,
 		spaceBetween: 25,
 		navigation: {
-			nextEl: ".lab .swiper-button-next",
-			prevEl: ".lab .swiper-button-prev",
-		},
-	})
-
-	var strategySwiper = new Swiper(".galleryStrategy .swiper-container", {
-		slidesPerView: 3,
-		spaceBetween: 25,
-		navigation: {
-			nextEl: ".lab .swiper-button-next",
-			prevEl: ".lab .swiper-button-prev",
+			nextEl: ".post4 .swiper-button-next",
+			prevEl: ".post4 .swiper-button-prev",
 		},
 	})
 	var strategySwiper = new Swiper(".galleryStrategy .swiper-container", {
 		slidesPerView: 3,
 		spaceBetween: 25,
 		navigation: {
-			nextEl: ".lab .swiper-button-next",
-			prevEl: ".lab .swiper-button-prev",
+			nextEl: ".galleryStrategy .swiper-button-next",
+			prevEl: ".galleryStrategy .swiper-button-prev",
+		},
+	})
+	var campusSwiper = new Swiper(".galleryCampus .swiper-container", {
+		slidesPerView: 3,
+		spaceBetween: 25,
+		navigation: {
+			nextEl: ".galleryCampus .swiper-button-next",
+			prevEl: ".galleryCampus .swiper-button-prev",
 		},
 	})
 

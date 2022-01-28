@@ -93,6 +93,7 @@
             }
         }
         &.lab{
+            margin-top:0;
             h1{
                 position:relative;
                 .link{
@@ -123,17 +124,6 @@
                             }
                         }
                     }
-                    &.reward{
-                        div[class^='swiper-button']{
-                            top:40%;
-                        }
-                    }
-                    div[class^='swiper-button']{
-                        &:after{
-                            color:#fff;
-                                text-shadow:1px 1px 7px #000;
-                        }
-                    }
                 }
             }
             div[class^='gallery']{
@@ -148,6 +138,184 @@
                         background-color:#f8f8fa;
                         z-index:-1;
                         content:""
+                    }
+                }
+                .swiper-container{
+                    margin:-1rem;
+                    padding:1rem;
+                    margin-top:6rem;
+                }
+                .swiper-slide{
+                    a{
+                        overflow:hidden;
+                        display:block;
+                        img{
+                            transform:scale(1);
+                            transition:all .5s ease-in-out;
+                        }
+                        &:hover{
+                            box-shadow:1px 1px 13px 0px rgba(0, 0, 0, 0.44);
+                            img{
+                                transform:scale(1.1);
+                                transition:all .5s ease-in-out;
+                            }
+                        }
+                    }
+                }
+                div[class^='swiper-button']{
+                    &:after{
+                        color:#fff;
+                            text-shadow:1px 1px 7px #000;
+                    }
+                }
+            }
+            .gallery{
+                &Reward{
+                    div[class^='swiper-button']{
+                        top:40%;
+                    }
+                    .grandList{
+                        padding:4rem 6rem;
+                        margin-bottom:5rem;
+                        a{
+                            width:100%;
+                            >*{
+                                display:block;
+                            }
+                            img{
+                                width:45.2rem;
+                                &:hover{
+                                    box-shadow:4px 4px 17px 2px rgba(0, 0, 0, 0.34);
+                                }
+                            }
+                            >strong{
+                                margin-top:3rem;
+                                font-size:2rem;
+                                font-weight:500;
+                            }
+                            >span{
+                                display:block;
+                                margin-top:2rem;
+                                font-size:1.8rem;
+                                em{
+                                    color:#dd2525;
+                                }
+                            }
+                            &+a{
+                                margin-left:6rem;
+                            }
+                        }
+                    }
+                }
+                &GuideBook{
+                    div[class^='swiper-button']{
+                        top:50%;
+                    }
+                }
+                &Strategy{
+                    div[class^='swiper-button']{
+                        top:35%;
+                    }
+                }
+                &Campus{
+                    padding:9rem 6rem;
+                    .swiper-slide{
+                        padding:3rem;
+                        background-color:#fff;
+                        box-sizing:border-box;
+                        box-shadow:1px 1px 20px 0px rgba(0, 0, 0, 0.04);
+                        a{
+                            border-radius:3px;
+                            &:hover{
+                                box-shadow:none !important;
+                            }
+                        }
+                    }
+                    div[class^='swiper-button']{
+                        top:60%;
+                    }
+                }
+            }
+            div[class^="lab_"]{
+                margin:0;
+                &+div{
+                    margin-left:8rem;
+                }
+                &>h1{
+                    width:100%;
+                    margin-bottom:6rem;
+                }
+                img{
+                    width:24.4rem;
+                    height:24.4rem;
+                }
+                > a{
+                    @include d-flex;
+                    @include align-start;
+                    width:100%;
+                    .info{
+                        margin-left:4rem;
+                    }
+                }
+                .info{
+                    padding:1rem 0;
+                    margin-left:4rem;
+                    width:100%;
+                    margin-left:0;
+                    > *{
+                        display:block;
+                        width:100%;
+                    }
+                    > span{
+                        font-size:1.7rem;
+                        font-weight:500;
+                        em{
+                            color:#ca1c1d;
+                            font-weight:500;
+                        }
+                        u{
+                            display:inline-block;
+                            width:1px;
+                            height:1.2rem;
+                            margin:0 0.5rem;
+                            background-color:#747478;
+                        }
+                    }
+                    q{
+                        margin-top:2rem;
+                        padding-top:3rem;
+                        border-top:1px solid #e5e7ee;
+                        font-size:1.6rem;
+                        font-weight:500;
+                        color:#747478;
+                        line-height:1.6em;
+                        letter-spacing:-0.05em;
+                    }
+                    strong{
+                        margin-bottom:2rem;
+                        font-size:2.2rem;
+                        font-weight:700;
+                    }
+                    b{
+                        margin-bottom:1.5rem;
+                        font-size:1.8rem;
+                        font-weight:500;
+                    }
+                }
+                > div{
+                    width:100%;
+                    margin-top:4rem;
+                    .info{
+                        padding:3.5rem 1rem;
+                    }
+                    > div{
+                        width:100%;
+                        padding:3.5rem 1rem;
+                        border-top:1px solid #e5e7ee;
+                        border-bottom:1px solid #e5e7ee;
+                        &+div{
+                            border-left:1px solid #e5e7ee;
+                        }
                     }
                 }
             }
@@ -533,7 +701,21 @@
         }
     }
 }
-
+.sub3Dep{
+    @include justify-between;
+    padding:0 12.5rem;
+    box-sizing:border-box;
+    border-bottom:1px solid #e5e7ee;
+    a{
+        display:inline-block;
+        padding:3.5rem 0;
+        font-size:2rem;
+        font-weight:500;
+        &.current{
+            border-bottom:2px solid #dd2525;
+        }
+    }
+}
 
 /* board */ 
 .board{
@@ -3623,6 +3805,68 @@
         }
     }
 }
+.underGray{
+    position:relative;
+    &:after{
+        position:absolute;
+        top:0;
+        left:-100%;
+        width:300%;
+        height:100%;
+        background-color:#f8f8fa;
+        z-index:-1;
+        content:""
+    }
+}
+.pipeLine{
+    display:inline-block;
+    width:1px;
+    height:1.2rem;
+    margin:0 0.5rem;
+    background-color:#747478;    
+}
+.lab{
+    &Gal{
+        &List{
+            flex-wrap:wrap;
+            &> a{
+                display:block;
+                width:29.6rem;
+                margin-top:9rem;
+                &:hover{
+                    img{
+                        box-shadow:4px 4px 17px 2px rgba(0, 0, 0, 0.34)
+                    }
+                }
+                &:nth-child(5n+1){
+                    margin-left:0;
+                }
+                &:nth-child(-n+5){
+                    margin-top:0;
+                }
+                img{
+                    width:100%;
+                }
+                &+a{
+                    margin-left:3rem;
+                }
+                span{
+                    display:block;
+                    margin-top:3rem;
+                    font-size:2rem;
+                    font-weight:500;
+                }
+                em{
+                    display:block;
+                    margin-top:2rem;
+                    font-size:1.8rem;
+                }
+            }
+            &Wide{}
+        }
+    }
+}
+
 
 // modal
 .onlyConfirm{
