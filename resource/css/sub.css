@@ -6896,7 +6896,6 @@ ul.lists.num li:before {
 
 .labGalList > a {
   display: block;
-  width: 29.6rem;
   margin-top: 9rem;
 }
 
@@ -6932,6 +6931,10 @@ ul.lists.num li:before {
   display: block;
   margin-top: 2rem;
   font-size: 1.8rem;
+}
+
+.labGalList.prize > a {
+  width: 29.6rem;
 }
 
 .onlyConfirm .modal-body p {

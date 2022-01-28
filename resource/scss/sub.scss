@@ -3831,7 +3831,6 @@
             flex-wrap:wrap;
             &> a{
                 display:block;
-                width:29.6rem;
                 margin-top:9rem;
                 &:hover{
                     img{
@@ -3862,7 +3861,16 @@
                     font-size:1.8rem;
                 }
             }
-            &Wide{}
+            &.prize{
+                &> a{
+                    width:29.6rem;
+                }
+            }
+            &.guide{
+                &>a{
+                    
+                }
+            }
         }
     }
 }
