@@ -1,0 +1,8 @@
+$(function () {
+    thumbListHover();
+});
+
+function thumbListHover(){
+    
+
+}
