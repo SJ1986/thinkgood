@@ -2,7 +2,7 @@
 @import "./mixin";
 // Break Point
 // $mobile-s : 480px;
-// $mobile-m : 720px;
+$mobile-m : 720px;
 $laptop : 1020px;
 $desktop : 1440px;
 
@@ -368,6 +368,10 @@ $font-weight__b : 600;
 
 $font-size__inherit : inherit;
 
+%mobile-width{
+    width:72rem;
+    max-width:72rem;
+}
 
 %standard-width { 
     width: 160rem; 
