@@ -3,21 +3,7 @@
 @import "mixin";
 
 // common
-.wrap{
-    @extend %mobile-width;
-    margin:0 auto;
-}
-header{
-    padding:2.8rem 3rem;
-    box-sizing:border-box;
-    .btn_sch{
-        display:inline-block;
-        width:3.4rem;
-        height:3.4rem;
-        padding:0;
-        margin-left:15rem;
-    }
-}
+
 
 // header
 
