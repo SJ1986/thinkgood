@@ -468,12 +468,14 @@ h5{
 header{
     padding:2.8rem 3rem;
     box-sizing:border-box;
-    .btn_sch{
-        display:inline-block;
-        width:3.4rem;
-        height:3.4rem;
-        padding:0;
-        margin-left:15rem;
+    .btn{
+        &--sch{
+            display:inline-block;
+            width:3.4rem;
+            height:3.4rem;
+            padding:0;
+            margin-left:30rem;
+        }
     }
 }
 footer{

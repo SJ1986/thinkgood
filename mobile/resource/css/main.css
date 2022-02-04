@@ -693,12 +693,12 @@ header {
           box-sizing: border-box;
 }
 
-header .btn_sch {
+header .btn--sch {
   display: inline-block;
   width: 3.4rem;
   height: 3.4rem;
   padding: 0;
-  margin-left: 15rem;
+  margin-left: 30rem;
 }
 
 footer .footer__nav {
