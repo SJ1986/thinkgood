@@ -294,8 +294,16 @@
   margin-left: 2rem !important;
 }
 
+.mr_20 {
+  margin-right: 2rem;
+}
+
 .mt_25 {
   margin-top: 2.5rem;
+}
+
+.mr_25 {
+  margin-right: 2.5rem ;
 }
 
 .mt_30 {
