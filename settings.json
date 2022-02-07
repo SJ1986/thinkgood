@@ -7,7 +7,7 @@
         {
             "format": "expanded",
             "extensionName": ".css",
-            "savePath": "./mobile/resource/css"
+            "savePath": "./resource/css"
         },
     ],
     "liveServer.settings.donotShowInfoMsg": true,
