@@ -2711,6 +2711,35 @@ ul.lists.num li:before {
   border-left: 1px solid #e5e7ee;
 }
 
+.content__core.lab .img-wrap {
+  position: relative;
+}
+
+.content__core.lab .img-wrap.hover:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.342);
+  content: "";
+}
+
+.content__core.lab .img-wrap.hover > button {
+  display: block;
+}
+
+.content__core.lab .img-wrap > button {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: transparent;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
 .content__core.contest .lnb .tit {
   height: auto;
   padding-bottom: 2rem;
@@ -6957,5 +6986,5 @@ ul.lists.num li:before {
 }
 
 .onlyConfirm .modal-content {
-  min-height: 27rem;
+  min-height: 2rem;
 }

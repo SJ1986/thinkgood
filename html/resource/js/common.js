@@ -3,6 +3,11 @@
 $(function () {
     uploadFile();
     
+    //hoverFn
+    $('.hoverImg').hover(function(){
+        $(this).toggleClass('hover');
+    })
+    
     $("input[type='text'], textarea").on('input', function(){
         if($(this).val() == ''){
             $(this).removeClass('fill');
