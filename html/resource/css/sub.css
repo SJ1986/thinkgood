@@ -303,7 +303,7 @@
 }
 
 .mr_25 {
-  margin-right: 2.5rem ;
+  margin-right: 2.5rem;
 }
 
 .mt_30 {
@@ -6536,9 +6536,6 @@ ul.lists.num li:before {
 .transCardWrap .items.rows > * + * {
   border-left: 1px solid #e5e7ee;
 }
-.transCardWrap .items.rows > * > .input-group{
-  height:100%;
-}
 
 .transCardWrap .items.rows.full {
   grid-template-columns: 100%;
@@ -6796,16 +6793,6 @@ ul.lists.num li:before {
   padding-left: 3rem;
 }
 
-.grid-block{
-  display:block;
-  width:100%;
-}
-
-.grid-block--c2r1{
-  padding-bottom:1rem;
-  border-bottom:1px solid #e5e7ee;
-}
-
 .transCardWrap.w1312221 .transHead {
   grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
   -ms-grid-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
@@ -6971,27 +6958,4 @@ ul.lists.num li:before {
 
 .onlyConfirm .modal-content {
   min-height: 27rem;
-}
-
-.content .waveSpan {
-  font-size: 14px;
-  font-weight: 500;
-  color: #444;
-}
-
-.customDate .datetimepicker-input {
-  height:100%;
-  border-right: none;
-  border:1px solid #e5e7ee;
-  font-size:14px;
-}
-
-.customDate .input-group-append {
-  border-left: none;
-}
-
-.customDate .input-group-text {
-  background-color: #fff;
-  border-radius: 4px;
-  border:1px solid #e5e7ee;
 }
