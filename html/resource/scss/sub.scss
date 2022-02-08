@@ -4,7 +4,7 @@
     &__inner{
         @extend %standard-width;
         margin: 0 auto;
-        margin-top: 20px;
+        margin-top: 2rem;
         &.sub{
             margin-bottom: 12rem;
             >h1{
@@ -57,19 +57,19 @@
                                 }
                             }
                             &-prev{
-                                left: 20px;
+                                left: 2rem;
                                 background-image: url(../image/common/icon/icon__slidePrev.png);
                             }
                             &-next{
-                                right: 20px;
+                                right: 2rem;
                                 background-image: url(../image/common/icon/icon__slideNext.png);
                             }
                         }
                         &-pagination{
-                            bottom: 20px;
+                            bottom: 2rem;
                             &-bullet{
-                                width:14px;
-                                height: 14px;
+                                width:1.4rem;
+                                height: 1.4rem;
                                 background: #ffffff;
                             }
                         }
@@ -223,7 +223,7 @@
                         padding:3rem;
                         background-color:#fff;
                         box-sizing:border-box;
-                        box-shadow:1px 1px 20px 0px rgba(0, 0, 0, 0.04);
+                        box-shadow:1px 1px 2rem 0px rgba(0, 0, 0, 0.04);
                         a{
                             border-radius:3px;
                             &:hover{
@@ -233,6 +233,103 @@
                     }
                     div[class^='swiper-button']{
                         top:60%;
+                    }
+                }
+                &__img{
+                    width:70.3rem;
+                    >img{
+                        width:auto;
+                        @include mobile-l{
+                            width:100%;
+                        }
+                        @include laptop{
+                            width:auto;
+                        }
+                    }
+                    &.hoverImg{
+                        &.hover{
+                            &:before{
+                                position:absolute;
+                                top:0;
+                                left:0;
+                                width:100%;
+                                height:100%;
+                                background-color:rgba(0, 0, 0, 0.288);
+                                content:""
+                            }
+                            button{
+                                display:block;
+                                background-color:transparent;
+                            }
+                            >img{
+                                filter:brightness(0.5);
+                            }
+                        }
+                        button{
+                            display:none;
+                            @include position-center;
+                            z-index:2;
+                        }
+                    }           
+                }
+                &__info{
+                    margin:3rem;
+                    >dl{
+                        *{
+                            font-size:1.8rem;
+                        }
+                        dt{
+                            width:15rem;
+                            margin-bottom:4rem;
+                            &:nth-child(n+10){
+                                margin-bottom:0;
+                            }
+                        }
+                        dd{
+                            width:calc(100% - 20rem);
+                            margin-bottom:4rem;
+                        }
+                    }
+                }
+                &-section{
+                    &--white{
+                        > div{
+                            &:before{
+                                display:none;
+                            }
+                        }
+                    }
+                    &--gray{
+                        position:relative;
+                        @include mobile-l{
+                            padding:6rem 3rem;
+                        }
+                        @include wideDesk{
+                            padding:6rem 0;
+                        }
+                        &:before{
+                            position:absolute;
+                            top:0;
+                            left:-100%;
+                            width:300%;
+                            height:100%;
+                            background-color:#f8f8fa;
+                            z-index:-1;
+                            content:""
+                        }
+                    }
+                }
+                &__title{
+                    position:relative;
+                    font-size:3.8rem;
+                    line-height:1.2em;
+                    color:#000;
+                    .count{
+                        position:absolute;
+                        bottom:0;
+                        right:0;
+                        font-size:16px;
+                        color:#747478;
                     }
                 }
             }
@@ -748,11 +845,11 @@
     &-view{
         .view{
             &-header{
-                padding:40px;
+                padding:4rem;
                 background: #f8f8fa;
             }
             &-type{
-                margin-bottom: 20px;
+                margin-bottom: 2rem;
                 font-size:1.8rem;
                 font-weight: $font-weight__m;
             }
@@ -761,10 +858,10 @@
                 font-weight: $font-weight__rm;
             }
             &-info{
-                margin: 0 -15px;
+                margin: 0 -1.5rem;
                 >*{
                     position: relative;
-                    padding:0 15px;
+                    padding:0 1.5rem;
                     font-size: 1.7rem;
                     color: $color-fontgray;
                     &+*{
@@ -774,7 +871,7 @@
                             top: 2px;
                             left: 0;
                             width:1px;
-                            height: 15px;
+                            height: 1.5rem;
                             background: $color-fontgray;
                             content:""
                         }
@@ -783,37 +880,37 @@
                 }
             }
             &-link{
-                padding:20px 40px;
+                padding:2rem 4rem;
                 border-bottom: 1px solid #e5e7ee;
                 >*{
                     font-size: 1.8rem;
                     font-weight: $font-weight__m;
                 }
                 .title{
-                    margin-right: 30px;
+                    margin-right: 3rem;
                 }
                 a{
                     font-size: 1.8rem;
                     &+a{
-                        margin-top: 10px;
+                        margin-top: 1rem;
                     }
                 }
             }
             &-content{
-                padding: 40px;
+                padding: 4rem;
                 border-bottom: 1px solid #e5e7ee;
                 >*{
                     font-size:1.8rem;
                     line-height: 3.2rem;
                 }
                 &+.button-wrap{
-                    padding:40px 0;
+                    padding:4rem 0;
                 }
             }
             &-comment{
-                margin-top: 50px;
+                margin-top: 5rem;
                 .title{
-                    margin-bottom: 20px;
+                    margin-bottom: 2rem;
                     font-size: 2.6rem;
                     font-weight: $font-weight__b;
                     >*{
@@ -821,12 +918,12 @@
                     }
                 }
                 .editor{
-                    height: 200px;
-                    margin-bottom: 40px;
+                    height: 20rem;
+                    margin-bottom: 4rem;
                     border:1px solid #000000;
                     border-radius: 3px;
                     textarea{
-                        padding:20px;
+                        padding:2rem;
                         flex:1;
                         border: none;
                         resize: none;
@@ -851,7 +948,7 @@
     }
     &-bottom{
         position: relative;
-        height: 50px;
+        height: 5rem;
         .button{
             &-wrap{
                 top:0;
@@ -873,7 +970,7 @@
             &-wrap{
                 .select{
                     width: 160px;
-                    height: 40px;
+                    height: 4rem;
                     border:1px solid #000000;
                     border-radius: 3px;
                     font-size: 1.6rem;
@@ -922,7 +1019,7 @@
                 }
             }
             &-input{
-                height: 40px;
+                height: 4rem;
                 border:1px solid #e5e7ee;
                 border-radius: 3px;
                 &::placeholder{
@@ -935,7 +1032,7 @@
             
         }
         .tit{
-            margin-bottom:20px;
+            margin-bottom:2rem;
             font: {
                 size:1.8rem;
                 weight:$font-weight__m;
@@ -944,7 +1041,7 @@
         }
         .editor{
             textarea{
-                padding: 20px; 
+                padding: 2rem; 
                 flex: 1; 
                 border: 1px solid #000000;
                 border-radius: 3px;
@@ -974,7 +1071,7 @@
 .comment{
     &-list{
         &__inner{
-            padding:20px 0;
+            padding:2rem 0;
             border-bottom: 1px solid #e5e7ee;
         }
         &__header{
@@ -992,7 +1089,7 @@
             }
         }
         &__body{
-            padding:20px 0;
+            padding:2rem 0;
             font-size:1.8rem;
             line-height: normal;
             
@@ -1000,23 +1097,23 @@
         .button-wrap{
             button{
                 height: 4rem;
-                padding:0 20px;
+                padding:0 2rem;
                 font-size:1.6rem;
                 font-weight: $font-weight__rm;
             }
         }
         .comment-answer{
-            padding:20px 0;
-            // padding-left: 20px;
+            padding:2rem 0;
+            // padding-left: 2rem;
             border-bottom: 1px solid #e5e7ee;
             .badge{
-                margin-right: 20px;
+                margin-right: 2rem;
             }
         }
     }
     &-box{
-        margin: 20px 0 -20px 0;
-        padding:20px;
+        margin: 2rem 0 -2rem 0;
+        padding:2rem;
         background: #f8f8fa;
         border-top:1px solid #e5e7ee;
         .editor{
@@ -1052,7 +1149,7 @@
         align-items: flex-end;
         .select{
             width:153px;
-            height:50px;
+            height:5rem;
             font-size:1.8rem;
             border:none;
             border-bottom: 1px solid #000000;
@@ -1086,7 +1183,7 @@
                 &__click{
                     position: absolute;
                     right: 0;
-                    width:50px;
+                    width:5rem;
                     height: 100%;
                     button{
                         background: #fff;
@@ -1100,7 +1197,7 @@
                 }
             }
             &-input{
-                width:calc(100% - 50px);
+                width:calc(100% - 5rem);
                 border:none;
             }
 
@@ -1349,14 +1446,14 @@
 
 /* 커뮤니티 :: talk 게시판 */ 
 .thinker{
-    margin-top: 40px;
+    margin-top: 4rem;
     ul{
         margin: -10px 0;
         li{
             @include display-flex;
             @include align-center;
             margin: 10px 0;
-            padding:10px 20px;
+            padding:10px 2rem;
             background: #ffffff;
             box-shadow: 5px 5px 11px rgba(0,0,0,0.15);
             &:nth-child(2){
@@ -1387,13 +1484,13 @@
                 @include d-flex;
                 width:4rem;
                 height: 3rem;
-                margin-right: 20px;
+                margin-right: 2rem;
                 background: $color-red;
                 color:#ffffff;
                 border-radius: 3px;
             }
             .name{
-                margin-right: 20px;
+                margin-right: 2rem;
                 font-weight: $font-weight__m;
             }
             .txt{
@@ -1513,7 +1610,7 @@
                     }
                     &:hover{
                         img{
-                            box-shadow: 13px 13px 20px rgba(31,31,49,0.26);
+                            box-shadow: 13px 13px 2rem rgba(31,31,49,0.26);
                         }
                         
                     }
@@ -1541,7 +1638,7 @@
                     }
                     &:hover{
                         img{
-                            box-shadow: 13px 13px 20px rgba(31,31,49,0.26);
+                            box-shadow: 13px 13px 2rem rgba(31,31,49,0.26);
                         }
                         
                     }
@@ -1693,7 +1790,7 @@
                 .badge{
                     &.intern{
                         display: inline-block;
-                        margin-left: 20px;
+                        margin-left: 2rem;
                         padding:7px;
                         font-size: 1.4rem;
                         background: #a59b99;
@@ -1779,13 +1876,13 @@
                     }
                 }
                 &-content{
-                    padding: 40px 0;
+                    padding: 4rem 0;
                     .content{
                         &-detail{
                             &__top{
                                 .img-wrap{
-                                    width: 512px;
-                                    margin-right: 70px;
+                                    width: 51.2rem;
+                                    margin-right: 7rem;
                                     img{
                                         width: 100%;
                                     }
@@ -1817,7 +1914,7 @@
                                     }
                                 }
                                 .info{
-                                    margin: -20px 0;
+                                    margin: -2rem 0;
                                     flex: auto;
                                     .button{
                                         &-wrap{
@@ -1828,23 +1925,23 @@
                                         }
                                     }
                                     >div{
-                                        padding: 20px 0;
+                                        padding: 2rem 0;
                                     }
                                     .tit, .txt{
                                         font-size: 1.8rem;
                                     }
                                     .tit{
-                                        margin-bottom: 20px;
+                                        margin-bottom: 2rem;
                                         font-weight: $font-weight__m;
                                         
                                     }
                                     .txt{
                                         ul{
-                                            margin: 0 -12px;
+                                            margin: 0 -1.2rem;
                                             li{
                                                 position: relative;
                                                 float: left;
-                                                padding: 0 12px;
+                                                padding: 0 1.2rem;
                                                 &+li{
                                                     &::before{
                                                         position: absolute;
@@ -1902,7 +1999,7 @@
     margin: -2.5px;
     button{
         @include d-flex;
-        width:45px;
+        width:4.5rem;
         height: 4.5rem;
         margin: 2.5px;
         padding:0;
@@ -1990,7 +2087,7 @@
 
 .thinkgood-coach{
     &__inner{
-        padding:40px;
+        padding:4rem;
         border:1px solid $color-red;
         border-radius: 3px;
         .font-xs{
@@ -2010,7 +2107,7 @@
     color:$color-fontgray
 }
 .border-box{
-    padding:40px;
+    padding:4rem;
     background:#f8f8fa;
     border:1px solid #e5e7ee;
     border-radius: 3px;;
@@ -2052,7 +2149,7 @@
                     &::before{
                         position: absolute;
                         top: -57px;
-                        left:-40px;
+                        left:-4rem;
                         width: calc(100% + 80px);
                         height: calc(100% + 67px);
                         background: #ffffff;
@@ -3292,9 +3389,6 @@
                 -ms-grid-rows:4rem 6rem 6rem 6rem 6rem 6rem;
                 > div{
                     position:relative;
-                    &.hasEvent{
-
-                    }
                     > a{
                         display: none;
                     }
@@ -3892,15 +3986,24 @@
                     width:29.6rem;
                 }
             }
-            &.guide{
-                &>a{
-                    
-                }
-            }
         }
     }
 }
-
+.link{
+    &-underline{
+        padding-bottom:5px;
+        border-bottom:1px solid #000;
+    }
+}
+.box{
+    &White{
+        background-color:#fff;
+        border:1px solid #e5e7ee;
+        font-size:1.7rem;
+        line-height:3.2rem;
+        color:#747478;
+    }
+}
 
 // modal
 .onlyConfirm{

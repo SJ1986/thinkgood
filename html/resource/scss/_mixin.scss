@@ -7,7 +7,7 @@ $mobile-m: 540px;
 $mobile-l: 720px;
 $labtop: 1024px;
 $desktop: 1440px;
-
+$wideDesk: 1600px;
 $height-l:936px;
  
  
@@ -57,6 +57,11 @@ $height-l:936px;
 
 @mixin laptop {
     @media (min-width: #{$laptop}) {
+      @content;
+    }
+  }
+@mixin wideDesk {
+    @media (min-width: #{$wideDesk}) {
       @content;
     }
   }

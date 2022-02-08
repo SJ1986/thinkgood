@@ -222,6 +222,10 @@
   color: #2024dc !important;
 }
 
+.color-cherryRed {
+  color: #2024dc !important;
+}
+
 .font-family__sn {
   font-family: "SeoulNamsan";
 }
@@ -294,8 +298,16 @@
   margin-left: 2rem !important;
 }
 
+.mr_20 {
+  margin-right: 2rem;
+}
+
 .mt_25 {
   margin-top: 2.5rem;
+}
+
+.mr_25 {
+  margin-right: 2.5rem;
 }
 
 .mt_30 {
@@ -344,6 +356,10 @@
 
 .mt_80 {
   margin-top: 8rem;
+}
+
+.ml_80 {
+  margin-left: 8rem;
 }
 
 .mt_90 {
@@ -444,6 +460,11 @@
 .py_5 {
   padding-top: 5rem;
   padding-bottom: 5rem;
+}
+
+.py_6 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 
 .py_9 {
@@ -561,7 +582,6 @@
 }
 
 .header__inner .rooftop__inner, .header__inner .gnb__inner, .footer__inner > div > div, .footer__inner .site-menu__inner {
-  width: 160rem;
   max-width: 160rem;
 }
 
@@ -689,6 +709,16 @@ p {
   align-items: center;
   height: 100%;
   border-right: 1px solid #e5e7ee;
+}
+
+.header__inner .rooftop__inner > div .mailing button.btn-mailing img {
+  width: 2.8rem;
+  height: 2.4rem;
+}
+
+.header__inner .rooftop__inner > div .search button.btn-search img {
+  width: 2.4rem;
+  height: 2.4rem;
 }
 
 .header__inner .rooftop .user-join ul li {
@@ -2330,6 +2360,21 @@ ul.lists.num li:before {
   white-space: pre-line;
 }
 
+@media screen and (max-width: 1440px) {
+  html {
+    font-size: 52.5%;
+  }
+  .header__inner .gnb .notice__inner {
+    width: 47.5rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 42.5%;
+  }
+}
+
 .icon {
   display: block;
   width: 1.5rem;
@@ -2610,5 +2655,5 @@ ul.lists.num li:before {
 
 .same-m button {
   width: 17.3rem;
-  padding: 0;
+  padding: 1px;
 }

@@ -49,6 +49,7 @@ $color-lightgray : #dddddd;
 $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
+$color-cherryRed : #f7592a;
 
 .float{
     &No{
@@ -119,32 +120,37 @@ $color-blue : #2024dc;
 
 
 
-.color-red {
-    color: $color-red !important;
-}
-.color-lightpink {
-    color: $color-lightpink !important;
-}
-.color-deeppink {
-    color: $color-deeppink !important;
-}
-.color-black {
-    color: #000 !important;
-}
-.color-fontgray {
-    color: $color-fontgray;
-}
-.color-lightgray {
-    color: $color-lightgray;
-}
-.color-gray {
-    color: $color-gray;
-}
-.color-white {
-    color: #fff !important;
-}
-.color-blue {
-    color: $color-blue !important;
+.color{
+    &-red {
+        color: $color-red !important;
+    }
+    &-lightpink {
+        color: $color-lightpink !important;
+    }
+    &-deeppink {
+        color: $color-deeppink !important;
+    }
+    &-black {
+        color: #000 !important;
+    }
+    &-fontgray {
+        color: $color-fontgray;
+    }
+    &-lightgray {
+        color: $color-lightgray;
+    }
+    &-gray {
+        color: $color-gray;
+    }
+    &-white {
+        color: #fff !important;
+    }
+    &-blue {
+        color: $color-blue !important;
+    }
+    &-cherryRed{
+        color: $color-blue !important;
+    }
 }
 
 $bg-gray : #eaedf2;
@@ -265,6 +271,9 @@ $font-weight__b : 600;
         &5{
             padding-top: 5rem; padding-bottom: 5rem;
         }
+        &6{
+            padding-top: 6rem; padding-bottom: 6rem;
+        }
         &9{
             padding-top: 9rem; padding-bottom: 9rem;
         }
@@ -372,7 +381,7 @@ $font-size__inherit : inherit;
 
 
 %standard-width { 
-    width: 160rem; 
+    //width: 160rem; 
     max-width: 160rem; 
 }
 
@@ -476,6 +485,30 @@ p{
                     @include align-center;
                     height:100%;
                     border-right:1px solid #e5e7ee;
+                    .mailing{
+                        button{
+                            &.btn{
+                                &-mailing{
+                                    img{
+                                        width:2.8rem;
+                                        height:2.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .search{
+                        button{
+                            &.btn{
+                                &-search{
+                                    img{
+                                        width:2.4rem;
+                                        height:2.4rem;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
             
@@ -536,41 +569,43 @@ p{
                             display: none;
                         }
                     }
-                    &.btn-search{
-                        &+.user-area__content{
-                            .search-right{
-                                >div{
-                                    margin: 0;
-                                    height: 50px;
-                                }
-                                .select{
-                                    width: 132px;
-                                    border-bottom:2px solid #000000;
-                                    font-size:1.8rem;
-                                    line-height: 100%;
-                                    background: icon(arrow-fill__bottom)no-repeat right 10px center;
-                                    option{
+                    &.btn{
+                        &-search{
+                            &+.user-area__content{
+                                .search-right{
+                                    >div{
+                                        margin: 0;
+                                        height: 50px;
+                                    }
+                                    .select{
+                                        width: 132px;
+                                        border-bottom:2px solid #000000;
                                         font-size:1.8rem;
+                                        line-height: 100%;
+                                        background: icon(arrow-fill__bottom)no-repeat right 10px center;
+                                        option{
+                                            font-size:1.8rem;
+                                        }
+                                    }
+                                    .form-search{
+                                        height: 50px;
+                                        border-bottom-width: 2px;
+                                        input{
+                                            height: 100%;
+                                            font-size:1.8rem;
+                                        }
                                     }
                                 }
-                                .form-search{
-                                    height: 50px;
-                                    border-bottom-width: 2px;
-                                    input{
-                                        height: 100%;
-                                        font-size:1.8rem;
+                                ul{
+                                    li{
+                                        a{
+                                            font-size: 1.7rem;
+                                            line-height: 3.2rem;
+                                        }
                                     }
                                 }
                             }
-                            ul{
-                                li{
-                                    a{
-                                        font-size: 1.7rem;
-                                        line-height: 3.2rem;
-                                    }
-                                }
-                            }
-                        }
+                        }   
                     }
                 }
                 &__content{
@@ -1938,5 +1973,28 @@ ul{
                 white-space:pre-line;
             }
         }
+    }
+}
+
+@media screen and (max-width:1440px){
+    html{
+        font-size:52.5%;
+    }
+    .header{
+        &__inner{
+            .gnb{
+                .notice{
+                    &__inner{
+                        width:47.5rem;
+                    }
+                }           
+            }
+        }
+    }
+}
+
+@media screen and (max-width:1200px){
+    html{
+        font-size:42.5%;
     }
 }
