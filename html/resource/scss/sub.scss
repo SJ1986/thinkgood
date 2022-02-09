@@ -237,12 +237,13 @@
                 }
                 &__img{
                     width:70.3rem;
+                    margin-left:3rem;
                     >img{
                         width:auto;
                         @include mobile-l{
                             width:100%;
                         }
-                        @include laptop{
+                        @include wideDesk{
                             width:auto;
                         }
                     }
@@ -273,7 +274,8 @@
                     }           
                 }
                 &__info{
-                    margin:3rem;
+                    width:calc(100% - 73.3rem);
+                    margin:6rem 0 0 7rem;
                     >dl{
                         *{
                             font-size:1.8rem;
@@ -289,6 +291,18 @@
                             width:calc(100% - 20rem);
                             margin-bottom:4rem;
                         }
+                    }
+                    >q{
+                        display:block;
+                        font-size:2rem;
+                        font-weight:$font-weight__m;
+                        color:#000;
+                    }
+                    >em{
+                        display:block;
+                        font-size:1.8rem;
+                        color:#747478;
+                        line-height:1.5em;
                     }
                 }
                 &-section{
@@ -324,6 +338,10 @@
                     font-size:3.8rem;
                     line-height:1.2em;
                     color:#000;
+                    span{
+                        display:block;
+                        font-size:18px;
+                    }
                     .count{
                         position:absolute;
                         bottom:0;
@@ -331,6 +349,10 @@
                         font-size:16px;
                         color:#747478;
                     }
+                }
+                &__name{
+                    font-size:2.4rem;
+                    font-weight:$font-weight__m;
                 }
             }
             div[class^="lab_"]{
@@ -4002,6 +4024,11 @@
         font-size:1.7rem;
         line-height:3.2rem;
         color:#747478;
+        .gallery{
+            &__img{
+                margin-left:0 !important;
+            }
+        }
     }
 }
 
@@ -4023,6 +4050,69 @@
         }
         &-content{
             min-height:2rem;
+        }
+    }
+}
+.modal{
+    &-content{
+        width:100%;
+    }
+    &-dialog{
+        &--large{
+            width:100rem;
+            max-width:100rem;
+        }
+        &--gallery{
+            .modal{
+                &-title{
+                    position:initial;
+                    top:auto;
+                    left:auto;
+                    transform:none;
+                    .underTxt{
+                        display:block;
+                        margin-top:2rem;
+                        text-align:left;
+                    }
+                }
+                &-body{
+                    > img{
+                        width:100%;
+                    }
+                    strong{
+                        display:block;
+                        font-size:2.2rem;
+                        font-weight:$font-weight__m;
+                    }
+                    p{
+                        font-size:1.8rem;
+                        line-height:1.7em;
+                    }
+                    .grayBox{
+                        >p{
+                            font-size:1.7rem;
+                            line-height:1.7em;
+                            color:#747478;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-caption{
+        @include d-flex;
+        @include justify-center;
+        @include align-center;
+        &--l{
+            width:10rem;
+            height:10rem;
+        }
+        &--circle{
+            border-radius:100%;
+        }
+        &--black{
+            background-color:#000;
+            color:#fff;
         }
     }
 }

@@ -1,5 +1,5 @@
-@import "./svg";
-@import "./mixin";
+@import "svg";
+@import "mixin";
 // Break Point
 // $mobile-s : 480px;
 // $mobile-m : 720px;
@@ -50,6 +50,10 @@ $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
 $color-cherryRed : #f7592a;
+
+.row{
+    margin:0;
+}
 
 .float{
     &No{
@@ -149,7 +153,7 @@ $color-cherryRed : #f7592a;
         color: $color-blue !important;
     }
     &-cherryRed{
-        color: $color-blue !important;
+        color: $color-cherryRed !important;
     }
 }
 
@@ -390,9 +394,9 @@ html {
     font-size: 62.5%; //1em = 10px로 설정
     font-weight: $font-weight__r;
     letter-spacing: -0.25px;
-    @include height-l {
-        font-size: 52.5%;
-    }
+    // @include height-l {
+    //     font-size: 52.5%;
+    // }
 }
 
 p{
@@ -1121,7 +1125,7 @@ p{
     }
     &-content{
         border:none;
-        width: auto;
+        width: 100%;
         min-width: 48rem;
         height: 100%;
         margin: 0 auto;
@@ -1174,7 +1178,8 @@ p{
         }
     }
     &-dialog{
-        max-width: 52%;
+        // max-width: 52%;
+        max-width: 100%;
         height: auto;
         margin:0 auto;
         // padding-top: 17.8rem;

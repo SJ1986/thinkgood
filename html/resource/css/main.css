@@ -105,6 +105,10 @@
   background-image: url("data:image/svg+xml;charset=utf8, ");
 }
 
+.row {
+  margin: 0;
+}
+
 .floatNo {
   float: none !important;
 }
@@ -223,7 +227,7 @@
 }
 
 .color-cherryRed {
-  color: #2024dc !important;
+  color: #f7592a !important;
 }
 
 .font-family__sn {
@@ -590,12 +594,6 @@ html {
   font-size: 62.5%;
   font-weight: 300;
   letter-spacing: -0.25px;
-}
-
-@media (max-height: 936px) {
-  html {
-    font-size: 52.5%;
-  }
 }
 
 p {
@@ -1468,7 +1466,7 @@ p {
 
 .modal-content {
   border: none;
-  width: auto;
+  width: 100%;
   min-width: 48rem;
   height: 100%;
   margin: 0 auto;
@@ -1532,7 +1530,7 @@ p {
 }
 
 .modal-dialog {
-  max-width: 52%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
 }
