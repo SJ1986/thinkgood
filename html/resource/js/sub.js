@@ -91,4 +91,11 @@ $(function () {
 		},
 	})
 
+	//campus intro masonry
+	$('.campus-masorny').masonry({
+		// options
+		itemSelector: '.grid-item',
+		columnWidth: 200
+	});
+
 })

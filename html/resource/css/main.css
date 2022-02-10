@@ -342,6 +342,14 @@
   margin-left: 4.5rem;
 }
 
+.ml_50 {
+  margin-left: 5rem;
+}
+
+.ml_60 {
+  margin-left: 6rem;
+}
+
 .mt_50 {
   margin-top: 5rem;
 }
@@ -416,6 +424,10 @@
   padding: 5rem;
 }
 
+.pd_6 {
+  padding: 6rem;
+}
+
 .px_1 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -439,6 +451,11 @@
 .px_5 {
   padding-left: 5rem;
   padding-right: 5rem;
+}
+
+.px_6 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
 .py_1 {
@@ -641,6 +658,12 @@ h1 .caption {
 
 h2 {
   font-size: 3rem;
+}
+
+h2 .caption {
+  display: block;
+  font-size: 1.7rem;
+  color: #747478;
 }
 
 h3 {
@@ -1720,6 +1743,7 @@ p {
 .icon.plus {
   width: 1.6rem;
   height: 1.6rem;
+  margin: 0 auto;
   background: url(../image/common/icon/icon-plus.png);
   background-size: contain;
 }
@@ -1780,6 +1804,21 @@ ul.lists.num li {
 ul.lists.num li:before {
   counter-increment: num;
   content: counter(num) ". ";
+}
+
+.ul-lists > li {
+  position: relative;
+}
+
+.ul-lists--bar > li {
+  padding-left: 1.5rem;
+}
+
+.ul-lists--bar > li:before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "-";
 }
 
 /* checkbox */

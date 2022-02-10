@@ -209,6 +209,8 @@ $font-weight__b : 600;
 .ml_40{margin-left: 4rem;}
 .mt_45{margin-top: 4.5rem;}
 .ml_45{margin-left: 4.5rem;}
+.ml_50{margin-left: 5rem;}
+.ml_60{margin-left: 6rem;}
 .mt_50{margin-top: 5rem;}
 .mb_40{margin-bottom: 4rem;}
 .mb_50{margin-bottom: 5rem !important;}
@@ -241,6 +243,9 @@ $font-weight__b : 600;
         &5{
             padding:5rem;
         }
+        &6{
+            padding:6rem;
+        }
     }
     &x_{
         &1{
@@ -257,6 +262,9 @@ $font-weight__b : 600;
         }
         &5{
             padding-left: 5rem; padding-right: 5rem;
+        }
+        &6{
+            padding-left: 6rem; padding-right: 6rem;
         }
     }
     &y_{
@@ -439,6 +447,11 @@ h1{
 }
 h2{
     font-size: 3rem;
+    .caption{
+        display:block;
+        font-size:1.7rem;
+        color:#747478;
+    }
 }
 h3{
     font-size: 2.6rem;
@@ -1357,6 +1370,7 @@ p{
     &.plus{
         width:1.6rem;
         height: 1.6rem;
+        margin:0 auto;
         background: url(../image/common/icon/icon-plus.png);
         background-size:contain;
     }
@@ -1419,6 +1433,26 @@ ul{
                 &:before{
                     counter-increment: num;
                     content:counter(num) '. ';
+                }
+            }
+        }
+    }
+}
+
+//ul-lists
+.ul{
+    &-lists{
+        > li{
+            position:relative;
+        }
+        &--bar{
+            > li{
+                padding-left:1.5rem;
+                &:before{
+                    position:absolute;
+                    top:0;
+                    left:0;
+                    content:"-";
                 }
             }
         }
