@@ -67,6 +67,15 @@ $color-cherryRed : #f7592a;
     }
 }
 
+.bg{
+    &--white{
+        background-color:#fff;
+    }
+    &--gray{
+        background-color:#f8f8fa;
+    }
+}
+
 /* parts:width */
 .w{
     &_100{

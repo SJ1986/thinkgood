@@ -1,3 +1,4 @@
+'use strict';
 $(function () {
 	$(".lnb-list__dep2>li>a").click(function () {
 		$(this).toggleClass("on");
@@ -65,7 +66,6 @@ $(function () {
         // }
 		
 	});
-
 	var laborSwiper = new Swiper(".post4 .swiper-container", {
 		slidesPerView: 5,
 		spaceBetween: 25,
@@ -91,11 +91,15 @@ $(function () {
 		},
 	})
 
-	//campus intro masonry
-	$('.campus-masorny').masonry({
-		// options
-		itemSelector: '.grid-item',
-		columnWidth: 200
-	});
-
+	//campus intro items masonry
+	// var msnry = new Masonry( '.grid', {
+	// 	itemSelector: '.grid-item',
+	// 	columnWidth: '.grid-sizer',
+	// 	percentPosition: true,
+	// 	gutter:'.gutter-sizer',
+	// 	fitwidth: true
+	// });
+	// imagesLoaded( '.grid' ).on( 'progress', function() {
+	// 	msnry.layout();
+	// });
 })
