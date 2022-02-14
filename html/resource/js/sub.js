@@ -7,6 +7,10 @@ $(function () {
 
 	$("img[src$='img-contestbanner__noImg.png']").parent().parent().parent().addClass("noImg");
 
+	$('.link-more').click(function(){ //링크 더보기 버튼 클릭
+		$(this).find('i').toggleClass('on');
+	})
+
 	//thinkgoodPick
 	var thinkgoodPick = new Swiper(".thinkgoodPick-banner .swiper-container", {
 		slidesPerView: 2,
@@ -20,7 +24,6 @@ $(function () {
 			prevEl: ".swiper-button-prev",
 		},
 	});
-
 
 	//다른 공모전 보기 슬라이드
 	var otherContest = new Swiper(".other-contest__slide .swiper-container", {

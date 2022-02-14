@@ -121,6 +121,14 @@
   float: left !important;
 }
 
+.bg--white {
+  background-color: #fff;
+}
+
+.bg--gray {
+  background-color: #f8f8fa;
+}
+
 /* parts:width */
 .w_100 {
   width: 100% !important;
@@ -312,6 +320,10 @@
 
 .mr_25 {
   margin-right: 2.5rem;
+}
+
+.ml_30 {
+  margin-left: 3rem;
 }
 
 .mt_30 {
@@ -620,7 +632,6 @@ p {
 
 p.font-s {
   font-size: 1.8rem;
-  line-height: 3.4rem;
 }
 
 .font-l {
@@ -633,7 +644,6 @@ p.font-s {
 
 .font-s {
   font-size: 1.8rem !important;
-  line-height: 3.4rem;
 }
 
 .font-xs {
@@ -1744,8 +1754,12 @@ p {
   width: 1.6rem;
   height: 1.6rem;
   margin: 0 auto;
-  background: url(../image/common/icon/icon-plus.png);
+  background-image: url(../image/common/icon/icon-plus-big.svg);
   background-size: contain;
+}
+
+.icon.plus.on {
+  background-image: url(../image/common/icon/icon-minus-big.svg);
 }
 
 /* ul */

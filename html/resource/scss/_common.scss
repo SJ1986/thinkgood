@@ -211,6 +211,7 @@ $font-weight__b : 600;
 .mr_20{margin-right: 2rem;}
 .mt_25{margin-top: 2.5rem;}
 .mr_25{margin-right: 2.5rem;}
+.ml_30{margin-left: 3rem}
 .mt_30{margin-top: 3rem !important;}
 .mb_30{margin-bottom: 3rem;}
 .mt_35{margin-top: 3.5rem;}
@@ -421,7 +422,6 @@ p{
     color: #000000;
     &.font-s{
         font-size: 1.8rem;
-        line-height: 3.4rem;
     }
 }
 .font{
@@ -433,7 +433,6 @@ p{
     }
     &-s{
         font-size: 1.8rem !important;
-        line-height: 3.4rem;
     }
     &-xs{
         font-size: 1.6rem !important;
@@ -1380,8 +1379,11 @@ p{
         width:1.6rem;
         height: 1.6rem;
         margin:0 auto;
-        background: url(../image/common/icon/icon-plus.png);
+        background-image: url(../image/common/icon/icon-plus-big.svg);
         background-size:contain;
+        &.on{
+            background-image: url(../image/common/icon/icon-minus-big.svg);
+        }
     }
 }
 
