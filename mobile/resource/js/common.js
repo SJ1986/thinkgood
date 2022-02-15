@@ -58,6 +58,18 @@ $(function () {
     });
     $(".depth2").mouseout(function(){
         $(this).removeClass("on");
+    });
+
+    //sideMenu Fn
+    $('.btn--mobile').click(function(){
+        let $this = $(this);
+        let mobileIcon = $this.find('i');
+        mobileIcon.toggleClass('active');
+        if(mobileIcon.hasClass('active')){
+            $('.side-menu').addClass('active');
+        }else{
+            $('.side-menu').removeClass('active');
+        }
     })
    
     
