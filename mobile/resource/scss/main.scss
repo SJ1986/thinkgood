@@ -31,8 +31,11 @@
 article{
     padding:4rem 3rem 6rem;
     .top10{
+        .swiper-container{
+            padding-right:2rem;
+        }
         .swiper-slide{
-            width:94%;
+            width:98%;
             &:first-child{
                 em{
                     background-color:var(--red);
@@ -86,4 +89,61 @@ article{
             }
         }
     }
+    .campusSlide{
+        .swiper-container{
+            padding-right:3rem;
+        }
+        .swiper-slide{
+            width:36rem;
+            a{
+                display:block;
+                border:1px solid #e5e7ee;
+                border-radius:.5rem;
+                img{
+                    width:100%;
+                }
+                strong{
+                    display:block;
+                    margin-top:2rem;
+                    padding:0 2rem;
+                    font-size:2.4rem;
+                    font-weight:500;
+                    line-height:1.2em;
+                }
+                b{
+                    display:block;
+                    margin-top:1.5rem;
+                    margin-bottom:3rem;
+                    padding:0 2rem;
+                    font-size:2.2rem;
+                    color:#747478;
+                }
+            }
+        }
+    }
+}
+
+.post{
+    &-list{
+        li{
+            @include display-flex;
+            padding:2.5rem 0;
+            border-bottom:1px solid #e5e7ee;
+            a{
+                display:block;
+                width:100%;
+                margin-bottom:1.5rem;
+                font-size:2.4rem;
+                font-weight:400;
+            }
+            span{
+                @include d-flex;
+                font-size:2rem;
+                color:$color-fontgray;
+                i{
+                    margin-right:1rem;
+                }
+            }
+        }
+    }   
 }

@@ -15,5 +15,6 @@ function mainSlide(){
     });
     var campusSlide = new Swiper('.campusSlide .swiper-container', {
         slidesPerView:'auto',
+        spaceBetween:30,
     });
 }
