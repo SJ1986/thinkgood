@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="25.998" height="26.999" viewBox="0 0 25.998 26.999">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #747478;
+      }
+    </style>
+  </defs>
+  <g id="그룹_18875" data-name="그룹 18875" transform="translate(-79 -1702)">
+    <g id="구성_요소_9_100" data-name="구성 요소 9 – 100" transform="translate(94 1728.999) rotate(-90)">
+      <path id="합치기_12" data-name="합치기 12" class="cls-1" d="M8.469,10.81l0,0L-.029,2.019,2.1-.181,8.471,6.426,14.846-.181l2.125,2.2-8.494,8.8Z" transform="translate(0.029 0.181)"/>
+    </g>
+    <rect id="사각형_23995" data-name="사각형 23995" class="cls-1" width="22" height="3" transform="translate(79 1719)"/>
+    <rect id="사각형_23996" data-name="사각형 23996" class="cls-1" width="20" height="3" transform="translate(79 1722) rotate(-90)"/>
+  </g>
+</svg>

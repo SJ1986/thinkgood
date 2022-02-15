@@ -82,7 +82,6 @@ $(function () {
         //     delay: 3000,
         //     disableOnInteraction: false,
         // },
-
     });
 
     //winger-menu

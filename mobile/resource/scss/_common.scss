@@ -2,7 +2,7 @@
 @import "./mixin";
 // Break Point
 // $mobile-s : 480px;
-$mobile-m : 720px;
+$mobile-m : 540px;
 $laptop : 1020px;
 $desktop : 1440px;
 
@@ -45,10 +45,45 @@ $color-main : #020e1d;
 $color-gray : #78838c;
 $color-deepgray : #a6adb3;
 $color-fontgray : #747478;
-$color-lightgray : #dddddd;
+$color-lightGray : #f8f8fa;
 $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
+
+:root{
+    // color
+    --white:#fff;
+    --black:#000;
+    --red : #dd2525;
+    --deeppink : #c41a66;
+    --pink3:#de1673;
+    --lightpink : #fcedf4;
+    --main : #020e1d;
+    --gray : #78838c;
+    --deepgray : #a6adb3;
+    --fontgray : #747478;
+    --lightGray : #f8f8fa;
+    --sunday : #ff4a5c;
+    --purple : #22202e;
+    --blue : #2024dc;
+}
+
+.bg{
+    &--white{
+        background-color:var(--white);
+    }
+    &--gray{
+        background-color:var(--gray);
+    }
+    &--lightGray{
+        background-color:var(--lightGray);
+    }
+}
+
+.hidden{
+    position:absolute;
+    top:-9999px;left:-9999px;
+}
 
 .float{
     &No{
@@ -135,7 +170,7 @@ $color-blue : #2024dc;
     color: $color-fontgray;
 }
 .color-lightgray {
-    color: $color-lightgray;
+    color: $color-lightGray;
 }
 .color-gray {
     color: $color-gray;
@@ -329,6 +364,9 @@ $font-weight__b : 600;
         &5{
             padding-bottom:5rem;
         }
+        &6{
+            padding-bottom:6rem;
+        }
     }
     &l_{
         &0{
@@ -404,7 +442,18 @@ html {
     font-size: 62.5%; //1em = 10px로 설정
     font-weight: $font-weight__r;
     letter-spacing: -0.25px;
-    
+    @include mobile-xs{
+        font-size:26.5%;
+    }
+    @include mobile-sm{
+        font-size:42.5%;
+    }
+    @include mobile-m{
+        font-size:52.5%;
+    }
+    @include mobile-l{
+        font-size:62.5%;
+    }
 }
 
 p{
@@ -479,15 +528,27 @@ header{
             margin-left:30rem;
         }
     }
+    .header{
+        &--logo{
+            margin-bottom:0;
+            img{
+                width:18rem;
+                height:4.4rem;
+            }
+        }
+    }
 }
 .container{
-
+    padding:0;
+    margin:0;
+    max-width:100%;
 }
 footer{
     .footer{
         &__nav{
             @include d-flex;
             @include justify-between;
+            flex:1;
             padding:1.6rem 6rem;
             border-top:1px solid #8c8c8c;
             border-bottom:1px solid #dddddd;
@@ -495,9 +556,6 @@ footer{
             a{
                 font-size:2rem;
                 color:#565656;
-                &+a{
-                    margin-left:7.7rem;
-                }
             }
         }
         &__snsLink{
@@ -519,15 +577,24 @@ footer{
     >h2{
         margin-top:4rem;
         text-align:center;
+        img{
+            width:18rem;
+            height:4.4rem;
+        }
     }
     address{
         margin-top:2rem;
         font-size:2rem;
-        line-height:1.5em;
         color:#565656;
         text-align:center;
         span{
             font-weight:500;
+        }
+        @include mobile-xs{
+            line-height:1.7em;
+        }
+        @include mobile-m{
+            line-height:2em;
         }
     }
 }
@@ -1450,6 +1517,50 @@ ul{
     
 }
 
+.tab{
+    &-wrap{
+        .tab{
+            width:100%;
+            height: 100%;
+            li{
+                @include d-flex;
+                width:100%;
+                font-size: 2.4rem;
+                color:$color-fontgray;
+                text-align: center;
+                border-bottom:.2rem solid #e5e7ee;
+                &+li{
+                    margin-left: -1px;
+                }
+                &.current{
+                    position:relative;
+                    color:$color-red;
+                    &:before{
+                        position:absolute;
+                        bottom:-.2rem;
+                        left:0;
+                        width:100%;
+                        height:.4rem;
+                        background-color:$color-red;
+                        content:""
+                    }
+                }
+            }
+            &-top{
+                width:100%;
+                height: 7rem;
+                text-align: right;
+            }
+        }
+        .tabcontent{
+            display: none;
+            &.current{
+                display: block;
+            }
+        }
+    }
+}
+
 /* pagination */
 .paging{
     margin-top: 4.5rem;
@@ -1510,7 +1621,6 @@ ul{
         }
     }
 }
-
 
 /* scrollbar */ 
 .book-list::-webkit-scrollbar { width: .4rem; }
@@ -1581,3 +1691,4 @@ ul{
         }
     }
 }
+
