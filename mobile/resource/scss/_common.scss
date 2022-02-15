@@ -408,7 +408,7 @@ html {
 }
 
 p{
-    font-size: 2rem;
+    font-size: 2.4rem;
     color: #000000;
     &.font-s{
         font-size: 1.8rem;
@@ -437,7 +437,7 @@ p{
     overflow:hidden;
 }
 h1{
-    font-size: 3.2rem;
+    font-size: 3.6rem;
     .caption{
         display:block;
         font-size:1.7rem;
@@ -445,16 +445,19 @@ h1{
     }
 }
 h2{
-    font-size: 3rem;
+    font-size: 3.4rem;
 }
 h3{
-    font-size: 2.6rem;
+    font-size: 3.2rem;
 }
 h4{
-    font-size: 2rem;
+    font-size: 3rem;
 }
 h5{
-    font-size: 1.8rem;
+    font-size: 2.8rem;
+}
+h6{
+    font-size: 2.6rem;
 }
 
 /* header */
@@ -466,6 +469,7 @@ h5{
 header{
     padding:2.8rem 3rem;
     box-sizing:border-box;
+    border-bottom:1px solid #707070;
     .btn{
         &--sch{
             display:inline-block;

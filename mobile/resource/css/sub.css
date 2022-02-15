@@ -540,7 +540,7 @@ html {
 }
 
 p {
-  font-size: 2rem;
+  font-size: 2.4rem;
   color: #000000;
 }
 
@@ -573,7 +573,7 @@ p.font-s {
 }
 
 h1 {
-  font-size: 3.2rem;
+  font-size: 3.6rem;
 }
 
 h1 .caption {
@@ -583,19 +583,23 @@ h1 .caption {
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 3.4rem;
 }
 
 h3 {
-  font-size: 2.6rem;
+  font-size: 3.2rem;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h5 {
-  font-size: 1.8rem;
+  font-size: 2.8rem;
+}
+
+h6 {
+  font-size: 2.6rem;
 }
 
 /* header */
@@ -608,6 +612,7 @@ header {
   padding: 2.8rem 3rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-bottom: 1px solid #707070;
 }
 
 header .btn--sch {
@@ -1840,4 +1845,8 @@ ul.lists.num li:before {
   html {
     font-size: 62.5%;
   }
+}
+
+.sub-title {
+  font-size: 4rem;
 }
