@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="26" height="24.05" viewBox="0 0 26 24.05">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <path id="패스_229" data-name="패스 229" class="cls-1" d="M20.455,4A7.131,7.131,0,0,0,15,7,7.131,7.131,0,0,0,9.545,4,6.545,6.545,0,0,0,3,10.545C3,16.886,10.421,22.951,13.8,25.6l0-.006a1.965,1.965,0,0,0,2.4,0l0,.006C19.579,22.951,27,16.886,27,10.545A6.545,6.545,0,0,0,20.455,4Z" transform="translate(-2 -3)"/>
+</svg>

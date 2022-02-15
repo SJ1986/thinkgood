@@ -1,0 +1,23 @@
+<svg id="돋보기" xmlns="http://www.w3.org/2000/svg" width="32.999" height="31" viewBox="0 0 32.999 31">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: none;
+      }
+
+      .cls-1 {
+        stroke: #000;
+        stroke-width: 3px;
+      }
+
+      .cls-2 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <rect id="사각형_23936" data-name="사각형 23936" width="12" height="3" transform="translate(24.514 20.394) rotate(45)"/>
+  <g id="타원_60" data-name="타원 60" class="cls-1">
+    <circle class="cls-2" cx="14" cy="14" r="14"/>
+    <circle class="cls-3" cx="14" cy="14" r="12.5"/>
+  </g>
+</svg>
