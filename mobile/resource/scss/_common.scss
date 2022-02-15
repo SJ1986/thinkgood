@@ -45,10 +45,45 @@ $color-main : #020e1d;
 $color-gray : #78838c;
 $color-deepgray : #a6adb3;
 $color-fontgray : #747478;
-$color-lightgray : #dddddd;
+$color-lightGray : #f8f8fa;
 $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
+
+:root{
+    // color
+    --white:#fff;
+    --black:#000;
+    --red : #dd2525;
+    --deeppink : #c41a66;
+    --pink3:#de1673;
+    --lightpink : #fcedf4;
+    --main : #020e1d;
+    --gray : #78838c;
+    --deepgray : #a6adb3;
+    --fontgray : #747478;
+    --lightGray : #f8f8fa;
+    --sunday : #ff4a5c;
+    --purple : #22202e;
+    --blue : #2024dc;
+}
+
+.bg{
+    &--white{
+        background-color:var(--white);
+    }
+    &--gray{
+        background-color:var(--gray);
+    }
+    &--lightGray{
+        background-color:var(--lightGray);
+    }
+}
+
+.hidden{
+    position:absolute;
+    top:-9999px;left:-9999px;
+}
 
 .float{
     &No{
@@ -135,7 +170,7 @@ $color-blue : #2024dc;
     color: $color-fontgray;
 }
 .color-lightgray {
-    color: $color-lightgray;
+    color: $color-lightGray;
 }
 .color-gray {
     color: $color-gray;
@@ -329,6 +364,9 @@ $font-weight__b : 600;
         &5{
             padding-bottom:5rem;
         }
+        &6{
+            padding-bottom:6rem;
+        }
     }
     &l_{
         &0{
@@ -501,7 +539,9 @@ header{
     }
 }
 .container{
-
+    padding:0;
+    margin:0;
+    max-width:100%;
 }
 footer{
     .footer{

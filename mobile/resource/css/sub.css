@@ -49,6 +49,41 @@
   background-size: contain;
 }
 
+:root {
+  --white:#fff;
+  --black:#000;
+  --red: #dd2525;
+  --deeppink: #c41a66;
+  --pink3:#de1673;
+  --lightpink: #fcedf4;
+  --main: #020e1d;
+  --gray: #78838c;
+  --deepgray: #a6adb3;
+  --fontgray: #747478;
+  --lightGray: #f8f8fa;
+  --sunday: #ff4a5c;
+  --purple: #22202e;
+  --blue: #2024dc;
+}
+
+.bg--white {
+  background-color: var(--white);
+}
+
+.bg--gray {
+  background-color: var(--gray);
+}
+
+.bg--lightGray {
+  background-color: var(--lightGray);
+}
+
+.hidden {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
 .floatNo {
   float: none !important;
 }
@@ -151,7 +186,7 @@
 }
 
 .color-lightgray {
-  color: #dddddd;
+  color: #f8f8fa;
 }
 
 .color-gray {
@@ -475,6 +510,10 @@
   padding-bottom: 5rem;
 }
 
+.pb_6 {
+  padding-bottom: 6rem;
+}
+
 .pl_0 {
   padding-left: 0 !important;
 }
@@ -661,6 +700,12 @@ header .header--logo {
 header .header--logo img {
   width: 18rem;
   height: 4.4rem;
+}
+
+.container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 footer .footer__nav {
