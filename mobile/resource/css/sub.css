@@ -17,6 +17,13 @@
   background-size: contain;
 }
 
+.icon-more {
+  width: 2.1rem;
+  height: 2.1rem;
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.998' height='20.998' viewBox='0 0 20.998 20.998'%3E%3Cpath d='M8.999 20.998v-9h-9v-3h9v-9h3v9h9v3h-9v9z'/%3E%3C/svg%3E%0A");
+  background-size: contain;
+}
+
 .icon-sns {
   width: 5.2rem;
   height: 5.2rem;
