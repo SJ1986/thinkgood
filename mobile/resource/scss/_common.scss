@@ -227,6 +227,7 @@ $font-weight__b : 600;
 .mt_25{margin-top: 2.5rem;}
 .mt_30{margin-top: 3rem !important;}
 .mb_30{margin-bottom: 3rem;}
+.ml_30{margin-left: 3rem;}
 .mt_35{margin-top: 3.5rem;}
 .mt_40{margin-top: 4rem !important;}
 .ml_40{margin-left: 4rem;}
@@ -240,7 +241,9 @@ $font-weight__b : 600;
 .ml_80{margin-left: 8rem;}
 .mt_90{margin-top: 9rem;}
 .mt_100{margin-top: 10rem;}
+.mb_100{margin-bottom: 10rem;}
 .mt_120{margin-top: 12rem;}
+.mb_120{margin-bottom: 12rem}
 .my_4{margin-top: 4rem; margin-bottom: 4rem;}
 .mx_2{margin-left: 2rem; margin-right: 2rem;}
 .pl_10{padding-left:10px;}
@@ -550,7 +553,7 @@ footer{
             @include justify-between;
             flex:1;
             padding:1.6rem 6rem;
-            border-top:1px solid #8c8c8c;
+            border-top:2px solid #8c8c8c;
             border-bottom:1px solid #dddddd;
             background-color:#f8f8fa;
             a{
