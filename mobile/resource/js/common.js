@@ -61,17 +61,50 @@ $(function () {
     });
 
     //sideMenu Fn
-    $('.btn--mobile').click(function(){
-        let $this = $(this);
-        let mobileIcon = $this.find('i');
-        mobileIcon.toggleClass('active');
-        if(mobileIcon.hasClass('active')){
-            $('.side-menu').addClass('active');
-        }else{
-            $('.side-menu').removeClass('active');
-        }
+    // $('.btn--sch, .btn--mobile').click(function(){
+    //     let $this = $(this);
+    //     let $dataId = $this.data('id');
+    //     let mobileIcon = $this.find('i');
+    //     let $contId = $('#' + $dataId);
+    //     mobileIcon.addClass('active');
+    //     $('.btn--mobile').addClass('off');
+    //     $('.btn--close').addClass('on');
+    //     if(mobileIcon.hasClass('active')){
+    //         $('.btn--close').attr('id', $dataId);
+    //     }
+    //     $($contId).addClass('active');
+    //     $('.btn#header__search').attr('title', '검색 닫힘');
+    //     $('.btn#header__mobile').attr('title', '모바일 메뉴 닫힘');
+    // }); 
+    // $('.btn--close').click(function(){
+    //     $(this).removeClass('on').attr('title', '');
+    //     $('.btn i').removeClass('active');
+    //     $('.btn--mobile').removeClass('off');
+    //     $('.side-sch, .side-menu').removeClass('active');
+    // })
+    $('.btn--sch, .btn--mobile').click(function(){
+        let $this = $(this),
+        $dataId = $this.data('id'),
+        $thisIcon = $this.children('i');
+
+        $('div[class*="side-"]').removeClass('active');
+        $thisIcon.addClass('on');
+        $('#' + $dataId).addClass('active');
+        $('.btn--close').attr('id', $dataId).addClass('on');
+        $('.btn--mobile').addClass('off');
+        
+        $('.btn#header__search').attr('title', '검색 닫힘');
+        $('.btn#header__mobile').attr('title', '모바일 메뉴 닫힘');
+        $('.btn--sch').hide();
+    }); 
+    $('.btn--close').click(function(){
+        $(this).attr('title', '');
+        $(this).attr('id', '').removeClass('on');
+        $('button[class*="btn--"] i').removeClass('on');
+        $('div[class*="side-"]').removeClass('active');
+        $('.btn--mobile').removeClass('off');
+        $('.btn--sch').show();
     })
-   
     
 
     //notice
@@ -243,6 +276,7 @@ $(function () {
     });
 
     acc_event('.acc_admit');  //아코디언 Object
+    acc_event('.acc_menu'); //mobile menu fn
 
 })
 
