@@ -237,6 +237,7 @@ $font-weight__b : 600;
 .mb_40{margin-bottom: 4rem;}
 .mb_50{margin-bottom: 5rem !important;}
 .mt_60{margin-top: 6rem;}
+.ml_70{margin-left: 7rem;}
 .mt_80{margin-top: 8rem;}
 .ml_80{margin-left: 8rem;}
 .mt_90{margin-top: 9rem;}
@@ -289,7 +290,7 @@ $font-weight__b : 600;
             padding-left: 6rem; padding-right: 6rem;
         }
         &7{
-            padding-left: 7rem; padding-right: 5rem;
+            padding-left: 7rem; padding-right: 7rem;
         }
     }
     &y_{
@@ -707,8 +708,6 @@ header{
                                 height:.3rem;
                                 background-color:#000;
                                 content:""
-                            }
-                            &:before{
                             }
                             &:after{
                                 transform:translate(-50%, -50%) rotate(90deg);
@@ -1261,19 +1260,11 @@ button{
             border:none !important;
         }
         &-darkgray{
-            width:10.7rem;
-            padding:0 !important;
             background: #474747;
             color:#ffffff;
             border: none !important;
         }
-        &-red{
-            color:#ffffff;
-            background: $color-red;
-            border: none !important;
-        }
         &-list{
-            width:10.7rem;
             background: #a59b99;
             color:#ffffff;
             border: none !important;
@@ -1287,10 +1278,22 @@ button{
             border: none !important;
         }
         &-black{
-            height: 4.5rem !important;
-            padding:0 20px !important;
             border-color:#000000 !important;
             color:#000000;
+        }
+        &-white{
+            background-color:#fff;
+            border-color:#ca1c1d !important;
+            color:#ca1c1d;
+        }
+        &-naver{
+            background-color:#26cc0a;
+        }
+        &-facebook{
+            background-color:#527bd3;
+        }
+        &-kakao{
+            background-color:#ffd900;
         }
     }
 }
@@ -1429,15 +1432,17 @@ ul{
                 clip:rect(0,0,0,0); 
                 border: 0;
                 &+label{
-                    display: inline-block; 
+                    @include d-flex;
+                    @include align-center;
                     position: relative; 
+                    height: 3.6rem;
                     margin-bottom: 0;
-                    padding-left: 3.3rem;
+                    padding-left: 4.6rem;
                     cursor: pointer; 
                     // -webkit-user-select: none; 
                     // -moz-user-select: none; 
                     // -ms-user-select: none;  
-                    font-size: 1.7rem;
+                    font-size: 2.4rem;
                     //color: #cccccc;
                     p, span{
                         font-size: 1.7rem;
@@ -1448,10 +1453,10 @@ ul{
                         /* 가짜 체크박스 */ 
                         content: ' '; 
                         display: inline-block; 
-                        width: 2.2rem; /* 체크박스의 너비를 지정 */ 
-                        height: 2.2rem; /* 체크박스의 높이를 지정 */ 
+                        width: 3.6rem; /* 체크박스의 너비를 지정 */ 
+                        height: 3.6rem; /* 체크박스의 높이를 지정 */ 
                         
-                        margin: -.3rem .8rem 0 0; 
+                        margin: 0; 
                         text-align: center;
                         vertical-align: middle; 
                         
@@ -1468,7 +1473,7 @@ ul{
                             content: '';
                             /* 체크표시 유니코드 사용 */ 
                             background: #fff url(../image/common/icon/icon-check.png)no-repeat center center; 
-                            background-size: 1.3rem 1rem;
+                            background-size: 2rem 1.5rem;
                             border-color: #000000;
                         }
                     }
@@ -1493,6 +1498,9 @@ ul{
             color:#747478;
             text-indent:2rem;
         }
+    }
+    &-row{
+        margin:0;
     }
 }
 
