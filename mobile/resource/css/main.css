@@ -1115,6 +1115,10 @@ header .header--logo img {
   margin-top: 1.5rem;
 }
 
+.side-sch input {
+  border: none;
+}
+
 .container {
   padding: 0;
   margin: 0;
@@ -1697,18 +1701,6 @@ button.btn-white {
   background-color: #fff;
   border-color: #ca1c1d !important;
   color: #ca1c1d;
-}
-
-button.btn-naver {
-  background-color: #26cc0a;
-}
-
-button.btn-facebook {
-  background-color: #527bd3;
-}
-
-button.btn-kakao {
-  background-color: #ffd900;
 }
 
 /* icon 아이콘 */
