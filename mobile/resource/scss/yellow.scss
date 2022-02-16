@@ -99,6 +99,18 @@
                 li{
                     padding:2rem 0;
                     border-bottom:2px solid #e5e7ee;
+                    &.answer{
+                        @include display-flex;
+                        >i{
+                            display: block; 
+                            width: 2.6rem; 
+                            height: 2.7rem; 
+                            margin-right: 2rem;
+                            background: url(../image/sub/iconRecomment.svg) no-repeat; 
+                            background-size: cover;
+                        }
+                        
+                    }
                 }
             }
             .part{
@@ -740,6 +752,33 @@
             }
         }
     }
+    &.top{
+        display: block;
+        margin-top: -6rem;
+        margin-bottom: 6rem;
+        .content{
+            font-weight: normal;
+            line-height:3.6rem;
+        }
+        .button-wrap{
+            button{
+                padding:0;
+                font: {
+                    size: 2.4rem;
+                    weight: 400;
+                }
+                color: #747478;
+                i{
+                    display: block;
+                    width: 1rem;
+                    height: 1.8rem;
+                    margin-left: 1.7rem;
+                    background: url(../image/sub/iconArrowRight.png);
+                    background-size: cover;
+                }
+            }
+        }
+    }
 }
 
 .modal{
@@ -835,6 +874,95 @@
             button{
                 height: 9rem;
                 font-size:2.6rem;
+            }
+        }
+    }
+}
+
+
+.thinkTalk{
+    &__inner{
+        .bg-gray{
+            background: #f8f8fa;
+            // p{
+            //     line-height: 4.5rem;
+            //     font : {
+            //         size: 3rem;
+            //         weight: $font-weight__b;
+            //     }
+            // }
+        }
+        >div{
+            padding:4rem 3rem;
+            p{
+                line-height: 3.6rem;
+            }
+        }
+        .thinker {
+            ul {
+                margin:1.5rem 0;
+                li {
+                    @include display-flex;
+                    @include align-center;
+                    padding:1.5rem 0;
+                    .num{
+                        @include d-flex;
+                        width: 5rem;
+                        height: 5rem;
+                        margin-right: 2rem;
+                        background: #dd2525;
+                        color:#ffffff;
+                        border-radius: .6rem;
+                        font-weight:500;
+                        flex: none;
+                    }
+                    .name{
+                        width: 8.55rem;
+                        flex: none;
+                        font-weight: 500
+                        
+                    }
+                    .txt{
+                        @include text-overflow;
+                        color: #747478;
+                        font-weight: 500;
+                        flex:1;
+                    }
+                    .count{
+                        @include d-flex;
+                        font-size: 2rem;
+                        color: #747478;
+                        flex:none;
+                        em{
+                            width: 3.2rem;
+                        }
+                    }
+                    i{
+                        &.view{
+                            display: block;
+                            width: 2.1rem;
+                            height: 1.4rem;
+                            margin-right: 1rem;
+                            background: icon(iconView)no-repeat center;
+                            background-size: contain;
+                        }
+                    }
+                    &:nth-child(2) .num {
+                        background-color: rgba(221, 37, 37, 0.8);
+                    }
+
+                    &:nth-child(3) .num {
+                        background-color: rgba(221, 37, 37, 0.6);
+                    }
+
+                    &:nth-child(4) .num {
+                        background-color: rgba(221, 37, 37, 0.4);
+                    }
+
+                    &:nth-child(5) .num {
+                        background-color: rgba(221, 37, 37, 0.2);
+                    }
+                }
             }
         }
     }

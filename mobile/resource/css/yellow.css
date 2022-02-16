@@ -759,6 +759,10 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 /* 게시판 */
 .board-list__inner ul li { padding: 2rem 0; border-bottom: 2px solid #e5e7ee; }
 
+.board-list__inner ul li.answer { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.board-list__inner ul li.answer > i { display: block; width: 2.6rem; height: 2.7rem; margin-right: 2rem; background: url(../image/sub/iconRecomment.svg) no-repeat; background-size: cover; }
+
 .board-list__inner .part { margin-bottom: 1.5rem; font-size: 2rem; font-weight: 500; }
 
 .board-list__inner .part span { color: #ca1c1d; font-weight: 500; }
@@ -996,6 +1000,14 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .layer__inner .button-wrap button { width: auto; height: 100%; padding: 0 3rem; background: none; border: none; }
 
+.layer.top { display: block; margin-top: -6rem; margin-bottom: 6rem; }
+
+.layer.top .content { font-weight: normal; line-height: 3.6rem; }
+
+.layer.top .button-wrap button { padding: 0; font-size: 2.4rem; font-weight: 400; color: #747478; }
+
+.layer.top .button-wrap button i { display: block; width: 1rem; height: 1.8rem; margin-left: 1.7rem; background: url(../image/sub/iconArrowRight.png); background-size: cover; }
+
 .modal-dialog { max-width: calc(100% - 6rem); }
 
 .modal-header { border-bottom: none; }
@@ -1043,3 +1055,33 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 .modal-footer .button-wrap { width: 100%; }
 
 .modal-footer .button-wrap button { height: 9rem; font-size: 2.6rem; }
+
+.thinkTalk__inner .bg-gray { background: #f8f8fa; }
+
+.thinkTalk__inner > div { padding: 4rem 3rem; }
+
+.thinkTalk__inner > div p { line-height: 3.6rem; }
+
+.thinkTalk__inner .thinker ul { margin: 1.5rem 0; }
+
+.thinkTalk__inner .thinker ul li { display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-align: center; -ms-flex-align: center; align-items: center; padding: 1.5rem 0; }
+
+.thinkTalk__inner .thinker ul li .num { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 5rem; height: 5rem; margin-right: 2rem; background: #dd2525; color: #ffffff; border-radius: .6rem; font-weight: 500; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+
+.thinkTalk__inner .thinker ul li .name { width: 8.55rem; -webkit-box-flex: 0; -ms-flex: none; flex: none; font-weight: 500; }
+
+.thinkTalk__inner .thinker ul li .txt { overflow: hidden; text-overflow: ellipsis; word-wrap: break-word; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; color: #747478; font-weight: 500; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.thinkTalk__inner .thinker ul li .count { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; font-size: 2rem; color: #747478; -webkit-box-flex: 0; -ms-flex: none; flex: none; }
+
+.thinkTalk__inner .thinker ul li .count em { width: 3.2rem; }
+
+.thinkTalk__inner .thinker ul li i.view { display: block; width: 2.1rem; height: 1.4rem; margin-right: 1rem; background: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.4' height='13.4'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23a1a1a1;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4px%7D%3C/style%3E%3C/defs%3E%3Cg id='그룹_18854' data-name='그룹 18854' transform='translate(-157.3 -592.3)'%3E%3Cg id='그룹_18829' data-name='그룹 18829' transform='translate(158 593)'%3E%3Cpath id='패스_227' data-name='패스 227' class='cls-1' d='M414.451 239.641c4.44 0 8.2-2.519 9.5-6-1.3-3.481-5.06-6-9.5-6s-8.2 2.519-9.5 6c1.3 3.481 5.059 6 9.5 6Z' transform='translate(-404.951 -227.641)'/%3E%3C/g%3E%3Cpath id='패스_228' data-name='패스 228' class='cls-1' d='M424.511 237.457a2.764 2.764 0 1 1-2.764-2.764 2.764 2.764 0 0 1 2.764 2.764Z' transform='translate(-254.248 361.543)'/%3E%3C/g%3E%3C/svg%3E") no-repeat center; background-size: contain; }
+
+.thinkTalk__inner .thinker ul li:nth-child(2) .num { background-color: rgba(221, 37, 37, 0.8); }
+
+.thinkTalk__inner .thinker ul li:nth-child(3) .num { background-color: rgba(221, 37, 37, 0.6); }
+
+.thinkTalk__inner .thinker ul li:nth-child(4) .num { background-color: rgba(221, 37, 37, 0.4); }
+
+.thinkTalk__inner .thinker ul li:nth-child(5) .num { background-color: rgba(221, 37, 37, 0.2); }
