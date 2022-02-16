@@ -60,21 +60,37 @@
                         <div class="content__core-right pt-0">
                             <div class="board-write">
                                 <div class="">
-                                    <p class="tit">분류</p>
+                                    <p class="tit">게시물 구분</p>
                                     <div class="form-wrap">
-                                        <select class="select">
-                                            <option value="0" selected="selected">분류선택</option>
-                                            <option value="1">제목</option>
-                                            <option value="2">내용</option>
+                                        <select class="select choiceOption">
+                                            <option value="normal" selected="selected">일반 게시물</option>
+                                            <option value="team">팀원 모집</option>
                                         </select>
                                     </div>
                                 </div>
+
+                                <div class="layer">
+                                    <div class="layer__inner d-flex">
+                                        <div>
+                                            <div class="title d-flex align-items-center"><i></i> 연관 공모전</div>
+                                            <div class="content">
+                                                공모전을 선택해주세요
+                                            </div>
+                                        </div>
+                                        <div class="button-wrap">
+                                            <button type="button" data-toggle="modal" data-target="#searchContest"><i class="icon finder_s m-auto" ></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="">
                                     <p class="tit essential">제목</p>
                                     <div class="form-wrap">
                                         <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="제목을 입력해 주세요" />
                                     </div>
                                 </div>
+
+                                
     
                                 <div class="">
                                     <p class="tit essential">내용</p>
@@ -121,6 +137,66 @@
                             </div>
                         </div>
                     </div>
+
+
+                    <!-- modal -->
+                    <div class="modal fade" id="searchContest" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered ">
+                            <div class="modal-content">
+                                <div class="modal-header d-flex justify-content-start">
+                                    <p class="modal-title">공모전/대외활동 검색하기</p>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="search-contest d-flex align-items-center">
+                                        <div class="form-wrap">
+                                            <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="검색어를 입력해 주세요">
+                                        </div>
+                                        <div class="button-wrap">
+                                            <button type="button"><i class="icon finder_s"></i></button>
+                                        </div>
+                                    </div>
+                                    <p class="ps mt_10">검색어 입력 후 검색 버튼을 클릭하시면 공모전 조회가 가능합니다.</p>
+
+                                    <!-- 검색 결과 -->
+                                    <div class="search-contest__list">
+                                        <div class="tit">
+                                            <div class="tit__inner">
+                                                검색된 공모전/대외활동 <span>(15)</span>
+                                            </div>
+                                        </div>
+                                        <ul>
+                                            <li><a href="javascript:void(0)">제 2회 용산전자랜드 <span class="keyword">메타버스</span> 크리에이터 경진대회</a></li>
+                                            <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
+                                        </ul>
+                                        <div class="board-bottom">
+                                            <div class="paging d-flex justify-content-center">
+                                                <div class="paging__inner d-flex">
+                                                    <a href="javascript:void(0)" class="first"><i class="icon arrow-first"></i></a>
+                                                    <a href="javascript:void(0)" class="prev"><i class="icon arrow-prev"></i></a>
+                                                    <a href="javascript:void(0)" class="on">1</a>
+                                                    <a href="javascript:void(0)">2</a>
+                                                    <a href="javascript:void(0)">3</a>
+                                                    <a href="javascript:void(0)">4</a>
+                                                    <a href="javascript:void(0)">5</a>
+                                                    <a href="javascript:void(0)" class="next"><i class="icon arrow-next"></i></a>
+                                                    <a href="javascript:void(0)" class="last"><i class="icon arrow-last"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //검색 결과 -->
+                                    
+                                </div>
+                                <div class="modal-footer d-flex justify-content-center">
+                                    <div class="button-wrap mt_60">
+                                        <button type="button" class="button-red" data-dismiss="modal">확인</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
 
@@ -164,5 +240,17 @@
 
 
 </body>
+
+<script>
+
+$('.choiceOption').change(function() {
+	var state = $('.choiceOption option:selected').val();
+	if ( state == 'team' ) {
+		$('.layer').show();
+	} else {
+		$('.layer').hide();
+	}
+});
+</script>
 
 </html>
