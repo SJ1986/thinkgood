@@ -1,5 +1,5 @@
 //svg icon
-@function icon($iconName, $color:ff0077, $border:000000){
+@function icon($iconName, $color:ff0077){
     $iconList: (
         finder:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33.999' viewBox='0 0 34 33.999'%3E%3Cg %3E%3Cpath d='m24.807 22.686 9.192 9.192L31.88 34l-9.193-9.193z'/%3E%3Cg style='stroke:%23000;stroke-width:3px;fill:none'%3E%3Ccircle cx='14' cy='14' r='14' style='stroke:none'/%3E%3Ccircle cx='14' cy='14' r='12.5' style='fill:none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A",
         finder_s:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='32.999' height='31'%3E%3Cpath data-name='사각형 23936' d='m24.514 20.394 8.485 8.485-2.121 2.122-8.485-8.486z'/%3E%3Cg data-name='타원 60' stroke='%23000' stroke-width='3' fill='none'%3E%3Ccircle cx='14' cy='14' r='14' stroke='none'/%3E%3Ccircle cx='14' cy='14' r='12.5'/%3E%3C/g%3E%3C/svg%3E",
@@ -93,7 +93,7 @@
         &--kakao{
             width:3.8rem;
             height:3.6rem;
-           background-image:icon(iconkakoAuth); 
+           background-image:icon(iconkakoAuth,'fff'); 
         }
     }
     &-clampR{
