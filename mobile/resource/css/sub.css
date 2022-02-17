@@ -637,11 +637,6 @@
   margin-bottom: -19rem;
 }
 
-.wrap {
-  width: 72rem;
-  max-width: 72rem;
-}
-
 /* 부트스트랩 초기화 */
 body {
   color: #000000;
