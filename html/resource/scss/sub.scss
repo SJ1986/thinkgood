@@ -214,9 +214,9 @@
                                     }
                                 }
                                 &-plus{
-                                    color:#dd2525;
+                                    color:#CA1C1D;
                                     &:before{
-                                        background-color:#dd2525;
+                                        background-color:#CA1C1D;
                                     }
                                 }
                                 &-delete{
@@ -241,7 +241,7 @@
                         height:4px;
                         margin-bottom:1.8rem;
                         border-radius:100%;
-                        background-color:#dd2525;
+                        background-color:#CA1C1D;
                         content:""
                     }
                 }
@@ -260,6 +260,9 @@
                 }
                 ::placeholder{
                     font-size:1.8rem;
+                }
+                &:disabled{
+                    background-color:#f8f8fa
                 }
             }
         }
@@ -541,6 +544,11 @@
         border:1px solid #e5e7ee;
         border-radius:.3rem;
         background-color:#fff;
+        input{
+            &.pw_bg_gray{
+                background-color:#f8f8fe;
+            }
+        }
     }
 }
 // dot css
@@ -555,7 +563,7 @@
             width:0.5rem;
             height:0.5rem;
             border-radius:100%;
-            background-color:#dd2525;
+            background-color:#CA1C1D;
             content:""
         }
     }
@@ -661,8 +669,8 @@
         box-sizing:border-box;
     }
     &-ing{
-        border:1px solid #dd2525;
-        color:#dd2525;
+        border:1px solid #CA1C1D;
+        color:#CA1C1D;
     }
     &-end{
         border:1px solid #78838c;
@@ -762,6 +770,15 @@
             &.prizeca{
                 &> a{
                     width:19.2%;
+                }
+            }
+        }
+    }
+    &_prcieIssue{
+        a{
+            .info{
+                span{
+                    color:#747478;
                 }
             }
         }
@@ -887,6 +904,11 @@
                     }
                 }
             }
+            .head{
+                h4{
+                    font-weight:500;
+                }
+            }
         }
         &.lab{
             margin-top:0;
@@ -918,6 +940,7 @@
                                 margin-top:1.5rem;
                                 font-size:1.8rem;
                                 line-height:1.5em;
+                                color: #747478;
                             }
                         }
                     }
@@ -975,6 +998,7 @@
                     .grandList{
                         padding:4rem 6rem;
                         margin-bottom:5rem;
+                        margin-top:6rem;
                         a{
                             width:100%;
                             >*{
@@ -996,7 +1020,7 @@
                                 margin-top:2rem;
                                 font-size:1.8rem;
                                 em{
-                                    color:#dd2525;
+                                    color:#CA1C1D;
                                 }
                             }
                             &+a{
@@ -1532,7 +1556,9 @@
                         }
                     }
                     &.normal{
-                        padding:3.5rem;
+                        padding:4rem;
+                        border-radius:.3rem;
+                        border:1px solid #e6e7ee;
                         strong{
                             font-weight:$font-weight__m;
                         }
@@ -1637,7 +1663,7 @@
                 border-bottom:1px solid #e4e6ee;
                 &.active{
                     a{
-                        color:#dd2525;
+                        color:#CA1C1D;
                     }
                 }
                 >a{
@@ -1735,7 +1761,7 @@
         overflow:hidden;
         padding:3.5rem;
         box-sizing:border-box;
-        background-color:#dd2525;
+        background-color:#CA1C1D;
         border-radius:3px;
         > p{
             font-size:2.4rem;
@@ -1809,7 +1835,7 @@
         font-size:2rem;
         font-weight:500;
         &.current{
-            border-bottom:2px solid #dd2525;
+            border-bottom:2px solid #CA1C1D;
         }
     }
 }
@@ -1884,18 +1910,20 @@
             &-comment{
                 margin-top: 5rem;
                 .title{
-                    margin-bottom: 2rem;
+                    padding-bottom:2rem;
+                    margin-bottom: 0;
                     font-size: 2.6rem;
-                    font-weight: $font-weight__b;
+                    font-weight: 600;
                     >*{
-                        font-weight: $font-weight__b;
+                        font-weight: 600;
                     }
                 }
                 .editor{
                     height: 20rem;
-                    margin-bottom: 4rem;
+                    margin-bottom: 0;
                     border:1px solid #000000;
                     border-radius: 3px;
+                    margin-top:6rem;
                     textarea{
                         padding:2rem;
                         flex:1;
@@ -2260,7 +2288,7 @@
                         width:0.5rem;
                         height:0.5rem;
                         border-radius:100%;
-                        background-color:#dd2525;
+                        background-color:#CA1C1D;
                         content:""
                     }
                 }
@@ -2363,7 +2391,7 @@
         .color{
             &-red{
                 color:#ffffff;
-                background: #dd2525;
+                background: #CA1C1D;
                 border:none !important;
             }
             &-naver{
@@ -2412,6 +2440,7 @@
         }
     }
     &-f8{
+        margin-bottom:6rem;
         background: #f8f8fa;
     }
 }
@@ -3075,10 +3104,11 @@
                     color:$color-fontgray;
                     background: #f8f8fa;
                     border:1px solid #e5e7ee;
+                    border-bottom:1px solid #000;
                     border-radius: 3px 3px 0 0 ;
                     &.current{
                         font-size: 2.6rem;
-                        font-weight: $font-weight__b;
+                        font-weight: 500;
                         background: none;
                         color:#000000;
                         background: #ffffff;
@@ -3912,10 +3942,10 @@
                             &:checked{
                                 &+label{
                                     &:before{
-                                        border:1px solid #dd2525;
+                                        border:1px solid #CA1C1D;
                                     }
                                     &::after{
-                                        background-color:#dd2525;
+                                        background-color:#CA1C1D;
                                     }
                                 }
                             }
@@ -4277,7 +4307,7 @@
                     span{
                         margin:0 0.5rem;
                         font-weight:$font-weight__m;
-                        color:#dd2525;
+                        color:#CA1C1D;
                     }
                 }
                 select{
@@ -4348,6 +4378,13 @@
             &+.post-subtit{
                 margin-top:8rem;
             }
+            &:first-child{
+                dd{
+                    &:first-child{
+                        font-size:2.4rem;
+                    }
+                }
+            }
             dt, dd{
                 margin-top:3rem;
                 font-size:1.8rem;
@@ -4380,7 +4417,7 @@
             font-size:1.6rem;
             color:#747478;
             span{
-                color:#dd2525;
+                color:#CA1C1D;
             }
         }
         .controlDate{
@@ -4497,7 +4534,7 @@
                 }
                 &:nth-child(7n+1){
                     p{
-                        color:#dd2525;
+                        color:#CA1C1D;
                     }
                 }
                 &.today{

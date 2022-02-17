@@ -37,12 +37,12 @@ $font-size__35 : 3.5rem;
 $font-size__38 : 3.85rem;
 $font-size__40 : 4rem;
 
-$color-red : #dd2525;
+$color-red : #CA1C1D;
 $color-deeppink : #c41a66;
 $color-pink3:#de1673;
 $color-lightpink : #fcedf4;
 $color-main : #020e1d;
-$color-gray : #78838c;
+$color-gray : #747478;
 $color-deepgray : #a6adb3;
 $color-fontgray : #747478;
 $color-lightgray : #dddddd;
@@ -194,7 +194,7 @@ $font-weight__b : 600;
 .font-weight__b{
     font-weight: $font-weight__b !important;    
 }
-
+.mg-0{margin:0 !important}
 .ml_5{margin-left: .5rem;}
 .mr_5{margin-right: .5rem;}
 .mt_5{margin-top: .5rem;}
@@ -298,6 +298,9 @@ $font-weight__b : 600;
         }
         &9{
             padding-top: 9rem; padding-bottom: 9rem;
+            &:last-child{
+                padding-bottom:0;
+            }
         }
     }
     &t_{
@@ -1129,7 +1132,7 @@ p{
                     background:  icon(arrow__top-fill, 'e5e7ee')no-repeat center;
                 }
                 &-next{
-                    background: icon(arrow__top-fill, 'dd2525')no-repeat center;
+                    background: icon(arrow__top-fill, 'CA1C1D')no-repeat center;
                     transform: rotate(-180deg);
                 }
             }
@@ -1378,11 +1381,12 @@ p{
     &.plus{
         width:1.6rem;
         height: 1.6rem;
-        margin:0 auto;
-        background-image: url(../image/common/icon/icon-plus-big.svg);
+        // margin:0 auto;
+        background-image: url(../image/common/icon/icon-plus.png);
         background-size:contain;
+        margin-left:2px;
         &.on{
-            background-image: url(../image/common/icon/icon-minus-big.svg);
+            background-image: url(../image/common/icon/icon-minus.png);
         }
     }
 }
@@ -1708,7 +1712,7 @@ ul{
                         left: .6rem; 
                         width: 1.3rem; 
                         height: 1.3rem; 
-                        background: #dd2525; 
+                        background: #CA1C1D; 
                         border-radius: 100%;
                     }
                 }
@@ -1896,7 +1900,7 @@ ul{
 
 /* pagination */
 .paging{
-    margin-top: 4.5rem;
+    margin-top: 3rem;
     &__inner{
         a{
             @include d-flex;

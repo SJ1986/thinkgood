@@ -199,7 +199,7 @@
 }
 
 .color-red {
-  color: #dd2525 !important;
+  color: #CA1C1D !important;
 }
 
 .color-lightpink {
@@ -223,7 +223,7 @@
 }
 
 .color-gray {
-  color: #78838c;
+  color: #747478;
 }
 
 .color-white {
@@ -256,6 +256,10 @@
 
 .font-weight__b {
   font-weight: 600 !important;
+}
+
+.mg-0 {
+  margin: 0 !important;
 }
 
 .ml_5 {
@@ -503,6 +507,10 @@
 .py_9 {
   padding-top: 9rem;
   padding-bottom: 9rem;
+}
+
+.py_9:last-child {
+  padding-bottom: 0;
 }
 
 .pt_0 {
@@ -997,7 +1005,7 @@ p {
 }
 
 .header__inner .gnb-menu .depth1 > ul li.on > a {
-  color: #dd2525;
+  color: #CA1C1D;
 }
 
 .header__inner .gnb-menu .depth1 > ul li a {
@@ -1019,7 +1027,7 @@ p {
 }
 
 .header__inner .gnb-menu .depth1 > ul li a:hover {
-  color: #dd2525;
+  color: #CA1C1D;
 }
 
 .header__inner .gnb-menu .depth1 > ul li .depth2 {
@@ -1288,7 +1296,7 @@ p {
   margin-top: 5px;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #dd2525;
+  color: #CA1C1D;
   text-align: center;
 }
 
@@ -1487,7 +1495,7 @@ p {
 }
 
 .winger-arrow .swiper-button-next {
-  background: url("data:image/svg+xml;charset=utf8,  %3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23dd2525' d='m4.5-.001 4.5 6H0l4.5-6Z'/%3E%3C/svg%3E") no-repeat center;
+  background: url("data:image/svg+xml;charset=utf8,  %3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6'%3E%3Cpath fill-rule='evenodd' fill='%23CA1C1D' d='m4.5-.001 4.5 6H0l4.5-6Z'/%3E%3C/svg%3E") no-repeat center;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
@@ -1707,7 +1715,7 @@ p {
 
 .button-wrap button.btn-red {
   color: #ffffff;
-  background: #dd2525;
+  background: #CA1C1D;
   border: none !important;
 }
 
@@ -1721,7 +1729,7 @@ p {
 
 .button-red {
   color: #ffffff;
-  background: #dd2525;
+  background: #CA1C1D;
   border: none !important;
 }
 
@@ -1753,13 +1761,13 @@ p {
 .icon.plus {
   width: 1.6rem;
   height: 1.6rem;
-  margin: 0 auto;
-  background-image: url(../image/common/icon/icon-plus-big.svg);
+  background-image: url(../image/common/icon/icon-plus.png);
   background-size: contain;
+  margin-left: 2px;
 }
 
 .icon.plus.on {
-  background-image: url(../image/common/icon/icon-minus-big.svg);
+  background-image: url(../image/common/icon/icon-minus.png);
 }
 
 /* ul */
@@ -2077,7 +2085,7 @@ ul.lists.num li:before {
   left: .6rem;
   width: 1.3rem;
   height: 1.3rem;
-  background: #dd2525;
+  background: #CA1C1D;
   border-radius: 100%;
 }
 
@@ -2566,7 +2574,7 @@ ul.lists.num li:before {
 }
 
 .top-dot.color-red::before {
-  background: #dd2525;
+  background: #CA1C1D;
 }
 
 .list-thumb.main ul {
