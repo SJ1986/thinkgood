@@ -8,16 +8,18 @@ $(function () {
 
 	//thinkgoodPick
 	var thinkgoodPick = new Swiper(".thinkgoodPick-banner .swiper-container", {
-		slidesPerView: 2,
+		slidesPerView: 1,
 		spaceBetween: 25,
+		slidesPerView: "auto",
+		centeredSlides: true,
 		pagination: {
 			el: ".swiper-pagination",
 			type: "fraction",
 		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
+		// navigation: {
+		// 	nextEl: ".swiper-button-next",
+		// 	prevEl: ".swiper-button-prev",
+		// },
 	});
 
 

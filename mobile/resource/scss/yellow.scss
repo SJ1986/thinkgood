@@ -1140,3 +1140,121 @@ h1, h2, h3, h4, h5{
         margin-top: 2rem !important;
     }
 }
+
+
+/* 공모전 */ 
+.filter{
+    padding: 0;
+    &-wrap{
+        padding:0rem 3rem 2rem 3rem;
+        margin-top: -1px;
+        background: #ffffff;
+        border-bottom:1px solid ;
+    }
+    font: {
+        size: 2.4rem;
+        weight: $font-weight__b;
+    }
+    i{
+        display: block;
+        width:4rem;
+        height: 3.4rem;
+        margin-right: 2rem;
+        background: url(../image/sub/iconFilter.svg)no-repeat center;
+        background-size: cover;
+    }
+}
+.search{
+    &-filter{
+        &-list{
+            padding:3rem;
+            ul{
+                margin: -0.6rem -.3rem;
+                flex-wrap: wrap;
+                li{
+                    @include d-flex;
+                    margin: 0.6rem .3rem;
+                    padding: 9px 20px 8px;
+                    font-size:2.2rem;
+                    background: #000000;
+                    color:#ffffff;
+                    border-radius: 2rem;
+                    flex: none;
+                    i{
+                        display: block;
+                        width:1rem;
+                        height: 1.7rem;
+                        margin: 0 .6rem;
+                        background: url(../image/sub/iconArrowRight-white.svg)no-repeat center;
+                        background-size: 100%;
+                    }
+                    .del{
+                        width:1.7rem;
+                        height:1.6rem;
+                        margin-left: 2rem;
+                        background: url(../image/sub/iconX-white.svg)no-repeat center;
+                        background-size: cover;
+                    }
+                }
+            }
+        }
+    }
+}
+.thinkgoodPick{
+    &-banner{
+        padding:2rem 0;
+            background: #f8f8fa;
+        // &__inner{
+            
+        // }
+        .swiper{
+            &-container{
+                overflow: visible;
+            }
+            &-slide{
+                width: calc(100% - 8rem) !important;
+                height: 34rem;
+                .img-wrap{
+                    height:100%;
+                    max-height: 34rem;
+                    img{
+                        width:100%;
+                        max-height: 100%;
+                    }
+                }
+            }
+            &-pagination{
+                left:auto;
+                right:6rem;
+                bottom:1rem;
+                display: inline-flex;
+                align-items: center;
+                width:auto;
+                height:4rem;
+                padding:0 2rem;
+                font-size: 2.2rem;
+                color:#ffffff;
+                background: rgba(0,0,0,.1);
+                border-radius: 2rem;
+                &-current{
+                    padding-right: .5rem;
+                }
+                &-total{
+                    padding-left: .5rem;
+                }
+            }
+        }
+        
+    }
+    &-list{
+        .campusSlide{
+            .swiper{
+                &-slide{
+                    a{
+                        border:none;
+                    }
+                } 
+            }
+        } 
+    }
+}
