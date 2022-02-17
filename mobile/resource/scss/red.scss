@@ -1,0 +1,160 @@
+
+/* myRoomContentList */
+.grayBox {
+    width:100%;
+    height: 18rem;
+    background-color: #f8f8fa;
+    box-sizing:border-box;
+    font-family: NanumSquare;
+    p {
+        font-size:2.2rem;
+        font-weight: normal;
+        letter-spacing: -0.55px;
+        color: #747478;
+        text-align:left;
+       
+    } 
+    >div {
+        width:25%;
+        padding:30px;
+    }  
+    >div + div {
+        border-left:1px solid #EDEEF3;
+    }   
+    span {
+        display:block;
+        margin-top:4.7rem;
+        font-size:2.2rem;
+        color:#000;
+        font-weight:normal;
+        letter-spacing: -0.55px;
+        text-align: right;
+        a {
+            font-size:3.2rem;
+            color:#000;
+            font-weight:800;
+            letter-spacing: -0.9px;
+        }
+    }
+    .on{
+        background-color: #000;
+        p {
+            color:#fff;
+        }
+        span{
+            color:#fff;
+            a{
+                color:#ff0001;
+            }
+        }
+    }
+}
+
+
+.boxWrap {
+    .controlDate {
+        position:relative;
+        text-align:center;
+        span {
+            font-size:4.4rem;
+            font-weight:500;
+            letter-spacing: -1.1px;
+        }
+        button {
+            position:absolute;
+            width: 1.7859rem;
+            height: 2.739rem;
+            top: 50%;
+            transform: translateY(-50%);
+            overflow: hidden;
+            box-sizing: border-box;
+            img{
+                position:absolute;
+                top:0;
+                left:0;
+            }
+        }
+        .datePrev{
+            left:10.4rem;
+        }
+        .dateNext{
+            right:10.4rem;
+        }
+        p {
+            font-size:2rem;
+            font-weight:300;
+            letter-spacing:-1px;
+            color:#555;
+            text-align: center;
+        }
+    }
+    .text {
+        margin-top: 2.8rem;
+        font-size:2rem;
+        font-weight:300;
+        letter-spacing:-1px;
+        color:#555;
+        text-align: center;
+        line-height: 3.25rem;
+    }
+    .DateTitle{
+        float:right;
+        margin-top:1.9rem;
+        padding-right:0.8rem;
+        span{
+            position:relative;
+            font-size:1.8rem;
+            color:#555;
+            letter-spacing: -0.45px;
+            text-align: left;
+        }  
+        .competition::before{
+            position:absolute;
+            width:1rem;
+            height:1rem;
+            background-color:#e82459;
+            border-radius: 50%;
+            content:'';
+        }  
+        .education::before{
+            position:absolute;
+            width:1rem;
+            height:1rem;
+            background-color:#ffbb00;
+            border-radius: 50%;
+            content:'';
+        } 
+        .activities::before{
+            position:absolute;
+            width:1rem;
+            height:1rem;
+            background-color:#8ee600;
+            border-radius: 50%;
+            content:'';
+        }    
+        + span {
+            margin-left:3.3rem;
+        }
+          
+    }
+
+}
+
+.calendarSt{
+    display: grid;
+    display: -ms-grid;
+    gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(14%, auto));
+    -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 4rem repeat(5, minmax(12rem, auto));
+    -ms-grid-rows: 4rem 12rem 12rem 12rem 12rem 12rem;
+    >div:nth-child(-n+7){
+        display:flex;
+        -ms-display: flexbox;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display:-webkit-flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
