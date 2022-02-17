@@ -1917,6 +1917,34 @@
                     }
                 }
             }
+            &-reply{
+                background-color:#f8f8fa;
+                &__top{
+                    @include justify-between;
+                    @include align-center;
+                    border-bottom:1px solid #e4e7ee;
+                    p{
+                        font-size:3rem;
+                        font-weight:500;
+                        span{
+                            margin-bottom:1.4rem;
+                            em{
+                                padding:.7rem .9rem;
+                                background-color:#a0a0a0;
+                                border-radius:.3rem;
+                                font-size:1.8rem;
+                                color:#fff;
+                            }
+                        }
+                    }
+                }
+                &__content{
+                    p{
+                        font-size:1.8rem;
+                        line-height:3.2rem;
+                    }
+                }
+            }
         }
 
     }
@@ -4577,6 +4605,146 @@
             >q{
                 margin-top:3rem;
                 line-height:1.5em;
+            }
+        }
+    }
+}
+
+
+// 회원가입
+.find{
+    &-link{
+        a{
+            position:relative;
+            display:block;
+            +a{
+                padding-left:1rem;
+                margin-left:1rem;
+                &:before{
+                    position:absolute;
+                    top:50%;
+                    left:0;
+                    width:2px;height:70%;
+                    background-color:#747478;
+                    transform:translateY(-50%);
+                    content:"";
+                }
+            }
+        }
+    }
+}
+
+//이용안내
+.guide{
+    &-box{
+        position:relative;
+        @include align-center;
+        padding:1.8rem 2rem;
+        margin-bottom:2.5rem;
+        background-color:#f8f8fa;
+        strong{
+            margin-right:2rem;
+            font-size:2.6rem;
+            font-weight:600
+        }
+        em{
+            font-size:1.7rem;
+            color:#747478
+        }
+    }
+}
+.date{
+    &-change{
+        &--year{
+            position:absolute;
+            top:50%;right:2rem;
+            transform:translateY(-50%);
+            button{
+                i{
+                    &.arrow{
+                        &-prev{
+                            width:.7rem;
+                            height: 1.1rem;
+                            background:url(../image/common/icon/arrow__prev.png)no-repeat center;
+                            background-size: cover;
+                        }
+                        &-next{
+                            width:.7rem;
+                            height: 1.1rem;
+                            background:url(../image/common/icon/arrow__prev.png)no-repeat center;
+                            background-size: cover;
+                            transform: rotate(180deg);
+                        }
+                    }
+                }
+            }
+            span{
+                margin:0 1rem;
+                background-color:transparent;
+                font-size:1.7rem;
+                font-weight:500;
+            }
+        }
+    }
+}
+.use{
+    &-term{
+        font-size:1.8rem;
+        line-height:1.7em;
+        >*{
+            display:block;
+        }
+        em{
+            margin-top:4rem;
+            margin-bottom:1rem;
+            font-weight:500;
+        }
+        span{
+            font-weight:600;
+            &:not(span:first-child){
+                margin-top:4rem;
+            }
+            +em{
+                margin-top:2rem;
+            }
+        }
+        p{
+            line-height:1.7rem;
+        }
+        ul{
+            &.lists{
+                &.num{
+                    li{
+                        font-size:1.8rem;
+                        line-height:1.7em;
+                        +li{
+                            margin-top:0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.infoGuide{
+    &-wrap{
+        .img{
+            &-wrap{
+                img{
+                    width:100%;
+                }
+            }
+        }
+        dl{
+            @include d-flex;
+            flex-wrap:wrap;
+            dt{
+                width:23rem;
+                margin-bottom:4rem;
+            }
+            dd{
+                width:calc(100% - 23rem);
+                margin-bottom:4rem;
             }
         }
     }

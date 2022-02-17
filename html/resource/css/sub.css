@@ -4765,6 +4765,42 @@ ul.lists.num li:before {
   border-radius: 0;
 }
 
+.board-view .view-reply {
+  background-color: #f8f8fa;
+}
+
+.board-view .view-reply__top {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-bottom: 1px solid #e4e7ee;
+}
+
+.board-view .view-reply__top p {
+  font-size: 3rem;
+  font-weight: 500;
+}
+
+.board-view .view-reply__top p span {
+  margin-bottom: 1.4rem;
+}
+
+.board-view .view-reply__top p span em {
+  padding: .7rem .9rem;
+  background-color: #a0a0a0;
+  border-radius: .3rem;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.board-view .view-reply__content p {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
 .board-bottom {
   position: relative;
   height: 5rem;
@@ -7766,4 +7802,146 @@ ul.lists.num li:before {
 .postList a > q {
   margin-top: 3rem;
   line-height: 1.5em;
+}
+
+.find-link a {
+  position: relative;
+  display: block;
+}
+
+.find-link a + a {
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.find-link a + a:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2px;
+  height: 70%;
+  background-color: #747478;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  content: "";
+}
+
+.guide-box {
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 1.8rem 2rem;
+  margin-bottom: 2.5rem;
+  background-color: #f8f8fa;
+}
+
+.guide-box strong {
+  margin-right: 2rem;
+  font-size: 2.6rem;
+  font-weight: 600;
+}
+
+.guide-box em {
+  font-size: 1.7rem;
+  color: #747478;
+}
+
+.date-change--year {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.date-change--year button i.arrow-prev {
+  width: .7rem;
+  height: 1.1rem;
+  background: url(../image/common/icon/arrow__prev.png) no-repeat center;
+  background-size: cover;
+}
+
+.date-change--year button i.arrow-next {
+  width: .7rem;
+  height: 1.1rem;
+  background: url(../image/common/icon/arrow__prev.png) no-repeat center;
+  background-size: cover;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.date-change--year span {
+  margin: 0 1rem;
+  background-color: transparent;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+
+.use-term {
+  font-size: 1.8rem;
+  line-height: 1.7em;
+}
+
+.use-term > * {
+  display: block;
+}
+
+.use-term em {
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.use-term span {
+  font-weight: 600;
+}
+
+.use-term span:not(span:first-child) {
+  margin-top: 4rem;
+}
+
+.use-term span + em {
+  margin-top: 2rem;
+}
+
+.use-term p {
+  line-height: 1.7rem;
+}
+
+.use-term ul.lists.num li {
+  font-size: 1.8rem;
+  line-height: 1.7em;
+}
+
+.use-term ul.lists.num li + li {
+  margin-top: 0;
+}
+
+.infoGuide-wrap .img-wrap img {
+  width: 100%;
+}
+
+.infoGuide-wrap dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.infoGuide-wrap dl dt {
+  width: 23rem;
+  margin-bottom: 4rem;
+}
+
+.infoGuide-wrap dl dd {
+  width: calc(100% - 23rem);
+  margin-bottom: 4rem;
 }
