@@ -27,6 +27,7 @@
     <script src="../../resource/js/yellow.js"></script>
     <title>씽굿</title>
 </head>
+
 <body>
     <div class="wrap">
         <header>
@@ -47,7 +48,6 @@
             </div>
         </header>
         <div class="content">
-
             <div class="container">
                 <div class="container__inner">
                     <h1 class="sub-title text-center py_60">제휴/제안안내</h1>
@@ -59,93 +59,96 @@
                     </div>
                     <div class="container__core">
 
-                        <div class="part-wrap">
-                            <div class="d-flex align-items-center">분류 <i></i> <span>공모전</span></div>
+                        <div class="d-flex search-box">
+                            <div class="d-flex align-items-end ml-auto search-right">
+                                <div class="d-flex">
+                                    <select class="select">
+                                        <option value="0" selected="selected">분류</option>
+                                        <option value="1">제목</option>
+                                        <option value="2">내용</option>
+                                    </select>
+                                    <select class="select ml_10">
+                                        <option value="0" selected="selected">전체</option>
+                                        <option value="1">제목</option>
+                                        <option value="2">내용</option>
+                                    </select>
+                                </div>
+                                <div class="ml_10">
+                                    <div class="form-search d-flex align-items-center">
+                                        <input type="text" name="searchKeyword" value="" id="" class="form-input" placeholder="">
+                                        <button type="submit" class="form-search__click"><i class="icon finder_s"></i></button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-
-                        <div class="board-view">
-                            <div class="board-view__inner mt_20">
-
-                                <!-- 전달사항 :: 답변완료와 답변대기 class 구분해주세요 -->
-                                <div class="view-badge done">답변완료</div>
-                                <div class="view-badge wait" style="display: none;">답변대기</div>
-
-                                <div class="view-title d-flex align-items-start">
-                                    <p>공모전 등록 관련 문의드립니다.</p>
-                                </div>
-                                <div class="view-info d-flex align-items-center">
-                                    <div class="d-flex etc">
-                                        <p class="author"><i></i>유창환</p>
-                                        <p class="num"><i></i>324</p>
-                                    </div>
-                                    <div class="date ml-auto">2주전</div>
-                                </div>
-                                <div class="view-link">
-                                    <div class="view-link__inner">
-                                        <ul>
-                                            <li><i></i><span>첨부파일</span><a href="screenshot.png" target="_blank" download="download">screenshot.png</a></li>
-                                            <li><i></i><span>첨부파일</span><a href="attached_file.pdf" target="_blank" download="download">attached_file.pdf</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-
-                                <div class="view-content">
-                                    <p>안녕하세요? <br>
-                                        한국관광공사 입니다.<br>
-                                        어제 공모전 '아름다운 우리나라 관광코스 제안 2차 공모전' 을 등록했는데, 마이페이지에 나타나지 않아 수정할 수가 없는데요.<br>
-                                        수정할 수 있는 방법 안내 부탁드립니다.<br>
-                                        <br>
-                                        감사합니다.</p>
-                                </div>
-                                <div class="view-content__bottom d-flex align-items-center">
-                                    <div class="">
-                                        <button class="button-scrap"><i></i>스크랩</button>
-                                        <!-- click 시 class에 on 추가됩니다. -->
-                                    </div>
-                                    <div class="ml-auto">
-                                        <button class="button-modify"><i></i></button>
-                                        <button class="button-delete"><i></i></button>
-                                    </div>
-                                </div>
-
-                                <div class="view-answer">
-                                    <div class="view-answer__inner">
-                                        <div class="view-answer__header">
-                                            <div class="tit-fix">답변</div>
-                                            <div class="tit d-flex align-items-center">
-                                                <p class="txt">답변드립니다.</p>
-                                                <p class="date">2022-01-01</p>
+                        <div class="board-list">
+                            <div class="board-list__inner mt_20">
+                                <ul>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="board-list__left">
+                                                <p class="part">분류 &gt; <span class="">공모전</span></p>
+                                                <a href="javascript:void(0)" class="title">대학 캠퍼스 교류활동 '메타버스'에서 실현해요!</a>
+                                                <div class="d-flex etc">
+                                                    <p class="author"><i></i>유창환</p>
+                                                    <p class="num"><i></i>324</p>
+                                                </div>
+                                            </div>
+                                            <div class="answerStatus">
+                                                <p class="wait">답변대기</p>
                                             </div>
                                         </div>
-                                        <div class="view-answer__body">
-                                            안녕하세요? <br>
-                                            씽굿 담당자 홍길동입니다.<br>
-                                            문의하신 사항에 대해 답변드립니다.<br><br>
-
-                                            더 궁금하신 사항이 있으시면 씽굿 메일로 <br>
-                                            자세히 문의주시기바랍니다.<br><br>
-
-                                            감사합니다.
+                                    </li>
+                                    <li>
+                                        <div class="d-flex align-items-center">
+                                            <div class="board-list__left">
+                                                <p class="part">분류 &gt; <span class="">공모전</span></p>
+                                                <a href="javascript:void(0)" class="title">대학 캠퍼스 교류활동 '메타버스'에서 실현해요!</a>
+                                                <div class="d-flex etc">
+                                                    <p class="author"><i></i>유창환</p>
+                                                    <p class="num"><i></i>324</p>
+                                                </div>
+                                            </div>
+                                            <div class="answerStatus">
+                                                <p class="">답변완료</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-
-                                <div class="button-wrap mt_40">
-                                    <button type="button" class="button-list">목록</button>
-                                </div>
-
-                            
-                                
+                                    </li>
+                                </ul>
                             </div>
                         </div>
 
                         
+                        <div class="button-wrap mt_30">
+                            <button type="button" class="button-red">문의하기</button>
+                        </div>
+
+
+
+                        <div class="board-bottom">
+                            <div class="paging d-flex justify-content-center">
+                                <div class="paging__inner d-flex">
+                                    <a href="javascript:void(0)" class="first"><i class="icon arrow-first"></i></a>
+                                    <a href="javascript:void(0)" class="prev"><i class="icon arrow-prev"></i></a>
+                                    <a href="javascript:void(0)" class="on">1</a>
+                                    <a href="javascript:void(0)">2</a>
+                                    <a href="javascript:void(0)">3</a>
+                                    <a href="javascript:void(0)">4</a>
+                                    <a href="javascript:void(0)">5</a>
+                                    <a href="javascript:void(0)" class="next"><i class="icon arrow-next"></i></a>
+                                    <a href="javascript:void(0)" class="last"><i class="icon arrow-last"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
 
                         
+
                     </div>
                 </div>
             </div>
+            
             
         </div>
         <footer>

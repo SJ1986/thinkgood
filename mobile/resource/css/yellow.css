@@ -2484,6 +2484,10 @@ ul.lists.num li:before {
   padding: 6rem 3rem 0 3rem;
 }
 
+h1, h2, h3, h4, h5 {
+  margin-bottom: 0;
+}
+
 .breadcrumb {
   margin: 0;
   margin-top: -1px;
@@ -2553,7 +2557,7 @@ ul.lists.num li:before {
   line-height: 100%;
   background: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.971' height='10.606'%3E%3Cpath data-name='합치기 12' d='M6.364 8.485.001 2.121l2.12-2.122 6.364 6.365 6.364-6.365 2.122 2.122-8.486 8.485Z'/%3E%3C/svg%3E") no-repeat right 1rem center;
   background-size: 1.7rem 1.1rem;
-  text-indent: 2rem;
+  text-indent: 1rem;
   border-bottom: 2px solid;
 }
 
@@ -2566,6 +2570,7 @@ ul.lists.num li:before {
       -ms-flex: 1;
           flex: 1;
   height: 7.5rem;
+  border: none;
 }
 
 .search-right .form-search__click {
@@ -2719,6 +2724,20 @@ ul.lists.num li:before {
   height: 1.4rem;
   background: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.4' height='13.4'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23a1a1a1;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4px%7D%3C/style%3E%3C/defs%3E%3Cg id='그룹_18854' data-name='그룹 18854' transform='translate(-157.3 -592.3)'%3E%3Cg id='그룹_18829' data-name='그룹 18829' transform='translate(158 593)'%3E%3Cpath id='패스_227' data-name='패스 227' class='cls-1' d='M414.451 239.641c4.44 0 8.2-2.519 9.5-6-1.3-3.481-5.06-6-9.5-6s-8.2 2.519-9.5 6c1.3 3.481 5.059 6 9.5 6Z' transform='translate(-404.951 -227.641)'/%3E%3C/g%3E%3Cpath id='패스_228' data-name='패스 228' class='cls-1' d='M424.511 237.457a2.764 2.764 0 1 1-2.764-2.764 2.764 2.764 0 0 1 2.764 2.764Z' transform='translate(-254.248 361.543)'/%3E%3C/g%3E%3C/svg%3E") no-repeat center;
   background-size: contain;
+}
+
+.board-list__inner .answerStatus {
+  font-size: 2.2rem;
+}
+
+.board-list__inner .answerStatus .wait {
+  color: #dd2525;
+}
+
+.board-list__left {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .board-write > div + div {
@@ -2917,8 +2936,12 @@ ul.lists.num li:before {
 
 .board-write .button-wrap button {
   height: 9rem;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-weight: 300;
+}
+
+.board-view .button-wrap button {
+  height: 9rem;
 }
 
 .view-title {
@@ -2950,7 +2973,7 @@ ul.lists.num li:before {
 .view-title p {
   font-size: 3.8rem;
   font-weight: 600;
-  line-height: 1.05;
+  line-height: 5.6rem;
 }
 
 .view-info {
@@ -3233,6 +3256,79 @@ ul.lists.num li:before {
   background-size: cover;
 }
 
+.view-badge {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 8rem;
+  height: 3.6rem;
+  margin-bottom: 2.8rem;
+  font-size: 1.8rem;
+}
+
+.view-badge.done {
+  color: #df0000;
+  border: solid 1px #ffb4b4;
+  background-color: #fff3f3;
+}
+
+.view-badge.wait {
+  color: #545454;
+  border: solid 1px #9a9a9a;
+  background-color: #e8e8e8;
+}
+
+.view-answer {
+  margin: 0 -3rem;
+  background: #f8f8fa;
+}
+
+.view-answer__header {
+  padding: 4rem 0;
+  border-bottom: 1px solid #e5e7ee;
+}
+
+.view-answer__header .tit {
+  margin-top: 1rem;
+  line-height: 5.6rem;
+}
+
+.view-answer__header .tit-fix {
+  font-size: 2.6rem;
+  font-weight: 600;
+  color: #ca1c1d;
+}
+
+.view-answer__header .tit .txt {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  font-size: 3.8rem;
+  font-weight: 600;
+}
+
+.view-answer__header .tit .date {
+  font-size: 2rem;
+  color: #747478;
+}
+
+.view-answer__inner {
+  padding: 3rem;
+}
+
+.view-answer__body {
+  padding: 6rem 0;
+  padding-bottom: 11rem;
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+}
+
 /* button */
 .button-wrap {
   margin: 0;
@@ -3240,13 +3336,14 @@ ul.lists.num li:before {
 
 .button-wrap button {
   width: 100%;
-  height: 7rem;
+  height: 9rem;
   margin: 0;
   border-radius: .6rem;
   font-size: 2.4rem;
 }
 
 .button-red {
+  background: #ca1c1d;
   color: #ffffff;
 }
 
@@ -3304,6 +3401,7 @@ ul.lists.num li:before {
 
 .button-list {
   background: #a59b99;
+  color: #ffffff;
 }
 
 .paging {
@@ -3351,6 +3449,17 @@ ul.lists.num li:before {
 .part-wrap * {
   font-size: 2.6rem;
   font-weight: 600;
+}
+
+.part-wrap i {
+  display: block;
+  width: 1.7rem;
+  height: 1.1rem;
+  margin: 0 1rem;
+  background: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='16.971' height='10.606'%3E%3Cpath data-name='합치기 12' d='M6.364 8.485.001 2.121l2.12-2.122 6.364 6.365 6.364-6.365 2.122 2.122-8.486 8.485Z'/%3E%3C/svg%3E") no-repeat center;
+  background-size: 100%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
 .part-wrap span {
@@ -3681,4 +3790,95 @@ ul.lists.num li:before {
 
 .thinkTalk__inner .thinker ul li:nth-child(5) .num {
   background-color: rgba(221, 37, 37, 0.2);
+}
+
+.thinker-view__info {
+  padding: 4rem 3rem;
+  border-bottom: 1px solid #e5e7ee;
+}
+
+.thinker-view__content {
+  padding: 0 3rem;
+}
+
+.thinker-view__content .board-write {
+  padding-top: 4rem;
+}
+
+.thinker-view__comment {
+  padding: 0 3rem;
+}
+
+.py_60 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* 이용약관 */
+.terms {
+  padding: 0 3rem;
+}
+
+.terms h4 {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  line-height: 4.5rem;
+}
+
+.terms h4.no-margin {
+  margin-top: 0;
+}
+
+.terms h5 {
+  margin-bottom: 1rem;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+}
+
+.terms h5.disc-orange {
+  margin-top: 4rem;
+}
+
+.terms p {
+  padding: 0 1rem;
+  font-size: 2.4rem;
+  color: #747478;
+  line-height: 4rem;
+  letter-spacing: -0.6px;
+}
+
+.terms p + p {
+  margin-top: 1.5rem;
+}
+
+.terms span {
+  display: inline-block;
+  font-size: 2.4rem;
+  color: #747478;
+  line-height: 4rem;
+  letter-spacing: -0.6px;
+}
+
+.terms .pl_20 {
+  padding-left: 2rem;
+}
+
+.bg-gray {
+  padding: 3rem 4rem;
+  background: #f8f8fa;
+}
+
+.bg-gray h4 {
+  line-height: 4.5rem;
+  margin-bottom: 2rem;
+}
+
+.bg-gray p {
+  font-size: 2.4rem;
+  color: #747478;
+  line-height: 3.7rem;
+}
+
+.mt_20 {
+  margin-top: 2rem !important;
 }
