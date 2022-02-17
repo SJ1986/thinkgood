@@ -1,1 +1,183 @@
-test{font-size:1px}
+/* myRoomContentList */
+.grayBox {
+  width: 100%;
+  height: 18rem;
+  background-color: #f8f8fa;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: NanumSquare;
+}
+
+.grayBox p {
+  font-size: 2.2rem;
+  font-weight: normal;
+  letter-spacing: -0.55px;
+  color: #747478;
+  text-align: left;
+}
+
+.grayBox > div {
+  width: 25%;
+  padding: 30px;
+}
+
+.grayBox > div + div {
+  border-left: 1px solid #EDEEF3;
+}
+
+.grayBox span {
+  display: block;
+  margin-top: 4.7rem;
+  font-size: 2.2rem;
+  color: #000;
+  font-weight: normal;
+  letter-spacing: -0.55px;
+  text-align: right;
+}
+
+.grayBox span a {
+  font-size: 3.2rem;
+  color: #000;
+  font-weight: 800;
+  letter-spacing: -0.9px;
+}
+
+.grayBox .on {
+  background-color: #000;
+}
+
+.grayBox .on p {
+  color: #fff;
+}
+
+.grayBox .on span {
+  color: #fff;
+}
+
+.grayBox .on span a {
+  color: #ff0001;
+}
+
+.boxWrap .controlDate {
+  position: relative;
+  text-align: center;
+}
+
+.boxWrap .controlDate span {
+  font-size: 4.4rem;
+  font-weight: 500;
+  letter-spacing: -1.1px;
+}
+
+.boxWrap .controlDate button {
+  position: absolute;
+  width: 1.7859rem;
+  height: 2.739rem;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.boxWrap .controlDate button img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.boxWrap .controlDate .datePrev {
+  left: 10.4rem;
+}
+
+.boxWrap .controlDate .dateNext {
+  right: 10.4rem;
+}
+
+.boxWrap .controlDate p {
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #555;
+  text-align: center;
+}
+
+.boxWrap .text {
+  margin-top: 2.8rem;
+  font-size: 2rem;
+  font-weight: 300;
+  letter-spacing: -1px;
+  color: #555;
+  text-align: center;
+  line-height: 3.25rem;
+}
+
+.boxWrap .DateTitle {
+  float: right;
+  margin-top: 1.9rem;
+  padding-right: 0.8rem;
+}
+
+.boxWrap .DateTitle span {
+  position: relative;
+  font-size: 1.8rem;
+  color: #555;
+  letter-spacing: -0.45px;
+  text-align: left;
+}
+
+.boxWrap .DateTitle .competition::before {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #e82459;
+  border-radius: 50%;
+  content: '';
+}
+
+.boxWrap .DateTitle .education::before {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #ffbb00;
+  border-radius: 50%;
+  content: '';
+}
+
+.boxWrap .DateTitle .activities::before {
+  position: absolute;
+  width: 1rem;
+  height: 1rem;
+  background-color: #8ee600;
+  border-radius: 50%;
+  content: '';
+}
+
+.boxWrap .DateTitle + span {
+  margin-left: 3.3rem;
+}
+
+.calendarSt {
+  display: grid;
+  display: -ms-grid;
+  gap: 0;
+  grid-template-columns: repeat(auto-fit, minmax(14%, auto));
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4rem repeat(5, minmax(12rem, auto));
+  -ms-grid-rows: 4rem 12rem 12rem 12rem 12rem 12rem;
+}
+
+.calendarSt > div:nth-child(-n+7) {
+  display: -webkit-box;
+  display: flex;
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
