@@ -804,6 +804,9 @@ header{
                 }
             }
         }
+        input{
+            border:none;
+        }
     }
 }
 .container{
@@ -1285,15 +1288,6 @@ button{
             background-color:#fff;
             border-color:#ca1c1d !important;
             color:#ca1c1d;
-        }
-        &-naver{
-            background-color:#26cc0a;
-        }
-        &-facebook{
-            background-color:#527bd3;
-        }
-        &-kakao{
-            background-color:#ffd900;
         }
     }
 }
