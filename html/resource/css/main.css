@@ -247,7 +247,11 @@
 }
 
 .font-weight__r {
-  font-weight: 300;
+  font-weight: 300 !important;
+}
+
+.font-weight__rm {
+  font-weight: 400;
 }
 
 .font-weight__m {
@@ -1751,8 +1755,7 @@ p {
 }
 
 .button-black {
-  height: 4.5rem !important;
-  padding: 0 20px !important;
+  height: 4rem !important;
   border-color: #000000 !important;
   color: #000000;
 }
@@ -2277,7 +2280,7 @@ ul.lists.num li:before {
 
 /* pagination */
 .paging {
-  margin-top: 4.5rem;
+  margin-top: 3rem;
 }
 
 .paging__inner a {
@@ -2578,17 +2581,17 @@ ul.lists.num li:before {
 }
 
 .list-thumb.main ul {
-  margin: -15px;
+  margin: -1.5rem;
 }
 
 .list-thumb.main ul li {
-  padding: 15px;
+  padding: 1.5rem;
 }
 
 .list-thumb.main ul li a {
   position: relative;
   display: inline-block;
-  background: none;
+  background: #f8f8fa;
 }
 
 .list-thumb.main ul li a img {
@@ -2617,11 +2620,11 @@ ul.lists.num li:before {
 }
 
 .list-banner ul {
-  margin: -25px -15px -25px -15px;
+  margin: -3rem -1.5rem -3rem -1.5rem;
 }
 
 .list-banner ul li {
-  padding: 25px 15px 25px 15px;
+  padding: 3rem 1.5rem 3rem 1.5rem;
 }
 
 .list-banner ul li a img {

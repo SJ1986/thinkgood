@@ -186,7 +186,10 @@ $font-weight__b : 600;
     font-weight: $font-weight__l;    
 }
 .font-weight__r{
-    font-weight: $font-weight__r;    
+    font-weight: $font-weight__r  !important;    
+}
+.font-weight__rm{
+    font-weight: $font-weight__rm;    
 }
 .font-weight__m{
     font-weight: $font-weight__m !important;      
@@ -1368,8 +1371,7 @@ p{
         border: none !important;
     }
     &-black{
-        height: 4.5rem !important;
-        padding:0 20px !important;
+        height: 4rem !important;
         border-color:#000000 !important;
         color:#000000;
     }

@@ -412,66 +412,68 @@
         }
     }
 }
-.modal{
-    &-content{
-        width:100%;
-    }
-    &-dialog{
-        &--large{
-            width:100rem;
-            max-width:100rem;
+.wrap{
+    .modal{
+        &-content{
+            width:auto;
         }
-        &--gallery{
-            .modal{
-                &-title{
-                    position:initial;
-                    top:auto;
-                    left:auto;
-                    transform:none;
-                    .underTxt{
-                        display:block;
-                        margin-top:2rem;
-                        text-align:left;
+        &-dialog{
+            &--large{
+                width:100rem;
+                max-width:100rem;
+            }
+            &--gallery{
+                .modal{
+                    &-title{
+                        position:initial;
+                        top:auto;
+                        left:auto;
+                        transform:none;
+                        .underTxt{
+                            display:block;
+                            margin-top:2rem;
+                            text-align:left;
+                        }
                     }
-                }
-                &-body{
-                    > img{
-                        width:100%;
-                    }
-                    strong{
-                        display:block;
-                        font-size:2.2rem;
-                        font-weight:$font-weight__m;
-                    }
-                    p{
-                        font-size:1.8rem;
-                        line-height:1.7em;
-                    }
-                    .grayBox{
-                        >p{
-                            font-size:1.7rem;
+                    &-body{
+                        > img{
+                            width:100%;
+                        }
+                        strong{
+                            display:block;
+                            font-size:2.2rem;
+                            font-weight:$font-weight__m;
+                        }
+                        p{
+                            font-size:1.8rem;
                             line-height:1.7em;
-                            color:#747478;
+                        }
+                        .grayBox{
+                            >p{
+                                font-size:1.7rem;
+                                line-height:1.7em;
+                                color:#747478;
+                            }
                         }
                     }
                 }
             }
         }
-    }
-    &-caption{
-        @include d-flex;
-        @include justify-center;
-        @include align-center;
-        &--l{
-            width:10rem;
-            height:10rem;
-        }
-        &--circle{
-            border-radius:100%;
-        }
-        &--black{
-            background-color:#000;
-            color:#fff;
+        &-caption{
+            @include d-flex;
+            @include justify-center;
+            @include align-center;
+            &--l{
+                width:10rem;
+                height:10rem;
+            }
+            &--circle{
+                border-radius:100%;
+            }
+            &--black{
+                background-color:#000;
+                color:#fff;
+            }
         }
     }
 }
@@ -481,16 +483,16 @@
         position:absolute;
     }
     &--right{
-        right:0;
+        right:0 !important;
     }
     &--left{
-        left:0;
+        left:0 !important;
     }
     &--top{
-        top:0;
+        top:0 !important;
     }
     &--bottom{
-        bottom:0;
+        bottom:0 !important;
     }
 }
 // image chang
@@ -1664,6 +1666,7 @@
                 &.active{
                     a{
                         color:#CA1C1D;
+                        font-weight:500;
                     }
                 }
                 >a{
@@ -1713,7 +1716,8 @@
                         }
                         &.active{
                             a{
-                                color:$color-red
+                                color:$color-red;
+                                font-weight:500;
                             }
                         }
                     }
@@ -2484,8 +2488,10 @@
             content:""
         }
         &-red{
-            font-weight: $font-weight__m;
+            font-weight: $font-weight__b;
+            color:#dd2525;
             &::before{
+                display:none;
                 position: absolute;
                 top:-1.8rem;
                 left: -.8rem;
@@ -2569,9 +2575,10 @@
 /* 공모전 :: list */ 
 .sub-tit{
     margin-bottom: 30px;
-    font: {
-        size:2.2rem;
-        weight: $font-weight__m;
+    size:2.2rem;
+    font-weight: 500;
+    span{
+        font-weight:500;
     }
 }
 .thinkgoodPick{
@@ -2678,7 +2685,7 @@
             margin: -30px -12.5px;
             li{
                 width: 20%;
-                padding: 30px 12.5px;
+                padding: 3rem 1.5rem;
                 a{
                     display: inline-block;
                     width:100%;
@@ -2915,6 +2922,7 @@
                     h3{
                         margin: 0;
                         margin-top: 25px;
+                        font-weight:600;
                     }
                 }
                 &-title{
@@ -2980,17 +2988,19 @@
                                         }
                                     }
                                     >div{
-                                        padding: 2rem 0;
+                                        padding: 1.2rem 0;
                                     }
                                     .tit, .txt{
                                         font-size: 1.8rem;
                                     }
                                     .tit{
+                                        display:inline-block;
+                                        width:17rem;
                                         margin-bottom: 2rem;
                                         font-weight: $font-weight__m;
-                                        
                                     }
                                     .txt{
+                                        display:inline-block;
                                         ul{
                                             margin: 0 -1.2rem;
                                             li{
@@ -3144,14 +3154,18 @@
 .thinkgood-coach{
     &__inner{
         padding:4rem;
-        border:1px solid $color-red;
+        border:none;
         border-radius: 3px;
+        background-color:#fafafa;
         .font-xs{
             line-height: 2.6rem;
         }
         .font-s{
             line-height: 3.2rem;
             letter-spacing: -.5px;
+        }
+        > .sub-tit{
+            font-weight:600;
         }
     }
 }
@@ -3175,6 +3189,7 @@
             @include d-flex;
             height: 6rem;
             background: #f8f8fa;
+            font-weight:500;
         }
         .list-banner{
             ul{
@@ -3243,6 +3258,8 @@
 }
 
 .form-input{
+    border:none;
+    padding:0;
     input{
         width:29rem;
         height: 4rem;
@@ -3542,7 +3559,7 @@
             h3{
                 padding-left:3rem;
                 margin:3.5rem 0 2.5rem;
-                font-weight:$font-weight__m;
+                font-weight:600;
             }
             span{
                 color: $color-red;

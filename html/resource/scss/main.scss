@@ -43,13 +43,13 @@
     &-thumb{
         &.main{
             ul{
-                margin: -15px;
+                margin: -1.5rem;
                 li{
-                    padding: 15px;
+                    padding: 1.5rem;
                     a{
                         position: relative;
                         display: inline-block;
-                        background: none;
+                        background: #f8f8fa;
                         
                         img{
                             max-height: 296px;
@@ -80,9 +80,9 @@
     }
     &-banner{
         ul{
-            margin: -25px -15px -25px -15px;
+            margin: -3rem -1.5rem -3rem -1.5rem;
             li{
-                padding: 25px 15px 25px 15px;
+                padding: 3rem 1.5rem 3rem 1.5rem;
                 a{
                     img{
                         max-height: 114px;

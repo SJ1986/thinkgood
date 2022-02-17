@@ -247,7 +247,11 @@
 }
 
 .font-weight__r {
-  font-weight: 300;
+  font-weight: 300 !important;
+}
+
+.font-weight__rm {
+  font-weight: 400;
 }
 
 .font-weight__m {
@@ -1751,8 +1755,7 @@ p {
 }
 
 .button-black {
-  height: 4.5rem !important;
-  padding: 0 20px !important;
+  height: 4rem !important;
   border-color: #000000 !important;
   color: #000000;
 }
@@ -3064,16 +3067,16 @@ ul.lists.num li:before {
   min-height: 2rem;
 }
 
-.modal-content {
-  width: 100%;
+.wrap .modal-content {
+  width: auto;
 }
 
-.modal-dialog--large {
+.wrap .modal-dialog--large {
   width: 100rem;
   max-width: 100rem;
 }
 
-.modal-dialog--gallery .modal-title {
+.wrap .modal-dialog--gallery .modal-title {
   position: initial;
   top: auto;
   left: auto;
@@ -3081,34 +3084,34 @@ ul.lists.num li:before {
           transform: none;
 }
 
-.modal-dialog--gallery .modal-title .underTxt {
+.wrap .modal-dialog--gallery .modal-title .underTxt {
   display: block;
   margin-top: 2rem;
   text-align: left;
 }
 
-.modal-dialog--gallery .modal-body > img {
+.wrap .modal-dialog--gallery .modal-body > img {
   width: 100%;
 }
 
-.modal-dialog--gallery .modal-body strong {
+.wrap .modal-dialog--gallery .modal-body strong {
   display: block;
   font-size: 2.2rem;
   font-weight: 500;
 }
 
-.modal-dialog--gallery .modal-body p {
+.wrap .modal-dialog--gallery .modal-body p {
   font-size: 1.8rem;
   line-height: 1.7em;
 }
 
-.modal-dialog--gallery .modal-body .grayBox > p {
+.wrap .modal-dialog--gallery .modal-body .grayBox > p {
   font-size: 1.7rem;
   line-height: 1.7em;
   color: #747478;
 }
 
-.modal-caption {
+.wrap .modal-caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3126,16 +3129,16 @@ ul.lists.num li:before {
   align-items: center;
 }
 
-.modal-caption--l {
+.wrap .modal-caption--l {
   width: 10rem;
   height: 10rem;
 }
 
-.modal-caption--circle {
+.wrap .modal-caption--circle {
   border-radius: 100%;
 }
 
-.modal-caption--black {
+.wrap .modal-caption--black {
   background-color: #000;
   color: #fff;
 }
@@ -3145,19 +3148,19 @@ ul.lists.num li:before {
 }
 
 .position--right {
-  right: 0;
+  right: 0 !important;
 }
 
 .position--left {
-  left: 0;
+  left: 0 !important;
 }
 
 .position--top {
-  top: 0;
+  top: 0 !important;
 }
 
 .position--bottom {
-  bottom: 0;
+  bottom: 0 !important;
 }
 
 .img-resize--wide > * img {
@@ -4453,6 +4456,7 @@ ul.lists.num li:before {
 
 .lnb-list__dep2 > li.active a {
   color: #CA1C1D;
+  font-weight: 500;
 }
 
 .lnb-list__dep2 > li > a {
@@ -4517,6 +4521,7 @@ ul.lists.num li:before {
 
 .lnb-list__dep2 .dep3 ul li.active a {
   color: #CA1C1D;
+  font-weight: 500;
 }
 
 .lnb-list__dep2 .dep3.kindCard {
@@ -5355,10 +5360,12 @@ ul.lists.num li:before {
 }
 
 .bf.important-red {
-  font-weight: 500;
+  font-weight: 600;
+  color: #dd2525;
 }
 
 .bf.important-red::before {
+  display: none;
   position: absolute;
   top: -1.8rem;
   left: -.8rem;
@@ -5466,7 +5473,11 @@ ul.lists.num li:before {
 /* 공모전 :: list */
 .sub-tit {
   margin-bottom: 30px;
-  font-size: 2.2rem;
+  size: 2.2rem;
+  font-weight: 500;
+}
+
+.sub-tit span {
   font-weight: 500;
 }
 
@@ -5593,7 +5604,7 @@ ul.lists.num li:before {
 
 .list-banner ul li {
   width: 20%;
-  padding: 30px 12.5px;
+  padding: 3rem 1.5rem;
 }
 
 .list-banner ul li a {
@@ -5880,6 +5891,7 @@ ul.lists.num li:before {
 .board-view.contest .view-header h3 {
   margin: 0;
   margin-top: 25px;
+  font-weight: 600;
 }
 
 .board-view.contest .view-title {
@@ -5950,7 +5962,7 @@ ul.lists.num li:before {
 }
 
 .board-view.contest .view-content .content-detail__top .info > div {
-  padding: 2rem 0;
+  padding: 1.2rem 0;
 }
 
 .board-view.contest .view-content .content-detail__top .info .tit, .board-view.contest .view-content .content-detail__top .info .txt {
@@ -5958,8 +5970,14 @@ ul.lists.num li:before {
 }
 
 .board-view.contest .view-content .content-detail__top .info .tit {
+  display: inline-block;
+  width: 17rem;
   margin-bottom: 2rem;
   font-weight: 500;
+}
+
+.board-view.contest .view-content .content-detail__top .info .txt {
+  display: inline-block;
 }
 
 .board-view.contest .view-content .content-detail__top .info .txt ul {
@@ -6112,8 +6130,9 @@ ul.lists.num li:before {
 
 .thinkgood-coach__inner {
   padding: 4rem;
-  border: 1px solid #CA1C1D;
+  border: none;
   border-radius: 3px;
+  background-color: #fafafa;
 }
 
 .thinkgood-coach__inner .font-xs {
@@ -6123,6 +6142,10 @@ ul.lists.num li:before {
 .thinkgood-coach__inner .font-s {
   line-height: 3.2rem;
   letter-spacing: -.5px;
+}
+
+.thinkgood-coach__inner > .sub-tit {
+  font-weight: 600;
 }
 
 .ps {
@@ -6151,6 +6174,7 @@ ul.lists.num li:before {
   justify-content: center;
   height: 6rem;
   background: #f8f8fa;
+  font-weight: 500;
 }
 
 .other-contest__inner .list-banner ul {
@@ -6209,6 +6233,11 @@ ul.lists.num li:before {
 .form-row {
   margin-right: 0;
   margin-left: 0;
+}
+
+.form-input {
+  border: none;
+  padding: 0;
 }
 
 .form-input input {
@@ -6531,7 +6560,7 @@ ul.lists.num li:before {
 .grayBox.intro h3 {
   padding-left: 3rem;
   margin: 3.5rem 0 2.5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .grayBox.intro span {
