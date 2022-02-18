@@ -3190,8 +3190,8 @@ ul.lists.num li:before {
 }
 
 .img-shadow > *:hover > a {
-  -webkit-box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.44);
-          box-shadow: 1px 1px 13px 0px rgba(0, 0, 0, 0.44);
+  -webkit-box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15);
+          box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15);
 }
 
 .img-shadow--text {
@@ -3222,6 +3222,10 @@ ul.lists.num li:before {
 
 .form-input input.pw_bg_gray {
   background-color: #f8f8fe;
+}
+
+.form-input.input-border--1 {
+  border: 1px solid #e5e7ee;
 }
 
 .dot--caution {
@@ -3494,8 +3498,10 @@ ul.lists.num li:before {
 }
 
 .boxWhite {
+  width: 100%;
   background-color: #fff;
   border: 1px solid #e5e7ee;
+  border-radius: .3rem;
   font-size: 1.7rem;
   line-height: 3.2rem;
   color: #747478;
@@ -3512,7 +3518,7 @@ ul.lists.num li:before {
 }
 
 .content__inner.sub {
-  margin-bottom: 12rem;
+  padding-bottom: 12rem;
 }
 
 .content__inner.sub > h1 {
@@ -3627,6 +3633,12 @@ ul.lists.num li:before {
   bottom: 0;
   right: 0;
   font-size: 1.6rem;
+  border: 1px solid #e5e7ee;
+  border-radius: 0.3rem;
+}
+
+.content__core.lab h1 {
+  font-size: 3.6rem;
 }
 
 .content__core.lab .swiper-container .swiper-slide img {
@@ -3693,9 +3705,22 @@ ul.lists.num li:before {
   transition: all .5s ease-in-out;
 }
 
+.content__core.lab div[class^='gallery'] div.swiper-button-prev {
+  background: url(../image/common/icon/icon__slidePrev.png) no-repeat 0 0;
+  -webkit-filter: drop-shadow(1.5px 2.6px 5px rgba(0, 0, 0, 0.39));
+          filter: drop-shadow(1.5px 2.6px 5px rgba(0, 0, 0, 0.39));
+}
+
+.content__core.lab div[class^='gallery'] div.swiper-button-next {
+  background: url(../image/common/icon/icon__slideNext.png) no-repeat 0 0;
+  -webkit-filter: drop-shadow(1.5px 2.6px 5px rgba(0, 0, 0, 0.39));
+          filter: drop-shadow(1.5px 2.6px 5px rgba(0, 0, 0, 0.39));
+}
+
 .content__core.lab div[class^='gallery'] div[class^='swiper-button']:after {
   color: #fff;
   text-shadow: 1px 1px 7px #000;
+  content: "";
 }
 
 .content__core.lab .galleryReward div[class^='swiper-button'] {
@@ -3861,6 +3886,12 @@ ul.lists.num li:before {
   margin: 6rem 0 0 7rem;
 }
 
+.content__core.lab .gallery__info--reward .gallery__title {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
 .content__core.lab .gallery__info--reward > dl * {
   font-size: 1.8rem;
 }
@@ -3868,6 +3899,7 @@ ul.lists.num li:before {
 .content__core.lab .gallery__info--reward > dl dt {
   width: 15rem;
   margin-bottom: 4rem;
+  font-weight: 500;
 }
 
 .content__core.lab .gallery__info--reward > dl dt:nth-child(n+10) {
@@ -3911,13 +3943,13 @@ ul.lists.num li:before {
 
 @media (min-width: 720px) {
   .content__core.lab .gallery-section--gray {
-    padding: 6rem 3rem;
+    padding: 6rem 3rem 4rem;
   }
 }
 
 @media (min-width: 1600px) {
   .content__core.lab .gallery-section--gray {
-    padding: 6rem 0;
+    padding: 6rem 0 4rem;
   }
 }
 
@@ -3934,6 +3966,9 @@ ul.lists.num li:before {
 
 .content__core.lab .gallery__title {
   position: relative;
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid #e5e7ee;
   font-size: 3.8rem;
   line-height: 1.2em;
   color: #000;
@@ -3946,7 +3981,7 @@ ul.lists.num li:before {
 
 .content__core.lab .gallery__title .count {
   position: absolute;
-  bottom: 0;
+  bottom: 4rem;
   right: 0;
   font-size: 16px;
   color: #747478;
@@ -4190,7 +4225,7 @@ ul.lists.num li:before {
   display: block;
   margin-top: 3rem;
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .content__core.lab .stats__kick > div > a {
@@ -4664,14 +4699,21 @@ ul.lists.num li:before {
 }
 
 .sub3Dep a {
+  position: relative;
   display: inline-block;
   padding: 3.5rem 0;
   font-size: 2rem;
   font-weight: 500;
 }
 
-.sub3Dep a.current {
-  border-bottom: 2px solid #CA1C1D;
+.sub3Dep a.current:before {
+  position: absolute;
+  bottom: 0;
+  left: -1rem;
+  width: calc(100% + 2rem);
+  height: 2px;
+  background-color: #CA1C1D;
+  content: "";
 }
 
 /* board */
@@ -7879,6 +7921,12 @@ ul.lists.num li:before {
 .postList a > q {
   margin-top: 3rem;
   line-height: 1.5em;
+}
+
+.postList a + a {
+  margin-top: 3rem;
+  padding-top: 3rem;
+  border-top: 1px solid #e5e7ee;
 }
 
 .find-link a {
