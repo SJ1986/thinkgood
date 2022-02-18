@@ -2658,13 +2658,6 @@ ul.lists.num li:before {
   border-radius: 3px;
 }
 
-.list-thumb.main ul li a:hover span {
-  opacity: 1;
-  visibility: visible;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
-}
-
 .list-banner ul {
   margin: -3rem -1.5rem -3rem -1.5rem;
 }
