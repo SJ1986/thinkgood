@@ -1195,7 +1195,7 @@ p {
 }
 
 .footer__inner .banner {
-  padding: 40px 0;
+  padding: 2rem 0;
   border-top: 2px solid #8c8c8c;
   background: #f8f8fa;
 }
@@ -2325,7 +2325,7 @@ ul.lists.num li:before {
   margin-left: -.1rem;
   color: #686868;
   font-size: 1.4rem;
-  font-weight: 200;
+  font-weight: 400;
   z-index: 1;
 }
 
@@ -2366,6 +2366,7 @@ ul.lists.num li:before {
   font-weight: 600;
   border: 1px solid #e4e6ee;
   border-radius: .3rem;
+  color: #000;
 }
 
 /* scrollbar */
@@ -3184,18 +3185,22 @@ ul.lists.num li:before {
 
 .position--right {
   right: 0 !important;
+  left: auto !important;
 }
 
 .position--left {
   left: 0 !important;
+  right: auto !important;
 }
 
 .position--top {
   top: 0 !important;
+  bottom: auto !important;
 }
 
 .position--bottom {
   bottom: 0 !important;
+  top: auto !important;
 }
 
 .img-resize--wide > * img {
@@ -3241,6 +3246,10 @@ ul.lists.num li:before {
   border: 1px solid #e5e7ee;
   border-radius: .3rem;
   background-color: #fff;
+}
+
+.form-input:disabled {
+  background-color: #f8f8fa;
 }
 
 .form-input input {
@@ -3919,6 +3928,12 @@ ul.lists.num li:before {
   margin-bottom: 0;
   padding-bottom: 0;
   border-bottom: none;
+}
+
+.content__core.lab .gallery__info--reward .gallery-review__title {
+  padding-bottom: 3rem;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #e5e7ee;
 }
 
 .content__core.lab .gallery__info--reward > dl * {
@@ -5055,8 +5070,9 @@ ul.lists.num li:before {
 }
 
 .board-view .view-comment .editor .button-wrap button {
-  width: 130px;
+  width: auto;
   height: 100%;
+  padding: 0 2rem;
   border: none;
   border-radius: 0;
 }
@@ -5121,7 +5137,7 @@ ul.lists.num li:before {
 .board-write .form-wrap .select {
   width: 160px;
   height: 4rem;
-  border: 1px solid #000000;
+  border: 1px solid #e5e7ee;
   border-radius: 3px;
   font-size: 1.6rem;
   color: #747478;
@@ -5755,8 +5771,8 @@ ul.lists.num li:before {
 }
 
 .thinkgoodPick-banner__inner .swiper-button-prev, .thinkgoodPick-banner__inner .swiper-button-next {
-  width: 1.1rem;
-  height: 1.8rem;
+  width: 2.6rem;
+  height: 4.5rem;
   margin: 0;
   opacity: 1;
   -webkit-transform: translateY(-50%);
@@ -5768,13 +5784,13 @@ ul.lists.num li:before {
 }
 
 .thinkgoodPick-banner__inner .swiper-button-prev {
-  left: 0;
-  background: url(../image/common/icon/arrow__prev-big.png) no-repeat center;
+  left: 1rem;
+  background: url(../image/common/icon/icon__slidePrev.png) no-repeat center;
 }
 
 .thinkgoodPick-banner__inner .swiper-button-next {
-  right: 0;
-  background: url(../image/common/icon/arrow__next-big.png) no-repeat center;
+  right: 1rem;
+  background: url(../image/common/icon/icon__slideNext.png) no-repeat center;
 }
 
 .thinkgoodPick-banner__inner .swiper-pagination {
@@ -5888,11 +5904,6 @@ ul.lists.num li:before {
   overflow: hidden;
   -webkit-transition: all .2s;
   transition: all .2s;
-}
-
-.list-banner ul li a:hover img {
-  -webkit-box-shadow: 13px 13px 2rem rgba(31, 31, 49, 0.26);
-          box-shadow: 13px 13px 2rem rgba(31, 31, 49, 0.26);
 }
 
 .list-banner ul li a .info {
@@ -6358,6 +6369,10 @@ ul.lists.num li:before {
   background: url(../image/common/icon/icon-mail.png);
 }
 
+.view-tab p {
+  line-height: 1.5em;
+}
+
 .view-tab .tab-top {
   height: 7rem;
 }
@@ -6591,8 +6606,6 @@ ul.lists.num li:before {
   display: inline-block;
   width: auto;
   padding: 3rem;
-  -webkit-box-shadow: 6px 6px 10px rgba(10, 10, 33, 0.1);
-          box-shadow: 6px 6px 10px rgba(10, 10, 33, 0.1);
 }
 
 .search-result__box .form-input {
@@ -8470,10 +8483,6 @@ div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
   margin-right: 0 !important;
 }
 
-.content__core-right .button-wrap button {
-  width: 130px;
-}
-
 .content__core-right .board-bottom .button-wrap .fileDown {
   width: 170px !important;
 }
@@ -8481,10 +8490,6 @@ div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
 .d-flex .button-wrap button.fileDown {
   font-size: 16px;
   font-weight: 400 !important;
-}
-
-.guideBook .button-wrap button {
-  width: 130px;
 }
 
 /* -------------------------------------220218
@@ -8541,7 +8546,6 @@ h1 {
     radius 주기 및 패딩 40px 주기*/
 .grayBox {
   border-radius: 0.3rem !important;
-  border: solid 1px #e5e7ee !important;
 }
 
 /*

@@ -337,11 +337,14 @@
                                 </div>
                             </div>
                         </div>
+                        
                     </div>
                     <div class="content__core-right pt-0">
                         <div class="board-write">
-                            <div class="">
-                                <p class="tit essential">분류</p>
+                            <div class="d-flex  align-items-center">
+                                <p class="tit w_17r mb-0">
+                                    <span class="essential font-weight__m">분류</span>
+                                </p>
                                 <div class="form-wrap">
                                     <select class="select">
                                         <option value="0" selected="selected">분류선택</option>
@@ -350,33 +353,35 @@
                                     </select>
                                 </div>
                             </div>
-                            <div class="mt_40">
-                                <p class="tit essential">제목</p>
-                                <div class="form-wrap">
-                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-100"
-                                            placeholder="" />
+                            <div class="d-flex mt_40 align-items-center">
+                                <p class="tit w_17r mb-0">
+                                    <span class="essential font-weight__m">제목</span>
+                                </p>
+                                <div class="form-wrap w-50">
+                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="">
                                 </div>
                             </div>
 
-                            <div class="mt_40">
-                                <p class="tit essential">내용</p>
+                            <div class="d-flex mt_40">
+                                <p class="tit w_17r">
+                                    <span class="essential font-weight__m">내용</span>
+                                </p>
 
                                 <!-- 에디터 영역입니다. -->
-                                <div class="editor">
-                                    <img src="../../resource/image/sub/img-editor.png" alt="">
+                                <div class="editor" style="width:calc(100% - 17rem)">
+                                    <img src="../../resource/image/sub/img-editor.png" class="w-100" alt="">
                                 </div>
                                 <!-- //에디터 영역입니다. -->
                                 
                             </div>
 
-                            <div class="mt_40">
-                                <p class="tit">링크</p>
+                            <div class="mt_40 d-flex align-items-center">
+                                <p class="tit w_17r mb-0">링크</p>
                                 <div class="form-wrap d-flex align-items-center">
-                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-600"
-                                            placeholder="" />
+                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-600" placeholder="URL을 입력해주세요. " disabled="true">
                                     <div class="button-wrap ml_20">
-                                        <button type="button" class="click-plus">추가</button>
-                                        <button type="button" class="click-delete">삭제</button>
+                                        <button type="button" class="m-0 w-auto ml_20 click-plus">추가</button>
+                                        <button type="button" class="m-0 w-auto ml_20 click-delete">삭제</button>
                                     </div>
                                     
                                 </div>
@@ -385,8 +390,8 @@
                             <div class="mt_40">
                                 <div class="button-wrap text-center">
                                     <button type="button" class="button-red">작성완료</button>
-                                    <button type="button" class="button-delete">삭제</button>
-                                </div>
+                                    <button type="button" class="button-white">삭제</button>
+                                </div>1
                             </div>
 
                         </div>

@@ -875,7 +875,7 @@ p{
             }
         }
         .banner{
-            padding:40px 0;
+            padding:2rem 0;
             border-top:2px solid #8c8c8c;
             background: #f8f8fa;
             &__inner{
@@ -1932,7 +1932,7 @@ ul{
             margin-left: -.1rem;
             color:#686868;
             font-size:1.4rem;
-            font-weight: $font-weight__l;
+            font-weight:400;
             z-index:1;
             
             &.first{
@@ -1977,6 +1977,7 @@ ul{
                 font-weight: $font-weight__b;
                 border:1px solid #e4e6ee;
                 border-radius: .3rem;
+                color:#000;
             }
         }
     }

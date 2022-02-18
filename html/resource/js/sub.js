@@ -26,23 +26,22 @@ $(function () {
 	});
 
 	//다른 공모전 보기 슬라이드
-	var otherContest = new Swiper(".other-contest__slide .swiper-container", {
-		slidesPerView: 5,
-		spaceBetween: 25,
-		//centeredSlides: true,
-		centeredSlides: true,
-		roundLengths: true,
-		loop: true,
-		loopAdditionalSlides: 30,
-		pagination: {
-			el: ".swiper-pagination",
-			type: "fraction",
-		},
-		navigation: {
-			nextEl: ".swiper-button-next",
-			prevEl: ".swiper-button-prev",
-		},
-	});
+	// var otherContest = new Swiper(".other-contest__slide .swiper-container", {
+	// 	slidesPerView: 5,
+	// 	spaceBetween: 25,
+	// 	centeredSlides: true,
+	// 	roundLengths: true,
+	// 	loop: true,
+	// 	loopAdditionalSlides: 30,
+	// 	pagination: {
+	// 		el: ".swiper-pagination",
+	// 		type: "fraction",
+	// 	},
+	// 	navigation: {
+	// 		nextEl: ".swiper-button-next",
+	// 		prevEl: ".swiper-button-prev",
+	// 	},
+	// });
 
 	//답글 클릭시
 	$(".button-comment").click(function(){
