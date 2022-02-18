@@ -1311,20 +1311,34 @@ p {
 
 .winger-list {
   position: relative;
-  border: 1px solid #e5e7ee;
   border-radius: 3px;
+  border: none;
+}
+
+.winger-list > div {
+  border-radius: .3rem;
+}
+
+.winger-list > div + div:not(.winger-content__wrap) {
+  margin-top: .4rem;
 }
 
 .winger-list button {
   width: 6.5rem;
   height: 6.5rem;
+  border: 1px solid #e5e7ee;
+  background-color: #f8f8fa;
+}
+
+.winger-list button + button {
+  margin-top: .5rem;
 }
 
 .winger-list button span {
   display: inline-block;
   margin-top: 5px;
   font-size: 1.2rem;
-  font-weight: 400;
+  font-weight: 600;
   color: #000;
   text-align: center;
 }
@@ -1347,8 +1361,8 @@ p {
 }
 
 .winger-list > div:not(.top) {
-  border-bottom: 1px solid #e5e7ee;
   background: #f8f8fa;
+  border-bottom: none;
 }
 
 .winger-list > div.fast-link i {
@@ -1356,6 +1370,7 @@ p {
   width: 3.1rem;
   height: 3.3rem;
   background: url(../image/common/icon/icon__fast-link.png) no-repeat center center;
+  background-size: cover;
 }
 
 .winger-list > div.scrap-link i {
@@ -1363,13 +1378,15 @@ p {
   width: 3.1rem;
   height: 2.8rem;
   background: url(../image/common/icon/icon__like-link.png) no-repeat center center;
+  background-size: contain;
 }
 
 .winger-list > div.btn-top i {
   display: block;
   width: 13px;
   height: 18px;
-  background: url(../image/common/icon/icon__top.png);
+  background: url(../image/common/icon/icon__top.png) no-repeat 0 0;
+  background-size: cover;
 }
 
 .winger-list > div.btn-top span {
@@ -1391,7 +1408,7 @@ p {
 
 .winger-content.current {
   display: block;
-  right: 60px;
+  right: 70px;
   z-index: -1;
 }
 
@@ -1399,14 +1416,16 @@ p {
   display: block;
   width: 23px;
   height: 21px;
-  background: url(../image/common/icon/icon__fast-link.png);
+  background-image: url(../image/common/icon/icon__fast-link.png);
+  background-size: cover;
 }
 
 .winger-content i.scrap-link {
   display: block;
   width: 23px;
   height: 22px;
-  background: url(../image/common/icon/icon__like-link.png);
+  background: url(../image/common/icon/icon__like-link.png) no-repeat 0 0;
+  background-size: contain;
 }
 
 .winger-content__header {
@@ -1458,7 +1477,6 @@ p {
   justify-content: center;
   width: 70px;
   height: 80px;
-  border: 1px solid #e5e7ee;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-flex: 0;
@@ -5888,7 +5906,7 @@ ul.lists.num li:before {
 
 .list-banner ul li {
   width: 20%;
-  padding: 3rem 1.5rem;
+  padding: 1rem 1.5rem;
 }
 
 .list-banner ul li a {

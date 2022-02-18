@@ -982,16 +982,27 @@ p{
     z-index: 2;
     &-list{
         position: relative;
-        border:1px solid #e5e7ee;
         border-radius: 3px;
+        border:none;
+        > div{
+            border-radius:.3rem;
+            +div:not(.winger-content__wrap ){
+                margin-top:.4rem;
+            }
+        }
         button{
             width:6.5rem;
             height: 6.5rem;
+            border:1px solid #e5e7ee;
+            background-color:#f8f8fa;
+            + button{
+                margin-top:.5rem;
+            }
             span{
                 display: inline-block;
                 margin-top: 5px;
                 font-size: 1.2rem;
-                font-weight: $font-weight__rm;
+                font-weight: 600;
                 color:#000;
                 text-align: center;
             }
@@ -1004,8 +1015,8 @@ p{
                 background-position: center;
             }
             &:not(.top){
-                border-bottom:1px solid #e5e7ee;
                 background: #f8f8fa;
+                border-bottom:none;
             }
             &.fast-link{
                 i{
@@ -1013,6 +1024,7 @@ p{
                     width:3.1rem;
                     height: 3.3rem;
                     background: url(../image/common/icon/icon__fast-link.png) no-repeat center center ;
+                    background-size:cover;
                 }
             }
             &.scrap-link{
@@ -1021,6 +1033,7 @@ p{
                     width:3.1rem;
                     height: 2.8rem;
                     background: url(../image/common/icon/icon__like-link.png) no-repeat center center ;
+                    background-size:contain;
                 }
             }
             &.btn-top{
@@ -1028,7 +1041,8 @@ p{
                     display: block;
                     width:13px;
                     height: 18px;
-                    background: url(../image/common/icon/icon__top.png);
+                    background: url(../image/common/icon/icon__top.png) no-repeat  0 0;
+                    background-size:cover;
                 }
                 span{
                     font-size: 1.3rem;
@@ -1048,7 +1062,7 @@ p{
         transition: all .2s;
         &.current{
             display: block;
-            right: 60px;
+            right: 70px;
             z-index: -1;
         }
         i {
@@ -1056,14 +1070,16 @@ p{
                 display: block;
                 width: 23px;
                 height: 21px;
-                background: url(../image/common/icon/icon__fast-link.png);
+                background-image: url(../image/common/icon/icon__fast-link.png);
+                background-size:cover;
             }
 
             &.scrap-link {
                 display: block;
                 width: 23px;
                 height: 22px;
-                background: url(../image/common/icon/icon__like-link.png);
+                background: url(../image/common/icon/icon__like-link.png) no-repeat  0 0;
+                background-size:contain;
             }
         }
         &__header{
@@ -1102,7 +1118,7 @@ p{
                 @include d-flex;
                 width: 70px;
                 height: 80px;
-                border:1px solid #e5e7ee;
+                // border:1px solid #e5e7ee;
                 box-sizing: border-box;
                 flex: none;
                 img{

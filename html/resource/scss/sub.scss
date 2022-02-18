@@ -2843,7 +2843,7 @@
             margin: -30px -12.5px;
             li{
                 width: 20%;
-                padding: 3rem 1.5rem;
+                padding: 1rem 1.5rem;
                 a{
                     display: inline-block;
                     width:100%;
@@ -5042,7 +5042,7 @@ div[class^="content__core-mainN"]{
                 }
                 &.active{
                     &a{
-                        font-weight:600;color:#dd2525
+                        font-weight:600;color:#dd2525;
                     }
                     &:before{position:absolute;top:0;left:50%;width:0.5rem;height:0.5rem;background-color:#dd2525;border-radius:100%;transform:translateX(-50%);content:""}
                 } 
