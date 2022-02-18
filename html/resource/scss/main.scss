@@ -87,6 +87,12 @@
                     img{
                         max-height: 114px;
                     }
+                    &:hover{
+                        img{
+                            box-shadow: 13px 13px 2rem rgba(31,31,49,0.26);
+                        }
+                        
+                    }
                 }
             }
         }

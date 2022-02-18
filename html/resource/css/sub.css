@@ -5924,6 +5924,11 @@ ul.lists.num li:before {
   transition: all .2s;
 }
 
+.list-banner ul li a:hover img {
+  -webkit-box-shadow: 13px 13px 2rem rgba(31, 31, 49, 0.26);
+          box-shadow: 13px 13px 2rem rgba(31, 31, 49, 0.26);
+}
+
 .list-banner ul li a .info {
   margin-top: 1.5rem;
   font-size: 1.6rem;
