@@ -8384,3 +8384,68 @@ div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
   padding: 30px 0;
   border-bottom: 1px solid #747478;
 }
+
+.pt_30 {
+  padding-top: 3rem;
+}
+
+.pb_0 {
+  padding-bottom: 0;
+}
+
+.pd_0 {
+  padding: 0 !important;
+}
+
+.lh_40 {
+  line-height: 40px;
+}
+
+.lh_50 {
+  line-height: 50px;
+}
+
+.postList a {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e6e8ef;
+  margin-bottom: 3rem;
+}
+
+.postList a.border_0 {
+  border: none;
+}
+
+.table_campus tbody tr td:nth-child(2) {
+  font-weight: 500;
+}
+
+.font-weight_5 {
+  font-weight: 500;
+}
+
+.stats__kick div p {
+  font-weight: 500;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.transCardWrap .items .head .form-check label {
+  margin-right: 0 !important;
+}
+
+.content__core-right .button-wrap button {
+  width: 130px;
+}
+
+.content__core-right .board-bottom .button-wrap .fileDown {
+  width: 170px !important;
+}
+
+.d-flex .button-wrap button.fileDown {
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
+.guideBook .button-wrap button {
+  width: 130px;
+}
