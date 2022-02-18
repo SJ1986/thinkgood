@@ -8444,7 +8444,7 @@ div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
   line-height: unset;
 }
 
-.top-dot::before {
+.top-dot.color-cherryRed::before {
   background: #f7592a !important;
 }
 
