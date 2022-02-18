@@ -1685,7 +1685,7 @@
     &-mainMagazine{
         width:36rem;
         .img-thumbnail{
-            padding:0;border:none;box-shadow:1px 1px 20px 13px rgba(147, 147, 147, 0.38)
+            padding:0;border:none;box-shadow:0px 23px 28px 0 rgba(31, 31, 49, 0.13)
         }
     }
     &-mainNews{
@@ -4963,4 +4963,19 @@ div[class^="content__core-mainN"]{
             }
         }
     }
+}
+
+.main-tit2{
+    font-size:3.4rem !important;
+	margin-bottom: 50px;
+    font-weight: 600;
+    em{
+        display: inline-block;
+        font-weight: 600;
+        line-height: unset;
+    }
+}
+
+.top-dot::before{
+    background: #f7592a !important;
 }

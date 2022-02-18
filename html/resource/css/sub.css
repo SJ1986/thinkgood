@@ -242,6 +242,10 @@
   color: #f7592a !important;
 }
 
+.color-orange {
+  color: #f7592a;
+}
+
 .font-family__sn {
   font-family: "SeoulNamsan";
 }
@@ -4496,8 +4500,8 @@ ul.lists.num li:before {
 .content-mainMagazine .img-thumbnail {
   padding: 0;
   border: none;
-  -webkit-box-shadow: 1px 1px 20px 13px rgba(147, 147, 147, 0.38);
-          box-shadow: 1px 1px 20px 13px rgba(147, 147, 147, 0.38);
+  -webkit-box-shadow: 0px 23px 28px 0 rgba(31, 31, 49, 0.13);
+          box-shadow: 0px 23px 28px 0 rgba(31, 31, 49, 0.13);
 }
 
 .content-mainNews {
@@ -8310,4 +8314,20 @@ div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   content: "";
+}
+
+.main-tit2 {
+  font-size: 3.4rem !important;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.main-tit2 em {
+  display: inline-block;
+  font-weight: 600;
+  line-height: unset;
+}
+
+.top-dot::before {
+  background: #f7592a !important;
 }
