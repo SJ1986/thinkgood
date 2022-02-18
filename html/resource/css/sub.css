@@ -678,6 +678,10 @@ p.font-s {
   font-size: 1.6rem !important;
 }
 
+.font-tiny {
+  font-size: 1.2rem !important;
+}
+
 .wrap {
   position: relative;
   min-height: 100%;
@@ -1920,7 +1924,7 @@ ul.lists.num li:before {
   margin: -.3rem .8rem 0 0;
   text-align: center;
   vertical-align: middle;
-  border: .1rem solid #e5e7ee;
+  border: .1rem solid #ddd;
   border-radius: 0.3rem;
   background-color: #fff;
 }
@@ -2868,6 +2872,7 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .items.rows .button-wrap button.click-file {
+  width: auto;
   color: #000;
 }
 
@@ -2876,6 +2881,7 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .items.rows .button-wrap button.click-plus {
+  width: auto;
   color: #CA1C1D;
 }
 
@@ -2884,6 +2890,7 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .items.rows .button-wrap button.click-delete {
+  width: auto;
   color: #a59b99;
 }
 
@@ -2896,6 +2903,7 @@ ul.lists.num li:before {
   -ms-flex-item-align: center;
       align-self: center;
   -ms-grid-row-align: center;
+  font-weight: 400;
 }
 
 .transCardWrap .items > * .caution:after {
@@ -2952,7 +2960,8 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .form-check input[type='checkbox'] + label {
-  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-left: 0;
   margin: 1rem 0;
 }
 
@@ -3003,8 +3012,8 @@ ul.lists.num li:before {
 .transCardWrap.content .transHead {
   grid-template-columns: 5rem 12.5rem 16rem 60rem 24rem;
   -ms-grid-columns: 5rem 12.5rem 16rem 60rem 24rem;
-  grid-template-rows: 7rem;
-  -ms-grid-rows: 7rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
 }
 
 .transCardWrap.content .items {
@@ -3026,8 +3035,8 @@ ul.lists.num li:before {
 .transCardWrap.reply .transHead {
   grid-template-columns: 5rem 12.5rem 16rem 40rem 40rem;
   -ms-grid-columns: 5rem 12.5rem 16rem 40rem 40rem;
-  grid-template-rows: 7rem;
-  -ms-grid-rows: 7rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
 }
 
 .transCardWrap.reply .items {
@@ -3049,8 +3058,8 @@ ul.lists.num li:before {
 .transCardWrap.applyList .transHead {
   grid-template-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
   -ms-grid-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
-  grid-template-rows: 7rem;
-  -ms-grid-rows: 7rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
 }
 
 .transCardWrap.applyList .items {
@@ -3074,8 +3083,8 @@ ul.lists.num li:before {
 .transCardWrap.w1312221 .items {
   grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
   -ms-grid-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
-  grid-template-rows: 6rem;
-  -ms-grid-rows: 6rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
 }
 
 .onlyConfirm .modal-body p {
@@ -4374,7 +4383,6 @@ ul.lists.num li:before {
   display: inline-block;
   margin-top: 4rem;
   padding: .3rem 0;
-  padding-right: 1.5rem;
   font-size: 1.6rem;
   font-weight: 500;
   background: url("../image/common/icon/arrow__next-big.png") no-repeat 100% center;
@@ -4390,6 +4398,10 @@ ul.lists.num li:before {
   height: 1px;
   background-color: #000;
   content: "";
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > a.goToLink {
+  padding-right: 2rem;
 }
 
 .content__core.myHost .content__core-right .grayBox .lists li {
@@ -4697,7 +4709,7 @@ ul.lists.num li:before {
 
 .lnb-list__dep2 > li.active a {
   color: #CA1C1D;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .lnb-list__dep2 > li > a {
@@ -5505,10 +5517,15 @@ ul.lists.num li:before {
   background-size: 1.5rem 2.5rem;
 }
 
+.button-wrap button.fileDown {
+  padding: 0;
+}
+
 .button-wrap button.fileDown i {
   display: inline-block;
   width: 1.7rem;
   height: 1.7rem;
+  margin-left: .5rem;
   background-image: url("../image/sub/icon/icon-fileDown.png");
   background-size: 1.7rem 1.7rem;
 }
@@ -5924,6 +5941,10 @@ ul.lists.num li:before {
   border: 1px solid #e5e7ee;
 }
 
+.tab-wrap .tab li span {
+  color: #CA1C1D;
+}
+
 .tab-wrap .tab li + li {
   margin-left: -1px;
 }
@@ -5938,6 +5959,10 @@ ul.lists.num li:before {
 
 .tab-wrap .tab li.current + li {
   border-left-color: #CA1C1D;
+}
+
+.tab-wrap .tab li.current span {
+  color: #ffff;
 }
 
 .tab-wrap .tab-top {
@@ -6892,7 +6917,6 @@ ul.lists.num li:before {
 }
 
 .grayBox.status > div > span a {
-  padding-right: 1.5rem;
   font-size: 4.8rem;
   font-weight: 600;
 }
@@ -7635,8 +7659,21 @@ ul.lists.num li:before {
   font-weight: 500;
 }
 
+.mythinkRoom .lnbBox, .myHost .lnbBox {
+  height: auto;
+}
+
+.mythinkRoom .lnbBox + p, .myHost .lnbBox + p {
+  border-bottom: 1px solid #000;
+}
+
 .mythinkRoom .img-wrap img, .myHost .img-wrap img {
   width: 100%;
+}
+
+.myHost .lnbBox {
+  height: 27.9rem;
+  padding-top: 2.5rem;
 }
 
 .myHost.intro .lnb__inner {
@@ -8622,4 +8659,20 @@ h1 {
 .content__core.lab .gallery__info--reward {
   width: calc(100% - 82rem) !important;
   margin: 4rem 0 0 7rem !important;
+}
+
+.icon.calendar {
+  width: 2rem;
+  height: 2rem;
+  background: url("../image/sub/icon/vector-smart-object.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.customDate {
+  height: 4rem;
+}
+
+.customDate input {
+  height: 100%;
+  font-size: 1.4rem;
 }

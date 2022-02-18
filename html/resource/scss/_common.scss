@@ -455,6 +455,9 @@ p{
     &-xs{
         font-size: 1.6rem !important;
     }
+    &-tiny{
+        font-size: 1.2rem !important;
+    }
 }
 
 
@@ -1551,7 +1554,7 @@ ul{
                         text-align: center;
                         vertical-align: middle; 
                         
-                        border: .1rem solid #e5e7ee; 
+                        border: .1rem solid #ddd; 
                         border-radius : 0.3rem; 
                         background-color:#fff;
                     }

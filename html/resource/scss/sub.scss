@@ -209,18 +209,21 @@
                             }
                             &.click{
                                 &-file{
+                                    width:auto;
                                     color:#000;
                                     &:before{
                                         background-color:#000;
                                     }
                                 }
                                 &-plus{
+                                    width:auto;
                                     color:#CA1C1D;
                                     &:before{
                                         background-color:#CA1C1D;
                                     }
                                 }
                                 &-delete{
+                                    width:auto;
                                     color:#a59b99;
                                     &:before{
                                         background-color:#a59b99;
@@ -235,6 +238,7 @@
                 position:relative;
                 align-self:center;
                 -ms-grid-row-align:center;
+                font-weight:400;
                 .caution{
                     &:after{
                         display:inline-block;
@@ -274,7 +278,8 @@
                 font-weight:400;
                 input[type='checkbox']{
                     + label{
-                        padding-left:2rem;
+                        padding-right:2rem;
+                        padding-left:0;
                         margin:1rem 0;
                         &::before{
                             position:relative;
@@ -320,8 +325,8 @@
                 &Head{
                     grid-template-columns: 5rem 12.5rem 16rem 60rem 24rem;
                     -ms-grid-columns:5rem 12.5rem 16rem 60rem 24rem;
-                    grid-template-rows: 7rem;
-                    -ms-grid-rows:7rem;
+                    grid-template-rows: 6rem;
+                    -ms-grid-rows:6rem;
                 }
             }
             .items{
@@ -341,8 +346,8 @@
                 &Head{
                     grid-template-columns: 5rem 12.5rem 16rem 40rem 40rem;
                     -ms-grid-columns:5rem 12.5rem 16rem 40rem 40rem;
-                    grid-template-rows: 7rem;
-                    -ms-grid-rows:7rem;
+                    grid-template-rows: 6rem;
+                    -ms-grid-rows:6rem;
                 }
             }
             .items{
@@ -362,8 +367,8 @@
                 &Head{
                     grid-template-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
                     -ms-grid-columns:10rem 10rem 46rem 12rem 24rem 15rem;
-                    grid-template-rows: 7rem;
-                    -ms-grid-rows:7rem;
+                    grid-template-rows: 6rem;
+                    -ms-grid-rows:6rem;
                 }
             }
             .items{
@@ -388,8 +393,8 @@
             .items{
                 grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
                 -ms-grid-columns:10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
-                grid-template-rows: 6rem;
-                -ms-grid-rows:6rem;
+                grid-template-rows: 7rem;
+                -ms-grid-rows:7rem;
             }
         }
     }
@@ -1579,7 +1584,6 @@
                                 display:inline-block;
                                 margin-top:4rem;
                                 padding:.3rem 0;
-                                padding-right:1.5rem;
                                 font-size:1.6rem;
                                 font-weight:500;
                                 background:url('../image/common/icon/arrow__next-big.png') no-repeat 100% center;
@@ -1593,6 +1597,9 @@
                                     height:1px;
                                     background-color:#000;
                                     content:""
+                                }
+                                &.goToLink{
+                                    padding-right:2rem;
                                 }
                             }
                         }
@@ -1789,7 +1796,7 @@
                 &.active{
                     a{
                         color:#CA1C1D;
-                        font-weight:500;
+                        font-weight:600;
                     }
                 }
                 >a{
@@ -2512,10 +2519,12 @@
                 }
             }
             &.fileDown{
+                padding:0;
                 i{
                     display:inline-block;
                     width:1.7rem;
                     height:1.7rem;
+                    margin-left:.5rem;
                     background-image:url('../image/sub/icon/icon-fileDown.png');
                     background-size:1.7rem 1.7rem;
                 }
@@ -2868,6 +2877,9 @@
                 color:$color-fontgray;
                 text-align: center;
                 border:1px solid #e5e7ee;
+                span{
+                    color:#CA1C1D
+                }
                 &+li{
                     margin-left: -1px;
                 }
@@ -2878,6 +2890,9 @@
                     box-shadow: 9px 9px 17px rgba(31,31,49,0.26);
                     &+li{
                         border-left-color: $color-red;
+                    }
+                    span{
+                        color:#ffff;
                     }
                 }
             }
@@ -3758,7 +3773,6 @@
                     font-size:2rem;
                     text-align:right;
                     a{
-                        padding-right:1.5rem;
                         font-size:4.8rem;
                         font-weight:$font-weight__b;
                     }
@@ -4375,6 +4389,12 @@
                     }
                 }
             }
+            &Box{
+                height:auto;
+                +p{
+                    border-bottom:1px solid #000;
+                }
+            }
         }
         .img-wrap{
             img{
@@ -4383,6 +4403,10 @@
         }
     }
     &Host{
+        .lnbBox{
+            height:27.9rem;
+            padding-top:2.5rem;
+        }
         &.intro{
             .lnb{
                 &__inner{
@@ -5206,27 +5230,32 @@ h1 {
 .content__core.lab .gallery-section--gray:before {
     height: 107% !important;
   }
-  
-  
-  
   /* 3493줄 넓이 조정   */
   .boxWhite {
     width:100%
   }
-  
-  
-  
   /* 3618줄 폰트크기   */
   .content__core.lab h1, .content__core.lab h2 {
     font-size:3.6rem;
   }
-  
-  
-  
   /* 3856줄 top 간격 조절   */
   .content__core.lab .gallery__info--reward {
       width: calc(100% - 82rem) !important;
     margin: 4rem 0 0 7rem !important;
   }
   
-  
+  .icon{
+      &.calendar{
+          width:2rem;
+          height:2rem;
+          background:url('../image/sub/icon/vector-smart-object.png') no-repeat 0 0;
+          background-size:cover;
+      }
+  }
+  .customDate{
+      height:4rem;
+      input{
+          height:100%;
+          font-size:1.4rem;
+      }
+  }
