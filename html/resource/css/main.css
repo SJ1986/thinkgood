@@ -242,6 +242,10 @@
   color: #f7592a !important;
 }
 
+.color-orange {
+  color: #f7592a;
+}
+
 .font-family__sn {
   font-family: "SeoulNamsan";
 }
@@ -674,6 +678,10 @@ p.font-s {
   font-size: 1.6rem !important;
 }
 
+.font-tiny {
+  font-size: 1.2rem !important;
+}
+
 .wrap {
   position: relative;
   min-height: 100%;
@@ -766,6 +774,10 @@ p {
   border-right: 1px solid #e5e7ee;
 }
 
+.header__inner .rooftop__inner > div:first-child {
+  padding: 0 2rem;
+}
+
 .header__inner .rooftop__inner > div .mailing button.btn-mailing img {
   width: 2.8rem;
   height: 2.4rem;
@@ -792,6 +804,7 @@ p {
 .header__inner .rooftop .user-join ul li a {
   padding: 0 2.5rem;
   font-size: 1.5rem;
+  font-weight: 500;
   color: #010101;
 }
 
@@ -1303,8 +1316,8 @@ p {
 }
 
 .winger-list button {
-  width: 60px;
-  height: 60px;
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 .winger-list button span {
@@ -1312,7 +1325,7 @@ p {
   margin-top: 5px;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #CA1C1D;
+  color: #000;
   text-align: center;
 }
 
@@ -1348,7 +1361,7 @@ p {
 .winger-list > div.scrap-link i {
   display: block;
   width: 3.1rem;
-  height: 3.3rem;
+  height: 2.8rem;
   background: url(../image/common/icon/icon__like-link.png) no-repeat center center;
 }
 
@@ -1888,12 +1901,14 @@ ul.lists.num li:before {
   position: relative;
   margin-bottom: 0;
   padding-left: 3.3rem;
+  font-weight: 400;
   cursor: pointer;
   font-size: 1.7rem;
 }
 
 .form-check input[type='checkbox'] + label p, .form-check input[type='checkbox'] + label span {
   font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .form-check input[type='checkbox'] + label::before {
@@ -1909,7 +1924,7 @@ ul.lists.num li:before {
   margin: -.3rem .8rem 0 0;
   text-align: center;
   vertical-align: middle;
-  border: .1rem solid #e5e7ee;
+  border: .1rem solid #ddd;
   border-radius: 0.3rem;
   background-color: #fff;
 }

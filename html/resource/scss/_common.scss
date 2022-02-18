@@ -167,6 +167,9 @@ $color-cherryRed : #f7592a;
     &-cherryRed{
         color: $color-cherryRed !important;
     }
+    &-orange{
+        color: #f7592a;
+    }
 }
 
 $bg-gray : #eaedf2;
@@ -452,6 +455,9 @@ p{
     &-xs{
         font-size: 1.6rem !important;
     }
+    &-tiny{
+        font-size: 1.2rem !important;
+    }
 }
 
 
@@ -525,6 +531,9 @@ p{
                     @include align-center;
                     height:100%;
                     border-right:1px solid #e5e7ee;
+                    &:first-child{
+                        padding: 0 2rem;
+                    }
                     .mailing{
                         button{
                             &.btn{
@@ -570,6 +579,7 @@ p{
                         a{
                             padding:0 2.5rem;
                             font-size: 1.5rem;
+                            font-weight:500;
                             color:#010101;
                         }
                     }
@@ -975,14 +985,14 @@ p{
         border:1px solid #e5e7ee;
         border-radius: 3px;
         button{
-            width:60px;
-            height: 60px;
+            width:6.5rem;
+            height: 6.5rem;
             span{
                 display: inline-block;
                 margin-top: 5px;
                 font-size: 1.2rem;
                 font-weight: $font-weight__rm;
-                color:$color-red;
+                color:#000;
                 text-align: center;
             }
         }
@@ -1009,7 +1019,7 @@ p{
                 i{
                     display: block;
                     width:3.1rem;
-                    height: 3.3rem;
+                    height: 2.8rem;
                     background: url(../image/common/icon/icon__like-link.png) no-repeat center center ;
                 }
             }
@@ -1520,6 +1530,7 @@ ul{
                     position: relative; 
                     margin-bottom: 0;
                     padding-left: 3.3rem;
+                    font-weight:400;
                     cursor: pointer; 
                     // -webkit-user-select: none; 
                     // -moz-user-select: none; 
@@ -1528,6 +1539,7 @@ ul{
                     //color: #cccccc;
                     p, span{
                         font-size: 1.7rem;
+                        font-weight:400;
                     }
                     &::before{
                         position: absolute;
@@ -1542,7 +1554,7 @@ ul{
                         text-align: center;
                         vertical-align: middle; 
                         
-                        border: .1rem solid #e5e7ee; 
+                        border: .1rem solid #ddd; 
                         border-radius : 0.3rem; 
                         background-color:#fff;
                     }

@@ -242,6 +242,10 @@
   color: #f7592a !important;
 }
 
+.color-orange {
+  color: #f7592a;
+}
+
 .font-family__sn {
   font-family: "SeoulNamsan";
 }
@@ -674,6 +678,10 @@ p.font-s {
   font-size: 1.6rem !important;
 }
 
+.font-tiny {
+  font-size: 1.2rem !important;
+}
+
 .wrap {
   position: relative;
   min-height: 100%;
@@ -766,6 +774,10 @@ p {
   border-right: 1px solid #e5e7ee;
 }
 
+.header__inner .rooftop__inner > div:first-child {
+  padding: 0 2rem;
+}
+
 .header__inner .rooftop__inner > div .mailing button.btn-mailing img {
   width: 2.8rem;
   height: 2.4rem;
@@ -792,6 +804,7 @@ p {
 .header__inner .rooftop .user-join ul li a {
   padding: 0 2.5rem;
   font-size: 1.5rem;
+  font-weight: 500;
   color: #010101;
 }
 
@@ -1303,8 +1316,8 @@ p {
 }
 
 .winger-list button {
-  width: 60px;
-  height: 60px;
+  width: 6.5rem;
+  height: 6.5rem;
 }
 
 .winger-list button span {
@@ -1312,7 +1325,7 @@ p {
   margin-top: 5px;
   font-size: 1.2rem;
   font-weight: 400;
-  color: #CA1C1D;
+  color: #000;
   text-align: center;
 }
 
@@ -1348,7 +1361,7 @@ p {
 .winger-list > div.scrap-link i {
   display: block;
   width: 3.1rem;
-  height: 3.3rem;
+  height: 2.8rem;
   background: url(../image/common/icon/icon__like-link.png) no-repeat center center;
 }
 
@@ -1888,12 +1901,14 @@ ul.lists.num li:before {
   position: relative;
   margin-bottom: 0;
   padding-left: 3.3rem;
+  font-weight: 400;
   cursor: pointer;
   font-size: 1.7rem;
 }
 
 .form-check input[type='checkbox'] + label p, .form-check input[type='checkbox'] + label span {
   font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .form-check input[type='checkbox'] + label::before {
@@ -1909,7 +1924,7 @@ ul.lists.num li:before {
   margin: -.3rem .8rem 0 0;
   text-align: center;
   vertical-align: middle;
-  border: .1rem solid #e5e7ee;
+  border: .1rem solid #ddd;
   border-radius: 0.3rem;
   background-color: #fff;
 }
@@ -2836,6 +2851,7 @@ ul.lists.num li:before {
 
 .transCardWrap .items.rows .form-check input[type='checkbox'] + label {
   margin-right: 4rem;
+  font-weight: 400;
 }
 
 .transCardWrap .items.rows .button-wrap button {
@@ -2856,6 +2872,7 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .items.rows .button-wrap button.click-file {
+  width: auto;
   color: #000;
 }
 
@@ -2864,6 +2881,7 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .items.rows .button-wrap button.click-plus {
+  width: auto;
   color: #CA1C1D;
 }
 
@@ -2872,6 +2890,7 @@ ul.lists.num li:before {
 }
 
 .transCardWrap .items.rows .button-wrap button.click-delete {
+  width: auto;
   color: #a59b99;
 }
 
@@ -2884,6 +2903,7 @@ ul.lists.num li:before {
   -ms-flex-item-align: center;
       align-self: center;
   -ms-grid-row-align: center;
+  font-weight: 400;
 }
 
 .transCardWrap .items > * .caution:after {
@@ -2936,9 +2956,11 @@ ul.lists.num li:before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  font-weight: 400;
 }
 
 .transCardWrap .form-check input[type='checkbox'] + label {
+  padding-right: 2rem;
   padding-left: 0;
   margin: 1rem 0;
 }
@@ -2964,6 +2986,7 @@ ul.lists.num li:before {
 
 .transCardWrap p {
   font-size: 1.8rem;
+  line-height: 2.3rem;
   text-align: center;
 }
 
@@ -2989,8 +3012,8 @@ ul.lists.num li:before {
 .transCardWrap.content .transHead {
   grid-template-columns: 5rem 12.5rem 16rem 60rem 24rem;
   -ms-grid-columns: 5rem 12.5rem 16rem 60rem 24rem;
-  grid-template-rows: 7rem;
-  -ms-grid-rows: 7rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
 }
 
 .transCardWrap.content .items {
@@ -3012,8 +3035,8 @@ ul.lists.num li:before {
 .transCardWrap.reply .transHead {
   grid-template-columns: 5rem 12.5rem 16rem 40rem 40rem;
   -ms-grid-columns: 5rem 12.5rem 16rem 40rem 40rem;
-  grid-template-rows: 7rem;
-  -ms-grid-rows: 7rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
 }
 
 .transCardWrap.reply .items {
@@ -3035,8 +3058,8 @@ ul.lists.num li:before {
 .transCardWrap.applyList .transHead {
   grid-template-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
   -ms-grid-columns: 10rem 10rem 46rem 12rem 24rem 15rem;
-  grid-template-rows: 7rem;
-  -ms-grid-rows: 7rem;
+  grid-template-rows: 6rem;
+  -ms-grid-rows: 6rem;
 }
 
 .transCardWrap.applyList .items {
@@ -3060,8 +3083,8 @@ ul.lists.num li:before {
 .transCardWrap.w1312221 .items {
   grid-template-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
   -ms-grid-columns: 10rem auto 10rem 14.5rem 10rem 14.5rem 10rem;
-  grid-template-rows: 6rem;
-  -ms-grid-rows: 6rem;
+  grid-template-rows: 7rem;
+  -ms-grid-rows: 7rem;
 }
 
 .onlyConfirm .modal-body p {
@@ -3220,6 +3243,10 @@ ul.lists.num li:before {
   background-color: #fff;
 }
 
+.form-input input {
+  font-weight: 300;
+}
+
 .form-input input.pw_bg_gray {
   background-color: #f8f8fe;
 }
@@ -3374,8 +3401,10 @@ ul.lists.num li:before {
 }
 
 .accept-ing {
-  border: 1px solid #CA1C1D;
+  border: 1px solid #f6aaaa;
   color: #CA1C1D;
+  font-weight: 500;
+  background-color: #fefafa;
 }
 
 .accept-end {
@@ -4299,7 +4328,7 @@ ul.lists.num li:before {
 .content__core.login {
   max-width: 92rem;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 
 .content__core.login .view-tab .tab-top {
@@ -4308,6 +4337,7 @@ ul.lists.num li:before {
 
 .content__core.login .view-tab .tab-top .tab li {
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .content__core.login .view-tab .tab-content input, .content__core.login .view-tab .tab-content label {
@@ -4322,6 +4352,7 @@ ul.lists.num li:before {
   padding: 4.5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 27.9rem;
 }
 
 .content__core.myHost .content__core-right .grayBox.status > div {
@@ -4352,8 +4383,8 @@ ul.lists.num li:before {
   display: inline-block;
   margin-top: 4rem;
   padding: .3rem 0;
-  padding-right: 1.5rem;
   font-size: 1.6rem;
+  font-weight: 500;
   background: url("../image/common/icon/arrow__next-big.png") no-repeat 100% center;
   background-size: 1rem 1.8rem;
   text-align: right;
@@ -4367,6 +4398,10 @@ ul.lists.num li:before {
   height: 1px;
   background-color: #000;
   content: "";
+}
+
+.content__core.myHost .content__core-right .grayBox.status > div > a.goToLink {
+  padding-right: 2rem;
 }
 
 .content__core.myHost .content__core-right .grayBox .lists li {
@@ -4484,6 +4519,177 @@ ul.lists.num li:before {
   margin: 0 auto;
 }
 
+.content-mainMagazine {
+  width: 36rem;
+}
+
+.content-mainMagazine .img-thumbnail {
+  padding: 0;
+  border: none;
+  -webkit-box-shadow: 0px 23px 28px 0 rgba(31, 31, 49, 0.13);
+          box-shadow: 0px 23px 28px 0 rgba(31, 31, 49, 0.13);
+}
+
+.content-mainNews {
+  width: 60rem;
+}
+
+@media (min-width: 1020px) {
+  .content-mainNews a:hover text-decoration:underline span {
+    text-decoration: underline;
+  }
+}
+
+.content-mainNews .nav li a {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.content-mainNews .nav li + li {
+  margin-left: 3rem;
+}
+
+.content-mainNews .nav-cont {
+  padding-top: 4rem;
+}
+
+.content-mainNews .newsMajor {
+  width: 100%;
+  font-size: 0;
+}
+
+.content-mainNews .newsMajor .gallery-thumbnail {
+  width: 18rem;
+}
+
+.content-mainNews .newsMajor .gallery-thumbnail img {
+  width: 100%;
+}
+
+.content-mainNews .newsMajor span {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.content-mainNews .newsMajor span .major-title {
+  width: calc(100% - 22rem);
+  margin-left: 4rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e7ee;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.content-mainNews .newsMajor span .major-title em {
+  display: block;
+  margin-bottom: 1.1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: #dd2525;
+}
+
+.content-mainNews .newsMinor {
+  position: absolute;
+  bottom: 12.6rem;
+  right: 0;
+  width: calc(100% - 22rem);
+  padding-bottom: 1rem;
+  z-index: 2;
+}
+
+.content-mainNews .newsMinor span {
+  display: block;
+}
+
+.content-mainNews .newsMinor .minor-title {
+  margin-bottom: 2.5rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.content-mainNews .newsMinor .minor-cont {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: #747478;
+  line-height: 2.5rem;
+}
+
+.content-mainNews .newsPiece {
+  -ms-display: flexbox;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 9rem;
+  padding: 0 2rem;
+  margin-top: 3.6rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-top: 1px solid #e5e7ee;
+  border-bottom: 1px solid #e5e7ee;
+}
+
+.content-mainNews .newsPiece + .newsPiece {
+  border-left: 1px solid #e5e7ee;
+}
+
+.content-mainNews .newsPiece span {
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content-mainNotice {
+  width: 52rem;
+}
+
+.content-mainNotice .nav li a {
+  font-size: 2.2rem;
+  font-weight: 400;
+}
+
+.content-mainNotice .nav-cont li {
+  height: 6rem;
+  padding: 1.4rem 1.1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.content-mainNotice .nav-cont li a {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.content-mainNotice .nav-cont li a > em {
+  display: inline-block;
+  padding: 0.8rem 1.1rem;
+  margin-right: 1rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #dd2525;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 500;
+  border-radius: 3px;
+}
+
+.content-mainNotice .list-group-flush:last-child .list-group-item:last-child {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-bottom-width: 1px;
+}
+
 .lnb__inner {
   width: 26rem;
   margin-right: 7rem;
@@ -4503,7 +4709,7 @@ ul.lists.num li:before {
 
 .lnb-list__dep2 > li.active a {
   color: #CA1C1D;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .lnb-list__dep2 > li > a {
@@ -4516,7 +4722,7 @@ ul.lists.num li:before {
   align-items: center;
   padding: 3rem 0;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .lnb-list__dep2 > li > a i {
@@ -4612,6 +4818,7 @@ ul.lists.num li:before {
 .lnbBox {
   overflow: hidden;
   padding: 3.5rem;
+  height: 27.9rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #CA1C1D;
@@ -4626,7 +4833,7 @@ ul.lists.num li:before {
   display: block;
   margin-top: 1.2rem;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
@@ -5119,7 +5326,7 @@ ul.lists.num li:before {
 
 /* table */
 .search-box {
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -5139,6 +5346,7 @@ ul.lists.num li:before {
 }
 
 .search-box > a {
+  font-weight: 500;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -5287,6 +5495,7 @@ ul.lists.num li:before {
   padding: 0 2.866rem;
   font-size: 1.8rem;
   border-radius: 3px;
+  line-height: 2.5rem;
 }
 
 .button-wrap button.size-big {
@@ -5308,10 +5517,15 @@ ul.lists.num li:before {
   background-size: 1.5rem 2.5rem;
 }
 
+.button-wrap button.fileDown {
+  padding: 0;
+}
+
 .button-wrap button.fileDown i {
   display: inline-block;
   width: 1.7rem;
   height: 1.7rem;
+  margin-left: .5rem;
   background-image: url("../image/sub/icon/icon-fileDown.png");
   background-size: 1.7rem 1.7rem;
 }
@@ -5727,6 +5941,10 @@ ul.lists.num li:before {
   border: 1px solid #e5e7ee;
 }
 
+.tab-wrap .tab li span {
+  color: #CA1C1D;
+}
+
 .tab-wrap .tab li + li {
   margin-left: -1px;
 }
@@ -5741,6 +5959,10 @@ ul.lists.num li:before {
 
 .tab-wrap .tab li.current + li {
   border-left-color: #CA1C1D;
+}
+
+.tab-wrap .tab li.current span {
+  color: #ffff;
 }
 
 .tab-wrap .tab-top {
@@ -5803,7 +6025,7 @@ ul.lists.num li:before {
 }
 
 .tab-wrap.calendar .tab li.current a {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .tab-wrap.calendar .tab li:first-child, .tab-wrap.calendar .tab li:nth-child(2) {
@@ -6503,6 +6725,10 @@ ul.lists.num li:before {
   color: #747478;
 }
 
+.result-list-common {
+  padding: 0 2rem;
+}
+
 .result-list-common ul li {
   padding: 3rem 0;
   border-bottom: 1px solid #e7ecfd;
@@ -6560,6 +6786,7 @@ ul.lists.num li:before {
 
 /* 회원가입 , 배너등록 */
 .grayBox {
+  border-radius: .3rem;
   background-color: #f8f8fa;
 }
 
@@ -6685,12 +6912,11 @@ ul.lists.num li:before {
 
 .grayBox.status > div > span {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: right;
 }
 
 .grayBox.status > div > span a {
-  padding-right: 1.5rem;
   font-size: 4.8rem;
   font-weight: 600;
 }
@@ -6705,6 +6931,7 @@ ul.lists.num li:before {
 
 .grayBox.status .mini > div p {
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .grayBox.status .mini > div:first-child {
@@ -6726,7 +6953,7 @@ ul.lists.num li:before {
 .grayBox.status .mini > div span a {
   display: inline-block;
   font-size: 4.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .grayCap {
@@ -6839,7 +7066,7 @@ ul.lists.num li:before {
 }
 
 .login.comp > div button {
-  width: auto;
+  width: 17.5rem;
 }
 
 .login.comp > .img-wrap {
@@ -6877,6 +7104,7 @@ ul.lists.num li:before {
 
 .login.comp dl dt {
   width: 9rem;
+  font-weight: 500;
 }
 
 .login.comp dl dt:first-child {
@@ -6972,6 +7200,7 @@ ul.lists.num li:before {
 .login.hostSel > div .button-wrap.sns button.color-facebook {
   background-image: url("../image/sub/icon/icon_logoFacebook.png");
   background-size: 1.1rem;
+  padding-left: 5rem;
   background-position: 2rem center;
 }
 
@@ -7027,6 +7256,7 @@ ul.lists.num li:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
+  line-height: 2.7rem;
 }
 
 .login.terms .table-wrap th .caution {
@@ -7356,7 +7586,7 @@ ul.lists.num li:before {
   justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 45rem;
+  width: 48.8rem;
   margin: 4rem auto 5.5rem;
   padding: 4rem;
   border: 1px solid #e5e7ee;
@@ -7394,6 +7624,7 @@ ul.lists.num li:before {
 
 .mythinkRoom.modi dl dd:nth-child(2), .mythinkRoom.modi ul.lists dd:nth-child(2), .myHost.modi dl dd:nth-child(2), .myHost.modi ul.lists dd:nth-child(2) {
   margin-bottom: 3rem;
+  font-weight: 600;
 }
 
 .mythinkRoom.modi dl dd input, .mythinkRoom.modi ul.lists dd input, .myHost.modi dl dd input, .myHost.modi ul.lists dd input {
@@ -7428,8 +7659,21 @@ ul.lists.num li:before {
   font-weight: 500;
 }
 
+.mythinkRoom .lnbBox, .myHost .lnbBox {
+  height: auto;
+}
+
+.mythinkRoom .lnbBox + p, .myHost .lnbBox + p {
+  border-bottom: 1px solid #000;
+}
+
 .mythinkRoom .img-wrap img, .myHost .img-wrap img {
   width: 100%;
+}
+
+.myHost .lnbBox {
+  height: 27.9rem;
+  padding-top: 2.5rem;
 }
 
 .myHost.intro .lnb__inner {
@@ -7465,6 +7709,7 @@ ul.lists.num li:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #dddddd;
+  border-radius: .3rem;
 }
 
 .boxWrap > p {
@@ -7480,7 +7725,9 @@ ul.lists.num li:before {
 }
 
 .boxWrap > p.floatNo {
+  color: #ee0000;
   font-size: 1.8rem;
+  font-weight: 300;
 }
 
 .boxWrap > .button-wrap {
@@ -7488,8 +7735,8 @@ ul.lists.num li:before {
 }
 
 .boxWrap > .button-wrap button {
-  width: 13rem;
-  height: 4.5rem;
+  width: 11rem;
+  height: 5rem;
 }
 
 .boxWrap .calWrap {
@@ -7530,7 +7777,8 @@ ul.lists.num li:before {
 
 .boxWrap .form-select p span {
   margin: 0 0.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #CA1C1D;
 }
 
@@ -7597,6 +7845,15 @@ ul.lists.num li:before {
   font-weight: 600;
 }
 
+.boxWrap .post-subtit-title {
+  font-size: 2.4rem !important;
+  font-weight: 500;
+}
+
+.boxWrap .post-subtit-where {
+  font-weight: 500;
+}
+
 .boxWrap > dl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7634,6 +7891,16 @@ ul.lists.num li:before {
 .boxWrap > dl dd {
   width: calc(100% - 23rem);
   margin-bottom: 0;
+}
+
+.boxWrap > dl dd .txt span .vol {
+  font-size: 1.4rem;
+  color: #747478;
+}
+
+.boxWrap > dl dd span .vol {
+  font-size: 1.4rem;
+  color: #747478;
 }
 
 .boxWrap.noLine {
@@ -7799,6 +8066,7 @@ ul.lists.num li:before {
   align-items: center;
   text-align: center;
   border-bottom: 3px double #eee;
+  font-weight: 500;
 }
 
 .calWrap .calendarSt > div:nth-child(-n+7) p {
@@ -7815,9 +8083,9 @@ ul.lists.num li:before {
 }
 
 .calWrap .calendarSt > div > p {
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 1.2rem 1.3rem 1rem 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.7rem 0.7rem 0.7rem 0.7rem;
 }
 
 .calWrap .calendarSt > div > a {
@@ -7830,11 +8098,12 @@ ul.lists.num li:before {
 
 .calWrap .calendarSt > div > a:not(.viewMore) {
   overflow: hidden;
-  height: 2.5rem;
-  padding: .7rem;
+  height: 3.4rem;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -8069,4 +8338,341 @@ ul.lists.num li:before {
 .infoGuide-wrap dl dd {
   width: calc(100% - 23rem);
   margin-bottom: 4rem;
+}
+
+div[class^="content__core-mainN"] {
+  position: relative;
+  margin-left: 6rem;
+}
+
+div[class^="content__core-mainN"] > .moveToMore {
+  position: absolute;
+  top: 0.8rem;
+  right: 0;
+  width: 3.4rem;
+  height: 3.4rem;
+  border: 1px solid #e5e7ee;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  line-height: 3rem;
+  text-align: center;
+}
+
+div[class^="content__core-mainN"] > .moveToMore img {
+  width: 1.6rem;
+}
+
+div[class^="content__core-mainN"] > .moveToMore .nav {
+  border-bottom: 1px solid #e5e7ee;
+}
+
+div[class^="content__core-mainN"] > .moveToMore .nav-cont {
+  position: relative;
+  display: none;
+}
+
+div[class^="content__core-mainN"] > .moveToMore .nav li {
+  position: relative;
+}
+
+div[class^="content__core-mainN"] > .moveToMore .nav li a {
+  margin: 0 1rem;
+  margin-bottom: 1.5rem;
+  padding: 0;
+  padding-top: 1.2rem;
+}
+
+div[class^="content__core-mainN"] > .moveToMore .nav li.activea {
+  font-weight: 600;
+  color: #dd2525;
+}
+
+div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: #dd2525;
+  border-radius: 100%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  content: "";
+}
+
+.main-tit2 {
+  font-size: 3.4rem !important;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+.main-tit2 em {
+  display: inline-block;
+  font-weight: 600;
+  line-height: unset;
+}
+
+.top-dot::before {
+  background: #f7592a !important;
+}
+
+.lnb_title {
+  padding: 30px 0;
+  border-bottom: 1px solid #747478;
+}
+
+.pt_30 {
+  padding-top: 3rem;
+}
+
+.pb_0 {
+  padding-bottom: 0;
+}
+
+.pd_0 {
+  padding: 0 !important;
+}
+
+.lh_40 {
+  line-height: 40px;
+}
+
+.lh_50 {
+  line-height: 50px;
+}
+
+.postList a {
+  padding-bottom: 3rem;
+  border-bottom: 1px solid #e6e8ef;
+  margin-bottom: 3rem;
+}
+
+.postList a.border_0 {
+  border: none;
+}
+
+.table_campus tbody tr td:nth-child(2) {
+  font-weight: 500;
+}
+
+.font-weight_5 {
+  font-weight: 500;
+}
+
+.stats__kick div p {
+  font-weight: 500;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+.transCardWrap .items .head .form-check label {
+  margin-right: 0 !important;
+}
+
+.content__core-right .button-wrap button {
+  width: 130px;
+}
+
+.content__core-right .board-bottom .button-wrap .fileDown {
+  width: 170px !important;
+}
+
+.d-flex .button-wrap button.fileDown {
+  font-size: 16px;
+  font-weight: 400 !important;
+}
+
+.guideBook .button-wrap button {
+  width: 130px;
+}
+
+/* -------------------------------------220218
+05씽굿랩_03공모전가이드북_01리스트페이지
+http://m16.co.kr/think/sub/04_lab/labGalleryGuideView.html------------------------------------ */
+/*
+main,css:671
+씽굿랩 h1은 전부 3.6rem으로 수정 */
+h1 {
+  font-size: 3.6rem !important;
+}
+
+/*
+    sub.css:3484
+    (공통)박스 radius  누락된거 생성*/
+.boxWhite {
+  border-radius: 0.3rem !important;
+}
+
+/*
+    sub.css:3189
+    (공통)쉐도우 서브메인쉐도우와 같게 변경*/
+.img-shadow > *:hover > a {
+  webkit-box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15) !important;
+  -webkit-box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15) !important;
+          box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15) !important;
+}
+
+/*
+    main.css:213
+    "씽굿 월간 공모전 가이드북 안내" txt 굵기 bold로 변경요청*/
+.color-black {
+  font-weight: 600 !important;
+}
+
+/*
+    reset.css:45
+    "씽굿 월간 공모전 가이드북 안내" list 간격은 30px 띄어주세요*/
+.content__core.lab .gallery .boxWhite ul {
+  margin-top: 3rem !important;
+}
+
+/* 적용 부탁!!!
+    sub.css:3957_2021년 2월호 텍스트를 기준으로 푸터와의 간격이 120px이 되게 변경 */
+.content__core.lab .gallery__items--guide div:nth-child(n+9) {
+  margin-bottom: 0;
+}
+
+/* -------------------------------------220218
+    05씽굿랩_03공모전가이드북_02신청하기페이지
+    http://m16.co.kr/think/sub/04_lab/labGalleryGuideWrite.html------------------------------------ */
+/*
+    sub.css:6508
+    radius 주기 및 패딩 40px 주기*/
+.grayBox {
+  border-radius: 0.3rem !important;
+  border: solid 1px #e5e7ee !important;
+}
+
+/*
+    sub.css:3213
+    입력칸 다 깨짐.*/
+.contestform-input {
+  padding: 1rem;
+  font-size: 1.6rem !important;
+  border: 1px solid #e5e7ee !important;
+  border-radius: 0.3rem;
+  background-color: #fff !important;
+}
+
+/*
+    sub.css:3209
+    th 폰트 미디움.*/
+.form-label * {
+  font-weight: 500 !important;
+}
+
+/*
+    placeholder 폰트 색 #747478
+    04_lab/labGalleryGuideWrite.html_에 주석 달아놓음 → 이런식으로수정 span class="fontplaceholde"*/
+.fontplaceholde {
+  color: #747478 !important;
+}
+
+/* 20220218-금요일 */
+/* 씽굿랩>수상작갤러리 */
+.content__core.lab .galleryReward .grandList a img {
+  border-radius: 3px;
+}
+
+.labGalList > a img {
+  border-radius: 3px;
+}
+
+.labGalList > a + a {
+  margin-left: 1.87% !important;
+}
+
+.labGalList > a:nth-child(5n+1) {
+  margin-left: 0 !important;
+}
+
+.sub3Dep a.current {
+  padding: 3.5rem 1rem;
+}
+
+/* 씽굿랩>수상작갤러리>뷰 */
+.content__core.lab .gallery__img > img {
+  border-radius: 3px;
+}
+
+.gallery-section--white > .gallery__info > .gallery__title {
+  border-bottom: 1px solid #e5e7ee;
+  padding-bottom: 4rem;
+}
+
+.content__core.lab .gallery__title .count {
+  padding-bottom: 4rem;
+}
+
+.content__core.lab .gallery__info--reward > dl dt {
+  font-weight: 500;
+}
+
+.gallery-section--gray > .boxWhite {
+  border: none !important;
+}
+
+.gallery-section--gray > .boxWhite:nth-child(2) {
+  border: 1px solid #e5e7ee !important;
+}
+
+/* 8 로그인/회원가입>개인회원가입>가입입력폼 */
+.login.terms .table-wrap td .form-row input.fill {
+  border: 1px solid #000 !important;
+}
+
+/* 씽굿랩 > 수상작갤러리 */
+.swiper-button-next, .swiper-button-prev {
+  margin-right: 1rem;
+}
+
+.swiper-button-next:after, .swiper-button-prev:after {
+  text-shadow: 1px 1px 7px rgba(0, 0, 0, 0.39) !important;
+}
+
+/* 씽굿랩 > 공모전가이드북 */
+.ul-lists--bar > li {
+  padding-left: 1.2rem;
+}
+
+.content__core.lab .gallery__img--guide {
+  padding: 8rem 6rem 8rem 0 !important;
+}
+
+/* 3921줄 세로높이 조절 */
+.content__core.lab .gallery-section--gray:before {
+  height: 107% !important;
+}
+
+/* 3493줄 넓이 조정   */
+.boxWhite {
+  width: 100%;
+}
+
+/* 3618줄 폰트크기   */
+.content__core.lab h1, .content__core.lab h2 {
+  font-size: 3.6rem;
+}
+
+/* 3856줄 top 간격 조절   */
+.content__core.lab .gallery__info--reward {
+  width: calc(100% - 82rem) !important;
+  margin: 4rem 0 0 7rem !important;
+}
+
+.icon.calendar {
+  width: 2rem;
+  height: 2rem;
+  background: url("../image/sub/icon/vector-smart-object.png") no-repeat 0 0;
+  background-size: cover;
+}
+
+.customDate {
+  height: 4rem;
+}
+
+.customDate input {
+  height: 100%;
+  font-size: 1.4rem;
 }
