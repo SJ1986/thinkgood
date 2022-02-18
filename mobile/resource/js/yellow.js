@@ -1,8 +1,29 @@
 $(function () {
+    thinkgoodPickList();
     scrapOn();
     linkPlus(); // 링크 추가 버튼 클릭
     filePlus(); // 파일첨부 버튼 클릭
 });
+
+function thinkgoodPickList(){
+    //thinkgoodPick
+	const thinkgoodPickList = new Swiper(".thinkgoodPick-list .swiper-container", {
+        slidesPerView:'auto',
+        //spaceBetween:30,
+		pagination: {
+			el: ".swiper-pagination",
+			type: "fraction",
+		},
+        grid: {
+            rows: 2,
+            column: 2,
+        },
+		// navigation: {
+		// 	nextEl: ".swiper-button-next",
+		// 	prevEl: ".swiper-button-prev",
+		// },
+	});
+}
 
 function scrapOn(){
    $(".button-scrap").click(function(){
