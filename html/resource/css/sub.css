@@ -1897,12 +1897,14 @@ ul.lists.num li:before {
   position: relative;
   margin-bottom: 0;
   padding-left: 3.3rem;
+  font-weight: 400;
   cursor: pointer;
   font-size: 1.7rem;
 }
 
 .form-check input[type='checkbox'] + label p, .form-check input[type='checkbox'] + label span {
   font-size: 1.7rem;
+  font-weight: 400;
 }
 
 .form-check input[type='checkbox'] + label::before {
@@ -2845,6 +2847,7 @@ ul.lists.num li:before {
 
 .transCardWrap .items.rows .form-check input[type='checkbox'] + label {
   margin-right: 4rem;
+  font-weight: 400;
 }
 
 .transCardWrap .items.rows .button-wrap button {
@@ -2945,10 +2948,11 @@ ul.lists.num li:before {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   text-align: center;
+  font-weight: 400;
 }
 
 .transCardWrap .form-check input[type='checkbox'] + label {
-  padding-left: 0;
+  padding-left: 2rem;
   margin: 1rem 0;
 }
 
@@ -2973,6 +2977,7 @@ ul.lists.num li:before {
 
 .transCardWrap p {
   font-size: 1.8rem;
+  line-height: 2.3rem;
   text-align: center;
 }
 
@@ -3229,6 +3234,10 @@ ul.lists.num li:before {
   background-color: #fff;
 }
 
+.form-input input {
+  font-weight: 300;
+}
+
 .form-input input.pw_bg_gray {
   background-color: #f8f8fe;
 }
@@ -3383,8 +3392,10 @@ ul.lists.num li:before {
 }
 
 .accept-ing {
-  border: 1px solid #CA1C1D;
+  border: 1px solid #f6aaaa;
   color: #CA1C1D;
+  font-weight: 500;
+  background-color: #fefafa;
 }
 
 .accept-end {
@@ -4308,7 +4319,7 @@ ul.lists.num li:before {
 .content__core.login {
   max-width: 92rem;
   margin: 0 auto;
-  margin-top: 6rem;
+  margin-top: 9rem;
 }
 
 .content__core.login .view-tab .tab-top {
@@ -4317,6 +4328,7 @@ ul.lists.num li:before {
 
 .content__core.login .view-tab .tab-top .tab li {
   font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .content__core.login .view-tab .tab-content input, .content__core.login .view-tab .tab-content label {
@@ -4331,6 +4343,7 @@ ul.lists.num li:before {
   padding: 4.5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 27.9rem;
 }
 
 .content__core.myHost .content__core-right .grayBox.status > div {
@@ -4363,6 +4376,7 @@ ul.lists.num li:before {
   padding: .3rem 0;
   padding-right: 1.5rem;
   font-size: 1.6rem;
+  font-weight: 500;
   background: url("../image/common/icon/arrow__next-big.png") no-repeat 100% center;
   background-size: 1rem 1.8rem;
   text-align: right;
@@ -4696,7 +4710,7 @@ ul.lists.num li:before {
   align-items: center;
   padding: 3rem 0;
   font-size: 1.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .lnb-list__dep2 > li > a i {
@@ -4792,6 +4806,7 @@ ul.lists.num li:before {
 .lnbBox {
   overflow: hidden;
   padding: 3.5rem;
+  height: 27.9rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   background-color: #CA1C1D;
@@ -4806,7 +4821,7 @@ ul.lists.num li:before {
   display: block;
   margin-top: 1.2rem;
   font-size: 1.8rem;
-  font-weight: 200;
+  font-weight: 300;
   line-height: 1.5em;
 }
 
@@ -5299,7 +5314,7 @@ ul.lists.num li:before {
 
 /* table */
 .search-box {
-  margin-bottom: 30px;
+  margin-bottom: 4rem;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -5319,6 +5334,7 @@ ul.lists.num li:before {
 }
 
 .search-box > a {
+  font-weight: 500;
   font-size: 2rem;
   font-weight: 600;
 }
@@ -5467,6 +5483,7 @@ ul.lists.num li:before {
   padding: 0 2.866rem;
   font-size: 1.8rem;
   border-radius: 3px;
+  line-height: 2.5rem;
 }
 
 .button-wrap button.size-big {
@@ -5983,7 +6000,7 @@ ul.lists.num li:before {
 }
 
 .tab-wrap.calendar .tab li.current a {
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .tab-wrap.calendar .tab li:first-child, .tab-wrap.calendar .tab li:nth-child(2) {
@@ -6744,6 +6761,7 @@ ul.lists.num li:before {
 
 /* 회원가입 , 배너등록 */
 .grayBox {
+  border-radius: .3rem;
   background-color: #f8f8fa;
 }
 
@@ -6869,7 +6887,7 @@ ul.lists.num li:before {
 
 .grayBox.status > div > span {
   display: block;
-  font-size: 3rem;
+  font-size: 2rem;
   text-align: right;
 }
 
@@ -6889,6 +6907,7 @@ ul.lists.num li:before {
 
 .grayBox.status .mini > div p {
   font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .grayBox.status .mini > div:first-child {
@@ -6910,7 +6929,7 @@ ul.lists.num li:before {
 .grayBox.status .mini > div span a {
   display: inline-block;
   font-size: 4.8rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .grayCap {
@@ -7023,7 +7042,7 @@ ul.lists.num li:before {
 }
 
 .login.comp > div button {
-  width: auto;
+  width: 17.5rem;
 }
 
 .login.comp > .img-wrap {
@@ -7061,6 +7080,7 @@ ul.lists.num li:before {
 
 .login.comp dl dt {
   width: 9rem;
+  font-weight: 500;
 }
 
 .login.comp dl dt:first-child {
@@ -7156,6 +7176,7 @@ ul.lists.num li:before {
 .login.hostSel > div .button-wrap.sns button.color-facebook {
   background-image: url("../image/sub/icon/icon_logoFacebook.png");
   background-size: 1.1rem;
+  padding-left: 5rem;
   background-position: 2rem center;
 }
 
@@ -7211,6 +7232,7 @@ ul.lists.num li:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: left;
+  line-height: 2.7rem;
 }
 
 .login.terms .table-wrap th .caution {
@@ -7540,7 +7562,7 @@ ul.lists.num li:before {
   justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 45rem;
+  width: 48.8rem;
   margin: 4rem auto 5.5rem;
   padding: 4rem;
   border: 1px solid #e5e7ee;
@@ -7578,6 +7600,7 @@ ul.lists.num li:before {
 
 .mythinkRoom.modi dl dd:nth-child(2), .mythinkRoom.modi ul.lists dd:nth-child(2), .myHost.modi dl dd:nth-child(2), .myHost.modi ul.lists dd:nth-child(2) {
   margin-bottom: 3rem;
+  font-weight: 600;
 }
 
 .mythinkRoom.modi dl dd input, .mythinkRoom.modi ul.lists dd input, .myHost.modi dl dd input, .myHost.modi ul.lists dd input {
@@ -7649,6 +7672,7 @@ ul.lists.num li:before {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 1px solid #dddddd;
+  border-radius: .3rem;
 }
 
 .boxWrap > p {
@@ -7664,7 +7688,9 @@ ul.lists.num li:before {
 }
 
 .boxWrap > p.floatNo {
+  color: #ee0000;
   font-size: 1.8rem;
+  font-weight: 300;
 }
 
 .boxWrap > .button-wrap {
@@ -7672,8 +7698,8 @@ ul.lists.num li:before {
 }
 
 .boxWrap > .button-wrap button {
-  width: 13rem;
-  height: 4.5rem;
+  width: 11rem;
+  height: 5rem;
 }
 
 .boxWrap .calWrap {
@@ -7714,7 +7740,8 @@ ul.lists.num li:before {
 
 .boxWrap .form-select p span {
   margin: 0 0.5rem;
-  font-weight: 500;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #CA1C1D;
 }
 
@@ -7781,6 +7808,15 @@ ul.lists.num li:before {
   font-weight: 600;
 }
 
+.boxWrap .post-subtit-title {
+  font-size: 2.4rem !important;
+  font-weight: 500;
+}
+
+.boxWrap .post-subtit-where {
+  font-weight: 500;
+}
+
 .boxWrap > dl {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -7818,6 +7854,16 @@ ul.lists.num li:before {
 .boxWrap > dl dd {
   width: calc(100% - 23rem);
   margin-bottom: 0;
+}
+
+.boxWrap > dl dd .txt span .vol {
+  font-size: 1.4rem;
+  color: #747478;
+}
+
+.boxWrap > dl dd span .vol {
+  font-size: 1.4rem;
+  color: #747478;
 }
 
 .boxWrap.noLine {
@@ -7983,6 +8029,7 @@ ul.lists.num li:before {
   align-items: center;
   text-align: center;
   border-bottom: 3px double #eee;
+  font-weight: 500;
 }
 
 .calWrap .calendarSt > div:nth-child(-n+7) p {
@@ -7999,9 +8046,9 @@ ul.lists.num li:before {
 }
 
 .calWrap .calendarSt > div > p {
-  font-size: 1rem;
-  font-weight: 600;
-  padding: 1.2rem 1.3rem 1rem 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  padding: 0.7rem 0.7rem 0.7rem 0.7rem;
 }
 
 .calWrap .calendarSt > div > a {
@@ -8014,11 +8061,12 @@ ul.lists.num li:before {
 
 .calWrap .calendarSt > div > a:not(.viewMore) {
   overflow: hidden;
-  height: 2.5rem;
-  padding: .7rem;
+  height: 3.4rem;
+  padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
+  font-weight: 500;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
@@ -8330,4 +8378,9 @@ div[class^="content__core-mainN"] > .moveToMore .nav li.active:before {
 
 .top-dot::before {
   background: #f7592a !important;
+}
+
+.lnb_title {
+  padding: 30px 0;
+  border-bottom: 1px solid #747478;
 }

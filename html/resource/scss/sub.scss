@@ -186,6 +186,7 @@
                         input[type='checkbox']{
                             &+ label{
                                 margin-right:4rem;
+                                font-weight:400;
                             }
                         }
                     }
@@ -270,9 +271,10 @@
             &-check{
                 flex-wrap:wrap;
                 text-align:center;
+                font-weight:400;
                 input[type='checkbox']{
                     + label{
-                        padding-left:0;
+                        padding-left:2rem;
                         margin:1rem 0;
                         &::before{
                             position:relative;
@@ -296,6 +298,7 @@
         }
         p{
             font-size:1.8rem;
+            line-height:2.3rem;
             text-align:center;
         }
         a{
@@ -547,6 +550,7 @@
         border-radius:.3rem;
         background-color:#fff;
         input{
+            font-weight:300;
             &.pw_bg_gray{
                 background-color:#f8f8fe;
             }
@@ -678,8 +682,10 @@
         box-sizing:border-box;
     }
     &-ing{
-        border:1px solid #CA1C1D;
+        border:1px solid #f6aaaa;
         color:#CA1C1D;
+        font-weight:500;
+        background-color: #fefafa;
     }
     &-end{
         border:1px solid #78838c;
@@ -1522,7 +1528,7 @@
         &.login{
             max-width:92rem;
             margin:0 auto;
-            margin-top:6rem;
+            margin-top:9rem;
             .view-tab{
                 .tab{
                     &-top{
@@ -1530,6 +1536,7 @@
                         .tab{
                             li{
                                 font-size:1.8rem;
+                                font-weight:400;
                             }
                         }
                     }
@@ -1548,6 +1555,7 @@
                     &.status{
                         padding:4.5rem;
                         box-sizing:border-box;
+                        height:27.9rem;
                         > div{
                             overflow:hidden;
                             padding:0;
@@ -1573,6 +1581,7 @@
                                 padding:.3rem 0;
                                 padding-right:1.5rem;
                                 font-size:1.6rem;
+                                font-weight:500;
                                 background:url('../image/common/icon/arrow__next-big.png') no-repeat 100% center;
                                 background-size:1rem 1.8rem;
                                 text-align:right;
@@ -1789,7 +1798,7 @@
                     //display: inline-block;
                     padding: 3rem 0;
                     font-size: 1.8rem;
-                    font-weight: $font-weight__m;
+                    font-weight: 600;
                     i{
                         position: relative;
                         margin-left: auto;
@@ -1878,6 +1887,7 @@
     &Box{
         overflow:hidden;
         padding:3.5rem;
+        height:27.9rem;
         box-sizing:border-box;
         background-color:#CA1C1D;
         border-radius:3px;
@@ -1888,7 +1898,7 @@
             display:block;
             margin-top:1.2rem;
             font-size:1.8rem;
-            font-weight:$font-weight__l;
+            font-weight:300;
             line-height:1.5em;
         }
         > a{
@@ -2301,7 +2311,7 @@
     &-box{
         //height: 67px;
         //margin-top: -67px;
-        margin-bottom: 30px;
+        margin-bottom: 4rem;
         align-items: flex-end;
         .select{
             width:153px;
@@ -2315,6 +2325,7 @@
             box-sizing: border-box;
         }
         > a{
+            font-weight:500;
             img{
                 margin-right:1rem;
             }
@@ -2479,6 +2490,7 @@
             padding:0 2.866rem;
             font-size:1.8rem;
             border-radius: 3px;
+            line-height:2.5rem;
             &.size{
                 &-big{
                     height:8rem;
@@ -2913,7 +2925,7 @@
                         background: none;
                         box-shadow:none;
                         a{
-                            font-weight:$font-weight__m;
+                            font-weight:600;
                         }
                     }
                     &:first-child, &:nth-child(2){
@@ -3639,6 +3651,7 @@
 /* 회원가입 , 배너등록 */
 .gray{
     &Box{
+        border-radius: .3rem;
         background-color:#f8f8fa;
         &.intro{
             padding:5.5rem 1.5rem;
@@ -3742,7 +3755,7 @@
                 }
                 > span{
                     display:block;
-                    font-size:3rem;
+                    font-size:2rem;
                     text-align:right;
                     a{
                         padding-right:1.5rem;
@@ -3759,6 +3772,7 @@
                     width:100%;
                     p{
                         font-size:1.8rem;
+                        font-weight:500;
                     }
                     &:first-child{
                         padding-right:5rem;
@@ -3775,7 +3789,7 @@
                         a{
                             display:inline-block;
                             font-size:4.8rem;
-                            font-weight:500;
+                            font-weight:600;
                         }
                     }
                 }
@@ -3871,7 +3885,7 @@
         > div{
             width:100%;
             button{
-                width:auto;
+                width:17.5rem;
             }
         }
         > .img-wrap{
@@ -3895,6 +3909,7 @@
             }
             dt{
                 width:9rem;
+                font-weight:500;
                 &:first-child{
                     margin-bottom:3rem;
                 }
@@ -3973,6 +3988,7 @@
                             &-facebook{
                                 background-image:url('../image/sub/icon/icon_logoFacebook.png');
                                 background-size:1.1rem;
+                                padding-left:5rem;
                                 background-position:2rem center;
                             }
                             &-kakao{
@@ -4024,6 +4040,7 @@
                 padding:2.5rem 3rem;
                 box-sizing: border-box;
                 text-align:left;
+                line-height:2.7rem;
                 .caution{
                     font-weight:$font-weight__m;
                 }
@@ -4297,7 +4314,7 @@
             dl, ul.lists{
                 @include d-flex;
                 flex-wrap:wrap;
-                width:45rem;
+                width:48.8rem;
                 margin:4rem auto 5.5rem;
                 padding:4rem;
                 border:1px solid #e5e7ee;
@@ -4325,6 +4342,7 @@
                     width:calc(100% - 9rem);
                     &:nth-child(2){
                         margin-bottom:3rem;
+                        font-weight:600;
                     }
                     input{
                         width:100%;
@@ -4400,6 +4418,7 @@
         padding:4rem;
         box-sizing:border-box;
         border:1px solid #dddddd;
+        border-radius: .3rem;
         > p{
             float:left;
             font-size:2.8rem;
@@ -4410,15 +4429,17 @@
                 color:#747478;
             }
             &.floatNo{
+                color:#ee0000;
                 font-size:1.8rem;
+                font-weight:300;
             }
         }
         > .button{
             &-wrap{
                 float:right;
                 button{
-                    width:13rem;
-                    height:4.5rem;
+                    width:11rem;
+                    height:5rem;
                 }
             }
         }
@@ -4446,7 +4467,8 @@
                     color:#747478;
                     span{
                         margin:0 0.5rem;
-                        font-weight:$font-weight__m;
+                        font-size:1.8rem;
+                        font-weight:600;
                         color:#CA1C1D;
                     }
                 }
@@ -4509,6 +4531,12 @@
                 border-bottom:1px solid #e5e7ee;
                 font-size:2.6rem;
                 font-weight:$font-weight__b;
+                &-title{
+                    font-size: 2.4rem !important; font-weight:500;
+                }
+                &-where{
+                    font-weight:500;
+                }
             }
         }
         > dl{
@@ -4537,6 +4565,20 @@
             dd{
                 width:calc(100% - 23rem);
                 margin-bottom:0;
+                .txt{
+                    span{
+                        .vol{
+                            font-size:1.4rem;
+                            color:#747478;  
+                        }
+                    }
+                }
+                span{
+                    .vol{
+                        font-size:1.4rem;
+                        color:#747478;
+                    }
+                }
             }
         }
         &.noLine{
@@ -4668,6 +4710,7 @@
                     @include align-center;
                     text-align:center;
                     border-bottom:3px double #eee;
+                    font-weight:500;
                     p{
                         padding:0;
                     }
@@ -4682,9 +4725,9 @@
                     border:1px solid #b7b7b7;
                 }
                 > p{
-                    font-size:1rem;
-                    font-weight:$font-weight__b;
-                    padding:1.2rem 1.3rem 1rem 1.3rem;
+                    font-size:1.4rem;
+                    font-weight:400;
+                    padding:0.7rem 0.7rem 0.7rem 0.7rem;
                 }
                 > a{
                     display:block;
@@ -4693,10 +4736,11 @@
                     }
                     &:not(.viewMore){
                         overflow:hidden;
-                        height:2.5rem;
-                        padding:.7rem;
+                        height:3.4rem;
+                        padding:1rem;
                         box-sizing:border-box;
-                        font-size:1.3rem;
+                        font-size:1.4rem;
+                        font-weight:500;
                         text-overflow:ellipsis;
                         white-space:nowrap;
                         &+a{
@@ -4978,4 +5022,8 @@ div[class^="content__core-mainN"]{
 
 .top-dot::before{
     background: #f7592a !important;
+}
+
+.lnb_title {
+    padding: 30px 0; border-bottom:1px solid #747478;
 }

@@ -1527,6 +1527,7 @@ ul{
                     position: relative; 
                     margin-bottom: 0;
                     padding-left: 3.3rem;
+                    font-weight:400;
                     cursor: pointer; 
                     // -webkit-user-select: none; 
                     // -moz-user-select: none; 
@@ -1535,6 +1536,7 @@ ul{
                     //color: #cccccc;
                     p, span{
                         font-size: 1.7rem;
+                        font-weight:400;
                     }
                     &::before{
                         position: absolute;
