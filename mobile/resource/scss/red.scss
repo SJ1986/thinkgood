@@ -1,6 +1,6 @@
 @import "./common";
 
-/* myRoomContentList */
+/* myRoomContest */
 footer.mt_0{
     margin-top:0 !important;
 }
@@ -300,24 +300,21 @@ footer.mt_0{
         }
     }
     .tab-wrap{
-        padding-top:4.1rem;
+        padding-top:4rem;
         background-color: #fff;
         li{
             color:#747478;
-            font-weight: 500;
+            font-weight: bold;
             letter-spacing: -0.6px;
             .current{
                 color:#ca1c1d;
             font-weight:bold;
             }
         }
-        .applyList{
-            margin-top:2.2rem;
-        }
         .items {
             position: relative;
             padding-right:3.6rem;
-            padding: 1.8rem 0 2.2rem;
+            padding: 2.2rem 0 2.2rem;
             &+.items {
                 border-top:1px solid #e5e7ee;
             }
@@ -363,6 +360,17 @@ footer.mt_0{
                         background-color:#e8e8e8;
                         border:1px solid #9a9a9a;
                     }
+                    .interView{
+                        font-size:2.2rem;
+                        font-weight: normal;
+                        letter-spacing: -0.55px;
+                    }
+                    .strategy {
+                        width:12rem;
+                        font-size:2.2rem;
+                        font-weight: normal;
+                        letter-spacing: -0.55px;
+                    }
                 }
                 .title {
                     margin-top:1.4rem;
@@ -388,20 +396,186 @@ footer.mt_0{
 
         }
     }
-}
+}  
 
 .bottom_menu {
     margin-top:12rem;
-    background-color: #f8f8fa;
     box-sizing:border-box;
     >button{
-        padding:3.2rem 11rem;
         display:inline-block;
+        width:50%;
+        padding:3.2rem 11rem;
         font-size: 2.4rem;
         font-weight: normal;
         letter-spacing: -0.6px;
+        background-color: #f8f8fa;
         +button {
             border-left:1px solid #EDEEF3;
+        }
+    }
+}
+
+/* myRoomContentList */
+.contentList {
+    .boxWrap{
+        margin:40px 0;
+        line-height: 3.3rem;
+    }
+    .indexList {
+        .index_wrap{
+            .search-box {
+                height:3.6rem;
+            }
+        }
+    }
+    
+}
+
+/* myRoomApplyList */
+.myRoom_apply.modal-open {
+    display:block;
+    opacity: 1 !important;
+    border:1px solid #000;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    .modal-dialog{
+        width:100%;
+        max-width: 100%;
+        min-height: calc(100% - -50rem);
+        .modal-content {
+            padding:11rem 8.7rem;
+            min-width: 100%;
+            height:70vh;
+            background: #fff;
+            border-radius: 3.6rem 3.6rem 0 0;
+            opacity: 1;
+            box-sizing: border-box;
+            transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+            box-shadow: 0 -8px 18px 0 rgba(0, 0, 0, 0.18);
+            .modal-header {
+                padding-bottom:5rem;
+                border-bottom:0;
+                h5{
+                    position: relative;
+                    padding:0;
+                    width:100%;
+                    left:0;
+                    font-size:4rem;
+                    font-weight:500;
+                    letter-spacing: -0.15rem;
+                    transform: none;
+                    span {
+                        margin-top:4rem;
+                        display:block;
+                        font-size:2rem;
+                        font-weight:300;
+                        letter-spacing: -0.13rem;
+                        color: #555;
+                    }
+                }
+            }
+            .modal-body {
+                padding:0;
+                div{
+                    font-size:2.4rem;
+                    font-weight:500;
+                    letter-spacing: normal;
+                    p{
+                        display:inline-block;
+                        margin-left:4rem;
+                        font-size:2.4rem;
+                        font-weight:300;
+                        letter-spacing: normal;
+                    }
+                }
+                input {
+                    margin-top:5rem;
+                }
+            }
+            .modal-footer {
+                .button-red{
+                    background-color:#ca1c1d;
+                    color:#fff;
+                    font-size:2.6rem;
+                    font-weight:500;
+                    letter-spacing: normal;
+                }
+                .button-white{
+                    margin-top:8rem;
+                    border:1px solid #e5e7ee;
+                    color:#747478;
+                    font-size:2.6rem;
+                    font-weight:500;
+                    letter-spacing: normal;
+                }
+            }
+        }
+    }
+    
+}
+.modal-backdrop {
+    background: transparent;
+}
+.modal-backdrop.show {
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:5;
+    width:100vw;
+    height:100vh;
+    opacity: 0.18;
+    background: rgba(0,0,0,1);
+}
+/* myRoomInfoMody */
+.container__core.myRoomMody {
+    padding-top:0;
+}
+
+.board-write {
+    span{
+        margin-left:3rem;
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: -1px;
+        color: #555;
+    }
+    .form-wrap{
+        input.color-black::placeholder{
+            color:#000;
+        }
+    }
+    .tab-top{
+        ul{
+            li{
+                font-weight:bold;
+            }
+        }
+    }
+
+    .tab-content {
+        .tab-top {
+            
+        }
+        .mody_items {
+            flex-flow: row wrap;
+            text-align: center;
+            .items {
+                width:33.33%;
+                box-sizing:border-box;
+                .icon_list{
+                    .box {
+                        width:12rem;
+                        height:12rem;
+                        line-height: 12rem;
+                        margin: 0 auto;
+                    }
+                    p{
+                        font-size:2rem;
+                        font-weight: normal;
+                        letter-spacing: normal;
+                        color:#999;
+                    }
+                }
+            }
         }
     }
 }
