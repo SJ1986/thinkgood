@@ -553,10 +553,11 @@ h6{
     border:1px solid #eee;
 }
 header{
+    max-height: 10rem;
     padding:2.8rem 3rem;
     box-sizing:border-box;
     border-bottom:1px solid #707070;
-    .btn{
+    button.btn{
         &--sch{
             display:inline-block;
             width:3.4rem;
@@ -576,6 +577,7 @@ header{
             }
         }
         &--mobile{
+            height: 3.3rem;
             opacity:1;
             visibility:visible;
             z-index:1;
@@ -815,7 +817,7 @@ header{
     max-width:100%;
 }
 footer{
-    margin-top:19rem;
+    margin-top:12rem;
     .footer{
         &__nav{
             @include d-flex;
@@ -1122,7 +1124,7 @@ footer{
         }
     }
     &-dialog{
-        max-width: 52%;
+        //max-width: 52%;
         height: auto;
         margin:0 auto;
         // padding-top: 17.8rem;
@@ -1883,11 +1885,11 @@ ul{
     &__inner{
         a{
             @include d-flex;
-            width:4.5rem;
-            height:4.5rem;
+            width:6rem;
+            height:6rem;
             margin-left: -.1rem;
             color:#686868;
-            font-size:1.4rem;
+            font-size:2.2rem;
             font-weight: $font-weight__l;
             z-index:1;
             

@@ -296,7 +296,7 @@
                         </div>
                     </div>
 
-                    <div class="pd_3 borderTopGray pd_3">
+                    <div class="borderTopGray pd_3">
                         <div class="d-flex align-items-center justify-content-between">
                             <h5 class="font-weight__b">공모전</h5>
                             <div class="btnClick">
@@ -676,7 +676,7 @@
         
         // 필터 검색어 삭제
         $(".del").click(function(){
-            $(this).parent().remove();
+            $(this).parents("li").remove();
         });
 
         //리스트형 썸네일형 클릭
