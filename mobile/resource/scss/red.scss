@@ -1,3 +1,4 @@
+@import "./common";
 
 /* myRoomContentList */
 footer.mt_0{
@@ -186,11 +187,7 @@ footer.mt_0{
             opacity:0.5;
         }
         &:nth-child(-n+7){
-            display:flex;
-            -ms-display: flexbox;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display:-webkit-flex;
+            @include display-flex;
             margin-bottom:2em;
             height:6.4rem;
             align-items: center;
@@ -316,80 +313,95 @@ footer.mt_0{
         }
         .applyList{
             margin-top:2.2rem;
-        
-            .items {
-                position: relative;
-                padding-right:3.6rem;
-                padding: 1.8rem 0 2.2rem;
-                &+.items {
-                    border-top:1px solid #e5e7ee;
-                }
-                .itemCont{
-                    display: inline-block;
-                    width: calc(100% - 4rem);
-                    .state {
-                        position:relative;
-                        div {
-                            display: inline-block;
-                            width:8rem;
-                            height:3.6rem;
-                            font-size:1.8rem;
-                            font-weight: normal;
-                            letter-spacing: -0.45px;
-                            line-height:3.6rem;
-                            text-align: center;
-                        }
-                        p {
-                            display: inline-block;
-                            margin-left:2rem;
-                            font-size:2.2rem;
-                            font-weight: normal;
-                            letter-spacing: -0.55px;
-                        }
-                        & >div.accepting{
-                            color:#df0000;
-                            background-color:#fff3f3;
-                            border:1px solid #ffb4b4;
-                        }
-                        & >div.tobe{
-                            color:#ff9306;
-                            background-color: #fffdf3;
-                            border:1px solid #ffc671;
-                        }
-                        & >div.imminent{
-                            color:#068bff;
-                            background-color:#f3faff;
-                            border:1px solid #71c1ff;
-                        }
-                        & >div.deadline{
-                            color: #545454;
-                            background-color:#e8e8e8;
-                            border:1px solid #9a9a9a;
-                        }
-                    }
-                    .title {
-                        margin-top:1.2rem;
-                        font-size:2.4rem;
-                        font-weight: normal;
-                        letter-spacing: -0.6px;
-                    }
-                    .date {
-                        margin-top:1rem;
+        }
+        .items {
+            position: relative;
+            padding-right:3.6rem;
+            padding: 1.8rem 0 2.2rem;
+            &+.items {
+                border-top:1px solid #e5e7ee;
+            }
+            .itemCont{
+                display: inline-block;
+                width: calc(100% - 4rem);
+                .state {
+                    position:relative;
+                    div {
+                        display: inline-block;
+                        width:8rem;
+                        height:3.6rem;
                         font-size:1.8rem;
                         font-weight: normal;
                         letter-spacing: -0.45px;
-                        color:#747478;
+                        line-height:3.6rem;
+                        text-align: center;
                     }
-                }    
-                .delete {
-                    position: absolute;
-                    top: 50%;
-                    -webkit-transform: translateY(-50%);
-                    transform: translateY(-50%);
-                    right: 3.6rem;
+                    p {
+                        display: inline-block;
+                        margin-left:2rem;
+                        font-size:2.2rem;
+                        font-weight: normal;
+                        letter-spacing: -0.55px;
+                    }
+                    & >div.accepting{
+                        color:#df0000;
+                        background-color:#fff3f3;
+                        border:1px solid #ffb4b4;
+                    }
+                    & >div.tobe{
+                        color:#ff9306;
+                        background-color: #fffdf3;
+                        border:1px solid #ffc671;
+                    }
+                    & >div.imminent{
+                        color:#068bff;
+                        background-color:#f3faff;
+                        border:1px solid #71c1ff;
+                    }
+                    & >div.deadline{
+                        color: #545454;
+                        background-color:#e8e8e8;
+                        border:1px solid #9a9a9a;
+                    }
                 }
-
+                .title {
+                    margin-top:1.4rem;
+                    font-size:2.4rem;
+                    font-weight: normal;
+                    letter-spacing: -0.6px;
+                }
+                .date {
+                    margin-top:1.2rem;
+                    font-size:1.8rem;
+                    font-weight: normal;
+                    letter-spacing: -0.45px;
+                    color:#747478;
+                }
+            }    
+            .delete {
+                position: absolute;
+                top: 50%;
+                -webkit-transform: translateY(-50%);
+                transform: translateY(-50%);
+                right: 3.6rem;
             }
-        }    
+
+        }
+    }
+}
+
+.bottom_menu {
+    margin-top:12rem;
+    background-color: #f8f8fa;
+    box-sizing:border-box;
+    >button{
+        padding:3.2rem 11rem;
+        display:inline-block;
+        font-size: 2.4rem;
+        font-weight: normal;
+        letter-spacing: -0.6px;
+        +button {
+            border-left:1px solid #EDEEF3;
+        }
     }
 }
