@@ -856,7 +856,6 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .accordion .admitContent p.pre { overflow: auto; height: 100%; padding-right: 3rem; font-size: 1.6rem; color: #747478; white-space: pre-line; }
 
-<<<<<<< HEAD
 /* myRoomContest */
 footer.mt_0 {
   margin-top: 0 !important;
@@ -1521,7 +1520,6 @@ footer.mt_0 {
   letter-spacing: normal;
   color: #999;
 }
-=======
 /* myRoomContentList */
 footer.mt_0 { margin-top: 0 !important; }
 
@@ -1664,4 +1662,4 @@ footer.mt_0 { margin-top: 0 !important; }
 .bottom_menu > button { padding: 3.2rem 11rem; display: inline-block; font-size: 2.4rem; font-weight: normal; letter-spacing: -0.6px; }
 
 .bottom_menu > button + button { border-left: 1px solid #EDEEF3; }
->>>>>>> 15fb68dfb0a7fb266aec1604760464b1c29b4d67
+
