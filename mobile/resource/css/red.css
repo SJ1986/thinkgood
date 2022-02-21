@@ -351,15 +351,15 @@ h6 { font-size: 2.6rem; }
 
 header { padding: 2.8rem 3rem; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #707070; }
 
-header .btn--sch { display: inline-block; width: 3.4rem; height: 3.4rem; padding: 0; margin-left: auto; margin-right: 4rem; }
+header button.btn--sch { display: inline-block; width: 3.4rem; height: 3.4rem; padding: 0; margin-left: auto; margin-right: 4rem; }
 
-header .btn--close { display: none; position: absolute; right: 4rem; display: none; padding: 0; }
+header button.btn--close { display: none; position: absolute; right: 4rem; display: none; padding: 0; }
 
-header .btn--close.on { display: block; }
+header button.btn--close.on { display: block; }
 
-header .btn--mobile { opacity: 1; visibility: visible; z-index: 1; }
+header button.btn--mobile { opacity: 1; visibility: visible; z-index: 1; }
 
-header .btn--mobile.off { opacity: 0; visibility: hidden; z-index: -1; }
+header button.btn--mobile.off { opacity: 0; visibility: hidden; z-index: -1; }
 
 header .header--logo { margin-bottom: 0; }
 
@@ -439,7 +439,7 @@ header .header--logo img { width: 18rem; height: 4.4rem; }
 
 .container { padding: 0; margin: 0; max-width: 100%; }
 
-footer { margin-top: 19rem; }
+footer { margin-top: 12rem; }
 
 footer .footer__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 1.6rem 6rem; border-top: 2px solid #8c8c8c; border-bottom: 1px solid #dddddd; background-color: #f8f8fa; }
 
