@@ -3,6 +3,8 @@ $(function () {
     scrapOn();
     linkPlus(); // 링크 추가 버튼 클릭
     filePlus(); // 파일첨부 버튼 클릭
+    footerMt0(); //footer mt-0 적용
+    btnShare();
 });
 
 function thinkgoodPickList(){
@@ -68,4 +70,17 @@ function linkPlus(){
     });
   
 
+ }
+
+ function footerMt0(){
+    //$(".button-bottom").parents().find(".wrap").children("footer").addClass("mt-0");
+ }
+
+ function btnShare(){
+     $(".button-share").click(function(){
+         $(this).toggleClass("on");
+     });
+     $(".share-button__inner .button-close").click(function(){
+        $(this).parent().parent().prev().removeClass("on");
+    })
  }

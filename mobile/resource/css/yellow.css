@@ -349,17 +349,17 @@ h6 { font-size: 2.6rem; }
 /* header */
 .wrap { margin: 0 auto; border: 1px solid #eee; }
 
-header { padding: 2.8rem 3rem; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #707070; }
+header { max-height: 10rem; padding: 2.8rem 3rem; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #707070; }
 
-header .btn--sch { display: inline-block; width: 3.4rem; height: 3.4rem; padding: 0; margin-left: auto; margin-right: 4rem; }
+header button.btn--sch { display: inline-block; width: 3.4rem; height: 3.4rem; padding: 0; margin-left: auto; margin-right: 4rem; }
 
-header .btn--close { display: none; position: absolute; right: 4rem; display: none; padding: 0; }
+header button.btn--close { display: none; position: absolute; right: 4rem; display: none; padding: 0; }
 
-header .btn--close.on { display: block; }
+header button.btn--close.on { display: block; }
 
-header .btn--mobile { opacity: 1; visibility: visible; z-index: 1; }
+header button.btn--mobile { height: 3.3rem; opacity: 1; visibility: visible; z-index: 1; }
 
-header .btn--mobile.off { opacity: 0; visibility: hidden; z-index: -1; }
+header button.btn--mobile.off { opacity: 0; visibility: hidden; z-index: -1; }
 
 header .header--logo { margin-bottom: 0; }
 
@@ -439,7 +439,7 @@ header .header--logo img { width: 18rem; height: 4.4rem; }
 
 .container { padding: 0; margin: 0; max-width: 100%; }
 
-footer { margin-top: 19rem; }
+footer { margin-top: 12rem; }
 
 footer .footer__nav { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; padding: 1.6rem 6rem; border-top: 2px solid #8c8c8c; border-bottom: 1px solid #dddddd; background-color: #f8f8fa; }
 
@@ -1128,6 +1128,16 @@ h1, h2, h3, h4, h5 { margin-bottom: 0; }
 
 .button-list { background: #a59b99; color: #ffffff; }
 
+.button-bottom { margin-top: 12rem; margin-bottom: -12rem; display: -webkit-box; display: flex; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; }
+
+.button-facebook i { width: 1.4rem; height: 2.7rem; background: url(../image/sub/icon-snsFacebook.svg); }
+
+.button-twitter i { width: 2.8rem; height: 2.3rem; background: url(../image/sub/icon-snsTwitter.svg); }
+
+.button-google i { width: 3.4rem; height: 2.3rem; background: url(../image/sub/icon-google.svg) no-repeat; }
+
+.button-mail i { width: 2.7rem; height: 2.7rem; background: url(../image/sub/icon-mail.svg); }
+
 .paging { margin-top: 3rem; }
 
 .paging__inner a { width: 6rem; height: 6rem; font-size: 2.2rem; }
@@ -1469,3 +1479,41 @@ h4 .color-red { color: #ca1c1d; font-weight: 600; }
 .contest .view-tab .tabcontent .list-dot::before { position: absolute; top: 1.3rem; left: .4rem; width: .4rem; height: .4rem; background: #000000; border-radius: 100%; content: ""; }
 
 .contest .view-tab .tabcontent p { font-size: 2.4rem; line-height: 4.135rem; }
+
+.scrapBtn { position: relative; z-index: 1; -webkit-box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.16); box-shadow: 0 -2px 15px 0 rgba(0, 0, 0, 0.16); }
+
+.scrapBtn > * { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 10rem; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.scrapBtn > * + * { border-left: 1px solid #e5e7ee; }
+
+.scrapBtn > div { font-size: 2.4rem; }
+
+.scrapBtn > div i { margin-right: 1rem; }
+
+.scrapBtn .button-scrap i { width: 2.2rem; height: 2.7rem; background: url(../image/sub/icon-scrap.svg) no-repeat center; }
+
+.scrapBtn .button-share { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; }
+
+.scrapBtn .button-share i { display: block; width: 2rem; height: 2.2rem; background: url(../image/sub/icon-share.svg) no-repeat center; }
+
+.scrapBtn .button-share.on + .share-button { top: -10rem; display: block; background-color: #f8f8fa; -webkit-box-shadow: inset 0px -9px 10px 0 rgba(0, 0, 0, 0.02); box-shadow: inset 0px -9px 10px 0 rgba(0, 0, 0, 0.02); }
+
+.scrapBtn .button-share.on + .share-button > div button { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; height: 100%; background: transparent; }
+
+.scrapBtn .button-share.on + .share-button > div button i { display: block; }
+
+.scrapBtn .button-share.on + .share-button > div button + button { border-left: 0; }
+
+.scrapBtn .button-share.on + .share-button > div button.button-close { -webkit-box-flex: 0; -ms-flex: none; flex: none; width: auto; padding: 0 3rem; }
+
+.scrapBtn .button-share.on + .share-button > div button.button-close i { display: block; width: 2.6rem; height: 2.6rem; background: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='25.999' height='25.999' viewBox='0 0 25.999 25.999'%3E%3Cpath d='m12.999 15.109-10.89 10.89L0 23.89l10.891-10.894L-.001 2.109 2.108 0l10.89 10.891L23.889 0l2.109 2.109-10.89 10.888 10.891 10.894L23.89 26z'/%3E%3C/svg%3E%0A"); }
+
+.scrapBtn .share-button { position: absolute; left: 0; top: 0rem; width: 100%; height: 10rem; -webkit-transition: all .2s; transition: all .2s; z-index: -1; }
+
+.scrapBtn .share-button > div { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-flex: 1; -ms-flex: 1; flex: 1; }
+
+.scrapBtn .share-button__inner { width: 100%; height: 100%; }
+
+.scrapBtn .share-button__inner button { background-size: cover; }
+
+.scrapBtn .share-button__inner button i { margin-right: 0; }
