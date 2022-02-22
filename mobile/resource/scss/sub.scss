@@ -44,6 +44,40 @@
     }
 }
 
+/* 회원가입 */
+.box{
+    &-gray{
+        padding:6rem 7.75rem;
+        border:1px solid #e5e7ee;
+        border-radius:.6rem;
+        text-align:center;
+        &--login{
+            width:31.5rem;
+        }
+        & + div{
+            margin-left:1rem;
+        }
+        .circle{
+            &-gray{
+                @include d-flex;
+                @include align-center;
+                @include justify-center;
+                width:16rem;
+                height:16rem;
+                background-color:#f8f8fa;
+                border-radius:100%;
+            }
+        }
+        >button{
+            &.btn{
+                height:5rem;
+                font-size:1.8rem;
+                font-weight:200;
+            }
+        }
+    }
+}
+
 
 /* 씽굿광장 */ 
 .search{
@@ -662,7 +696,6 @@
         background: #a59b99;
     }
 }
-
 
 .paging{
     margin-top: 3rem;
