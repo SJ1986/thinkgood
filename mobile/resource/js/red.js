@@ -13,8 +13,14 @@ function projectClick(){
 }  
 function genderButton(){
     $('.formGender button').click(function(){
-        $(this).removeClass('on');
-        $(this).addClass('on');
+        if($('this').hasClass('on')){
+            $(this).offset().removeClass('on');
+        }else{
+            $(this).addClass('on');
+        }
+
+       
+       
     });
 }    
 function pwCheck(){
