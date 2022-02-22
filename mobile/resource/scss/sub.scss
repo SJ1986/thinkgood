@@ -45,28 +45,16 @@
 }
 
 /* 회원가입 */
-.box{
-    &-gray{
-        padding:6rem 7.75rem;
-        border:1px solid #e5e7ee;
-        border-radius:.6rem;
+.boxes{
+    &-item{
+        padding:6rem 7rem;
         text-align:center;
+        &__border{
+            border:1px solid #e5e7ee;
+            border-radius:.6rem;
+        }
         &--login{
-            width:31.5rem;
-        }
-        & + div{
-            margin-left:1rem;
-        }
-        .circle{
-            &-gray{
-                @include d-flex;
-                @include align-center;
-                @include justify-center;
-                width:16rem;
-                height:16rem;
-                background-color:#f8f8fa;
-                border-radius:100%;
-            }
+            width:33rem;
         }
         >button{
             &.btn{
@@ -74,6 +62,21 @@
                 font-size:1.8rem;
                 font-weight:200;
             }
+        }
+        & + div{
+            margin-left:1rem;
+        }
+    }
+    .circle{
+        &-gray{
+            @include d-flex;
+            @include align-center;
+            @include justify-center;
+            margin:0 auto;
+            width:16rem;
+            height:16rem;
+            background-color:#f8f8fa;
+            border-radius:100%;
         }
     }
 }
@@ -910,6 +913,45 @@
             }
         }
     }
+    &.modal-bottom{
+        display:initial !important;
+        top:100%;
+        opacity:1;
+        transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+        border-top-left-radius: 4rem;
+        border-top-right-radius:4rem;
+        .modal-dialog{
+            width:100%;
+            height:100%;
+            margin:0;
+            max-width:100%;
+            .modal-content{
+                overflow:auto;
+                padding:11rem 7.5rem;
+                h1{
+                    font-size:4rem;
+                }
+            }
+        }
+    }
+}
+body{
+    &.modal-open{
+        .modal{
+            &.modal-bottom{
+                display:initial !important;
+                top:17%;
+                opacity:1;
+            }
+        }
+    }
+}
+/* modal backdrop fix */
+.modal+.modal {
+    z-index: 1052 !important;
+}
+.modal-backdrop.show+.modal-backdrop.show {
+    z-index: 1051 !important;
 }
 
 

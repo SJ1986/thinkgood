@@ -172,16 +172,73 @@
 					<div class="container__inner">
                         <div class="">
                             <h1 class="sub-title pt_8 text-center">본인인증</h1>
-                            <div class="d-flex mt_60 px_4 justify-content-center">
-                                <div class="box-gray box-gray--login">
+                            <div class="boxes d-flex mt_60 px_4 justify-content-center">
+                                <div class="boxes-item boxes-item__border boxes-item--login">
                                     <p class="circle-gray">
                                         <i class="icon icon-login--email"></i>
                                     </p>
-                                    <button type="button" class="btn btn-darkgray mt_30">
+                                    <button type="button" class="btn btn-darkgray mt_30" data-toggle="modal" data-target="#modalEmailCert">
                                         이메일 인증하기
                                     </button>
+                                    <div class="modal modal-bottom" id="modalEmailCert"aria-labelledby="modalEmailCertLabel">
+                                        <div class="modal-dialog" role="document">
+                                          <div class="modal-content">
+                                            <div class="modal-body">
+                                                <h1 class="text-center">
+                                                    본인 소유의 이메일 주소를<br/>
+                                                    입력해주세요
+                                                </h1>
+                                                <input type="text" name="" id="" class="mt_90 mb_20 form-input w-100" placeholder="이메일 주소를 입력해주세요" title="본인인증 이메일주소입력">
+                                                <button type="button" class="btn btn-red mt_20 btn w-100" id="sendToCertiMail" data-toggle="modal" data-target="#sendToCertiMail">
+                                                    인증메일 발송하기
+                                                </button>
+                                                <button type="button" class="btn close w-100" data-dismiss="modal" aria-label="Close" style="margin-top:12rem">
+                                                    취소
+                                                </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <div class="modal" id="sendToCertiMail" data-backdrop="static">
+                                        <div class="modal-dialog">
+                                          <div class="modal-content">
+                                            <div class="container"></div>
+                                            <div class="modal-body">
+                                                <h5>
+                                                    입력하신 메일 주소로 회원가입 <br/>
+                                                    인증 링크가 담긴 메일이 발송되었습니다.                                                        
+                                                </h5>
+                                                <button type="button" class="btn btn-red mt_20 btn w-100 close" data-dismiss="modal">
+                                                    확인
+                                                </button>
+                                            </div>
+                                          </div>
+                                        </div>
+                                    </div>
+                                    <!-- Modal -->
+                                    <!-- <div class="modal modal-bottom" id="modalEmailCert" tabindex="-1" role="dialog" aria-labelledby="modalEmailCertLabel" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-body">
+                                                    <h1 class="text-center">
+                                                        본인 소유의 이메일 주소를<br/>
+                                                        입력해주세요
+                                                    </h1>
+                                                    <input type="text" name="" id="" class="mt_90 mb_20 form-input w-100" placeholder="이메일 주소를 입력해주세요" title="본인인증 이메일주소입력">
+                                                    <button type="button" class="btn btn-red mt_20 btn w-100" id="sendToCertiMail" data-toggle="modal" data-target="#test2">
+                                                        인증메일 발송하기
+                                                    </button>
+                                                    <button type="button" class="btn close w-100" data-dismiss="modal" aria-label="Close" style="margin-top:12rem">
+                                                        취소
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div> -->
+                                    
+                                    
                                 </div>
-                                <div class="box-gray  box-gray--login">
+                                <div class=" boxes-item boxes-item__border boxes-item--login">
                                     <p class="circle-gray">
                                         <i class="icon icon-login--cellphone"></i>
                                     </p>
