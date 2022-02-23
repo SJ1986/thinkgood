@@ -80,6 +80,24 @@
         }
     }
 }
+.box{
+    &-gray{
+        background-color:#f8f8fa;
+        border:1px solid #e5e7ee;
+        border-radius:.6rem;
+    }
+}
+.auth{
+    &-comp{
+        dt{
+            width:10.4rem;
+        }
+        dd{
+            width:calc(100% - 10.4rem);
+        }
+    }
+
+}
 
 /* 씽굿광장 */ 
 .search{

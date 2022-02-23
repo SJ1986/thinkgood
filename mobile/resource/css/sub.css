@@ -741,6 +741,12 @@ p.font-s {
 
 .font-m {
   font-size: 2.4rem !important;
+  line-height: 3.4rem;
+}
+
+.font-r {
+  font-size: 2rem !important;
+  line-height: 3.4rem;
 }
 
 .font-s {
@@ -1143,14 +1149,14 @@ header .header--logo img {
   border: none;
 }
 
+.content {
+  min-height: 91.7rem;
+}
+
 .container {
   padding: 0;
   margin: 0;
   max-width: 100%;
-}
-
-footer {
-  margin-top: 12rem;
 }
 
 footer .footer__nav {
@@ -1777,6 +1783,15 @@ ul.lists.bar li:before {
   content: "-";
 }
 
+ul.lists.dot li:before {
+  top: 1.5rem;
+  width: .2rem;
+  height: .2rem;
+  background-color: #000;
+  border-radius: 100%;
+  content: "";
+}
+
 ul.lists.num {
   counter-reset: num;
 }
@@ -1942,10 +1957,6 @@ ul.lists.num li:before {
 
 .form-row {
   margin: 0;
-}
-
-.table-check > label {
-  position: initial;
 }
 
 /* select 셀렉트 영역 스타일 */
@@ -2600,6 +2611,20 @@ ul.lists.num li:before {
   height: 16rem;
   background-color: #f8f8fa;
   border-radius: 100%;
+}
+
+.box-gray {
+  background-color: #f8f8fa;
+  border: 1px solid #e5e7ee;
+  border-radius: .6rem;
+}
+
+.auth-comp dt {
+  width: 10.4rem;
+}
+
+.auth-comp dd {
+  width: calc(100% - 10.4rem);
 }
 
 /* 씽굿광장 */
