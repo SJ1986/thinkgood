@@ -50,6 +50,7 @@ $color-sunday : #ff4a5c;
 $color-purple : #22202e;
 $color-blue : #2024dc;
 $color-cherryRed : #f7592a;
+$color-weed : #6e971a;
 
 .row{
     margin:0;
@@ -81,6 +82,12 @@ $color-cherryRed : #f7592a;
     &_100{
         width:100% !important
     }
+    &_95{
+        width:75% !important
+    }
+    &_85{
+        width:75% !important
+    }
     &_75{
         width:75% !important
     }
@@ -89,6 +96,9 @@ $color-cherryRed : #f7592a;
     }
     &_45{
         width:45% !important
+    }
+    &_48{
+        width:48%
     }
     &_25{
         width:25% !important
@@ -1376,6 +1386,10 @@ p{
                     background: $color-red;
                     border:none !important;
                 }
+                &-excelDown{
+                    border:1px solid #6e971a;
+                    color:#6e971a;
+                }
             }
         }
     }
@@ -1517,6 +1531,20 @@ ul{
     &-check{
         position: relative; 
         padding-left: 0;
+        &.table{
+            &-check{
+                input[type='checkbox']{
+                    + label{
+                        position:initial;
+                        &:before{
+                            top:0;
+                            left:50%;
+                            transform:translateX(-50%);
+                        }
+                    }
+                }
+            }
+        }
         &.check-all{
             input{
                 &[type='checkbox']{
