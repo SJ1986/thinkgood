@@ -469,6 +469,10 @@
   padding: 5rem;
 }
 
+.pd_120 {
+  padding-bottom: 12rem;
+}
+
 .px_1 {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -6511,10 +6515,19 @@ footer.mt_0 {
 
 .campus-list {
   margin: -6rem -3rem 0 -3rem;
+  background-color: #f8f8fa;
 }
 
 .campus-list section {
-  padding: 6rem 3rem;
+  padding: 3rem;
+}
+
+.campus-list section:nth-child(even) {
+  background-color: #fff;
+}
+
+.campus-list section:nth-child(even) .campus-item {
+  background-color: #f8f8fa;
 }
 
 .campus-list section h2 {
@@ -6534,4 +6547,63 @@ footer.mt_0 {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.campus-list section button {
+  background-color: transparent;
+}
+
+.campus-list section > a {
+  display: block;
+  width: 2.1rem;
+  height: 2.1rem;
+  margin: 0 auto;
+  margin-top: 4.4rem;
+  margin-bottom: 3rem;
+}
+
+.campus-itemWrap {
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  grid-auto-rows: minmax(12rem, auto);
+  grid-auto-flow: dense;
+}
+
+.campus-item {
+  width: 100%;
+  padding: 1.6rem;
+  margin-bottom: 1.6rem;
+  background-color: #fff;
+  border-radius: .6rem;
+}
+
+.campus-item img {
+  width: 100%;
+}
+
+.campus-item:nth-child(even) {
+  margin-left: 1.6rem;
+}
+
+.campus-item--s {
+  grid-row: auto / span 4;
+}
+
+.campus-item--l {
+  grid-row: auto / span 5;
+}
+
+.campus-item span:nth-child(2) {
+  display: block;
+  margin-top: 2.4rem;
+  letter-spacing: -0.05em;
+}
+
+.campus-item em {
+  display: block;
+  margin-top: 1rem;
+  font-size: 2.2rem;
+  font-style: normal;
+  line-height: 3.2rem;
+  color: #747478;
 }
