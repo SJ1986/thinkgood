@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shortcut icon" href="../../resoruce/image/common/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../resoruce/image/common/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../../resource/css/reset.css">
+		<link rel="stylesheet" href="../../resource/css/font.css">
+		<link rel="stylesheet" href="../../resource/css/animate.css">
+		<link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../resource/css/swiper.min.css">
+		<link rel="stylesheet" href="../../resource/css/sub.css">
+		<link rel="stylesheet" href="../../resource/css/main.css">
+		<link rel="stylesheet" href="../../resource/css/main_s.css">
+        <link rel="stylesheet" href="../../resource/css/red.css">
+        <link rel="stylesheet" href="../../resource/css/yellow.css">
+		<link rel="stylesheet" href="">
+		<script src="../../resource/js/jquery-1.12.4.min.js"></script>
+		<script src="../../resource/js/bootstrap.min.js"></script>
+		<script src="../../resource/js/swiper.min.js"></script>
+		<script src="../../resource/js/common.js"></script>
+		<script src="../../resource/js/main.js"></script>
+		<script src="../../resource/js/sub.js"></script>
+        <script src="../../resource/js/red.js"></script>
+		<title>씽굿</title>
+	</head>
+
+<body class="modal-open">
+    <div class="wrap">
+        <header>
+            <div class="header__inner">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h1 class="header--logo">
+                        <a href="" title="홈으로 이동">
+                            <img src="../../resource/image/common/logo.png" alt="Thinkgood">
+                        </a>
+                    </h1>
+                    <button type="button" class="btn btn--sch">
+                        <i class="icon finder" title="검색버튼 열림"></i>
+                    </button>
+                    <button type="button" class="btn btn--mobile">
+                        <i class="icon mobileHam" title="모바일 메뉴 열림"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+
+            <div class="container">
+                <div class="container__inner ">
+
+                    <div class="breadcrumb">    
+                        <div class="breadcrumb__inner">
+                            My공모전 <i></i> 나의정보수정
+                        </div>
+                    </div>
+
+                    <h1 class="sub-title text-center py_60">기본회원정보</h1>
+
+
+
+                    <div class="container__core myRoomMody">
+                        <div class="board-write">
+                            <div class="">
+                                <p class="tit essential">비밀번호</p>
+                                <span class="assistant">변경하실 경우 입력해 주세요.</span>
+                                <div class="form-wrap">
+                                    <input type="password" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="영문, 대소문자, 숫자, 특수문자의 조합으로 6자이상 입력하세요">
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit essential">비밀번호 확인</p>
+                                <div class="form-wrap">
+                                    <input type="password" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="비밀번호를 한번 더 입력해주세요">
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit essential">이름</p>
+                                <div class="form-wrap">
+                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-100 color-black" placeholder="홍길동">
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit essential">휴대폰</p>
+                                <div class="modyPhone d-flex">
+                                    <div class="form-wrap">
+                                        <input type="text" name="searchKeyword" value="" id="" class="form-input" placeholder="010-1234-5678">
+                                    </div>
+                                    <button type="button" class="cNumber button-gray">인증번호발송</button>
+                                </div>    
+                            </div>
+                            <div class="">
+                                <p class="tit essential">이메일</p>
+                                <div class="form-wrap">
+                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="hong@gmail.com">
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit essential">성별</p>
+                                <div class="form-wrap">
+                                    <div class="formGender d-flex">
+                                        <input id="toggle-on" class="toggle toggle-left" name="toggle" value="false" type="radio" checked>
+                                        <label for="toggle-on" class="button">남자</label>
+                                        <input id="toggle-off" class="toggle toggle-right" name="toggle" value="true" type="radio">
+                                        <label for="toggle-off" class="button">여자</label>
+                                    </div>
+
+
+                                    
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit essential">생년월일</p>
+                                <div class="form-wrap">
+                                    <div class="d-flex align-items-end ml-auto search-right">
+                                        <div class="d-flex birth w-208">
+                                            <select class="select">
+                                                <option value="0" selected="selected">년</option>
+                                                <option value="">2022</option>
+                                                <option value="">2021</option>
+                                                <option value="">2020</option>
+                                                <option value="">2019</option>
+                                                <option value="">2018</option>
+                                                <option value="">2017</option>
+                                                <option value="">2016</option>
+                                                <option value="">2015</option>
+                                                <option value="">2014</option>
+                                                <option value="">2013</option>
+                                                <option value="">2012</option>
+                                                <option value="">2011</option>
+                                                <option value="">2010</option>
+                                                <option value="">2009</option>
+                                                <option value="">2008</option>
+                                                <option value="">2007</option>
+                                                <option value="">2006</option>
+                                                <option value="">2005</option>
+                                                <option value="">2004</option>
+                                                <option value="">2003</option>
+                                                <option value="">2002</option>
+                                                <option value="">2001</option>
+                                                <option value="">2000</option>
+                                                <option value="">1999</option>
+                                                <option value="">1998</option>
+                                                <option value="">1997</option>
+                                                <option value="">1996</option>
+                                                <option value="">1995</option>
+                                                <option value="">1994</option>
+                                                <option value="">1993</option>
+                                                <option value="">1992</option>
+                                                <option value="">1991</option>
+                                                <option value="">1990</option>
+                                                <option value="">1989</option>
+                                                <option value="">1988</option>
+                                                <option value="">1987</option>
+                                                <option value="">1986</option>
+                                                <option value="">1985</option>
+                                                <option value="">1984</option>
+                                                <option value="">1983</option>
+                                                <option value="">1982</option>
+                                                <option value="">1981</option>
+                                                <option value="">1981</option>
+                                                <option value="">1980</option>
+                                                <option value="">1979</option>
+                                                <option value="">1978</option>
+                                                <option value="">1977</option>
+                                                <option value="">1976</option>
+                                                <option value="">1975</option>
+                                                <option value="">1974</option>
+                                                <option value="">1973</option>
+                                                <option value="">1972</option>
+                                                <option value="">1971</option>
+                                                <option value="">1969</option>
+                                                <option value="">1968</option>
+                                                <option value="">1967</option>
+                                                <option value="">1966</option>
+                                                <option value="">1965</option>
+                                                <option value="">1964</option>
+                                                <option value="">1963</option>
+                                                <option value="">1962</option>
+                                                <option value="">1961</option>
+                                                <option value="">1960</option>
+                                                <option value="">1959</option>
+                                                <option value="">1958</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex birth w-208">
+                                            <select class="select">
+                                                <option value="0" selected="selected">월</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                            </select>
+                                        </div>
+                                        <div class="d-flex birth w-208">
+                                            <select class="select">
+                                                <option value="0" selected="selected">일</option>
+                                                <option value="">01</option>
+                                                <option value="">02</option>
+                                                <option value="">03</option>
+                                                <option value="">04</option>
+                                                <option value="">05</option>
+                                                <option value="">06</option>
+                                                <option value="">07</option>
+                                                <option value="">08</option>
+                                                <option value="">09</option>
+                                                <option value="">10</option>
+                                                <option value="">11</option>
+                                                <option value="">12</option>
+                                                <option value="">13</option>
+                                                <option value="">14</option>
+                                                <option value="">15</option>
+                                                <option value="">16</option>
+                                                <option value="">17</option>
+                                                <option value="">18</option>
+                                                <option value="">19</option>
+                                                <option value="">20</option>
+                                                <option value="">21</option>
+                                                <option value="">22</option>
+                                                <option value="">23</option>
+                                                <option value="">24</option>
+                                                <option value="">25</option>
+                                                <option value="">26</option>
+                                                <option value="">27</option>
+                                                <option value="">28</option>
+                                                <option value="">29</option>
+                                                <option value="">30</option>
+                                                <option value="">31</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit essential">지역</p>
+                                <div class="form-wrap">
+                                    <select class="select choiceOption">
+                                        <option value="normal" selected="selected">지역선택</option>
+                                        <option value="">서울특별시</option>
+                                        <option value="">부산광역시</option>
+                                        <option value="">대구광역시</option>
+                                        <option value="">인천광역시</option>
+                                        <option value="">광주광역시</option>
+                                        <option value="">대전광역시</option>
+                                        <option value="">울산광역시</option>
+                                        <option value="">세종특별자치시</option>
+                                        <option value="">경기도</option>
+                                        <option value="">강원도</option>
+                                        <option value="">충청북도</option>
+                                        <option value="">충청남도</option>
+                                        <option value="">전라북도</option>
+                                        <option value="">전라남도</option>
+                                        <option value="">경상북도</option>
+                                        <option value="">경상남도</option>
+                                        <option value="">제주특별자치도</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit">소속</p>
+                                <div class="form-wrap">
+                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="board-write topGrayLine">
+                            <h6>기타개인설정</h6>
+                            <div class="">
+                                <p class="tit essential mt_30">응원메세지</p>
+                                <span class="cheering">
+                                    오늘의 도전을 응원합니다!<br/>대한민국 대표 공모전 · 대외활동 씽굿에게도<br/>응원의 한 마디 부탁드려요 :)
+                                </span>
+                                <div class="form-wrap message">
+                                    <textarea name="" id="" cols="30" rows="10" placeholder="씽굿 응원합니다! 항상 공모전 정보 잘 받아보고 있습니다."></textarea>
+                                </div>
+                        
+                            </div>
+                            <div class="">
+                                <p class="tit essential mb_30">관심있는 프로젝트를 선택해 주세요</p>
+                                <div class="tab-wrap pt_40">
+                                    <div class="tab-top d-flex align-items-center">
+                                        <ul class="tab d-flex justify-content-between">
+                                            <li class="current" data-tab="tabApplyList01">공모전</li>
+                                            <li class="" data-tab="tabApplyList02">대외활동</li>
+                                            <li class="" data-tab="tabApplyList03">교육/강연</li>
+                                        </ul>
+                                        <div class="link-plus"></div>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="tabcontent current" id="tabApplyList01">
+                                            <div class="transCardWrap mody_items forIE d-flex mt_30">
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify01.png" alt="">
+                                                        </div>
+                                                        <p class="txt">기획/아이디어</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify02.png" alt="">
+                                                        </div>
+                                                        <p class="txt">건축</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify03.png" alt="">
+                                                        </div>
+                                                        <p class="txt">게임/소프트웨어</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify04.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">과학</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify05.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">광고/마케팅</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify06.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">네이밍/슬로건</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify07.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">논문</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                          <img src="../../resource/image/sub/icon_modify08.png" alt="">
+                                                        </div>  
+                                                        <p class="txt">경연/경진대회</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify09.png" alt="">
+                                                        </div>
+                                                        <p class="txt">만화/캐릭터</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify10.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">문학/수기</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify11.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">디자인/미술</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify12.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">사진</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify13.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">영상/UCC</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify14.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">음악</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify15.png" alt="">
+                                                        </div>
+                                                        <p class="txt">경품/이벤트</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify16.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">취업/창업</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify17.png" alt="">
+                                                        </div>
+                                                        <p class="txt">해외</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabcontent" id="tabApplyList02">
+                                            <div class="transCardWrap mody_items forIE d-flex mt_30">
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify01.png" alt="">
+                                                        </div>
+                                                        <p class="txt">기획/아이디어</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify02.png" alt="">
+                                                        </div>
+                                                        <p class="txt">건축</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify03.png" alt="">
+                                                        </div>
+                                                        <p class="txt">게임/소프트웨어</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify04.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">과학</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify05.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">광고/마케팅</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify06.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">네이밍/슬로건</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify07.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">논문</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                          <img src="../../resource/image/sub/icon_modify08.png" alt="">
+                                                        </div>  
+                                                        <p class="txt">경연/경진대회</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify09.png" alt="">
+                                                        </div>
+                                                        <p class="txt">만화/캐릭터</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify10.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">문학/수기</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify11.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">디자인/미술</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify12.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">사진</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify13.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">영상/UCC</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify14.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">음악</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify15.png" alt="">
+                                                        </div>
+                                                        <p class="txt">경품/이벤트</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify16.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">취업/창업</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify17.png" alt="">
+                                                        </div>
+                                                        <p class="txt">해외</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tabcontent" id="tabApplyList03">
+                                            <div class="transCardWrap mody_items forIE d-flex mt_30">
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify01.png" alt="">
+                                                        </div>
+                                                        <p class="txt">기획/아이디어</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify02.png" alt="">
+                                                        </div>
+                                                        <p class="txt">건축</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify03.png" alt="">
+                                                        </div>
+                                                        <p class="txt">게임/소프트웨어</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify04.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">과학</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify05.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">광고/마케팅</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify06.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">네이밍/슬로건</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify07.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">논문</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                          <img src="../../resource/image/sub/icon_modify08.png" alt="">
+                                                        </div>  
+                                                        <p class="txt">경연/경진대회</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify09.png" alt="">
+                                                        </div>
+                                                        <p class="txt">만화/캐릭터</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify10.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">문학/수기</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify11.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">디자인/미술</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify12.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">사진</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify13.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">영상/UCC</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify14.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">음악</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify15.png" alt="">
+                                                        </div>
+                                                        <p class="txt">경품/이벤트</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify16.png" alt="">
+                                                        </div>    
+                                                        <p class="txt">취업/창업</p>
+                                                    </div>
+                                                </div>
+                                                <div class="items">
+                                                    <div class="icon_list">
+                                                        <div class="box">
+                                                            <img src="../../resource/image/sub/icon_modify17.png" alt="">
+                                                        </div>
+                                                        <p class="txt">해외</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <p class="tit">뉴스레터 서비스</p>
+                                <span class="newsletterService">
+                                    지금 가장 핫한 대외활동 ·공모전 소식을 매주 수요일 보내드립니다.
+                                </span>
+                                <div class="form-check d-flex align-items-center mt_20">
+                                    <input type="checkbox" title="" name="" id="check2" value="">
+                                    <label for="check2">정보 메일을 받겠습니다</label>
+                                </div>
+                            </div>
+
+                            <div class="">
+                                <p class="tit essential">자동등록방지</p>
+                                <div class="modyCaptcha mt_20">
+                                    <div class="captBox d-flex ">
+                                        <img src="../../resource/image/sub/CAPTCHA.png" alt="">
+                                        <div class="captBtn">
+                                            <a href="javascript:void(0)" title="음성듣기"><span class="captcha captchaSound"></span></a>
+                                            <a href="javascript:void(0)" title="새로고침"><span class="captcha captchaRefresh"></span></a>
+                                        </div>
+                                        <input type="text" placeholder="문자입력">
+                                    </div>
+                                </div>
+                        
+                            </div>
+
+                            <div class="button-wrap text-center mt_30">
+                                <button type="button" class="button-red">정보수정</button>
+                            </div>
+
+
+                        </div>
+
+                        <div class="board-write modifyWithdrawal">
+                            <div class="">
+                                <p class="tit">회원탈퇴</p>
+                                <span>
+                                    씽굿 회원을 탈퇴하시겠습니까?
+                                </span>
+                                <div class="button-wrap text-center mt_30">
+                                    <button type="button" class="button-gray">회원탈퇴</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+            
+                </div>
+            </div>
+
+
+            <div class="modal modal-bottom myRoom_apply show" id="modalEmailCert"aria-labelledby="modalEmailCertLabel">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header d-flex justify-content-start">
+                            <h5 class="modal-title" id="galleryReward__greatLabel">
+                                회원탈퇴
+                                <span class="underTxt">지금까지 씽굿을 이용해주셔서 감사드립니다.</span>
+                            </h5>
+                        </div>
+                        <div class="modal-body">
+                            <div>아이디 <p>hong123</p></div>
+                            <input type="password" name="" id="" class="form-input w-100 mb_20" placeholder="비밀번호를 입력해 주세요" title="로그인 비밀번호입력">
+                            <button type="button" class="btn btn-red mt_20 btn w-100" id="sendToCertiMail" data-toggle="modal" data-target="#sendToCertiMail">확인</button>
+                            <button type="button" class="btn close w-100 second" data-dismiss="modal" aria-label="Close" style="margin-top:12rem">메인으로 돌아가기</button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <footer class="mt_0">
+            <section class="footer__nav">
+                <a href="">광고문의</a>
+                <a href="">제휴문의</a>
+                <a href="">이용약관</a>
+                <a href="">개인정보처리방침</a>
+            </section>
+            <h2>
+                    <img src="../../resource/image/common/logo.jpg" alt="Thinkgood">
+                </a>
+            </h2>
+            <address>
+                법인명(상호) : 주식회사 씽굿<br/>
+                주소 : 서울특별시 금천구 벚꽃로 298 대륭포스트타워 6차 607호<br/>
+                대표이사 : 신선경    개인정보, 관리 책임자 : 신선유 02-334-7540<br/>
+                대표메일 : <span class="color-red">good@thinkcontetst.com</span>
+            </address>
+            <section class="footer__snsLink">
+                <a href="" title="facebook 이동">
+                    <i class="icon icon-sns facebook"></i>
+                </a>
+                <a href="" title="instagram 이동">
+                    <i class="icon icon-sns instar"></i>
+                </a>
+                <a href="" title="blog 이동">
+                    <i class="icon icon-sns blog"></i>
+                </a>
+                <a href="" title="youtube 이동">
+                    <i class="icon icon-sns youtube"></i>
+                </a>
+            </section>
+        </footer>
+    </div>
+    <div class="modal-backdrop show"></div>
+</body>
+
+</html>

@@ -741,6 +741,12 @@ p.font-s {
 
 .font-m {
   font-size: 2.4rem !important;
+  line-height: 3.4rem;
+}
+
+.font-r {
+  font-size: 2rem !important;
+  line-height: 3.4rem;
 }
 
 .font-s {
@@ -1143,14 +1149,14 @@ header .header--logo img {
   border: none;
 }
 
+.content {
+  min-height: 91.7rem;
+}
+
 .container {
   padding: 0;
   margin: 0;
   max-width: 100%;
-}
-
-footer {
-  margin-top: 12rem;
 }
 
 footer .footer__nav {
@@ -1775,6 +1781,15 @@ ul.lists li:before {
 
 ul.lists.bar li:before {
   content: "-";
+}
+
+ul.lists.dot li:before {
+  top: 1.5rem;
+  width: .2rem;
+  height: .2rem;
+  background-color: #000;
+  border-radius: 100%;
+  content: "";
 }
 
 ul.lists.num {
@@ -3050,9 +3065,6 @@ footer.mt_0 {
 
 .modal-bottom.show {
   display: block;
-}
-
-.modal-bottom.myRoom_apply {
   top: 31rem !important;
 }
 
@@ -3125,7 +3137,7 @@ footer.mt_0 {
   margin-top: 5rem;
 }
 
-.modal-bottom .modal-dialog .modal-content .modal-body .cancel {
+.modal-bottom .modal-dialog .modal-content .modal-body .second {
   margin-top: 8rem;
   border: 1px solid #e5e7ee;
   color: #747478;
@@ -3653,25 +3665,34 @@ footer.mt_0 {
   font-size: 3.6rem;
   font-weight: 500;
   letter-spacing: -0.9px;
+  height: 5.4rem;
+  line-height: 5.4rem;
 }
 
 .applyView .viewTop .date {
   display: block;
   margin-top: 1rem;
+  height: 3.3rem;
   font-size: 2.2rem;
-  margin-top: 1rem;
   color: #747478;
 }
 
 .applyView .viewCont .viewBox {
   margin-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.applyView .viewCont .viewBox + .viewBox {
+  margin-top: 8rem;
 }
 
 .applyView .viewCont .viewBox + .viewBox::before {
+  position: absolute;
+  display: block;
   width: 100%;
   height: 1.9rem;
-  padding-top: 1.9rem;
-  border: 1px solid #068bff;
+  margin-top: -8rem;
+  left: 0;
   background-color: #f8f8fa;
   content: '';
 }
@@ -3699,4 +3720,64 @@ footer.mt_0 {
   margin-bottom: 1.4rem;
   font-weight: 500;
   letter-spacing: -0.65px;
+}
+
+.applyView .viewCont .viewBox.last {
+  margin-top: 8rem;
+  padding-bottom: 12rem;
+}
+
+.applyView .viewCont .viewBox.last::before {
+  margin-top: -8rem;
+}
+
+.applyView .viewCont .viewBox.last > div {
+  font-size: 2.4rem;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  color: #ca1c1d;
+  text-align: center;
+  line-height: 1.58;
+}
+
+.applyView .viewCont .viewBox.last .btn-gray {
+  height: 9rem;
+  background-color: #a59b99;
+  color: #fff;
+}
+
+.applyView.cancle .viewBox .stateCancle {
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  color: #ca1c1d;
+}
+
+.applyView.cancle .viewBox.last {
+  margin-top: 41px;
+}
+
+.applyView.cancle .viewBox.last::before {
+  margin-top: -4rem;
+}
+
+.withdrawal .bye span {
+  font-size: 2.8rem;
+  line-height: 1.36;
+  letter-spacing: -0.7px;
+  color: #ca1c1d;
+  font-weight: bold;
+}
+
+.withdrawal .auth-comp dt {
+  margin-right: 2rem;
+  width: 12rem;
+}
+
+.withdrawal .auth-comp dd {
+  width: calc(100% - 20rem);
+}
+
+.withdrawal .mt_70 {
+  margin-top: 7.2rem;
 }
