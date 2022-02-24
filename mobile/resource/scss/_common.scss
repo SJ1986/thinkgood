@@ -237,6 +237,7 @@ $font-weight__b : 600;
 .mb_40{margin-bottom: 4rem;}
 .mb_50{margin-bottom: 5rem !important;}
 .mt_60{margin-top: 6rem;}
+.mr_60{margin-right: 6rem;}
 .ml_70{margin-left: 7rem;}
 .mt_80{margin-top: 8rem;}
 .ml_80{margin-left: 8rem;}
@@ -427,6 +428,9 @@ $font-weight__b : 600;
 .mb-repair{
     margin-bottom:-19rem;
 }
+.mb-repair12{
+    margin-bottom:-12rem;
+}
 
 // em 계산법
 @function em($pixels, $context: $brower-font-size) {
@@ -589,6 +593,7 @@ header{
         }
         &--mobile{
             height: 3.3rem;
+            padding:0;
             opacity:1;
             visibility:visible;
             z-index:1;
@@ -831,7 +836,7 @@ header{
     max-width:100%;
 }
 footer{
-    // margin-top:12rem;
+    margin-top:12rem;
     .footer{
         &__nav{
             @include d-flex;
@@ -1662,6 +1667,13 @@ ul{
                     border: 1px solid #cdcdcd; 
                     border-radius: 100%;
                 }
+                &.centered{
+                    &::before{
+                        top:50%;
+                        transform:translateY(-50%)
+                    }
+                }
+                
             } 
             &:checked{
                 &+label{
@@ -1678,6 +1690,13 @@ ul{
                         background: #dd2525; 
                         border-radius: 100%;
                     }
+                    &.centered{
+                        &::after{
+                            top:50%;
+                            transform:translateY(-50%)
+                        }
+                    }
+                    
                 }
             }
         }

@@ -20,6 +20,7 @@
         iconHeart:"%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='26' height='24.05'%3E%3Cpath data-name='패스 229' d='M18.455 1A7.131 7.131 0 0 0 13 4a7.131 7.131 0 0 0-5.455-3A6.545 6.545 0 0 0 1 7.545C1 13.886 8.421 19.951 11.8 22.6v-.006a1.965 1.965 0 0 0 2.4 0v.006C17.579 19.951 25 13.886 25 7.545A6.545 6.545 0 0 0 18.455 1Z' fill='%23#{$color}' stroke='%23000' stroke-miterlimit='10' stroke-width='2'/%3E%3C/svg%3E",
         iconClose:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='25.999' height='25.999' viewBox='0 0 25.999 25.999'%3E%3Cpath d='m12.999 15.109-10.89 10.89L0 23.89l10.891-10.894L-.001 2.109 2.108 0l10.89 10.891L23.889 0l2.109 2.109-10.89 10.888 10.891 10.894L23.89 26z'/%3E%3C/svg%3E%0A",
         iconClampR:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='33.941' height='33.941' viewBox='0 0 33.941 33.941'%3E%3Cpath data-name='합치기 8' d='M3 0H0v24h3V3h21V0z' transform='rotate(135 13.456 15.515)' style='fill:%23#{$color}'/%3E%3C/svg%3E%0A",
+        iconClampB:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='27.984' height='17.555' viewBox='0 0 27.984 17.555'%3E%3Cpath data-name='합치기 12' d='m13.986 17.506-.037.037-3.509-3.508.037-.035L0 3.521 3.509.012l10.477 10.477L24.475 0l3.509 3.508L17.495 14l.049.049-3.509 3.508z'/%3E%3C/svg%3E%0A",
         iconNewsletter:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='35.639' height='30.628' viewBox='0 0 35.639 30.628'%3E%3Cg%3E%3Cpath d='m35.24 28.305-2.884-2.884 1.913-1.913a2.428 2.428 0 0 0-1.04-4.05l-8.1-2.353a2.43 2.43 0 0 0-3.009 3.01l2.352 8.1a2.429 2.429 0 0 0 4.05 1.04l1.913-1.913 2.885 2.884a1.361 1.361 0 0 0 1.925-1.925zm-8.3-1.322-2.06-7.113 7.113 2.066z'/%3E%3Cpath d='M31.309 0H4.081A4.088 4.088 0 0 0-.003 4.084v17.7a4.088 4.088 0 0 0 4.084 4.084h14.974a1.67 1.67 0 0 0 1.4-1.645c0-.752-.653-1.758-1.4-1.758H4.764a1.363 1.363 0 0 1-1.361-1.361V5.134l13.54 10.727a1.363 1.363 0 0 0 1.507 0l13.54-9.437v9.226c0 .751.937 1.361 1.689 1.361s1.715-.61 1.715-1.361V4.084A4.088 4.088 0 0 0 31.309 0zM17.696 12.411 6.275 3.403h24.312z'/%3E%3C/g%3E%3C/svg%3E%0A",
         iconNaverAuth:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 32 32'%3E%3Cpath d='M181.767 264.324 169.9 247.2h-9.834v32h10.3v-17.129l11.869 17.129h9.834v-32h-10.3z' transform='translate(-160.069 -247.198)' style='fill:%23#{$color}'/%3E%3C/svg%3E%0A",
         iconFacebookAuth:"%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='36' viewBox='0 0 20 36'%3E%3Cpath d='M86.536 20.414v-6.352h-5.793a8.194 8.194 0 0 0-8.319 8.062v5.81h-5.888v6.631h5.887v15.5h7.188v-15.6h5.382l1.026-6.583h-6.408V23.2a2.827 2.827 0 0 1 2.87-2.782z' transform='translate(-66.536 -14.062)' style='fill:%23#{$color}'/%3E%3C/svg%3E%0A",
@@ -103,6 +104,9 @@
         width:3.4rem;
         height:3.4rem;
         background-image:icon(iconClampR, fff);
+        &.black{
+            background-image:icon(iconClampR, 000);
+        }
     }
     &-newsLetter{
         display:inline-block;
@@ -127,6 +131,11 @@
         width:12.7rem;
         height:12.8rem;
         background-image:icon(imgCongrateFlag);
+    }
+    &-view{
+        width:2.1rem;
+        height:1.4rem;
+        background-image:icon(iconView);
     }
     
 }
