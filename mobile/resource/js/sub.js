@@ -93,4 +93,8 @@ $(function () {
 		},
 	})
 
+	var thirdMenuSlide = new Swiper(".thirdMenuSlide", {
+		slidesPerView:'auto',
+	});
+
 })

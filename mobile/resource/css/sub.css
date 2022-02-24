@@ -399,6 +399,10 @@
   margin-right: 6rem;
 }
 
+.mb_60 {
+  margin-bottom: 6rem !important;
+}
+
 .ml_70 {
   margin-left: 7rem;
 }
@@ -6311,6 +6315,17 @@ footer.mt_0 {
   letter-spacing: -0.05em;
 }
 
+.grandList.interview {
+  padding-bottom: 4rem;
+}
+
+.grandList.interview h1 span, .grandList.interview h6 span {
+  display: block;
+  margin-top: 1.5rem;
+  font-size: 2.2rem;
+  color: #747478;
+}
+
 .lab-gallery {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
@@ -6606,4 +6621,86 @@ footer.mt_0 {
   font-style: normal;
   line-height: 3.2rem;
   color: #747478;
+}
+
+.campus-item.vertical {
+  width: calc(100% - 3rem);
+  margin: 0 auto;
+  margin-top: 6rem;
+}
+
+.campus-item.vertical a {
+  display: grid;
+  display: -ms-grid;
+  -ms-grid-columns: 29rem auto;
+      grid-template-columns: 29rem auto;
+  grid-auto-flow: dense;
+}
+
+.campus-item.vertical img {
+  width: 100%;
+  padding-right: 2.9rem;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 3;
+  grid-row: 1 / span 3;
+}
+
+.thirdMenuSlide {
+  height: 8.8rem;
+  background-color: #fff;
+  border-bottom: 2px solid #e5e7ee;
+}
+
+.thirdMenuSlide .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 21.4rem;
+}
+
+.thirdMenuSlide .swiper-slide a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: flex-end;
+  -ms-flex-align: flex-end;
+  align-items: flex-end;
+  positino: relative;
+  height: 100%;
+  padding-bottom: 2.5rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+  color: #747478;
+}
+
+.thirdMenuSlide .swiper-slide a.current {
+  color: #ca1c1d;
+  font-weight: bold;
+}
+
+.thirdMenuSlide .swiper-slide a.current:before {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 70%;
+  height: .4rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background-color: #ca1c1d;
+  content: "";
 }

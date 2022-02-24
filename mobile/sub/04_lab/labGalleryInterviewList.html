@@ -1,687 +1,324 @@
 <!DOCTYPE html>
 <html lang="ko">
 
-<head>
-    <meta charset="UTF-8">
-    <title>씽굿</title>
+    <head>
+		<meta charset="UTF-8">
+		<meta content="width=device-width,user-scalable=no,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" name="Viewport" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<link rel="shortcut icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="../../resource/image/common/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" href="../../resource/css/reset.css">
+		<link rel="stylesheet" href="../../resource/css/font.css">
+		<link rel="stylesheet" href="../../resource/css/animate.css">
+		<link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../../resource/css/swiper.min.css">
+		<link rel="stylesheet" href="../../resource/css/sub.css">
+		<link rel="stylesheet" href="../../resource/css/main.css">
+		<link rel="stylesheet" href="">
+		<script src="../../resource/js/jquery-1.12.4.min.js"></script>
+		<script src="../../resource/js/bootstrap.min.js"></script>
+		<script src="../../resource/js/swiper.min.js"></script>
+		<script src="../../resource/js/common.js"></script>
+		<script src="../../resource/js/main.js"></script>
+		<script src="../../resource/js/sub.js"></script>
+		<title>씽굿</title>
+	</head>
 
-    <link rel="stylesheet" href="../../resource/css/reset.css">
-    <link rel="stylesheet" href="../../resource/css/font.css">
-    <link rel="stylesheet" href="../../resource/css/animate.css">
-    <link rel="stylesheet" href="../../resource/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../../resource/css/swiper.min.css">
-
-    <link rel="stylesheet" href="../../resource/css/sub.css">
-    <link rel="stylesheet" href="../../resource/css/main.css">
-
-    <script src="../../resource/js/jquery-1.12.4.min.js"></script>
-    <script src="../../resource/js/bootstrap.min.js"></script>
-    <script src="../../resource/js/swiper.min.js"></script>
-
-    <script src="../../resource/js/common.js"></script>
-    <script src="../../resource/js/main.js"></script>
-    <script src="../../resource/js/sub.js"></script>
-
-</head>
-
-<body>
-    <div class="wrap">
-        <header>
-            <div class="header__inner">
-                <div class="rooftop ">
-                    <div class="rooftop__inner d-flex align-items-center">
-                        <div class="user-join ml-auto">
-                            <ul class="d-flex align-items-center">
-                                <li><a href="javascript:void(0)">HOME</a></li>
-                                <li><a href="javascript:void(0)">LOGIN</a></li>
-                                <li><a href="javascript:void(0)">JOIN</a></li>
-                            </ul>
-                        </div>
-                        <div class="sns">
-                            <ul class="d-flex">
-                                <li><a href="javascript:void(0)"><img
-                                            src="../../resource/image/common/icon/sns-facebook.png" alt=""></a></li>
-                                <li><a href="javascript:void(0)"><img
-                                            src="../../resource/image/common/icon/sns-insta.png" alt=""></a></li>
-                                <li><a href="javascript:void(0)"><img
-                                            src="../../resource/image/common/icon/sns-blog.png" alt=""></a></li>
-                                <li><a href="javascript:void(0)"><img
-                                            src="../../resource/image/common/icon/sns-youtube.png" alt=""></a></li>
-                            </ul>
-                        </div>
-                        <div class="user-area d-flex align-items-center">
-                            <div class="mailing">
-                                <button type="button" class="btn-mailing">
-                                    <img src="../../resource/image/common/icon/icon-mailing.png" alt="">
-                                </button>
-                                <div class="user-area__content">
-                                    <!-- <button type="button" class="button-close"></button> -->
-                                    <div>
-                                        <p class="title"><span class="color-red font-weight__b">뉴스레터</span> 신청</p>
-                                        <div class="w-100">
-                                            <div class="d-flex">
-                                                <div class="form-wrap">
-                                                    <input type="text" name="" value="" id="" class="form-input"
-                                                        placeholder="이름" />
-                                                </div>
-                                                <div class="form-wrap ml_10">
-                                                    <input type="text" name="" value="" id="" class="form-input"
-                                                        placeholder="이메일 주소" />
-                                                    <button type="submit" class="button-click"><i></i></button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <p class="txt"><span class="color-red">"씽굿"</span>에서 발행하는 정기공모전 뉴스레터를 신청하시면 매주
-                                            새로운 공모전
-                                            소식을 확인하실 수 있습니다!</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="search">
-                                <button type="button" class="btn-search">
-                                    <img src="../../resource/image/common/icon/icon-search.png" alt="">
-                                </button>
-                                <div class="user-area__content">
-                                    <div class="d-flex align-items-center ml-auto search-right">
-                                        <div>
-                                            <select class="select">
-                                                <option value="0" selected="selected">전체</option>
-                                                <option value="1">제목</option>
-                                                <option value="2">내용</option>
-                                            </select>
-                                        </div>
-                                        <div class="ml_10">
-                                            <div class="form-search">
-                                                <input type="text" name="searchKeyword" value="" id=""
-                                                    class="form-input w-100" placeholder="" />
-                                                <button type="submit" class="form-search__click"><i></i></button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="mt_30">
-                                        <p class="title">주간 <span class="color-red font-weight__b">조회수</span> 베스트</p>
-                                        <ul>
-                                            <li><a href="javascript:void(0)">1. 경기도 공유경제 BI・슬로건 공모전</a></li>
-                                            <li><a href="javascript:void(0)">2. 건강생활실천 디자인·영상 공모전</a></li>
-                                            <li><a href="javascript:void(0)">3. 2021 대한민국 편지쓰기 공모전</a></li>
-                                            <li><a href="javascript:void(0)">4. 2021년 해양생물 콘텐츠 공모전</a></li>
-                                            <li><a href="javascript:void(0)">5. 2021년 제3회 핫트랙스 캐릭터 스티커 공모전</a></li>
-                                            <li><a href="javascript:void(0)">6. 제31회 전국 청소년 숲사랑 작품공모전</a></li>
-                                            <li><a href="javascript:void(0)">7. 제8회 안전한 학교 공모전</a></li>
-                                            <li><a href="javascript:void(0)">8. 2021 국민참여 청렴콘텐츠 공모전</a></li>
-                                            <li><a href="javascript:void(0)">9. 제4회 팩트체킹 공모전</a></li>
-                                            <li><a href="javascript:void(0)"> 10. 2021 KEIT 브랜드 대국민 아이디어 공모전</a></li>
-                                        </ul>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="hammenu">
-                                <button type="button" class="btn-hammenu">
-                                    <img src="../../resource/image/common/icon/icon-hammenu.png" alt="">
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="gnb">
-                    <div class="gnb__inner d-flex align-items-center">
-                        <div class="logo">
-                            <a href="javascript:void(0)">
-                                <img src="../../resource/image/common/logo.png" alt="">
+    <body>
+        <div class="wrap">
+            <header>
+                <div class="header__inner">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h1 class="header--logo">
+                            <a href="" title="홈으로 이동">
+                                <img src="../../resource/image/common/logo.png" alt="Thinkgood">
                             </a>
-                        </div>
-                        <div class="gnb-menu">
-                            <div class="depth1">
-                                <ul class="d-flex justify-content-center">
-                                    <li><a href="javascript:void(0)">공모전</a></li>
-                                    <li><a href="javascript:void(0)">대외활동</a></li>
-                                    <li><a href="javascript:void(0)">교육/행사</a></li>
-                                    <li><a href="javascript:void(0)">씽굿 lab</a></li>
-                                    <li><a href="javascript:void(0)">커뮤니티</a></li>
-                                    <li><a href="javascript:void(0)">광고안내</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="notice ml-auto">
-                            <div class="notice__inner d-flex align-items-center">
-                                <i class="icon icon-notice mr_15"></i>
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)" class="notice-txt">
-                                                <p><span class="name font-weight__m">장예지</span>굿공모전포털항상응원합니다 많은항상응원합니다
-                                                    많은항상응원합니다 많은 공모전 소식을 알</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                    <div class="swiper-arrow d-flex flex-column">
-                                        <div class="swiper-button-prev"></div>
-                                        <div class="swiper-button-next"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <div class="content">
-
-            <!-- float-menu -->
-            <div class="winger">
-                <div class="winger__inner">
-                    <div class="winger-list">
-                        <div class="fast-link">
-                            <button type="button"><i></i><span>(4)</span></button>
-                            <div class="winger-content">
-                                <div class="winger-content__header d-flex align-items-center">
-                                    <i class="m-0"></i>
-                                    <p class="tit">방금 본 공모전</p>
-                                    <button type="button" class="button-close ml-auto"></button>
-                                </div>
-                                <div class="winger-content__body">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전2021 블록체인 대국민 <br>아이디어 공모전
-                                                    </p>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/No_Image.jpg" alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전</p>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전</p>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전</p>
-                                                </a>
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div class="winger-arrow">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <!-- 스크랩 공모전 기능은 회원 로그인 한 경우에만 제공 -->
-                        <div class="scrap-link">
-                            <button type="button"><i></i><span>(4)</span></button>
-                            <div class="winger-content">
-                                <div class="winger-content__header d-flex align-items-center">
-                                    <i class="m-0"></i>
-                                    <p class="tit">스크랩 공모전</p>
-                                    <button type="button" class="button-close ml-auto"></button>
-                                </div>
-                                <div class="winger-content__body">
-                                    <div class="swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전2021 블록체인 대국민 <br>아이디어 공모전
-                                                    </p>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전</p>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전</p>
-                                                </a>
-                                            </div>
-                                            <div class="swiper-slide">
-                                                <a href="javascript:void(0)" class="d-flex align-items-center">
-                                                    <div class="img-wrap">
-                                                        <img src="../../resource/image/common/img-contest__thumb.png"
-                                                            alt="">
-                                                    </div>
-                                                    <p class="tit">2021 블록체인 대국민 <br>아이디어 공모전</p>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="winger-arrow">
-                                    <div class="swiper-button-prev"></div>
-                                    <div class="swiper-button-next"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- //스크랩 공모전 기능은 회원 로그인 한 경우에만 제공 -->
-                        <div class="btn-top">
-                            <button type="button"><i></i><span class="color-black">TOP</span></button>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <!-- //float-menu -->
-
-            <div class="content__inner sub">
-                <div class="visual-banner">
-                    <div class="visual-banner__inner">
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <a href="javascript:void(0)">
-                                        <div class="img-wrap">
-                                            <img src="../../resource/image/sub/img-sub-lab01.png" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript:void(0)">
-                                        <div class="img-wrap">
-                                            <img src="../../resource/image/sub/img-sub-lab01.png" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                                <div class="swiper-slide">
-                                    <a href="javascript:void(0)">
-                                        <div class="img-wrap">
-                                            <img src="../../resource/image/sub/img-sub-lab01.png" alt="">
-                                        </div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-pagination"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="sub3Dep d-flex w_100">
-                    <a href="">씽굿lab</a>
-                    <a href="">수상작갤러리</a>
-                    <a href="">공모전 가이드북</a>
-                    <a href="">전략&amp;통계</a>
-                    <a href="">캠퍼스</a>
-                    <a href="" class="current">인터뷰</a>
-                    <a href="">수상자 발표</a>
-                </div>
-                <div class="content__core lab">
-                    <div class="interview mt_90">
-                        <h1 class="text-center font-weight__b">
-                            인터뷰
                         </h1>
-                        <div class="d-flex mt_60">
-                            <div class="interview__left under-bg under-bg--gray pd_4">
-                                <h2 class="mb_30 font-weight__b">
-                                    주최사 인터뷰
-                                    <span class="caption mt_20">새로운 프로젝트가 시작됩니다!</span>
-                                </h2>
-                                <div class="d-flex img-resize--wide img-shadow">
-                                    <div>
-                                        <a href="" class="display--block ov--h">
-                                            <img src="../../resource/image/sub/img-hostInterview--01.png" alt="" class="">
-                                        </a>
-                                        <p class="mt_30 font-weight__m">
-                                            <span class="display--block color-red mb_10 font-s font-weight__m">학교안전공제중앙회</span>
-                                            제8회 안전한 학교 공모전
-                                        </p>
-                                    </div>
-                                    <div class=" ml_30">    
-                                        <a href="" class="display--block ov--h">
-                                            <img src="../../resource/image/sub/img-hostInterview--01.png" alt="" class="">
-                                        </a>
-                                        <p class="mt_30 font-weight__m">
-                                            <span class="display--block color-red mb_10 font-s font-weight__m">학교안전공제중앙회</span>
-                                            제8회 안전한 학교 공모전
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="interview__right pd_4 img-resize--wide img-shadow">
-                                <h2 class="mb_30 font-weight__b">
-                                    수상자 인터뷰
-                                    <span class="caption mt_20">어떻게 수상하게 되었냐면요!</span>
-                                </h2>
-                                <a href="" class="display--block ov--h">
-                                    <img src="../../resource/image/sub/img-hostInterview--02.png" alt="" class="">
-                                </a>
-                                <p class="mt_30 font-weight__m">
-                                    고려대 세종 중앙 공모전
-                                </p>
-                            </div>
-                        </div>
-                        <div class="d-flex search-box mt_50">
-                            <div class="d-flex">
-                                <select class="select">
-                                    <option value="0">분류</option>
-                                </select>
-                            </div>
-                            <div class="d-flex align-items-center ml-auto search-right">
-                                <div>
+                        <button type="button" class="btn btn--sch" data-id="header__search" title="검색 열림">
+                            <i class="icon finder" ></i>
+                        </button>
+                        <button type="button" class="btn btn--mobile" data-id="header__mobile" title="모바일 메뉴 열림">
+                            <i class="icon mobileHam"></i>
+                        </button>
+                        <button type="button" class="btn btn--close" id="" title="">
+                            <i class="icon icon-close"></i>
+                        </button>
+                        <div class="side-sch" id="header__search">
+                            <div class="d-flex search-box">
+                                <div class="d-flex align-items-end ml-auto search-right">
                                     <select class="select">
                                         <option value="0" selected="selected">전체</option>
                                         <option value="1">제목</option>
                                         <option value="2">내용</option>
                                     </select>
+                                    <div class="ml_10">
+                                        <div class="form-search d-flex align-items-center">
+                                            <input type="text" name="searchKeyword" value="" id="" class="form-input" placeholder="">
+                                            <button type="submit" class="form-search__click"><i class="icon finder_s"></i></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="side-sch__best mt_80">
+                                <h1 class="">주간 <span class="color-red font-weight__m">조회수</span> 베스트</h1>
+                                <ol class="ol-lists ol-lists--num mt_40">
+                                    <li>경기도 공유경제 BI·슬로건 공모전</li>
+                                    <li>건강생활실천 디자인·영상 공모전</li>
+                                    <li>2021 대한민국 편지쓰기 공모전</li>
+                                    <li>2021년 해양생물 콘텐츠 공모전</li>
+                                    <li>2021년 제 3회 핫트랙스 캐릭터 스티커 공모전</li>
+                                    <li>제 42회 전국 청소년 숲사랑 작품공모전</li>
+                                    <li>제8회 안전한 학교 공모전</li>
+                                    <li>201 국민참여 청렴콘텐츠 공모전</li>
+                                    <li>제4회 팩트체킹 공모전</li>
+                                    <li>2021 KEIT 브랜드 대국민 아이디어공모전</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="side-menu" id="header__mobile">
+                            <div class="side-menu__top">
+                                <div class="d-flex side-menu__login">
+                                    <a href="">로그인</a>
+                                    <a href="">회원가입</a>
+                                </div>
+                                <div class="side-menu__info d-grid">
+                                    <a href="">
+                                        <img src="../../resource/image/common/img-profile-null.png" alt="프로필 사진">
+                                    </a>
+                                    <em>나를 발견하는 시간,</em>
+                                    <span>언제나 <strong>씽굿</strong></span>
+                                </div>
+                                <div class="d-flex side-menu__myArea">
+                                    <a href="">My 공모전</a>
+                                    <a href="">My 콘텐츠</a>
+                                </div>
+                            </div>
+                            <div class="side-menu__cont accordion">
+                                <div>
+                                    <button type="button" class="acc_menu d-flex">
+                                        공모전
+                                        <i></i>
+                                    </button>
+                                    <div class="admitContent">
+                                        <a href="">분야별</a>
+                                        <a href="">주최기관</a>
+                                        <a href="">응모대상</a>
+                                        <a href="">시상내용</a>
+                                    </div>
                                 </div>
                                 <div>
-                                    <div class="form-search">
-                                        <input type="text" name="searchKeyword" value="" id="" class="form-input" placeholder="">
-                                        <button type="submit" class="form-search__click"><i></i></button>
+                                    <button type="button" class="acc_menu d-flex">
+                                        대외활동
+                                        <i></i>
+                                    </button>
+                                    <div class="admitContent">
+                                        <a href="">분야별</a>
+                                        <a href="">주최기관</a>
+                                        <a href="">응모대상</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="acc_menu d-flex">
+                                        교육/행사
+                                        <i></i>
+                                    </button>
+                                    <div class="admitContent">
+                                        <a href="">교육/강연/세미나</a>
+                                        <a href="">멘토링</a>
+                                        <a href="">자격증</a>
+                                        <a href="">지원사업</a>
+                                        <a href="">전시/박람회</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="acc_menu d-flex">
+                                        씽굿lab
+                                        <i></i>
+                                    </button>
+                                    <div class="admitContent">
+                                        <a href="">전체</a>
+                                        <a href="">수상작갤러리</a>
+                                        <a href="">공모전 가이드북</a>
+                                        <a href="">전략&통계</a>
+                                        <a href="">캠퍼스</a>
+                                        <a href="">인터뷰</a>
+                                        <a href="">수상자 발표</a>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button" class="acc_menu d-flex">
+                                        커뮤니티
+                                        <i></i>
+                                    </button>
+                                    <div class="admitContent">
+                                        <a href="">자유게시판</a>
+                                        <a href="">씽굿광장</a>
+                                        <a href="">지식 Q&A</a>
+                                        <a href="">씽굿 TALK</a>
                                     </div>
                                 </div>
                             </div>
+                            <a href="" class="applyNews">
+                                <span>
+                                    <i class="icon icon-newsLetter"></i>
+                                </span>
+                                뉴스레터 신청
+                                <i class="icon icon-clampR"></i>
+                            </a>
                         </div>
-                        <div class="table-wrap hor">
-                            <div class="table">
-                                <table class="text-center td-nth3--left">
-                                    <colgroup>
-                                        <col style="width:8%;">
-                                        <col style="width:8%;">
-                                        <col style="width:auto;">
-                                        <col style="width:8%;">
-                                        <col style="width:10%;">
-                                        <col style="width:8%;">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">번호</th>
-                                            <th scope="col">분류</th>
-                                            <th scope="col">제목</th>
-                                            <th scope="col">글쓴이</th>
-                                            <th scope="col">등록일</th>
-                                            <th scope="col">조회수</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>광고</td>
-                                            <td>
-                                                <a href="">공모전 등록 관련 문의드립니다. <span>(10)</span></a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>논문</td>
-                                            <td>
-                                                <a href="">대외활동 접수 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>디자인</td>
-                                            <td>
-                                                <a href="">대외활동 접수 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>기획마케팅</td>
-                                            <td>
-                                                <a href="">교육/행사 시간대 설정 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>체험</td>
-                                            <td>
-                                                <a href="">공모전 신청자 누락 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>기타</td>
-                                            <td>
-                                                <a href="">광고 게재 위치 상세 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>광고</td>
-                                            <td>
-                                                <a href="">사이트 이용 중 문의사항이 발생하여 글 남깁니다.</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>3</td>
-                                            <td>디자인</td>
-                                            <td>
-                                                <a href="">기능 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>디자인</td>
-                                            <td>
-                                                <a href="">로그인 관련 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>기획마케팅</td>
-                                            <td>
-                                                <a href="">대외활동 접수내역 문의</a>
-                                            </td>
-                                            <td>홍길동</td>
-                                            <td>2021.10.05</td>
-                                            <td>100</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                    </div>
+                </div>
+			</header>
+            <div class="content">
+				<div class="container px-0">
+					<div class="container__inner">
+                        <div class="breadcrumb">    
+                            <div class="breadcrumb__inner">
+                                씽굿lab <i></i> 인터뷰
                             </div>
                         </div>
-                        <div class="board-bottom">
-                            <div class="paging d-flex justify-content-center">
-                                <div class="paging__inner d-flex">
-                                    <a href="javascript:void(0)" class="first"><i class="icon arrow-first"></i></a>
-                                    <a href="javascript:void(0)" class="prev"><i class="icon arrow-prev"></i></a>
-                                    <a href="javascript:void(0)" class="on">1</a>
-                                    <a href="javascript:void(0)">2</a>
-                                    <a href="javascript:void(0)">3</a>
-                                    <a href="javascript:void(0)">4</a>
-                                    <a href="javascript:void(0)">5</a>
-                                    <a href="javascript:void(0)">6</a>
-                                    <a href="javascript:void(0)">7</a>
-                                    <a href="javascript:void(0)">8</a>
-                                    <a href="javascript:void(0)">9</a>
-                                    <a href="javascript:void(0)">10</a>
-                                    <a href="javascript:void(0)" class="next"><i class="icon arrow-next"></i></a>
-                                    <a href="javascript:void(0)" class="last"><i class="icon arrow-last"></i></a>
+                        <div class="container__core">
+                            <div class="galleryReward">
+                                <div class="grandList interview">
+                                    <h1 class="sub-tit font-weight__b mb_40">
+                                        주최사 인터뷰
+                                        <span>새로운 프로젝트가 시작됩니다!</span>
+                                    </h1>
+                                    <a href="">
+                                        <span>
+                                            <img src="../../resource/image/sub/img-interview--01.png" alt="">
+                                        </span>
+                                        <h6 class="mt_25">
+                                            제 8회 안전한 학교 공모전
+                                            <span>교육부</span>
+                                        </h6>
+                                    </a>
+                                    <a href="" class="mb_40">
+                                        <span>
+                                            <img src="../../resource/image/sub/img-interview--02.png" alt="">
+                                        </span>
+                                        <h6 class="mt_25">
+                                            제 28회 경기도 문화의 한마당 공모전
+                                            <span>경기도청</span>
+                                        </h6>
+                                    </a>
+                                    <a href="" class="py_6 px_3 bg--white" style="margin:0 -3rem">
+                                        <h1 class="sub-tit font-weight__b mb_40">
+                                            수상자 인터뷰
+                                            <span>어떻게 수상하게 되었냐면요!</span>
+                                        </h1>
+                                        <span>
+                                            <img src="../../resource/image/sub/img-interview--03.png" alt="">
+                                        </span>
+                                        <h6 class="mt_25">대구시, K-2 종전부지 글로벌 도시공간 조성방안 토론회 및 공...</h6>
+                                    </a>
+                                </div>
+                                <div class="bg--white px_3" style="margin:0 -3rem;">
+                                    <div class="d-flex search-box">
+                                        <div class="d-flex align-items-end ml-auto search-right">
+                                            <div class="d-flex">
+                                                <select class="select">
+                                                    <option value="0" selected="selected">분류</option>
+                                                    <option value="1">제목</option>
+                                                    <option value="2">내용</option>
+                                                </select>
+                                                <select class="select ml_10">
+                                                    <option value="0" selected="selected">전체</option>
+                                                    <option value="1">제목</option>
+                                                    <option value="2">내용</option>
+                                                </select>
+                                            </div>
+                                            <div class="ml_10">
+                                                <div class="form-search d-flex align-items-center">
+                                                    <input type="text" name="searchKeyword" value="" id="" class="form-input" placeholder="">
+                                                    <button type="submit" class="form-search__click"><i class="icon finder_s"></i></button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="board-list">
+                                        <div class="board-list__inner mt_20">
+                                            <ul>
+                                                <li>
+                                                    <div>
+                                                        <p class="part">분류 &gt; <span class="">CAMPUS ON</span></p>
+                                                        <a href="javascript:void(0)" class="title">대학 캠퍼스 교류활동 '메타버스'에서 실현해요!</a>
+                                                        <div class="d-flex etc">
+                                                            <p class="author"><i></i>유창환</p>
+                                                            <p class="num"><i></i>324</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <p class="part">분류 &gt; <span>CAMPUS ON</span></p>
+                                                        <a href="javascript:void(0)" class="title">대학 캠퍼스 교류활동 '메타버스'에서 실현해요!</a>
+                                                        <div class="d-flex etc">
+                                                            <p class="author"><i></i>유창환</p>
+                                                            <p class="num"><i></i>324</p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="board-bottom">
+                                        <div class="paging d-flex justify-content-center">
+                                            <div class="paging__inner d-flex">
+                                                <a href="javascript:void(0)" class="first"><i class="icon arrow-first"></i></a>
+                                                <a href="javascript:void(0)" class="prev"><i class="icon arrow-prev"></i></a>
+                                                <a href="javascript:void(0)" class="on">1</a>
+                                                <a href="javascript:void(0)">2</a>
+                                                <a href="javascript:void(0)">3</a>
+                                                <a href="javascript:void(0)">4</a>
+                                                <a href="javascript:void(0)" class="next"><i class="icon arrow-next"></i></a>
+                                                <a href="javascript:void(0)" class="last"><i class="icon arrow-last"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
+                            
                         </div>
 
                     </div>
-                    
                 </div>
-
             </div>
-
+            <footer>
+				<section class="footer__nav">
+                    <a href="">광고문의</a>
+                    <a href="">제휴문의</a>
+                    <a href="">이용약관</a>
+                    <a href="">개인정보처리방침</a>
+                </section>
+                <h2>
+                    <a href="">
+                        <img src="../../resource/image/common/logo.jpg" alt="Thinkgood">
+                    </a>
+                </h2>
+                <address>
+                    법인명(상호) : 주식회사 씽굿<br/>
+                    주소 : 서울특별시 금천구 벚꽃로 298 대륭포스트타워 6차 607호<br/>
+                    대표이사 : 신선경    개인정보, 관리 책임자 : 신선유 02-334-7540<br/>
+                    대표메일 : <span class="color-red">good@thinkcontetst.com</span>
+                </address>
+                <section class="footer__snsLink">
+                    <a href="" title="facebook 이동">
+                        <i class="icon icon-sns facebook"></i>
+                    </a>
+                    <a href="" title="instagram 이동">
+                        <i class="icon icon-sns instar"></i>
+                    </a>
+                    <a href="" title="blog 이동">
+                        <i class="icon icon-sns blog"></i>
+                    </a>
+                    <a href="" title="youtube 이동">
+                        <i class="icon icon-sns youtube"></i>
+                    </a>
+                </section>
+			</footer>
         </div>
-        <footer>
-            <div class="footer__inner">
-                <div class="banner">
-                    <div class="banner__inner d-flex align-items-center">
-                        <p>씽굿공모전 <br>
-                            관련사이트 </p>
-                        <div class="slide-banner">
-                            <div class="slide-banner__inner">
-                                <div class="swiper-container">
-                                    <div class="swiper-wrapper">
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner01.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner02.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner03.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner04.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner05.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner06.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                        <div class="swiper-slide">
-                                            <a href="javascript:void(0)">
-                                                <div class="img-wrap">
-                                                    <img src="../../resource/image/common/img-footer__banner07.png"
-                                                        alt="">
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="site-menu">
-                    <div class="site-menu__inner">
-                        <ul class="d-flex align-items-center">
-                            <li><a href="javascript:void(0)">회사소개</a></li>
-                            <li><a href="javascript:void(0)">이용약관</a></li>
-                            <li><a href="javascript:void(0)" class="color-red font-weight__m">개인정보처리방침</a></li>
-                            <li><a href="javascript:void(0)">책임한계와
-                            <li><a href="javascript:void(0)">법적고지</a></li>
-                            <li><a href="javascript:void(0)">제휴/제안안내</a></li>
-                            <li><a href="javascript:void(0)">사이트맵</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="thinkgood-info">
-                    <div class="thinkgood-info__inner d-flex align-items-center justify-content-between">
-                        <div class="footer-logo">
-                            <a href="javascript:void(0)"><img src="../../resource/image/common/logo.png" alt=""></a>
-                        </div>
-                        <div class="thinkgood-info-txt d-flex flex-wrap">
-                            <p>법인명(상호) : 주식회사 씽굿</p>
-                            <p>사업자등록번호 : 214-86-44014</p>
-                            <p>대표전화 : <span class="color-red">02-334-7540</span></p>
-                            <p>팩스 : 02-334-7392</p>
-                            <p>대표메일 : <a href="mailto:good@thinkcontetst.com"
-                                    class="color-red">good@thinkcontetst.com</a></p>
-                            <p>주소 : 서울특별시 금천구 벚꽃로 298 대륭포스트타워 6차 607호</p>
-                            <p>대표이사 : 신선경</p>
-                            <p>사업자등록번호 : 214-86-44014</p>
-                            <p>개인정보보호책임자 : 전은혜</p>
-                            <p class="copyright color-fontgray">ⓒTHINKGOOD. ALL RIGHTS RESERVED.</p>
-                        </div>
-                        <div class="app-store">
-                            <div class="img-wrap d-flex align-items-center">
-                                <a href="javascript:void(0)">
-                                    <img src="../../resource/image/common/img__appstore.png" alt="">
-                                </a>
-                                &nbsp;&nbsp;
-                                <a href="javascript:void(0)">
-                                    <img src="../../resource/image/common/img__googleplay.png" alt="">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
 
-</body>
+    </body>
 
 </html>

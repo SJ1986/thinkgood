@@ -3116,6 +3116,17 @@ footer.mt_0{
             letter-spacing: -0.05em;
         }
     }
+    &.interview{
+        padding-bottom:4rem;
+        h1, h6{
+            span{
+                display:block;
+                margin-top:1.5rem;
+                font-size:2.2rem;
+                color:#747478;
+            }
+        }
+    }
 }
 .lab{
     &-gallery{
@@ -3384,6 +3395,56 @@ footer.mt_0{
             font-style:normal;
             line-height:3.2rem;
             color:#747478;
+        }
+        &.vertical{
+            width:calc(100% - 3rem);
+            margin:0 auto;
+            margin-top:6rem;
+            a{
+                @include d-grid;
+                grid-template-columns: 29rem auto;
+                grid-auto-flow: dense;
+            }
+            img{
+                width:100%;
+                padding-right:2.9rem;
+                grid-row: 1 / span 3;
+            }
+        }
+    }
+}
+
+.thirdMenuSlide{
+    height:8.8rem;
+    background-color:#fff;
+    border-bottom:2px solid #e5e7ee;
+    .swiper-slide{
+        @include d-flex;
+        @include align-center;
+        width:21.4rem;
+        a{
+            @include d-flex;
+            @include align-end;
+            positino:relative;
+            height:100%;
+            padding-bottom:2.5rem;
+            font-size:2.4rem;
+            font-weight:500;
+            color:#747478;
+            &.current{
+                color:#ca1c1d;
+                font-weight:bold;
+                &:before{
+                    position:absolute;
+                    bottom:0;
+                    left:50%;
+                    width:70%;
+                    height:.4rem;
+                    transform:translateX(-50%);
+                    background-color:#ca1c1d;
+                    content:""
+                }
+            }
         }
     }
 }
