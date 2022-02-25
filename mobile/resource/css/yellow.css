@@ -381,7 +381,7 @@ header button.btn--close { display: none; position: absolute; right: 4rem; displ
 
 header button.btn--close.on { display: block; }
 
-header button.btn--mobile { width: 3.4rem; height: 3.3rem; padding: 0; opacity: 1; visibility: visible; border-radius: 0; z-index: 1; }
+header button.btn--mobile { width: 3.4rem; height: 3.4rem; padding: 0; opacity: 1; visibility: visible; border-radius: 0; z-index: 1; }
 
 header button.btn--mobile.off { opacity: 0; visibility: hidden; z-index: -1; }
 
@@ -895,7 +895,7 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .search-filter-list ul li .del { background-size: contain; }
 
-.slideRight__inner.on { top: 15.7rem; }
+.slideRight__inner.on { top: 16rem; height: calc(100vh - 16rem); }
 
 .filter-keywordResult__inner ul li { padding: 1.2rem 1.5rem; }
 
@@ -903,7 +903,9 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .filter, .scrapBtn button { color: #000000; }
 
-.filter-wrap { margin-top: -1.6px; }
+.filter-wrap { position: relative; margin-top: 0; }
+
+.filter-wrap::before { position: absolute; top: -3px; left: 0; width: 100%; height: 5px; background: #ffffff; content: ""; }
 
 .view-comment .comment-list .button-wrap button, .view-comment .comment-list .comment-box__inner, .view-comment .comment-list li, .board-list__inner ul li { border-width: .2rem !important; }
 
@@ -921,13 +923,9 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .share-button__sns { padding: 0 8%; }
 
-.slideRight__inner { height: calc(100vh - 15.8rem); }
+.slideRight__inner .side-menu__cont.accordion .button-wrap { height: 10rem; }
 
-.slideRight__inner.on { top: 15.8rem; }
-
-.slideRight__inner .side-menu__cont.accordion > div.on + div.button-wrap { height: 10rem; }
-
-.slideRight__inner .side-menu__cont.accordion > div.on + div.button-wrap button { height: 100%; border-radius: 0; color: #ffffff; text-align: center; font-size: 2.8rem; font-weight: 400; }
+.slideRight__inner .side-menu__cont.accordion .button-wrap button { height: 100%; border-radius: 0; color: #ffffff; text-align: center; font-size: 2.8rem; font-weight: 400; }
 
 #contestFilter .modal-dialog { max-width: calc(100% - 12rem); }
 
@@ -939,4 +937,8 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .scrapBtn > *, .scrapBtn .button-share { background: #f8f8fa; }
 
-.scrapBtn .share-button > div { border-top: 1px solid #f8f8fa; }
+.scrapBtn .share-button__inner { border-top: 1px solid #e5e7ee; }
+
+.search-right select { border-radius: 0; border-width: .2rem; }
+
+.search-right .form-search { border-width: .2rem; }
