@@ -17,15 +17,15 @@ function thinkgoodPickBanner(){
 function thinkgoodPickList(){
     //thinkgoodPick
 	const thinkgoodPickList = new Swiper(".thinkgoodPick-list .swiper-container", {
-        slidesPerView:'auto',
-        //spaceBetween:30,
+        slidesPerView:"auto",
+        spaceBetween:30,
 		pagination: {
 			el: ".swiper-pagination",
 			type: "fraction",
 		},
         grid: {
-            rows: 1,
-            column: 1,
+            rows: 2,
+            //column: 2,
         },
 		// navigation: {
 		// 	nextEl: ".swiper-button-next",
