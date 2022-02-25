@@ -7,9 +7,11 @@
 
 .icon.mobileHam { width: 100%; height: 100%; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33' viewBox='0 0 34 33'%3E%3Cg %3E%3Cpath  transform='translate(20 10)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  d='M830.856 111.5c-.473 0-.856-.214-.856-.479V88.979c0-.265.383-.479.856-.479s.856.214.856.479v22.042c.001.265-.383.479-.856.479z' transform='translate(-830 -88.5)' style='fill:%23ca1c1d'/%3E%3Cpath  d='M837 102.562V90.354l13.6 6.679z' transform='translate(-834.603 -89.719)' style='fill:%23ca1c1d'/%3E%3Cpath  transform='translate(20)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  transform='translate(0 30)' style='fill:%23ca1c1d' d='M0 0h34v3H0z'/%3E%3Cpath  transform='translate(10 20)' style='fill:%23ca1c1d' d='M0 0h24v3H0z'/%3E%3C/g%3E%3C/svg%3E%0A"); }
 
+.icon-top { width: 2rem; height: 2.67rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.286' height='26.725' viewBox='0 0 20.286 26.725'%3E%3Cpath data-name='패스 691' d='M20.286 9.292 10.143 0 0 9.292l2.513 2.3L8.366 6.23v20.495h3.555V6.233l5.853 5.362z'/%3E%3C/svg%3E%0A"); }
+
 .icon-close { width: 3.4rem; height: 3.3rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='25.999' height='25.999' viewBox='0 0 25.999 25.999'%3E%3Cpath d='m12.999 15.109-10.89 10.89L0 23.89l10.891-10.894L-.001 2.109 2.108 0l10.89 10.891L23.889 0l2.109 2.109-10.89 10.888 10.891 10.894L23.89 26z'/%3E%3C/svg%3E%0A"); text-indent: -9999px; }
 
-.icon-more { width: 2.1rem; height: 2.1rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.998' height='20.998' viewBox='0 0 20.998 20.998'%3E%3Cpath d='M8.999 20.998v-9h-9v-3h9v-9h3v9h9v3h-9v9z'/%3E%3C/svg%3E%0A"); }
+.icon-more { width: 3rem; height: 3rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.998' height='20.998' viewBox='0 0 20.998 20.998'%3E%3Cpath d='M8.999 20.998v-9h-9v-3h9v-9h3v9h9v3h-9v9z'/%3E%3C/svg%3E%0A"); }
 
 .icon-sns { width: 5.2rem; height: 5.2rem; }
 
@@ -834,11 +836,11 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .tab-wrap .tab { width: 100%; height: 100%; }
 
-.tab-wrap .tab li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; font-size: 2.4rem; color: #747478; text-align: center; border-bottom: .2rem solid #e5e7ee; }
+.tab-wrap .tab li { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; width: 100%; font-size: 2.4rem; font-weight: 500; color: #747478; text-align: center; border-bottom: .2rem solid #e5e7ee; }
 
 .tab-wrap .tab li + li { margin-left: -1px; }
 
-.tab-wrap .tab li.current { position: relative; color: #dd2525; }
+.tab-wrap .tab li.current { position: relative; color: #dd2525; font-weight: 700; }
 
 .tab-wrap .tab li.current:before { position: absolute; bottom: -.2rem; left: 0; width: 100%; height: .4rem; background-color: #dd2525; content: ""; }
 
@@ -911,9 +913,17 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .layer.top .content { min-height: unset; }
 
-.thinkgoodPick-list .swiper-container { height: 115.4rem; }
+.thinkgoodPick-list { height: 110.9rem; }
 
-.thinkgoodPick-list .swiper-slide { width: 40%; }
+.thinkgoodPick-list .swiper-container { height: calc(100% - 6.5rem); }
+
+.thinkgoodPick-list .swiper-wrapper { margin: 0 -1.5rem; }
+
+.thinkgoodPick-list .swiper-slide { width: 27rem !important; margin: 0 1.5rem; }
+
+.thinkgoodPick-list .swiper-slide:nth-child(2n) { height: calc((100% - 6rem) / 2) !important; }
+
+.thinkgoodPick-list .swiper-slide:nth-child(2n) a { margin-top: 0 !important; }
 
 .thinkgoodPick-banner .swiper-slide { height: auto; }
 

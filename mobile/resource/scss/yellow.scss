@@ -59,8 +59,28 @@
 
 .layer.top .content{min-height: unset;}
 
-.thinkgoodPick-list .swiper-container{height: 115.4rem;}
-.thinkgoodPick-list .swiper-slide{width:40%;}
+.thinkgoodPick-list{
+    height: 110.9rem;
+    .swiper{
+        &-container{
+            height: calc(100% - 6.5rem);
+        }
+        &-wrapper{
+            //flex-direction: row;
+            margin: 0 -1.5rem;
+        }
+        &-slide{
+            width:27rem !important;
+            margin: 0 1.5rem;
+            &:nth-child(2n){
+                height: calc((100% - 6rem) / 2) !important;
+                a{
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+} 
 .thinkgoodPick-banner{
     .swiper-slide{
         height: auto;
