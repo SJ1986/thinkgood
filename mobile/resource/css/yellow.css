@@ -897,7 +897,7 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .search-filter-list ul li .del { background-size: contain; }
 
-.slideRight__inner.on { top: 16rem; height: calc(100vh - 16rem); }
+.slideRight__inner.on { top: 16rem; height: calc(100vh - 16rem); padding-bottom: 16rem; }
 
 .filter-keywordResult__inner ul li { padding: 1.2rem 1.5rem; }
 
@@ -933,7 +933,7 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .share-button__sns { padding: 0 8%; }
 
-.slideRight__inner .side-menu__cont.accordion .button-wrap { height: 10rem; }
+.slideRight__inner .side-menu__cont.accordion .button-wrap { height: 10rem; margin: 0; }
 
 .slideRight__inner .side-menu__cont.accordion .button-wrap button { height: 100%; border-radius: 0; color: #ffffff; text-align: center; font-size: 2.8rem; font-weight: 400; }
 

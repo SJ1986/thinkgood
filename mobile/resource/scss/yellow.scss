@@ -23,6 +23,7 @@
         &.on{
             top: 16rem;
             height: calc(100vh - 16rem);
+            padding-bottom:16rem;
         }
     }
 }
@@ -101,6 +102,7 @@
 
 .slideRight__inner .side-menu__cont.accordion .button-wrap{
     height: 10rem;
+    margin: 0;
     button{
         height: 100%;
         border-radius: 0;
