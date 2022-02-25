@@ -888,6 +888,7 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .accordion .admitContent p.pre { overflow: auto; height: 100%; padding-right: 3rem; font-size: 1.6rem; color: #747478; white-space: pre-line; }
 
+/* 220225 디버깅 작업 */
 .search-filter-list ul li { padding: .9rem 2rem .8rem; }
 
 .search-filter-list ul li .del { background-size: 100%; }
@@ -905,3 +906,13 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 .view-comment .comment-list .button-wrap button, .view-comment .comment-list .comment-box__inner, .view-comment .comment-list li, .board-list__inner ul li { border-width: .2rem !important; }
 
 .layer.top .content { min-height: unset; }
+
+.thinkgoodPick-list .swiper-container { height: 115.4rem; }
+
+.thinkgoodPick-list .swiper-slide { width: 40%; }
+
+.thinkgoodPick-banner .swiper-slide { height: auto; }
+
+.thinkgoodPick-banner .swiper-slide .img-wrap { max-height: none; }
+
+.thinkgoodPick-banner .swiper-slide .img-wrap img { height: auto; max-height: none; }

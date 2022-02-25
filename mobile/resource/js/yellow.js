@@ -7,6 +7,13 @@ $(function () {
     btnShare();
 });
 
+function thinkgoodPickBanner(){
+    const thinkgoodPickBanner = new Swiper(".thinkgoodPick-banner__inner .swiper-container", {
+        spaceBetween:20,
+        autoHeight: true,
+	});
+    
+}
 function thinkgoodPickList(){
     //thinkgoodPick
 	const thinkgoodPickList = new Swiper(".thinkgoodPick-list .swiper-container", {
@@ -17,8 +24,8 @@ function thinkgoodPickList(){
 			type: "fraction",
 		},
         grid: {
-            rows: 2,
-            column: 2,
+            rows: 1,
+            column: 1,
         },
 		// navigation: {
 		// 	nextEl: ".swiper-button-next",

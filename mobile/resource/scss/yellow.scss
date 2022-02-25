@@ -1,6 +1,9 @@
 @import "./common";
 
 
+
+/* 220225 디버깅 작업 */ 
+
 .search-filter-list ul li{
     padding: .9rem 2rem .8rem;
     .del{
@@ -33,3 +36,18 @@
 }
 
 .layer.top .content{min-height: unset;}
+
+.thinkgoodPick-list .swiper-container{height: 115.4rem;}
+.thinkgoodPick-list .swiper-slide{width:40%;}
+.thinkgoodPick-banner{
+    .swiper-slide{
+        height: auto;
+        .img-wrap {
+            max-height: none;
+            img{
+                height: auto; 
+                max-height: none;
+            }
+        }
+    }
+} 
