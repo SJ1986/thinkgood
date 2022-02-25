@@ -901,3 +901,7 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 .filter, .scrapBtn button { color: #000000; }
 
 .filter-wrap { margin-top: -1.6px; }
+
+.view-comment .comment-list .button-wrap button, .view-comment .comment-list .comment-box__inner, .view-comment .comment-list li, .board-list__inner ul li { border-width: .2rem !important; }
+
+.layer.top .content { min-height: unset; }
