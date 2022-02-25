@@ -268,15 +268,21 @@ $(function () {
 
     var btnTop = $('.btn-top');
     btnTop.on('click', 'button', function (e) {
-        e.preventDefault();
+        ce.preventDefault();
         $doc.stop()
             .animate({
                 scrollTop: 0
             }, 300)
     });
 
+    $("#btn-top").click(function(){  //btn-top scroll fn
+        window.scrollTo({top : 0, behavior: 'smooth'}); 
+    });
+    
+
     acc_event('.acc_admit');  //아코디언 Object
     acc_event('.acc_menu'); //mobile menu fn
+
 
 })
 
