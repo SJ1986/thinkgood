@@ -18,7 +18,7 @@ function thinkgoodPickList(){
     //thinkgoodPick
 	const thinkgoodPickList = new Swiper(".thinkgoodPick-list .swiper-container", {
         slidesPerView:"auto",
-        spaceBetween:30,
+        //spaceBetween:30,
 		pagination: {
 			el: ".swiper-pagination",
 			type: "fraction",
