@@ -1,11 +1,11 @@
 @charset "UTF-8";
 .icon { display: block; background-size: contain; background-repeat: no-repeat; }
 
-.icon.finder { width: 3.4rem; height: 3.4rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33.999' viewBox='0 0 34 33.999'%3E%3Cg %3E%3Cpath d='m24.807 22.686 9.192 9.192L31.88 34l-9.193-9.193z'/%3E%3Cg style='stroke:%23000;stroke-width:3px;fill:none'%3E%3Ccircle cx='14' cy='14' r='14' style='stroke:none'/%3E%3Ccircle cx='14' cy='14' r='12.5' style='fill:none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"); background-size: cover; }
+.icon.finder { width: 100%; height: 100%; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33.999' viewBox='0 0 34 33.999'%3E%3Cg %3E%3Cpath d='m24.807 22.686 9.192 9.192L31.88 34l-9.193-9.193z'/%3E%3Cg style='stroke:%23000;stroke-width:3px;fill:none'%3E%3Ccircle cx='14' cy='14' r='14' style='stroke:none'/%3E%3Ccircle cx='14' cy='14' r='12.5' style='fill:none'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A"); background-size: cover; }
 
 .icon.finder_s { width: 3.3rem; height: 3.1rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='32.999' height='31'%3E%3Cpath data-name='사각형 23936' d='m24.514 20.394 8.485 8.485-2.121 2.122-8.485-8.486z'/%3E%3Cg data-name='타원 60' stroke='%23000' stroke-width='3' fill='none'%3E%3Ccircle cx='14' cy='14' r='14' stroke='none'/%3E%3Ccircle cx='14' cy='14' r='12.5'/%3E%3C/g%3E%3C/svg%3E"); background-size: cover; }
 
-.icon.mobileHam { width: 3.4rem; height: 3.3rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33' viewBox='0 0 34 33'%3E%3Cg %3E%3Cpath  transform='translate(20 10)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  d='M830.856 111.5c-.473 0-.856-.214-.856-.479V88.979c0-.265.383-.479.856-.479s.856.214.856.479v22.042c.001.265-.383.479-.856.479z' transform='translate(-830 -88.5)' style='fill:%23ca1c1d'/%3E%3Cpath  d='M837 102.562V90.354l13.6 6.679z' transform='translate(-834.603 -89.719)' style='fill:%23ca1c1d'/%3E%3Cpath  transform='translate(20)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  transform='translate(0 30)' style='fill:%23ca1c1d' d='M0 0h34v3H0z'/%3E%3Cpath  transform='translate(10 20)' style='fill:%23ca1c1d' d='M0 0h24v3H0z'/%3E%3C/g%3E%3C/svg%3E%0A"); }
+.icon.mobileHam { width: 100%; height: 100%; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33' viewBox='0 0 34 33'%3E%3Cg %3E%3Cpath  transform='translate(20 10)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  d='M830.856 111.5c-.473 0-.856-.214-.856-.479V88.979c0-.265.383-.479.856-.479s.856.214.856.479v22.042c.001.265-.383.479-.856.479z' transform='translate(-830 -88.5)' style='fill:%23ca1c1d'/%3E%3Cpath  d='M837 102.562V90.354l13.6 6.679z' transform='translate(-834.603 -89.719)' style='fill:%23ca1c1d'/%3E%3Cpath  transform='translate(20)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  transform='translate(0 30)' style='fill:%23ca1c1d' d='M0 0h34v3H0z'/%3E%3Cpath  transform='translate(10 20)' style='fill:%23ca1c1d' d='M0 0h24v3H0z'/%3E%3C/g%3E%3C/svg%3E%0A"); }
 
 .icon-close { width: 3.4rem; height: 3.3rem; background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='25.999' height='25.999' viewBox='0 0 25.999 25.999'%3E%3Cpath d='m12.999 15.109-10.89 10.89L0 23.89l10.891-10.894L-.001 2.109 2.108 0l10.89 10.891L23.889 0l2.109 2.109-10.89 10.888 10.891 10.894L23.89 26z'/%3E%3C/svg%3E%0A"); text-indent: -9999px; }
 
@@ -375,13 +375,13 @@ h1, h2, h3, h4, h5 { margin-bottom: 0; }
 
 header { max-height: 10rem; padding: 2.8rem 3rem; -webkit-box-sizing: border-box; box-sizing: border-box; border-bottom: 1px solid #707070; }
 
-header button.btn--sch { display: inline-block; width: 3.4rem; height: 3.4rem; padding: 0; margin-left: auto; margin-right: 4rem; }
+header button.btn--sch { display: inline-block; width: 3.4rem; height: 3.4rem; padding: 0; margin-left: auto; margin-right: 4rem; border-radius: 0; }
 
 header button.btn--close { display: none; position: absolute; right: 4rem; display: none; padding: 0; }
 
 header button.btn--close.on { display: block; }
 
-header button.btn--mobile { height: 3.3rem; padding: 0; opacity: 1; visibility: visible; z-index: 1; }
+header button.btn--mobile { width: 3.4rem; height: 3.3rem; padding: 0; opacity: 1; visibility: visible; border-radius: 0; z-index: 1; }
 
 header button.btn--mobile.off { opacity: 0; visibility: hidden; z-index: -1; }
 
@@ -427,7 +427,7 @@ header .header--logo img { width: 18rem; height: 4.4rem; }
 
 .side-menu__cont.accordion > div.on button i:after { -webkit-transform: translate(-50%, -50%) rotate(0); transform: translate(-50%, -50%) rotate(0); -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out; }
 
-.side-menu__cont.accordion > div button { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: block; width: 100%; padding: 3.6rem 4rem; font-size: 2.6rem; font-weight: 600; text-align: left; }
+.side-menu__cont.accordion > div button { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: center; -ms-flex-align: center; align-items: center; display: block; width: 100%; padding: 3.6rem 4rem; font-size: 2.6rem; font-weight: 600; color: #000; text-align: left; }
 
 .side-menu__cont.accordion > div button i { position: relative; display: block; }
 
@@ -888,6 +888,8 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 
 .accordion .admitContent p.pre { overflow: auto; height: 100%; padding-right: 3rem; font-size: 1.6rem; color: #747478; white-space: pre-line; }
 
+.accordion .admitContent.mobile { padding: 3rem; padding-right: 0; height: 14.5rem; -webkit-box-sizing: content-box; box-sizing: content-box; }
+
 /* 220225 디버깅 작업 */
 .search-filter-list ul li { padding: .9rem 2rem .8rem; }
 
@@ -916,3 +918,5 @@ ul.lists.num li:before { counter-increment: num; content: counter(num) ". "; }
 .thinkgoodPick-banner .swiper-slide .img-wrap { max-height: none; }
 
 .thinkgoodPick-banner .swiper-slide .img-wrap img { height: auto; max-height: none; }
+
+.share-button__sns { padding: 0 8%; }
