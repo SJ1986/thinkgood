@@ -2764,6 +2764,7 @@ article .campusSlide .swiper-slide a b {
 #btn-top {
   width: 7rem;
   height: 7rem;
+  margin-right: 3rem;
   font-size: 1.6rem;
   border: 1px solid #000;
   border-radius: .6rem;
