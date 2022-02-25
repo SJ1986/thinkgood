@@ -40,8 +40,8 @@
     background-size:contain;
     background-repeat:no-repeat;
     &.finder{
-        width:3.4rem;
-        height:3.4rem;
+        width:100%;
+        height:100%;
         background-image: icon(finder, '000');
         background-size:cover;
         &_s{
@@ -52,8 +52,8 @@
         }
     }
     &.mobileHam{
-        width:3.4rem;
-        height:3.3rem;
+        width:100%;
+        height:100%;
         background-image: icon(mobileHam, 'ca1c1d');
     }
     &-close{
