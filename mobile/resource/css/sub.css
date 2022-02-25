@@ -26,8 +26,8 @@
 }
 
 .icon-top {
-  width: 20rem;
-  height: 26.7rem;
+  width: 2rem;
+  height: 2.67rem;
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.286' height='26.725' viewBox='0 0 20.286 26.725'%3E%3Cpath data-name='패스 691' d='M20.286 9.292 10.143 0 0 9.292l2.513 2.3L8.366 6.23v20.495h3.555V6.233l5.853 5.362z'/%3E%3C/svg%3E%0A");
 }
 
@@ -1184,10 +1184,6 @@ header .header--logo img {
 
 .side-sch input {
   border: none;
-}
-
-.content {
-  min-height: 91.7rem;
 }
 
 .container {

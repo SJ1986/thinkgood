@@ -1186,10 +1186,6 @@ header .header--logo img {
   border: none;
 }
 
-.content {
-  min-height: 91.7rem;
-}
-
 .container {
   padding: 0;
   margin: 0;
