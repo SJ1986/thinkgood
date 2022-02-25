@@ -44,7 +44,7 @@ article{
             > a{
                 position:relative;
                 display:block;
-                padding:1rem 2rem;
+                padding:1rem 3rem 1rem 2rem;
                 box-sizing:border-box;
                 em{
                     position:absolute;
@@ -132,7 +132,6 @@ article{
             a{
                 display:block;
                 width:100%;
-                margin-bottom:1.5rem;
                 font-size:2.4rem;
                 font-weight:400;
             }
@@ -146,4 +145,12 @@ article{
             }
         }
     }   
+}
+
+#btn-top{
+    width:7rem;
+    height:7rem;
+    font-size:1.6rem;
+    border:1px solid #000;
+    border-radius:.6rem;
 }

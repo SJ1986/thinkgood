@@ -1897,6 +1897,7 @@ ul{
                 @include d-flex;
                 width:100%;
                 font-size: 2.4rem;
+                font-weight:500;
                 color:$color-fontgray;
                 text-align: center;
                 border-bottom:.2rem solid #e5e7ee;
@@ -1906,6 +1907,7 @@ ul{
                 &.current{
                     position:relative;
                     color:$color-red;
+                    font-weight:700;
                     &:before{
                         position:absolute;
                         bottom:-.2rem;
