@@ -4,19 +4,25 @@
 
 /* 220225 디버깅 작업 */ 
 
-.search-filter-list ul li{
-    padding: .9rem 2rem .8rem;
-    .del{
-        background-size: 100%;
+.search-filter-list{
+    ul{
+        li{
+            height: 5rem;
+            padding: .9rem 2rem .8rem;
+            border-radius: 3rem;
+            .del{
+                background-size: contain;
+            }
+        }
     }
-}
+} 
 
 .slideRight__inner.on{
     top: 15.7rem;
 }
 
 .filter-keywordResult__inner ul li{
-    padding: .9rem 1.5rem;
+    padding: 1.2rem 1.5rem;
 }
 
 .btnClick button{
@@ -54,4 +60,54 @@
 
 .share-button__sns{
     padding: 0 8%;
+}
+
+.slideRight__inner{
+    height: calc(100vh - 15.8rem);
+    &.on{
+        top: 15.8rem;
+    }
+}
+.slideRight__inner .side-menu__cont.accordion > div.on + div.button-wrap{
+    height: 10rem;
+    button{
+        height: 100%;
+        border-radius: 0;
+        color:#ffffff;
+        text-align: center;
+        font-size: 2.8rem;
+        font-weight: 400;
+    }
+}
+
+#contestFilter{
+    .modal{
+        &-dialog{
+            max-width: calc(100% - 12rem);
+        }
+        &-body{
+            padding:0 3rem;
+        }
+    }
+    
+    .button-wrap{
+        margin: 0;
+        
+        button{
+            height:10rem;
+            margin: 0;
+            border-radius: 0;
+        }
+    }
+} 
+
+.scrapBtn{
+    >*, .button-share{
+        background: #f8f8fa;
+    }
+    .share-button{
+        >div{
+            border-top:1px solid #f8f8fa;
+        }
+    }
 }

@@ -91,3 +91,12 @@ function linkPlus(){
         $(this).parent().parent().prev().removeClass("on");
     })
  }
+
+
+
+ $(document).ready(function(){       
+    $(".filter-keywordSearch__inner a").click(function(){
+        $(this).toggleClass("selected");
+    })
+});
+
