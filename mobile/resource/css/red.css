@@ -25,6 +25,12 @@
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='33' viewBox='0 0 34 33'%3E%3Cg %3E%3Cpath  transform='translate(20 10)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  d='M830.856 111.5c-.473 0-.856-.214-.856-.479V88.979c0-.265.383-.479.856-.479s.856.214.856.479v22.042c.001.265-.383.479-.856.479z' transform='translate(-830 -88.5)' style='fill:%23ca1c1d'/%3E%3Cpath  d='M837 102.562V90.354l13.6 6.679z' transform='translate(-834.603 -89.719)' style='fill:%23ca1c1d'/%3E%3Cpath  transform='translate(20)' style='fill:%23ca1c1d' d='M0 0h14v3H0z'/%3E%3Cpath  transform='translate(0 30)' style='fill:%23ca1c1d' d='M0 0h34v3H0z'/%3E%3Cpath  transform='translate(10 20)' style='fill:%23ca1c1d' d='M0 0h24v3H0z'/%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
+.icon-top {
+  width: 2rem;
+  height: 2.67rem;
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.286' height='26.725' viewBox='0 0 20.286 26.725'%3E%3Cpath data-name='패스 691' d='M20.286 9.292 10.143 0 0 9.292l2.513 2.3L8.366 6.23v20.495h3.555V6.233l5.853 5.362z'/%3E%3C/svg%3E%0A");
+}
+
 .icon-close {
   width: 3.4rem;
   height: 3.3rem;
@@ -33,8 +39,8 @@
 }
 
 .icon-more {
-  width: 2.1rem;
-  height: 2.1rem;
+  width: 3rem;
+  height: 3rem;
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='20.998' height='20.998' viewBox='0 0 20.998 20.998'%3E%3Cpath d='M8.999 20.998v-9h-9v-3h9v-9h3v9h9v3h-9v9z'/%3E%3C/svg%3E%0A");
 }
 
@@ -845,8 +851,8 @@ header {
 
 header button.btn--sch {
   display: inline-block;
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 4.4rem;
+  height: 4.4rem;
   padding: 0;
   margin-left: auto;
   margin-right: 4rem;
@@ -866,8 +872,8 @@ header button.btn--close.on {
 }
 
 header button.btn--mobile {
-  width: 3.4rem;
-  height: 3.4rem;
+  width: 4.4rem;
+  height: 4.4rem;
   padding: 0;
   opacity: 1;
   visibility: visible;
@@ -1180,10 +1186,6 @@ header .header--logo img {
   border: none;
 }
 
-.content {
-  min-height: 91.7rem;
-}
-
 .container {
   padding: 0;
   margin: 0;
@@ -1210,8 +1212,8 @@ footer .footer__nav {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 1.6rem 6rem;
-  border-top: 2px solid #8c8c8c;
+  padding: 2.6rem;
+  border-top: .2rem solid #8c8c8c;
   border-bottom: 1px solid #dddddd;
   background-color: #f8f8fa;
 }
@@ -1725,6 +1727,7 @@ footer address span {
 button.btn {
   height: 9rem;
   font-size: 2.6rem;
+  font-weight: 500;
   border-radius: .7rem;
 }
 
@@ -1793,7 +1796,7 @@ ul.list-dashed li::before {
   top: 1.2rem;
   left: 0;
   width: .5rem;
-  height: .1rem;
+  height: 1px;
   background: #78838c;
   content: "";
 }
@@ -1936,7 +1939,7 @@ ul.lists.num li:before {
   margin: 0;
   text-align: center;
   vertical-align: middle;
-  border: .1rem solid #e5e7ee;
+  border: 1px solid #e5e7ee;
   border-radius: 0.3rem;
   background-color: #fff;
 }
@@ -2002,7 +2005,7 @@ ul.lists.num li:before {
   font-size: 2.5rem;
   cursor: pointer;
   color: #cccccc;
-  border: .1rem solid #ced4da;
+  border: 1px solid #ced4da;
   background: #fff;
 }
 
@@ -2187,7 +2190,7 @@ ul.lists.num li:before {
 .table__inner table {
   margin-bottom: 0;
   table-layout: fixed;
-  border-top: .1rem solid #000000;
+  border-top: 1px solid #000000;
 }
 
 .table__inner thead th {
@@ -2195,7 +2198,7 @@ ul.lists.num li:before {
   font-weight: 500;
   background: #f1f3f6;
   border-top: none;
-  border-bottom: .1rem solid #ececec;
+  border-bottom: 1px solid #ececec;
   vertical-align: middle;
   text-align: center;
   font-size: 2rem;
@@ -2227,7 +2230,7 @@ ul.lists.num li:before {
 .table__inner td {
   padding: 0rem 2rem;
   border-top: 0;
-  border-bottom: .1rem solid #ececec;
+  border-bottom: 1px solid #ececec;
   font-size: 1.8rem;
 }
 
@@ -2280,7 +2283,7 @@ ul.lists.num li:before {
 
 .table__inner.hor table {
   table-layout: fixed;
-  border-top: .1rem solid #000000;
+  border-top: 1px solid #000000;
 }
 
 .table__inner.hor table.table-initial {
@@ -2307,8 +2310,8 @@ ul.lists.num li:before {
   padding-left: 3rem;
   font-weight: 500;
   background: #f1f3f6;
-  border-right: .1rem solid #d7d7d7;
-  border-bottom: .1rem solid #d7d7d7;
+  border-right: 1px solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
   text-align: left;
 }
 
@@ -2319,7 +2322,7 @@ ul.lists.num li:before {
 .table__inner.hor td {
   padding-left: 3rem;
   border-top: 0;
-  border-bottom: .1rem solid #d7d7d7;
+  border-bottom: 1px solid #d7d7d7;
 }
 
 .table__inner.hor td .certi-box .form-group {
@@ -2382,6 +2385,7 @@ ul.lists.num li:before {
   justify-content: center;
   width: 100%;
   font-size: 2.4rem;
+  font-weight: 500;
   color: #747478;
   text-align: center;
   border-bottom: .2rem solid #e5e7ee;
@@ -2394,6 +2398,7 @@ ul.lists.num li:before {
 .tab-wrap .tab li.current {
   position: relative;
   color: #dd2525;
+  font-weight: 700;
 }
 
 .tab-wrap .tab li.current:before {

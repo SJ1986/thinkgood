@@ -579,8 +579,8 @@ header{
     button.btn{
         &--sch{
             display:inline-block;
-            width:3.4rem;
-            height:3.4rem;
+            width:4.4rem;
+            height:4.4rem;
             padding:0;
             margin-left:auto;
             margin-right:4rem;
@@ -597,8 +597,8 @@ header{
             }
         }
         &--mobile{
-            width:3.4rem;
-            height: 3.4rem;
+            width:4.4rem;
+            height: 4.4rem;
             padding:0;
             opacity:1;
             visibility:visible;
@@ -850,8 +850,8 @@ footer{
             @include d-flex;
             @include justify-between;
             flex:1;
-            padding:1.6rem 6rem;
-            border-top:2px solid #8c8c8c;
+            padding:2.6rem;
+            border-top:.2rem solid #8c8c8c;
             border-bottom:1px solid #dddddd;
             background-color:#f8f8fa;
             a{
@@ -1285,6 +1285,7 @@ button{
     &.btn{
         height:9rem;
         font-size:2.6rem;
+        font-weight:500;
         border-radius:.7rem;
         &-red{
             color:#ffffff;
@@ -1349,7 +1350,7 @@ ul{
                     top:1.2rem;
                     left: 0;
                     width:.5rem;
-                    height:.1rem;
+                    height:1px;
                     background:#78838c;
                     content:"";
                 }
@@ -1495,7 +1496,7 @@ ul{
                         text-align: center;
                         vertical-align: middle; 
                         
-                        border: .1rem solid #e5e7ee; 
+                        border: 1px solid #e5e7ee; 
                         border-radius : 0.3rem; 
                         background-color:#fff;
                     }
@@ -1549,7 +1550,7 @@ ul{
         font-size: 2.5rem;
         cursor: pointer;
         color: #cccccc;
-        border:.1rem solid #ced4da;
+        border:1px solid #ced4da;
         background: #fff;
         &+&{
             margin-top:2rem;
@@ -1720,7 +1721,7 @@ ul{
         table{
             margin-bottom: 0;
             table-layout: fixed;
-            border-top: .1rem solid #000000;
+            border-top: 1px solid #000000;
         }
         thead{
             th{
@@ -1729,7 +1730,7 @@ ul{
                 // width:22rem;
                 background: #f1f3f6;
                 border-top:none;
-                border-bottom: .1rem solid #ececec;
+                border-bottom: 1px solid #ececec;
                 vertical-align: middle;
                 text-align: center;
                 font-size:2rem;
@@ -1759,7 +1760,7 @@ ul{
         td{
             padding: 0rem 2rem;
             border-top:0;
-            border-bottom: .1rem solid #ececec;font-size:1.8rem;
+            border-bottom: 1px solid #ececec;font-size:1.8rem;
             &.pd-normal{
                 padding: 1.65rem 3rem;
             }
@@ -1794,7 +1795,7 @@ ul{
         &.hor{
             table{
                 table-layout: fixed;
-                border-top: .1rem solid #000000;
+                border-top: 1px solid #000000;
                 &.table-initial{
                     table-layout: initial;
                 }
@@ -1820,8 +1821,8 @@ ul{
                 padding-left:3rem;
                 font-weight: $font-weight__m;
                 background: #f1f3f6;
-                border-right: .1rem solid #d7d7d7;
-                border-bottom: .1rem solid #d7d7d7;
+                border-right: 1px solid #d7d7d7;
+                border-bottom: 1px solid #d7d7d7;
                 text-align: left;
                 &.title{
                     border-right:none;
@@ -1830,7 +1831,7 @@ ul{
             td{
                 padding-left: 3rem;
                 border-top:0;
-                border-bottom: .1rem solid #d7d7d7;
+                border-bottom: 1px solid #d7d7d7;
                 // .form-group, .filebox{
                 //     margin-left: -2rem;
                 // }
@@ -2025,7 +2026,7 @@ ul{
         }
     }
     .acc_admit{
-        height:3.4rem;
+        height:4rem;
         padding-right:4.5rem;
         font-size:1.6rem;
         background:url('../image/sub/icon/icon_accClampDown.png') no-repeat 100% 100%;
