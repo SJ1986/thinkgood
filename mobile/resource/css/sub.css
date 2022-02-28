@@ -1923,7 +1923,7 @@ ul.lists.num li:before {
 }
 
 .form-check input[type='checkbox'] + label p, .form-check input[type='checkbox'] + label span {
-  font-size: 1.7rem;
+  font-size: 2.4rem;
 }
 
 .form-check input[type='checkbox'] + label::before {
@@ -2518,8 +2518,10 @@ ul.lists.num li:before {
 }
 
 .accordion > div.on .acc_admit {
-  background: url("../image/sub/icon/icon_accClampUp.png") no-repeat 100% 100%;
-  background-size: contain;
+  background: url("../image/common/icon/clamp__bottom22.png") no-repeat center center;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background-size: 1.7rem 1.1rem;
 }
 
 .accordion > div input[type='checkbox'] + label::before {
@@ -2527,11 +2529,13 @@ ul.lists.num li:before {
 }
 
 .accordion .acc_admit {
-  height: 4rem;
-  padding-right: 4.5rem;
+  width: 3.6rem;
+  height: 3.6rem;
   font-size: 1.6rem;
-  background: url("../image/sub/icon/icon_accClampDown.png") no-repeat 100% 100%;
-  background-size: contain;
+  border: 1px solid #e5e7ee;
+  border-radius: .3rem;
+  background: url("../image/common/icon/clamp__bottom22.png") no-repeat center center;
+  background-size: 1.7rem 1.1rem;
 }
 
 .accordion .admitContent {
@@ -5686,7 +5690,7 @@ footer.mt_0 {
 }
 
 .board-write .tab-top ul li {
-  font-weight: bold;
+  font-weight: 500;
 }
 
 .board-write .tab-content .mody_items {
@@ -5942,7 +5946,7 @@ footer.mt_0 {
   display: block;
   margin-left: 0;
   margin-top: 1rem;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.5;
   letter-spacing: normal;
@@ -5957,22 +5961,22 @@ footer.mt_0 {
 
 .board-write.topGrayLine .message textarea::-webkit-input-placeholder {
   color: #000;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .board-write.topGrayLine .message textarea:-ms-input-placeholder {
   color: #000;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .board-write.topGrayLine .message textarea::-ms-input-placeholder {
   color: #000;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .board-write.topGrayLine .message textarea::placeholder {
   color: #000;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 .board-write.topGrayLine .modyCaptcha .captBox img {
@@ -5992,7 +5996,7 @@ footer.mt_0 {
   border: solid 1px #e5e7ee;
   background-color: #f8f8fa;
   width: 100%;
-  height: 5.6rem;
+  height: 5.7rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-align: center;
@@ -6002,7 +6006,7 @@ footer.mt_0 {
 .board-write.topGrayLine .modyCaptcha .captBox .captBtn a span {
   margin-left: 0;
   width: 5.7em;
-  height: 5.6rem;
+  height: 5.7rem;
 }
 
 .board-write.topGrayLine .modyCaptcha .captBox .captBtn a span.captchaSound {
@@ -6019,11 +6023,15 @@ footer.mt_0 {
   background-size: cover;
 }
 
+.board-write.topGrayLine .modyCaptcha .captBox .captBtn a + a {
+  border-top: none;
+}
+
 .board-write.topGrayLine .modyCaptcha .captBox input {
   margin-left: 1rem;
   width: 35.6rem;
   height: 11.3rem;
-  border-radius: 6px;
+  border-radius: .3rem;
   border: solid 1px #e5e7ee;
   background-color: #f8f8fa;
   font-size: 2.5rem;
