@@ -30,7 +30,7 @@
 }
 
 .container__core .guideBook-list__item p {
-  margin-top: 3.2rem;
+  margin-top: 2.4rem;
 }
 
 .container__core .board-write .modyCaptcha .captBox img {
@@ -240,4 +240,35 @@
 
 .view-rewardList h1 {
   font-size: 3.6rem;
+}
+
+.view-rewardList .view-rewardList__item p span {
+  font-size: 3.6rem;
+}
+
+.view-rewardList .view-rewardList__item p strong {
+  font-size: 3.6rem;
+}
+
+.view-rewardList .view-rewardList__item .pipeLine {
+  width: 1px;
+  height: 3.2rem;
+}
+
+.view-rewardList .view-rewardList__writer h1 {
+  font-size: 2.8rem;
+}
+
+.view-rewardList .view-rewardList__writer span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  line-height: 1.45;
+  letter-spacing: -0.55px;
+}
+
+.line15 {
+  line-height: 1.5;
 }
