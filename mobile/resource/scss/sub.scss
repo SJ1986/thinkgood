@@ -241,10 +241,11 @@
                 select{
                     width:100%;
                     height:9rem;
+                    padding:2.5rem 0;
                     border: solid 1px #e5e7ee;
                     border-radius: .6rem;
                     font-size:2.4rem;
-                    line-height: 100%;
+                    line-height: 2.5rem;
                     text-indent: 2rem;
                     background: icon(chevron-down) no-repeat right 2rem center;
                     background-size: 1.7rem 1rem;
@@ -252,8 +253,10 @@
                 input{
                     width:100%;
                     height:9rem;
+                    padding:2.5rem 0;
                     border: solid 1px #e5e7ee;
                     border-radius: .6rem;
+                    line-height: 9rem;
                     font-size:2.4rem;
                     text-indent: 2rem;
                     &::placeholder{
@@ -611,10 +614,11 @@
     }
     &-badge{
         @include d-flex;
-        width: 8rem;
-        height: 3.6rem;
+        width: 9rem;
+        height: 5rem;
         margin-bottom: 2.8rem;
-        font-size: 1.8rem;
+        font-size: 2rem;
+        font-weight:500;
         &.done{
             color:#df0000;
             border: solid 1px #ffb4b4;
@@ -651,7 +655,7 @@
                     }
                 }
                 .date{
-                    font-size:2rem;
+                    font-size:2.5rem;
                     color: #747478;
                 }
             }
@@ -662,7 +666,7 @@
         &__body{
             padding:6rem 0;
             padding-bottom: 11rem;
-            font-size: 2.4rem;
+            font-size: 2.8rem;
             line-height: 3.8rem;
         }
     }
@@ -1698,6 +1702,7 @@ h4{
         position:absolute;
         //top:20.6rem;
         left:-200%;
+        
         width:100%;
         height: calc(100vh - 16rem);
         background: #fff;
@@ -2858,6 +2863,7 @@ footer.mt_0{
                     height:11.3rem;
                     border-radius: .3rem;
                     border: solid 1px #e5e7ee;
+                    border-radius:.6rem;
                     background-color: #f8f8fa;
                     font-size:2.5rem;
                 }
@@ -3450,3 +3456,67 @@ footer.mt_0{
         }
     }
 }
+
+/* 220228 ë””ë²„ê¹… ìž‘ì—… */
+
+.search-filter-list ul li, .filter-keywordResult__inner ul li{ height:5rem; padding:0rem 2rem; /* padding-right:.5rem; */ font-size: 2.2rem; font-weight:normal !important; border-radius:3rem !important; line-height:5rem;}
+.filter-keywordResult__inner ul li .del{margin-top: -.5rem;}
+.search-filter-list ul li .del{margin-left:1rem; margin-right:0; padding:0; background-size: 100%; line-height:5rem;}
+.thinkgoodPick-banner .swiper-slide a{ display:block; margin:0 1rem !important;}
+.thinkgoodPick-list .swiper-slide a .day{height:3.5rem; padding:1rem;}
+.thinkgoodPick-list h4{ margin-bottom:4rem; font-size:3.6rem;}
+.borderTopGray h5{font-size:3.6rem;}
+.btnClick button{width:3rem; height:3rem;}
+.tab-wrap .tab li{font-size:2.8rem;}
+.tab-wrap .tab li.current:before{height:.5rem;}
+.filter-keywordResult__inner ul li .del{ padding:0; background-size:1.7rem 1.6rem;}
+.indexList .tab-wrap .items .itemCont .state div{height:4rem; line-height:4rem;}
+.borderTopGray::before{height:2rem;}
+.borderTopGray{margin-top:2rem;}
+.thinkgoodPick-list{height:115rem;}
+.thinkgoodPick-list{padding-top:5rem; padding-bottom:8rem;}
+.slideRight__inner .side-menu__cont.accordion > div .admitContent a{border-top:none; border-bottom:1px solid #e5e7ee}
+.slideRight__inner .side-menu__cont.accordion .button-wrap{margin-top:10rem !important;}
+.accordion > div:nth-last-child(-n+2){border-bottom:none;}
+.filter-keywordSearch__inner a{border-bottom:.1rem solid #e5e7ee;}
+.modal-header__gray .modal-header{border-bottom:none;}
+.filter-keywordSearch__inner a.selected{    background-size: 1.42rem 0.92rem;}
+.button-wrap button{font-weight:500 !important;}
+#contestFilter .button-wrap button, .slideRight__inner .side-menu__cont.accordion .button-wrap button{ font-size:2.8rem; }
+.contest .view-content .info .posterView-header .view i{width:4.1rem; height:3.4rem;}
+.contest .view-content .info .posterView-header .view{font-size:2.8rem;}
+.contest .view-content .info .posterView-header .tit{font-size:4.8rem; line-height:7.2rem;}
+.contest .view-content .info-detail ul li .txt, .contest .view-content .info-detail ul li .type, .view-content *{font-size:2.8rem; line-height: 5rem;}
+.contest .view-content .info-detail ul li{padding:1.8rem 0;}
+.scrapBtn .button-share i, .scrapBtn .button-scrap i{background-size:100% 100%;}
+.scrapBtn > *, .scrapBtn .button-share{font-size:2.6rem; font-weight:500;}
+.scrapBtn .button-scrap i{width:3.2rem; height:3.7rem;}
+.scrapBtn .button-share i{width:3rem; height:3.2rem;}
+.scrapBtn{box-shadow:0 -2px 15px 0 rgba(0,0,0,0.08)}
+.scrapBtn > * button{    background: #f8f8fa; font-size:2.6rem; font-weight:500;}
+.scrapBtn > *, .scrapBtn > div{width:50%; flex:1;}
+.scrapBtn .button-share{width:100%;}
+.scrapBtn > div i, .scrapBtn .button-share.on + .share-button > div button.button-close i{background-size:100%;}
+.thinkTalk__inner > div.thinker{padding:1.5rem 3rem;}
+.board-list__inner .title, .board-list__inner .title span{font-size:2.6rem; font-weight:400;}
+.etc .num, .etc .author, .view-info *{font-size:2.5rem;}
+.etc .num i{width:2.7rem; height:2rem;}
+.etc .author i{width:1.9rem; height:2.5rem;}
+.search-right select{line-height:7.5rem;}
+.button-wrap button{height:9rem; font-weight:500; font-size:2.8rem;}
+.button-scrap{ padding:0; color:#000000; font-size:2.6rem;}
+.button-scrap i, .button-scrap.on i{width:3.6rem ;height:3.5rem; background-size:100%;}
+.button-modify i{width:3.7rem; height:4.7rem; background-size:100%;}
+.button-delete{padding-right:0;}
+.button-delete i{width:3.7rem; height:4.2rem; background-size:contain;}
+.view-comment .title{ padding-bottom:2rem; border-bottom: .2rem solid #e5e7ee; font-size:3rem;}
+.view-comment .editor{height:18rem;}
+.view-comment .editor .button-wrap{overflow:hidden; margin:0;}
+.view-comment .editor button{ padding:0;}
+.view-comment .comment-answer{border-width:.2rem;}
+header button.btn--sch, header button.btn--mobile{width:4.4rem; height:4.4rem;}
+.indexList .tab-wrap .items .itemCont .title{ margin-top:2rem; font-weight:500; font-size:2.6rem;}
+.indexList .tab-wrap .items .itemCont .date{margin-top:2rem; font-size:2.2rem;}
+footer .footer__nav{padding:2.6rem; border-width:.2rem;}
+footer .footer__nav a{font-weight:500;}
+footer .footer__nav a:last-child{color:#ca1c1d; font-weight:600;}

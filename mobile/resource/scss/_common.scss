@@ -37,7 +37,7 @@ $font-size__35 : 3.5rem;
 $font-size__38 : 3.85rem;
 $font-size__40 : 4rem;
 
-$color-red : #dd2525;
+$color-red : #ca1c1d;
 $color-deeppink : #c41a66;
 $color-pink3:#de1673;
 $color-lightpink : #fcedf4;
@@ -850,7 +850,7 @@ footer{
             @include d-flex;
             @include justify-between;
             flex:1;
-            padding:2.6rem;
+            padding:2.6rem 9rem;
             border-top:.2rem solid #8c8c8c;
             border-bottom:1px solid #dddddd;
             background-color:#f8f8fa;
