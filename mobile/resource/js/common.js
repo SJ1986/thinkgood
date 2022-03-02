@@ -2,6 +2,7 @@
 
 $(function () {
     uploadFile();
+    checkFn();
     
     $("input[type='text'], textarea").on('input', function(){
         if($(this).val() == ''){
@@ -312,5 +313,26 @@ function uploadFile(){
             var filename = $(this).val().split('/').pop().split('\\').pop();
         };
         $(this).siblings('.upload-name').val(filename);
+    });
+}
+
+function checkFn(){
+    var $checkAll = $('.check-all');
+    $checkAll.change(function () {
+    var $this = $(this);
+    var checked = $this.prop('checked'); // checked 문자열 참조(true, false)
+    $('input[name="checkContestFilter"]').prop('checked', checked);
+
+    });
+
+    var boxes = $('input[name="checkContestFilter"]');
+    boxes.change(function () {
+
+    var boxLength = boxes.length;
+    var checkedLength = $('input[name="checkContestFilter"]:checked').length;
+    var selectAll = (boxLength == checkedLength);
+
+    $checkAll.prop('checked', selectAll);
+
     });
 }

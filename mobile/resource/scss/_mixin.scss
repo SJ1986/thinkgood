@@ -158,7 +158,8 @@ $height-l:936px;
 @mixin text-overflow {
   overflow:hidden;
   text-overflow:ellipsis;
-  word-wrap:break-word;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical
+  word-wrap:break-word;display:-webkit-box;-webkit-line-clamp:1;-webkit-box-orient:vertical;
+  height:3.5rem;line-height:3.5rem;
 }
 
 @mixin text-overflow_tit {

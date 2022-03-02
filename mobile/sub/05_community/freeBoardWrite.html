@@ -52,7 +52,7 @@
                 <div class="container__inner">
                     <div class="breadcrumb">    
                         <div class="breadcrumb__inner">
-                            커뮤니티 <i></i> 씽굿광장
+                            커뮤니티 <i></i> 자유게시판
                         </div>
                     </div>
                     <div class="container__core">
@@ -73,9 +73,9 @@
                                     <div class="layer__inner d-flex">
                                         <div>
                                             <div class="title d-flex align-items-center"><i></i> 연관 공모전</div>
-                                            <div class="content">
+                                            <p class="content">
                                                 공모전을 선택해주세요
-                                            </div>
+                                            </p>
                                         </div>
                                         <div class="button-wrap">
                                             <button type="button" data-toggle="modal" data-target="#searchContest"><i class="icon finder_s m-auto" ></i></button>
@@ -143,10 +143,10 @@
                     <div class="modal fade" id="searchContest" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered ">
                             <div class="modal-content">
-                                <div class="modal-header d-flex justify-content-start">
+                                <div class="modal-header d-flex justify-content-start" style="border-bottom:none;">
                                     <p class="modal-title">공모전/대외활동 검색하기</p>
                                 </div>
-                                <div class="modal-body">
+                                <div class="modal-body p-0" style="border-top:none;">
                                     <div class="search-contest d-flex align-items-center">
                                         <div class="form-wrap">
                                             <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="검색어를 입력해 주세요">
@@ -155,17 +155,22 @@
                                             <button type="button"><i class="icon finder_s"></i></button>
                                         </div>
                                     </div>
-                                    <p class="ps mt_10">검색어 입력 후 검색 버튼을 클릭하시면 공모전 조회가 가능합니다.</p>
+                                    <p class="ps mt_10" style="margin-bottom:2rem;">검색어 입력 후 검색 버튼을 클릭하시면 공모전 조회가 가능합니다.</p>
 
                                     <!-- 검색 결과 -->
                                     <div class="search-contest__list">
                                         <div class="tit">
                                             <div class="tit__inner">
-                                                검색된 공모전/대외활동 <span>(15)</span>
+                                                검색된 공모전/대외활동 (<span class="color-red font-weight__b">15</span>)
                                             </div>
                                         </div>
                                         <ul>
                                             <li><a href="javascript:void(0)">제 2회 용산전자랜드 <span class="keyword">메타버스</span> 크리에이터 경진대회</a></li>
+                                            <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
+                                            <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
+                                            <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
+                                            <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
+                                            <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
                                             <li><a href="javascript:void(0)"><span class="keyword">메타버스</span> 기초영어회화 체험단(베타테스기초영어회화 체험단(베타테스</a></li>
                                         </ul>
                                         <div class="board-bottom">
@@ -187,11 +192,7 @@
                                     <!-- //검색 결과 -->
                                     
                                 </div>
-                                <div class="modal-footer d-flex justify-content-center">
-                                    <div class="button-wrap mt_60">
-                                        <button type="button" class="button-red" data-dismiss="modal">확인</button>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
                     </div>

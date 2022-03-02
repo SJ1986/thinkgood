@@ -834,14 +834,18 @@ header{
             ol{
                 li{
                     @include d-flex;
+                    @include align-start;
                     @include justify-start;
+                    padding-top:.7rem;
                     height:4rem;
                     padding-left:6rem;
                     font-size:2.8rem;
-                    line-height:4.5rem;
+                    line-height:100%;
                     &:before{
+                        @include d-flex;
+                        @include align-center;
+                        @include justify-center;
                         width:4rem;height:4rem;
-                        line-height:4.5rem;
                         background-color:#ca1c1d;
                         font-size:2.4rem;
                         color:#fff;
@@ -1926,6 +1930,7 @@ ul{
                 color:$color-fontgray;
                 text-align: center;
                 border-bottom:.2rem solid #e5e7ee;
+                border-radius:0;
                 &+li{
                     margin-left: -1px;
                 }

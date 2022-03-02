@@ -1186,19 +1186,37 @@ header .header--logo img {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
   -webkit-box-pack: flex-start;
   -ms-flex-pack: flex-start;
   justify-content: flex-start;
+  padding-top: .7rem;
   height: 4rem;
   padding-left: 6rem;
   font-size: 2.8rem;
-  line-height: 4.5rem;
+  line-height: 100%;
 }
 
 .side-sch__best ol li:before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   width: 4rem;
   height: 4rem;
-  line-height: 4.5rem;
   background-color: #ca1c1d;
   font-size: 2.4rem;
   color: #fff;
@@ -2417,6 +2435,7 @@ ul.lists.num li:before {
   color: #747478;
   text-align: center;
   border-bottom: .2rem solid #e5e7ee;
+  border-radius: 0;
 }
 
 .tab-wrap .tab li + li {
@@ -2761,7 +2780,7 @@ article .campusSlide .swiper-slide a b {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 2.5rem 0;
+  padding: 2.8rem 0 2.3rem;
   border-bottom: 1px solid #e5e7ee;
 }
 
