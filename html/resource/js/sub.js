@@ -1,5 +1,14 @@
 'use strict';
 $(function () {
+
+	$('.form-search__click').click(function(){ //팝업 슬라이드
+		$('.sch-result').addClass('on');
+	})
+	$('button.close').click(function(){ //팝업 슬라이드
+		$('.sch-result').removeClass('on');
+	})
+
+
 	$(".lnb-list__dep2>li>a").click(function () {
 		$(this).toggleClass("on");
 		$(this).next(".dep3").slideToggle();

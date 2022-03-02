@@ -7048,3 +7048,7 @@ footer .footer__nav a:last-child {
   color: #ca1c1d;
   font-weight: 600;
 }
+
+a {
+  font-size: 1px;
+}

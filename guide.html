@@ -340,8 +340,57 @@
                         </div>
                     </div>
                     <div class="content__core-right">
-
                         <div>
+                            <h1 style="margin: bottom 30px;">팝업 내부 슬라이드</h1>
+                            <button type="button" style="width:20rem;height:4.8rem;border:1px solid #ccc;font-size:2rem"  data-toggle="modal" data-target="#testModal">팝업</button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="testModal" tabindex="-1" role="dialog" aria-labelledby="testModalLabel" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                <div class="modal-content p-4" style="width:50rem;">
+                                    <div class="modal-header" style="border-bottom:none;">
+                                        <p class="modal-title font-s font-weight__m" id="testModalLabel">주최사 검색 결과</p>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="width:1.5rem;
+                                        height:1.5rem;padding:0;">
+                                            <img src="./html/resource/image/common/icon/icon-close.png" class="w-100" alt="">
+                                            <!-- <span aria-hidden="true">&times;</span> -->
+                                        </button>
+                                    </div>
+                                    <div class="modal-body p-0">
+                                        <div class="form-box m-0">
+                                            <div class="form-input d-flex align-items-center justify-content-between w-100">
+                                                <input type="text" name="searchKeyword" value="" id="" class="form-input w_100" placeholder=""  style="height:5rem;">
+                                                <button type="submit" class="form-search__click"><i></i></button>
+                                            </div>
+                                        </div> 
+                                        <div class="sch-result">
+                                            <p class="sch-result__tit font-s font-weight__b">검색된 주최사 (<span>15</span>)</p>
+                                            <div class="sch-result__item">
+                                                <a href="">한국관광공사 원주 본사</a>
+                                            </div>
+                                            <div class="sch-result__item">
+                                                <a href="">한국관광공사 서울사무소</a>
+                                            </div>
+                                            <div class="paging d-flex justify-content-center">
+                                                <div class="paging__inner d-flex">
+                                                    <a href="javascript:void(0)" class="first"><i class="icon arrow-first"></i></a>
+                                                    <a href="javascript:void(0)" class="prev"><i class="icon arrow-prev"></i></a>
+                                                    <a href="javascript:void(0)" class="on">1</a>
+                                                    <a href="javascript:void(0)">2</a>
+                                                    <a href="javascript:void(0)">3</a>
+                                                    <a href="javascript:void(0)">4</a>
+                                                    <a href="javascript:void(0)">5</a>
+                                                    <a href="javascript:void(0)" class="next"><i class="icon arrow-next"></i></a>
+                                                    <a href="javascript:void(0)" class="last"><i class="icon arrow-last"></i></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="mt_60">
                             <h1>[h*]</h1>
                             <div>
                                 <h2>h2 :: 30px   regular   strong   -25   #000000</h2>

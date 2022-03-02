@@ -134,6 +134,14 @@
   width: 100% !important;
 }
 
+.w_95 {
+  width: 75% !important;
+}
+
+.w_85 {
+  width: 75% !important;
+}
+
 .w_75 {
   width: 75% !important;
 }
@@ -144,6 +152,10 @@
 
 .w_45 {
   width: 45% !important;
+}
+
+.w_48 {
+  width: 48%;
 }
 
 .w_25 {
@@ -1766,6 +1778,11 @@ p {
   border: none !important;
 }
 
+.button-wrap button.btn-excelDown {
+  border: 1px solid #6e971a;
+  color: #6e971a;
+}
+
 .button-darkgray {
   width: 10.7rem;
   padding: 0 !important;
@@ -1893,6 +1910,17 @@ ul.lists.num li:before {
 .form-check {
   position: relative;
   padding-left: 0;
+}
+
+.form-check.table-check input[type='checkbox'] + label {
+  position: initial;
+}
+
+.form-check.table-check input[type='checkbox'] + label:before {
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .form-check.check-all input[type='checkbox'] + label {
@@ -2668,6 +2696,11 @@ ul.lists.num li:before {
 
 .list-banner ul li a img {
   max-height: 114px;
+}
+
+.list-banner ul li a:hover img {
+  -webkit-box-shadow: 13px 13px 2rem rgba(31, 31, 49, 0.26);
+          box-shadow: 13px 13px 2rem rgba(31, 31, 49, 0.26);
 }
 
 /* section4 */
