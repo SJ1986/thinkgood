@@ -47,6 +47,7 @@
             margin-top:2.4rem;
         }
     }
+    
 
     .board-write {
         .modyCaptcha {
@@ -144,7 +145,13 @@
     }
 }
 
-
+.withdrawal {
+    button{
+        &.btn-red{
+            font-size:3rem;
+        }
+    }
+}
 
 /* 220220228 red_lab 수정*/
 .icon-minus{
@@ -236,23 +243,66 @@
             .viewBox {
                 .text{
                     font-weight:400;
+                    line-height: 4.3rem;
                     p{
                         font-weight:500;
                     }
                     &.thick{
-                        font-weight:600;
+                        font-weight:500;
                     }
                 } 
                 &.last{
                     >div{
                         font-size:2.8rem;
                         font-weight:400;
+                        line-height: 4.3rem;
                     }
                 }
             }
 
         } 
+
+        &.cancle{
+            .viewBox {
+                .stateCancle{
+                    font-weight: 500;
+                }
+            }
+        }
     } 
+    
+    .grayBox {
+        span{
+            margin-top: 5.6rem;
+            font-size: 3.4rem;
+            a{
+                font-size:4.4rem;
+            }
+        }
+    }
+    .boxWrap{
+        .text {
+            font-size: 2.4rem;
+            line-height: 3.75rem;
+        }    
+    } 
+    .DateTitle {
+        margin-top:5rem;
+    }
+    .bottom_menu{
+        height: 10rem;
+        > button{
+            padding: 4.2rem 7rem;
+            color:#000;
+            font-weight:500;
+            font-size:2.6rem;
+
+        }
+    } 
+
+    
+   
+
 }
 
 .form-select{
@@ -282,6 +332,13 @@
                 }
             }
         }
+        .itemCont{
+            .state {
+                .strategy{
+                    margin-left: -0.4rem;
+                }
+            }
+        } 
     }
 }
 .myRoomMody {
@@ -417,5 +474,40 @@
         } 
        
     }
-   
+    
 } 
+
+.modal-bottom {
+    .modal-dialog {
+        .modal-content {
+            .modal-header {
+                h5 {
+                    span{
+                        font-size: 2.8rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+            .modal-body {
+                div{
+                    font-size: 3rem;
+                    p{
+                        font-size: 3rem;
+                    }
+                }
+                    
+                input {
+                    margin-top:4rem;
+                }
+                button{
+                    &.btn{
+                        font-size: 3rem;
+                    }
+                }
+
+
+
+            }
+        }
+    }
+}

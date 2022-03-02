@@ -144,6 +144,10 @@
   height: 0.5rem;
 }
 
+.withdrawal button.btn-red {
+  font-size: 3rem;
+}
+
 /* 220220228 red_lab 수정*/
 .icon-minus {
   width: 2.1rem;
@@ -205,6 +209,7 @@
 
 .content__core-right .applyView .viewCont .viewBox .text {
   font-weight: 400;
+  line-height: 4.3rem;
 }
 
 .content__core-right .applyView .viewCont .viewBox .text p {
@@ -212,12 +217,46 @@
 }
 
 .content__core-right .applyView .viewCont .viewBox .text.thick {
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .content__core-right .applyView .viewCont .viewBox.last > div {
   font-size: 2.8rem;
   font-weight: 400;
+  line-height: 4.3rem;
+}
+
+.content__core-right .applyView.cancle .viewBox .stateCancle {
+  font-weight: 500;
+}
+
+.content__core-right .grayBox span {
+  margin-top: 5.6rem;
+  font-size: 3.4rem;
+}
+
+.content__core-right .grayBox span a {
+  font-size: 4.4rem;
+}
+
+.content__core-right .boxWrap .text {
+  font-size: 2.4rem;
+  line-height: 3.75rem;
+}
+
+.content__core-right .DateTitle {
+  margin-top: 5rem;
+}
+
+.content__core-right .bottom_menu {
+  height: 10rem;
+}
+
+.content__core-right .bottom_menu > button {
+  padding: 4.2rem 7rem;
+  color: #000;
+  font-weight: 500;
+  font-size: 2.6rem;
 }
 
 .form-select .color-red {
@@ -238,6 +277,10 @@
 
 .indexList .tab-wrap .items + .items:nth-last-of-type(1) {
   border-bottom: 0.2rem solid #e5e7ee;
+}
+
+.indexList .tab-wrap .itemCont .state .strategy {
+  margin-left: -0.4rem;
 }
 
 .myRoomMody .tab-wrap .tab li.current {
@@ -341,5 +384,26 @@
 }
 
 .applyView .viewCont .viewBox .text p {
+  font-size: 3rem;
+}
+
+.modal-bottom .modal-dialog .modal-content .modal-header h5 span {
+  font-size: 2.8rem;
+  line-height: 4rem;
+}
+
+.modal-bottom .modal-dialog .modal-content .modal-body div {
+  font-size: 3rem;
+}
+
+.modal-bottom .modal-dialog .modal-content .modal-body div p {
+  font-size: 3rem;
+}
+
+.modal-bottom .modal-dialog .modal-content .modal-body input {
+  margin-top: 4rem;
+}
+
+.modal-bottom .modal-dialog .modal-content .modal-body button.btn {
   font-size: 3rem;
 }
