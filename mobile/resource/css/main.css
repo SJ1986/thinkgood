@@ -125,6 +125,13 @@
   background-image: url("data:image/svg+xml;charset=utf8, %0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='20.4' height='13.4'%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill:none;stroke:%23a1a1a1;stroke-linecap:round;stroke-linejoin:round;stroke-width:1.4px%7D%3C/style%3E%3C/defs%3E%3Cg id='그룹_18854' data-name='그룹 18854' transform='translate(-157.3 -592.3)'%3E%3Cg id='그룹_18829' data-name='그룹 18829' transform='translate(158 593)'%3E%3Cpath id='패스_227' data-name='패스 227' class='cls-1' d='M414.451 239.641c4.44 0 8.2-2.519 9.5-6-1.3-3.481-5.06-6-9.5-6s-8.2 2.519-9.5 6c1.3 3.481 5.059 6 9.5 6Z' transform='translate(-404.951 -227.641)'/%3E%3C/g%3E%3Cpath id='패스_228' data-name='패스 228' class='cls-1' d='M424.511 237.457a2.764 2.764 0 1 1-2.764-2.764 2.764 2.764 0 0 1 2.764 2.764Z' transform='translate(-254.248 361.543)'/%3E%3C/g%3E%3C/svg%3E");
 }
 
+.icon-calendar {
+  width: 3rem;
+  height: 3rem;
+  background-image: url("data:image/svg+xml;charset=utf8, %3Csvg data-name='Vector Smart Object' xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3E%3Cg data-name='그룹 30'%3E%3Cg data-name='그룹 29'%3E%3Cpath data-name='패스 7' d='M26.484 2.344h-1.406V0h-2.344v2.344H7.266V0H4.922v2.344H3.516A3.52 3.52 0 0 0 0 5.859v20.625A3.52 3.52 0 0 0 3.516 30h22.968A3.52 3.52 0 0 0 30 26.484V5.859a3.52 3.52 0 0 0-3.516-3.515zm1.172 24.141a1.173 1.173 0 0 1-1.172 1.172H3.516a1.173 1.173 0 0 1-1.172-1.172V11.016h25.312zm0-17.813H2.344V5.859a1.173 1.173 0 0 1 1.172-1.171h1.406v2.343h2.344V4.688h15.468v2.343h2.344V4.688h1.406a1.173 1.173 0 0 1 1.172 1.172z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 32'%3E%3Cg data-name='그룹 31'%3E%3Cpath data-name='사각형 1' d='M4.453 13.477h2.344v2.344H4.453z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 34'%3E%3Cg data-name='그룹 33'%3E%3Cpath data-name='사각형 2' d='M9.141 13.477h2.344v2.344H9.141z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 36'%3E%3Cg data-name='그룹 35'%3E%3Cpath data-name='사각형 3' d='M13.828 13.477h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 38'%3E%3Cg data-name='그룹 37'%3E%3Cpath data-name='사각형 4' d='M18.516 13.477h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 40'%3E%3Cg data-name='그룹 39'%3E%3Cpath data-name='사각형 5' d='M23.203 13.477h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 42'%3E%3Cg data-name='그룹 41'%3E%3Cpath data-name='사각형 6' d='M4.453 18.164h2.344v2.344H4.453z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 44'%3E%3Cg data-name='그룹 43'%3E%3Cpath data-name='사각형 7' d='M9.141 18.164h2.344v2.344H9.141z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 46'%3E%3Cg data-name='그룹 45'%3E%3Cpath data-name='사각형 8' d='M13.828 18.164h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 48'%3E%3Cg data-name='그룹 47'%3E%3Cpath data-name='사각형 9' d='M18.516 18.164h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 50'%3E%3Cg data-name='그룹 49'%3E%3Cpath data-name='사각형 10' d='M4.453 22.852h2.344v2.344H4.453z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 52'%3E%3Cg data-name='그룹 51'%3E%3Cpath data-name='사각형 11' d='M9.141 22.852h2.344v2.344H9.141z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 54'%3E%3Cg data-name='그룹 53'%3E%3Cpath data-name='사각형 12' d='M13.828 22.852h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 56'%3E%3Cg data-name='그룹 55'%3E%3Cpath data-name='사각형 13' d='M18.516 22.852h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3Cg data-name='그룹 58'%3E%3Cg data-name='그룹 57'%3E%3Cpath data-name='사각형 14' d='M23.203 18.164h2.344v2.344h-2.344z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+  background-size: cover;
+}
+
 :root {
   --white:#fff;
   --black:#000;
@@ -343,6 +350,10 @@
 
 .mb_20 {
   margin-bottom: 2rem;
+}
+
+.mr_20 {
+  margin-right: 2rem;
 }
 
 .ml_20 {
@@ -1766,7 +1777,6 @@ footer address span {
 }
 
 .button-wrap {
-  margin: -2.5px;
   font-size: 0;
 }
 
