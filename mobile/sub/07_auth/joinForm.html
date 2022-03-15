@@ -60,7 +60,7 @@
                             <div class="">
                                 <p class="tit essential">아이디</p>
                                 <div class="form-wrap">
-                                    <input type="password" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="3자 이상의 영문과 숫자를 조합한 아이디를 입력하세요">
+                                    <input type="text" name="searchKeyword" value="" id="" class="form-input w-100" placeholder="3자 이상의 영문과 숫자를 조합한 아이디를 입력하세요">
                                 </div>
                             </div>
                             <div class="">
@@ -112,7 +112,7 @@
                             </div>
                             <div class="">
                                 <p class="tit essential">생년월일</p>
-                                <input type="date" name="" id="" class="custom-datepicker w-100">
+                                <input type="date" name="" id="" class="custom-datepicker w-100" placeholder="20YY.MM.DD">
                             </div>
                             <div class="">
                                 <p class="tit essential">지역</p>
@@ -600,20 +600,20 @@
                                     지금 가장 핫한 대외활동 ·공모전 소식을 매주 수요일 보내드립니다.
                                 </span>
                                 <div class="form-check d-flex align-items-center mt_20">
-                                    <input type="checkbox" title="" name="" id="check2" value="">
+                                    <input type="checkbox" title="" name="" id="check2" class="" value="">
                                     <label for="check2">정보 메일을 받겠습니다</label>
                                 </div>
                             </div>
                             <div class="">
                                 <p class="tit essential">이용약관동의</p>
                                 <div class="form-check d-flex align-items-center mt_10 py_2 px_3 bg--lightGray" style="margin:0 -3rem;padding-left:3rem;">
-                                    <input type="checkbox" title="" name="" id="check3" value="">
+                                    <input type="checkbox" title="" name="" id="check3" value="" class="checkAcceptAll">
                                     <label for="check3">전체동의 합니다.</label>
                                 </div>
                             </div>
                             <div class="accordion mt_10" style="margin-top:1rem;margin:0 -3rem;">
                                 <div class="form-check d-flex" style="padding:1.5rem 3rem;border-bottom:none;">
-                                    <input type="checkbox" title="" name="" id="check_authForm01" value="10">
+                                    <input type="checkbox" title="" name="checkAccept" id="check_authForm01" value="10">
                                     <label for="check_authForm01" class="color-fontgray">서비스 이용약관 동의 <span class="color-red ml-1">[필수]</span></label>
                                     <button type="button" class="acc_admit" title="서비스 이용약관 동의 열림"></button>
                                     <div class="admitContent mobile">
@@ -667,7 +667,7 @@
                                     </div>
                                 </div>
                                 <div class="form-check d-flex" style="padding:1.5rem 3rem;border-bottom:none;">
-                                    <input type="checkbox" title="" name="" id="check_authForm02" value="10">
+                                    <input type="checkbox" title="" name="checkAccept" id="check_authForm02" value="10">
                                     <label for="check_authForm02" class="color-fontgray">개인정보수집 및 이용에 대한 안내 <span class="color-red ml-1">[필수]</span></label>
                                     <button type="button" class="acc_admit" title="개인정보수집 및 이용에 대한 안내 열림"></button>
                                     <div class="admitContent mobile">

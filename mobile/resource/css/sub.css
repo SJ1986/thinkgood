@@ -2943,6 +2943,10 @@ ul.lists.num li:before {
   background-size: 1.7rem 1rem;
 }
 
+.board-write .form-wrap select.fill {
+  border: 1px solid #000 !important;
+}
+
 .board-write .form-wrap input {
   width: 100%;
   height: 9rem;
@@ -4854,9 +4858,27 @@ h4 .color-red {
   border-bottom: 1px solid #e5e7ee;
 }
 
+.slideRight__inner .side-menu__cont.accordion > div .admitContent .form-row.last-item {
+  border-bottom: none;
+}
+
 .slideRight__inner .side-menu__cont.accordion > div .admitContent label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0;
   padding-left: 7rem;
   font-size: 2.8rem;
+  line-height: 1.5em;
   color: #000;
 }
 
@@ -6278,7 +6300,7 @@ footer.mt_0 {
 .modifyWithdrawal span {
   margin-top: 1rem;
   margin-left: 0;
-  font-size: 2.4ren;
+  font-size: 2.4rem;
   font-weight: 300;
   letter-spacing: normal;
   color: #000;
@@ -6915,12 +6937,14 @@ input[type=date].custom-datepicker {
   height: 9rem;
   border: 1px solid #e5e7ee;
   border-radius: .6rem;
+  background-color: #fff;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
-  font-size: 2.4rem;
+  font-size: 2.8rem;
   color: #000;
   line-height: 100%;
+  text-align: left;
 }
 
 input[type=date].custom-datepicker::-webkit-input-placeholder {
@@ -6999,11 +7023,6 @@ input[type=date]:after {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   letter-spacing: -0.1rem;
-}
-
-.container__core .button-wrap button {
-  font-size: 3rem;
-  letter-spacing: -0.75px;
 }
 
 .container__core .guideBook-list__item img {
@@ -7113,6 +7132,10 @@ input[type=date]:after {
 
 .container__core .board-write .message textarea::placeholder {
   font-weight: 500;
+}
+
+input.fill, textarea.fill, select.fill {
+  border: 1px solid #000 !important;
 }
 
 /* 220220228 red_lab 수정*/

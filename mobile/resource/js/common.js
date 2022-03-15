@@ -2,15 +2,21 @@
 
 $(function () {
     uploadFile();
-    checkFn();
     
-    $("input[type='text'], textarea").on('input', function(){
+    $("input[type='text'], textarea, input[type='password']").on('input', function(){
         if($(this).val() == ''){
             $(this).removeClass('fill');
         }else{
             $(this).addClass('fill');
         }
     })
+    $("select").on("change", function(){ 
+        $(this).addClass('fill');
+        if($(this).val() == 'normal'){
+            $(this).removeClass('fill');
+        }
+    });
+
     $("input[type='checkbox']").on('input', function(){
         if($(this).is(":checked") == true){
             $(this).next('label').find('input').attr('disabled', false);
@@ -284,6 +290,9 @@ $(function () {
     acc_event('.acc_admit');  //아코디언 Object
     acc_event('.acc_menu'); //mobile menu fn
 
+    checkFn('.check-all');
+    checkFn('.checkAcceptAll');
+
 
 })
 
@@ -316,23 +325,27 @@ function uploadFile(){
     });
 }
 
-function checkFn(){
-    var $checkAll = $('.check-all');
+function checkFn(this_obj){
+    var $checkAll = $(this_obj);
     $checkAll.change(function () {
-    var $this = $(this);
-    var checked = $this.prop('checked'); // checked 문자열 참조(true, false)
-    $('input[name="checkContestFilter"]').prop('checked', checked);
-
+        var $this = $(this);
+        var checked = $this.prop('checked'); // checked 문자열 참조(true, false)
+        $('input[name="checkContestFilter"]').prop('checked', checked);
+        $('input[name="checkAccept"]').prop('checked', checked);
     });
+    var boxes = $('input[name="checkContestFilter"]'),
+    boxes2 = $('input[name="checkAccept"]');
 
-    var boxes = $('input[name="checkContestFilter"]');
     boxes.change(function () {
-
-    var boxLength = boxes.length;
-    var checkedLength = $('input[name="checkContestFilter"]:checked').length;
-    var selectAll = (boxLength == checkedLength);
-
-    $checkAll.prop('checked', selectAll);
-
+        var boxLength = boxes.length;
+        var checkedLength = $('input[name="checkContestFilter"]:checked').length;
+        var selectAll = (boxLength == checkedLength);
+        $checkAll.prop('checked', selectAll);
+    });
+    boxes2.change(function () {
+        var box2Length = boxes2.length;
+        var checkedLength = $('input[name="checkAccept"]:checked').length;
+        var selectAll = (box2Length == checkedLength);
+        $checkAll.prop('checked', selectAll);
     });
 }

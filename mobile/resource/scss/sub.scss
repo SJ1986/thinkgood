@@ -252,6 +252,9 @@
                     text-indent: 2rem;
                     background: icon(chevron-down) no-repeat right 2rem center;
                     background-size: 1.7rem 1rem;
+                    &.fill{
+                        border:1px solid #000 !important;
+                    }
                 }
                 input{
                     width:100%;
@@ -1841,11 +1844,17 @@ h4{
                                 width:50%;
                                 padding:3.5rem 0;
                                 border-bottom:1px solid #e5e7ee;
-
+                                &.last-item{
+                                    border-bottom:none;
+                                }
                             }
                             label{
+                                @include d-flex;
+                                @include align-center;
+                                margin-bottom:0;
                                 padding-left:7rem;
                                 font-size:2.8rem;
+                                line-height:1.5em;
                                 color:#000;
                             }
                             input{
@@ -3036,7 +3045,7 @@ footer.mt_0{
     span {
         margin-top:1rem;
         margin-left:0;
-        font-size: 2.4ren;
+        font-size: 2.4rem;
         font-weight: 300;
         letter-spacing: normal;
         color:#000;
@@ -3588,10 +3597,12 @@ input[type=date]{
             height:9rem;
             border:1px solid #e5e7ee;
             border-radius:.6rem;
+            background-color:#fff;
             appearance:none;
-            font-size:2.4rem;
+            font-size:2.8rem;
             color:#000;
             line-height:100%;
+            text-align:left;
             &::placeholder{
                 font-size:2.4rem;
                 color:#000;
@@ -3660,12 +3671,12 @@ input[type=date]{
     }
 }
 .container__core{
-    .button-wrap{
-        button{
-            font-size:3rem;
-            letter-spacing: -0.75px;
-        }
-    }
+    // .button-wrap{
+    //     button{
+    //         font-size:3rem;
+    //         letter-spacing: -0.75px;
+    //     }
+    // }
     .guideBook-list__item {
         img{
             width: 100%;
@@ -3758,6 +3769,12 @@ input[type=date]{
             }
         }
         
+    }
+}
+
+input, textarea, select{
+    &.fill{
+        border:1px solid #000 !important;
     }
 }
 
