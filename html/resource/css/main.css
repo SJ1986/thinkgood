@@ -105,7 +105,7 @@
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='15'%3E%3Cpath fill-rule='evenodd' fill='%23000' d='M10 7.497 0-.002v14.999l10-7.5z'/%3E%3C/svg%3E%0A");
   background-size: 1rem 1.5rem;
   background-repeat: no-repeat;
-  background-position: 95% 1.3rem;
+  background-position: 100% 1.3rem;
 }
 
 .icon-triangle--white, .direct-link__item:hover span {
@@ -2635,7 +2635,7 @@ ul.lists.num li:before {
   background-image: url("data:image/svg+xml;charset=utf8, %3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='15'%3E%3Cpath fill-rule='evenodd' fill='%23000' d='M10 7.497 0-.002v14.999l10-7.5z'/%3E%3C/svg%3E%0A");
   background-size: 1rem 1.5rem;
   background-repeat: no-repeat;
-  background-position: 95% 1.3rem;
+  background-position: 100% 1.3rem;
 }
 
 .icon-triangle--white, .direct-link__item:hover span {
@@ -2962,13 +2962,14 @@ ul.lists.num li:before {
   width: 100%;
   font-size: 2.4rem;
   font-weight: bold;
-  line-height: 1.7em;
+  line-height: 1.5em;
 }
 
 .direct-link__item em {
   display: block;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   font-size: 1.6rem;
+  color: #747478;
 }
 
 .direct-link--regist {
@@ -3193,10 +3194,12 @@ ul.lists.num li:before {
   position: absolute;
   top: 50%;
   left: 0;
+  overflow: hidden;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   -webkit-box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15);
           box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15);
+  border-radius: 3px;
 }
 
 .notice-group__guidebook .notice-box em {
@@ -3209,6 +3212,9 @@ ul.lists.num li:before {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   font-size: 1.6rem;
   color: #a1a1a1;
 }
