@@ -66,6 +66,40 @@
                             background-color:#de2e2e;
                             border-radius:3px;
                         }
+                        .hover-info{
+                            display:none;
+                            position:absolute;
+                            top:0;left:0;
+                            width:100%;
+                            height:100%;
+                            padding:4rem;
+                            &--red{
+                                background-color:rgba(202, 28, 28, 0.9);
+                            }
+                            &--orange{
+                                background-color:rgba(247, 96, 46, 0.9);
+                            }
+                            em{
+                                display: block;
+                                padding:0;
+                                color:#fff;
+                            }
+                            &__tit{
+                                font-size:2.4rem;
+                                font-weight:bold;
+                                line-height:1.5em;
+                            }
+                            &__comp{
+                                margin-top:2rem;
+                                font-size:1.6rem;
+                                font-weight:500;
+                            }
+                            &__date{
+                                margin-top:6rem;
+                                font-size:2.4rem;
+                                font-weight:bold;
+                            }
+                        }
                         // &:hover{
                         //     span{
                         //         opacity:1;
@@ -73,6 +107,13 @@
                         //         transition:all .5s ease;
                         //     }
                         // }
+                    }
+                    &.on{
+                        .hover-info{
+                            display:block;
+                            opacity:1;
+                            visibility:visible;
+                        }
                     }
                 }
             }
@@ -176,6 +217,265 @@
         button{
             width:17.3rem;
             padding:1px;
+        }
+    }
+}
+
+.direct{
+    &-link{
+        width:calc(100% - 44.4rem);
+        padding:6rem;
+        padding-left:0;
+        &:before{
+            width:200%;
+        }
+        >ul{
+            @include d-flex;
+            li{
+                @include d-flex;
+                flex-flow:row wrap;
+                justify-content: flex-start;
+                align-items:flex-end;
+                width: 100%;
+                a{
+                    display:block;
+                    width:100%;
+                }
+                +li{
+                    margin-left:2rem;
+                }
+            }
+        }
+        &__item{
+            height:28.2rem;
+            padding:4rem 3rem;
+            background-color:#fff;
+            border-radius:.4rem;
+            transition:all .5s ease-in-out;
+            background-repeat:no-repeat;
+            background-position:3rem 3rem;
+            &:hover{
+                background-color:#ca1c1d;
+                box-shadow: 0px 16px 56px 0 rgba(23, 6, 6, 0.18);
+                transition:all .5s ease-in-out;
+                span{
+                    color:#fff;
+                    @extend .icon-triangle--white;
+                }
+                em{
+                    color:#fff;
+                }
+            }
+            span{
+                display:block;
+                width:100%;
+                font-size:2.4rem;
+                font-weight:bold;
+                line-height:1.7em;
+                @extend .icon-triangle;
+            }
+            em{
+                display:block;
+                margin-top:2rem;
+                font-size:1.6rem;
+            }
+        }
+        &--regist{
+            background-image:url('../image/main/icon/icon-chart--off.png');
+            &:hover{
+                background-image:url('../image/main/icon/icon-chart--on.png');
+            }
+        }
+        &--notice{
+            background-image:url('../image/main/icon/icon-gear--off.png');
+            &:hover{
+                background-image:url('../image/main/icon/icon-gear--on.png');
+            }
+        }
+        &--website{
+            background-image:url('../image/main/icon/icon-signBoard--off.png');
+            &:hover{
+                background-image:url('../image/main/icon/icon-signBoard--on.png');
+            }
+            span{
+                margin-bottom:-.5rem
+            }
+        }
+        &--marketing{
+            background-image:url('../image/main/icon/icon-speaker--off.png');
+            &:hover{
+                background-image:url('../image/main/icon/icon-speaker--on.png');
+            }
+        }
+    }
+}
+.login{
+    &-box{
+        width:39.9rem;
+        padding:5rem 0 0;
+        margin-left:4.5rem;
+        >h3{
+            font-weight:bold;
+            span{
+                font-weight:bold;
+                color:#ca1c1d;
+            }
+        }
+        .form{
+            &-row{
+                label{
+                    font-size:1.7rem;
+                }
+                a{
+                    position:relative;
+                    font-size:1.7rem;
+                    + a{
+                        margin-left:1.2rem;
+                        padding-left:1.2rem;
+                        &:before{
+                            position:absolute;
+                            top:2px;left:0;
+                            width:1px;
+                            height:1.5rem;
+                            background-color:#000;
+                            content:""
+                        }
+                    }
+                }
+                &.d-grid{
+                    display:grid;
+                    grid-template-columns: 28.7rem 10.6rem;
+                    grid-template-rows: 5rem 5rem;
+                    gap:.6rem .1rem;
+                    align-items:stretch;
+                    label{
+                        margin:0;
+                        input{
+                            width:100%;
+                            height:5rem;
+                            background-color:#f8f8fa;
+                            border:1px solid #e5e7ee;
+                            border-radius:.4rem;
+                            &::placeholder{
+                                font-size:1.7rem;
+                                color:#747478;
+                            }
+                        }
+                    }
+                    button{
+                        grid-row:auto / span 2;
+                        margin-left:.6rem;
+                        color:#fff;
+                        font-size:1.8rem;
+                        background-color:#474747;
+                    }
+                }
+            }
+        }
+        >button{
+            font-size:1.8rem;
+            height:5rem;
+            font-weight:500;
+            color:#000;
+            border:1px solid #e5e7ee;
+        }
+    }
+}
+.notice{
+    &-group{
+        h3{
+            margin-bottom:3rem;
+            font-weight:bold;
+            span{
+                color:#ca1c1d;
+                font-weight:bold
+            }
+        }
+        > div{
+            width:100%;
+            + div{
+                margin-left:6rem;
+            }
+        }
+        ul{
+            li{
+                padding:1.7rem 0;
+                a{
+                    padding-left:1rem;
+                    font-size:1.8rem;
+                    font-weight:500;
+                    color:#000;
+                    &:hover{
+                        font-weight:bold;
+                        color:#ca1c1d;
+                    }
+                }
+                + li{
+                    border-top:1px solid #e5e7ee;
+                }
+            }
+        }
+        &__guidebook{
+            .notice{
+                &-box{
+                    &__major{
+                        position:relative;
+                        padding-left:6rem;
+                        >div{
+                            height:25.3rem;
+                            padding:9rem 0 0 12.9rem;
+                            background-color:#f8f8fa;
+                            p{
+                                span{
+                                    font-size:2.2rem;
+                                    font-weight:bold;
+                                    &:first-child{
+                                        margin-right:.5rem;
+                                        font-size:3rem;
+                                        font-weight:bold;
+                                        color:#ca1c1d;
+                                    }
+                                    em{
+                                        @include align-center;
+                                        width:100%;
+                                        margin-top:1.5rem;
+                                        i{
+                                            margin-right:.5rem;
+                                        }
+                                    }
+                                }
+                            }
+                            a{
+                                position:absolute;
+                                bottom:4rem;right:4rem;
+                                padding-right:2.3rem;
+                                font-size:1.6rem;
+                                background:url('../image/main/icon/icon-clamp__right.png') no-repeat 95% center;
+                            }
+                            .img-wrap{
+                                position:absolute;
+                                top:50%;left:0;
+                                transform:translateY(-50%);
+                                box-shadow: 8.4px 10px 14px 0 rgba(10, 10, 33, 0.15);
+                            }
+                        }
+                    }
+                    em{
+                        @include d-flex;
+                        font-size:1.6rem;
+                        color:#a1a1a1;
+                        i{
+                            margin-right:.5rem;
+                        }
+                    }
+                }
+            }
+            ul{
+                li{
+                    @include d-flex;
+                    @include justify-between;
+                }
+            }
         }
     }
 }
