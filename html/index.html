@@ -484,11 +484,11 @@
 						</div>
 						<div class="content__core-mainNews" id="funcTab">
 							<ul class="nav">
-								<li class="nav-item active"><a href="" class="nav-link">수상작갤러리</a></li>
-								<li class="nav-item"><a href="" class="nav-link">트렌드</a></li>
-								<li class="nav-item"><a href="" class="nav-link">인터뷰</a></li>
+								<li class="nav-item active"><a href="" class="nav-link" data-url="aaa">수상작갤러리</a></li>
+								<li class="nav-item"><a href="" class="nav-link" data-url="bbb">트렌드</a></li>
+								<li class="nav-item"><a href="" class="nav-link" data-url="ccc">인터뷰</a></li>
 							</ul>
-							<a href="" class="moveToMore" title="수상작갤러리더보기"><img src="./resource/image/main/icon/icon_more.png" alt=""></a>
+							<a href="http://www.naver.com" class="moveToMore" title="수상작갤러리더보기"><img src="./resource/image/main/icon/icon_more.png" alt=""></a>
 							<div class="nav-cont" id="news-tab1" style="display:block">
 								<div class="d-flex flex-wrap">
 									<a href="" class="newsMajor">
@@ -1516,14 +1516,15 @@
 				$tab_ID.find('.nav-cont').eq($(this).index()).css('display','block');
 				$tab_ID.find('.nav li').removeClass('active');
 				if(!$(this).hasClass('active')) {
-				$(this).addClass('active');
+					$(this).addClass('active');
+					var nav_url = $('.nav-item.active a').attr('data-url');
+					$('.moveToMore').attr('href', nav_url);
 				} else {
-				$(this).removeClass('active');
+					$(this).removeClass('active');
 				}
 			});
 		});
 	};
-		
 </script>
 </body>
 

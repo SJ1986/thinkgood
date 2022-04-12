@@ -397,6 +397,22 @@
                 -ms-grid-rows:7rem;
             }
         }
+        &.w1132221{
+            .trans{
+                &Head{
+                    grid-template-columns: 10rem  10rem auto 14.5rem 10rem 14.5rem 10rem;
+                    -ms-grid-columns:10rem  10rem auto 14.5rem 10rem 14.5rem 10rem;
+                    grid-template-rows: 6rem;
+                    -ms-grid-rows:6rem;
+                }
+            }
+            .items{
+                grid-template-columns: 10rem  10rem auto 14.5rem 10rem 14.5rem 10rem;
+                -ms-grid-columns:10rem  10rem auto 14.5rem 10rem 14.5rem 10rem;
+                grid-template-rows: 7rem;
+                -ms-grid-rows:7rem;
+            }
+        }
     }
 }
 // modal
