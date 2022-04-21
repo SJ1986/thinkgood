@@ -9032,3 +9032,37 @@ h1 {
 .sch-result__item a {
   font-size: 1.5rem;
 }
+
+.apply-table {
+  float: left;
+  width: 100%;
+}
+
+.apply-table table {
+  width: 100%;
+}
+
+.apply-table table th, .apply-table table td {
+  font-size: 1.8rem;
+}
+
+.apply-table table th {
+  padding: 2.1rem 0;
+  font-weight: 500;
+  background-color: #f8f8fa;
+  text-align: center;
+}
+
+.apply-table table td {
+  padding: 2.6rem 0;
+  text-align: center;
+}
+
+.apply-table table td a {
+  display: block;
+  text-align: left;
+}
+
+.boxWrap > .tab-wrap {
+  width: 100%;
+}

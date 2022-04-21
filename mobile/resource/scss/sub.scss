@@ -37,7 +37,7 @@
             width:1.7rem;
             height: 1.1rem;
             margin: 0 1rem;
-            background: icon(chevron-down) no-repeat center;
+            background: icon(chevron-down)  no-repeat center;
             background-size: 100%;
             transform: rotate(-90deg);
         }
@@ -143,7 +143,7 @@
                         left:0;
                         width:3rem;
                         height:3rem;
-                        background: #ca1c1d icon(iconNoti)no-repeat center;
+                        background: #ca1c1d icon(iconNoti) no-repeat center;
                         border-radius: 100%;
                         content:""
                     }
@@ -157,7 +157,7 @@
                         left:0;
                         width:3rem;
                         height:3rem;
-                        background: #ca1c1d icon(iconPeople)no-repeat center;
+                        background: #ca1c1d icon(iconPeople) no-repeat center;
                         background-size: 1.8rem 1.9rem;
                         border-radius: 100%;
                         content:""
@@ -185,7 +185,7 @@
                         display: block;
                         width: 1.4rem;
                         height: 2rem;
-                        background: icon(iconAuthor)no-repeat center;
+                        background: icon(iconAuthor) no-repeat center;
                         background-size: contain;
                     }
                 }
@@ -196,7 +196,7 @@
                         display: block;
                         width: 2.1rem;
                         height: 1.4rem;
-                        background: icon(iconView)no-repeat center;
+                        background: icon(iconView) no-repeat center;
                         background-size: contain;
                     }
                 }
@@ -303,7 +303,7 @@
                 .button-delete{
                     width:6.6rem;
                     height:2.6rem;
-                    background: url(../image/sub/iconX.svg)no-repeat center;
+                    background: url(../image/sub/iconX.svg) no-repeat center;
                     background-size: 2.6rem;
                 }
                 &+div{
@@ -337,7 +337,7 @@
                 //     height:2.5rem;
                 //     margin-right: 1rem;
                 //     font-weight:500;
-                //     background: url(../image/sub/iconPlus.svg)no-repeat center;
+                //     background: url(../image/sub/iconPlus.svg) no-repeat center;
                 //     background-size: 100%;
                 //     line-height:100%;
                 // }
@@ -353,7 +353,7 @@
                 //     height:2.5rem;
                 //     margin-right: 1rem;
                 //     font-weight:500;
-                //     background: url(../image/sub/iconPlus.svg)no-repeat center;
+                //     background: url(../image/sub/iconPlus.svg) no-repeat center;
                 //     background-size: 100%;
                 //     line-height:100%;
                 // }
@@ -403,11 +403,11 @@
             border-radius: 100%;
             flex: none;
             &.team{
-                background: #ca1c1d icon(iconPeople)no-repeat center;
+                background: #ca1c1d icon(iconPeople) no-repeat center;
                 background-size: 1.7rem 2rem;
             }
             &.noti{
-                background: #ca1c1d icon(iconNoti)no-repeat center;
+                background: #ca1c1d icon(iconNoti) no-repeat center;
                 background-size: 2rem 1.7rem;
             }
         }
@@ -461,7 +461,7 @@
                     display: block;
                     width:3.5rem;
                     height:3.5rem;
-                    background: #ca1c1d icon(iconLink)no-repeat center;
+                    background: #ca1c1d icon(iconLink) no-repeat center;
                     background-size: 2.2rem 2rem;
                     border-radius: 100%;
                     flex:none;
@@ -512,7 +512,7 @@
                     display: block;
                     width:3.5rem;
                     height:3.5rem;
-                    background: #ca1c1d icon(iconLink)no-repeat center;
+                    background: #ca1c1d icon(iconLink) no-repeat center;
                     background-size: 2.2rem 2rem;
                     border-radius: 100%;
                     flex:none;
@@ -647,7 +647,7 @@
                             width:2.6rem;
                             height:2.7rem;
                             margin-right: 2rem;
-                            background: url(../image/sub/iconRecomment.svg)no-repeat;
+                            background: url(../image/sub/iconRecomment.svg) no-repeat;
                             background-size: cover;
                         }
                         .editor{
@@ -690,7 +690,7 @@
                     width:2.6rem;
                     height:2.7rem;
                     margin-right: 2rem;
-                    background: url(../image/sub/iconRecomment.svg)no-repeat;
+                    background: url(../image/sub/iconRecomment.svg) no-repeat;
                     background-size: cover;
                 }
             }
@@ -781,12 +781,12 @@
             width: 2.6rem;
             height:2.5rem;
             margin-right: 1rem;
-            background: icon(iconHeart,fff)no-repeat center;
+            background: icon(iconHeart,fff) no-repeat center;
             background-size: cover;
         }
         &.on{
             i{
-                background: icon(iconHeart,ff4a4b)no-repeat center;
+                background: icon(iconHeart,ff4a4b) no-repeat center;
                 background-size: cover;
             }
         }
@@ -798,7 +798,7 @@
             display: block;
             width:2.7rem;
             height:3.7rem;
-            background: icon(iconModify)no-repeat center bottom;
+            background: icon(iconModify) no-repeat center bottom;
             background-size: 100%;
         }
     }
@@ -808,7 +808,7 @@
             display: block;
             width:2.7rem;
             height:3.2rem;
-            background: icon(iconDelete)no-repeat center bottom;
+            background: icon(iconDelete) no-repeat center bottom;
             background-size: 100%;
         }
     }
@@ -839,7 +839,7 @@
         i{
             width: 3.4rem;
             height: 2.3rem;
-            background: url(../image/sub/icon-google.svg)no-repeat;
+            background: url(../image/sub/icon-google.svg) no-repeat;
         }
     }
     &-mail{
@@ -862,21 +862,21 @@
                 color:#dd2525;
             }
             &.first{
-                background: url(../image/sub/iconLast.png)no-repeat center;
+                background: url(../image/sub/iconLast.png) no-repeat center;
                 background-size: 1.9rem 1.8rem;
                 transform: rotate(180deg);
             }
             &.prev{
-                background: url(../image/sub/iconNext.png)no-repeat center;
+                background: url(../image/sub/iconNext.png) no-repeat center;
                 background-size: 1.1rem 1.9rem;
                 transform: rotate(180deg);
             }
             &.next{
-                background: url(../image/sub/iconNext.png)no-repeat center;
+                background: url(../image/sub/iconNext.png) no-repeat center;
                 background-size: 1.1rem 1.9rem;
             }
             &.last{
-                background: url(../image/sub/iconLast.png)no-repeat center;
+                background: url(../image/sub/iconLast.png) no-repeat center;
                 background-size: 1.9rem 1.8rem;
             }
         }
@@ -895,7 +895,7 @@
             width:1.7rem;
             height: 1.1rem;
             margin: 0 1rem;
-            background: icon(chevron-down) no-repeat center;
+            background: icon(chevron-down)  no-repeat center;
             background-size: 100%;
             transform: rotate(-90deg);
         }
@@ -925,7 +925,7 @@
                 width:3.5rem;
                 height:3.5rem;
                 margin-right: 1rem;
-                background: #ca1c1d icon(iconLink)no-repeat center;
+                background: #ca1c1d icon(iconLink) no-repeat center;
                 background-size: 2.2rem 2rem;
                 border-radius: 100%;
                 flex:none;
@@ -995,7 +995,7 @@
                     width:2.6rem;
                     height: 2.6rem;
                     margin-left: auto;
-                    background: icon(iconClose)no-repeat center;
+                    background: icon(iconClose) no-repeat center;
                     background-size: 2.6rem;
                 }
             }
@@ -1214,7 +1214,7 @@ body{
                             width: 2.1rem;
                             height: 1.4rem;
                             margin-right: 1rem;
-                            background: icon(iconView)no-repeat center;
+                            background: icon(iconView) no-repeat center;
                             background-size: contain;
                         }
                     }
@@ -1456,7 +1456,7 @@ body{
         width:4rem;
         height: 3.4rem;
         margin-right: 2rem;
-        background: url(../image/sub/iconFilter.svg)no-repeat center;
+        background: url(../image/sub/iconFilter.svg) no-repeat center;
         background-size: cover;
     }
     &-close{
@@ -1469,7 +1469,7 @@ body{
             width:4rem;
             height: 3.4rem;
             margin-right: 2rem;
-            background: icon(iconClose)no-repeat center;
+            background: icon(iconClose) no-repeat center;
             background-size: 2.6rem;
         }
     }
@@ -1512,7 +1512,7 @@ body{
                         width: 1.2rem;
                         height: 100%; 
                         margin-left: 1rem; 
-                        background: url(../image/sub/iconX-white.svg) no-repeat center; 
+                        background: url(../image/sub/iconX-white.svg)  no-repeat center; 
                         background-size: 1.2rem; 
                     }
                 }
@@ -1541,14 +1541,14 @@ body{
                         width:1rem;
                         height: 1.7rem;
                         margin: 0 .6rem;
-                        background: url(../image/sub/iconArrowRight-white.svg)no-repeat center;
+                        background: url(../image/sub/iconArrowRight-white.svg) no-repeat center;
                         background-size: 100%;
                     }
                     .del{
                         width:1.7rem;
                         height:1.6rem;
                         margin-left: 2rem;
-                        background: url(../image/sub/iconX-white.svg)no-repeat center;
+                        background: url(../image/sub/iconX-white.svg) no-repeat center;
                         background-size: cover;
                     }
                 }
@@ -1742,7 +1742,7 @@ h4{
         }
     }
     &-thumb{
-        background:url(../image/sub/iconThumb.svg)no-repeat;
+        background:url(../image/sub/iconThumb.svg) no-repeat;
         &.on{
             background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='%23ca1c1d'%3E%3Cg data-name='그룹 18915'%3E%3Cpath d='M0 0h10v10H0zm14 0h10v10H14zM0 14h10v10H0zm14 0h10v10H14z'/%3E%3C/g%3E%3C/svg%3E");
             background-size: contain;
@@ -1774,7 +1774,7 @@ h4{
                 width:100%;
             }
             &.noImg{
-                background: #f8f8fa url(../image/sub/thinkGoodLogo.png)no-repeat center;
+                background: #f8f8fa url(../image/sub/thinkGoodLogo.png) no-repeat center;
                 background-size: 50%;
             }
         }
@@ -1949,7 +1949,7 @@ h4{
                                 width: 2.1rem;
                                 height: 1.4rem;
                                 margin-right: 1rem;
-                                background: icon(iconView)no-repeat center;
+                                background: icon(iconView) no-repeat center;
                                 background-size: contain;
                             }
                         }
@@ -2056,7 +2056,7 @@ h4{
             i{
                 width: 2.2rem;
                 height: 2.7rem;
-                background: url(../image/sub/icon-scrap.svg)no-repeat center;
+                background: url(../image/sub/icon-scrap.svg) no-repeat center;
             }
             
         }
@@ -2068,7 +2068,7 @@ h4{
                 display: block;
                 width: 2rem;
                 height: 2.2rem;
-                background: url(../image/sub/icon-share.svg)no-repeat center;
+                background: url(../image/sub/icon-share.svg) no-repeat center;
             }
             &.on{
                 &+.share{
